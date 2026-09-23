@@ -22,7 +22,8 @@ It is **not evidence by itself**. Every status must be traceable to the migratio
 | Workshop system | EVIDENCE FOUND | Architecture, controller snapshots, and runtime evidence survive. |
 | Capability resolver | EVIDENCE FOUND | Python resolver snapshots and Hermes mapping survive. |
 | Task Sessions | EVIDENCE FOUND | Numerous certified and pre-change snapshots survive through Phase 14.11. |
-| Layered Hot Context | RECONCILING | Current cache/learning revisions are later than Phase 14.7 backups; checkpoints and source lineage survive, but chronology still needs reconciliation. |
+| Layered Hot Context | RECONCILED | Current late cache/learning source is consistent with surviving Phase 14.6/14.7 lineage and the later master checkpoint that records 14.7 complete; selected as best recovered implementation, not byte-certified. |
+| Learning / User Context | RECONCILED | Current foundation, indexes, deterministic matchers, Context Route State, snapshot retrieval, and precedence/generation semantics match the recovered User Context checkpoint and later master checkpoint. |
 | Source Context / Turn Composition | RECONCILED | Surviving current source matches the explicit Phase 14.9 completed module family and behavioral checkpoint; checkpoint-backed, not byte-certified. |\n| Reasoning Controls | EVIDENCE FOUND | Phase 14.10 source/checkpoint material survives. |
 | Model Forms | EVIDENCE FOUND | Phase 14.11 model-form source and certified snapshots survive. |
 | Session Identity / Store | EVIDENCE FOUND | Certified Phase 14.11 runtime snapshots survive. |
@@ -35,4 +36,4 @@ It is **not evidence by itself**. Every status must be traceable to the migratio
 
 ## Next recovery target
 
-Next reconcile **Cache / Layered Hot Context**, then the **Learning / User Context** subsystem. Workshop/runtime-adapter reconciliation remains active in parallel where certification/source linkage is still incomplete.
+Next return to **Workshop / capability resolution + runtime factory/controller**, now with the later cache integration explained by the reconciled Phase 14.6/14.7 lineage. Then continue through Reasoning Controls and the late Phase 14.11 runtime/model-form surface.
