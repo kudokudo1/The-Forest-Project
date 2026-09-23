@@ -1,6 +1,6 @@
 # Bristlecone Pine — Cache / Layered Hot Context Reconciliation
 
-Status: **RECONCILING**
+Status: **RECONCILED** — finalized by `LEARNING-USER-CONTEXT-RECONCILIATION.md`; this file preserves the earlier reconciliation reasoning.
 
 ## Current finding
 
