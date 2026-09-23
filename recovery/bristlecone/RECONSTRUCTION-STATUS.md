@@ -22,7 +22,7 @@ It is **not evidence by itself**. Every status must be traceable to the migratio
 | Workshop system | EVIDENCE FOUND | Architecture, controller snapshots, and runtime evidence survive. |
 | Capability resolver | EVIDENCE FOUND | Python resolver snapshots and Hermes mapping survive. |
 | Task Sessions | EVIDENCE FOUND | Numerous certified and pre-change snapshots survive through Phase 14.11. |
-| Layered Hot Context | EVIDENCE FOUND | Architecture/checkpoints and implementation-era evidence survive. |
+| Layered Hot Context | RECONCILING | Current cache/learning revisions are later than Phase 14.7 backups; checkpoints and source lineage survive, but chronology still needs reconciliation. |
 | Source Context / Turn Composition | RECONCILED | Surviving current source matches the explicit Phase 14.9 completed module family and behavioral checkpoint; checkpoint-backed, not byte-certified. |\n| Reasoning Controls | EVIDENCE FOUND | Phase 14.10 source/checkpoint material survives. |
 | Model Forms | EVIDENCE FOUND | Phase 14.11 model-form source and certified snapshots survive. |
 | Session Identity / Store | EVIDENCE FOUND | Certified Phase 14.11 runtime snapshots survive. |
