@@ -1,0 +1,119 @@
+schema_version: 1
+tree: bristlecone
+
+capabilities:
+
+  todo:
+    kind: toolset
+    scope: general
+    default_state: dormant
+    sticky_allowed: true
+
+  clarify:
+    kind: toolset
+    scope: general
+    default_state: dormant
+    sticky_allowed: true
+
+  session:
+    kind: context
+    scope: general
+    default_state: dormant
+    sticky_allowed: true
+
+  memory:
+    kind: context
+    scope: general
+    default_state: dormant
+    sticky_allowed: true
+
+  leaf:
+    kind: context
+    scope: general
+    default_state: dormant
+    sticky_allowed: true
+    runtime_status: unresolved
+
+  web:
+    kind: toolset
+    scope: specialized
+    default_state: dormant
+
+  file:
+    kind: toolset
+    scope: specialized
+    default_state: dormant
+
+  terminal:
+    kind: toolset
+    scope: specialized
+    default_state: dormant
+
+  code-execution:
+    kind: toolset
+    scope: specialized
+    default_state: dormant
+
+  debugging:
+    kind: skill
+    scope: specialized
+    default_state: dormant
+    sticky_allowed: true
+
+  testing:
+    kind: skill
+    scope: specialized
+    default_state: dormant
+    sticky_allowed: true
+
+  special:
+    kind: capability
+    scope: specialized
+    default_state: dormant
+
+  model-evaluation:
+    kind: skill
+    scope: specialized
+    default_state: dormant
+
+  model-benchmarking:
+    kind: skill
+    scope: specialized
+    default_state: dormant
+    runtime_status: unresolved
+
+  model-inference:
+    kind: skill
+    scope: specialized
+    default_state: dormant
+
+  quantization:
+    kind: skill
+    scope: specialized
+    default_state: dormant
+    runtime_status: unresolved
+
+  training:
+    kind: skill
+    scope: specialized
+    default_state: dormant
+    runtime_status: unresolved
+
+  runtime-inspection:
+    kind: capability
+    scope: specialized
+    default_state: dormant
+    runtime_status: unresolved
+
+general_ready:
+  - todo
+  - clarify
+  - session
+  - memory
+  - leaf
+
+policy:
+  individual_activation: true
+  activate_entire_group: false
+  inject_only_when_active: true
+  minimum_useful_canopy: true
