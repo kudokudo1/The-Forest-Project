@@ -23,7 +23,7 @@ It is **not evidence by itself**. Every status must be traceable to the migratio
 | Capability resolver | EVIDENCE FOUND | Python resolver snapshots and Hermes mapping survive. |
 | Task Sessions | EVIDENCE FOUND | Numerous certified and pre-change snapshots survive through Phase 14.11. |
 | Layered Hot Context | EVIDENCE FOUND | Architecture/checkpoints and implementation-era evidence survive. |
-| Reasoning Controls | EVIDENCE FOUND | Phase 14.10 source/checkpoint material survives. |
+| Source Context / Turn Composition | RECONCILED | Surviving current source matches the explicit Phase 14.9 completed module family and behavioral checkpoint; checkpoint-backed, not byte-certified. |\n| Reasoning Controls | EVIDENCE FOUND | Phase 14.10 source/checkpoint material survives. |
 | Model Forms | EVIDENCE FOUND | Phase 14.11 model-form source and certified snapshots survive. |
 | Session Identity / Store | EVIDENCE FOUND | Certified Phase 14.11 runtime snapshots survive. |
 | Handoff / Continuity | EVIDENCE FOUND | Handoff and continuity source snapshots survive. |
@@ -35,4 +35,4 @@ It is **not evidence by itself**. Every status must be traceable to the migratio
 
 ## Next recovery target
 
-Next reconcile the **Workshop system + capability resolver** as a coupled subsystem: canonical Forest capability definitions, Workshop profiles, Hermes adapter mapping, controller/resolver source, and the evidence showing exact-state activation/rollback.
+Next reconcile **Cache / Layered Hot Context**, then the **Learning / User Context** subsystem. Workshop/runtime-adapter reconciliation remains active in parallel where certification/source linkage is still incomplete.
