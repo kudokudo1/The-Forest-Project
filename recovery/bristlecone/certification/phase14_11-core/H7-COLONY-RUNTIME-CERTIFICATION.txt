@@ -1,0 +1,126 @@
+Phase: 14.11H
+Name: Colony Runtime / Shared-Weight Semantics
+Status: FINAL CERTIFIED
+
+Production TaskSession SHA:
+d666cb1471b568bf43db4255f5e84e98c1ea502af467e1e2670e4a93dc364991
+
+H.5F SHA:
+c0ac6bb4cca9eaf737660d5c041218fccc9cd9a4a17468eecbf209db23db2f4b
+
+H.6B SHA:
+64b06bcca60593f4f111946b6cc17711966e3c83773252ff3eb733a1a086412e
+
+H.6C SHA:
+f9d07b51af86929fa94ba6a3b57ee2479a72cb7a9d0ee59bf5ef6770f321b33b
+
+Primary checkpoints:
+- bristlecone/backups/phase14_11H5G_certified_20260811T233141Z
+- bristlecone/backups/phase14_11H6D_certified_20260811T234357Z
+
+Independent Terminal 2 certifications:
+- bristlecone/backups/phase14_11H5G_T2_independent_certified_20260811T233702Z
+- bristlecone/backups/phase14_11H6D_T2_independent_certified_20260811T234454Z
+
+FINAL COLONY SEMANTICS
+
+1. Colony
+A Colony is one Tree and all of its Clones/Ramets.
+
+2. Tree identity
+tree_id identifies the Tree/Colony.
+
+3. Colony-member identity
+execution_context_id is the canonical stable technical identity
+for an individual Ortet/Ramet execution context.
+
+4. Lineage and operational role
+lineage_role records ortet/ramet lineage.
+operational_role records Main/worker/specialist/etc.
+Lineage does not determine operational role.
+A Ramet may be Main while the Ortet remains the Ortet.
+
+5. Runtime session identity
+A live runtime session belongs to:
+execution_context_id + binding_id
+
+Two Colony members using the same binding must retain separate
+runtime sessions, context/KV, and control state.
+
+6. Shared model residency
+Model residency belongs to the binding/model weights, not to
+an individual Tree member.
+
+Multiple execution contexts may share one resident model-weight
+copy while preserving separate runtime sessions.
+
+7. Model Form
+Model Form is execution-context local.
+
+8. Reasoning
+Reasoning control and temporary Reasoning leases are
+execution-context local.
+
+Legacy top-level reasoning_control is compatibility state for
+ctx-default only and must never broadcast to Ramets.
+
+9. Task-local state
+Active Task state, Workshop behavior, temporary capabilities,
+and task-sticky Skills remain context-local.
+
+10. Resource targeting
+ResourceRequest.execution_context_id comes from the frozen turn.
+Resource allocation therefore targets the exact active
+execution context rather than the Tree name.
+
+11. Lifecycle
+Create, reuse, stale recovery, rotation, retirement, and
+non-stale failure remain scoped to the intended context+binding
+session. Neighboring Colony members remain untouched.
+
+12. Shared capability, separate activation
+Trees may share durable capability and model resources while
+temporary/live activation remains scoped to the execution context.
+
+13. Phase boundary
+14.11H certifies Colony identity, state isolation, runtime-session
+ownership, shared-weight semantics, resource targeting, and
+lifecycle composition.
+
+Fake-adapter execution certification belongs to 14.11I and is
+not claimed by this checkpoint.
+
+CERTIFICATION RESULTS
+
+H.1 Colony identity:
+PASS
+
+H.2 context+binding session ownership:
+PASS
+
+H.3 shared model residency:
+PASS
+
+H.4 lifecycle isolation:
+6 PASS / 0 FAIL
+
+H.5 integrated Ortet/Ramet matrix:
+15 PASS / 0 FAIL
+
+H.6B identity/resource/session/residency:
+13 PASS / 0 FAIL
+
+H.6C lifecycle/resource/residency:
+12 PASS / 0 FAIL
+
+H.6D full regression:
+PASS
+
+Terminal 2 independent H.5G recertification:
+PASS
+
+Terminal 2 independent H.6D recertification:
+PASS
+
+FINAL RESULT:
+14.11H CERTIFIED
