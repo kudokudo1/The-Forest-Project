@@ -30,11 +30,13 @@ It is **not evidence by itself**. Every status must be traceable to the migratio
 | Session Identity / Store | RECONCILED | Current session_identity.py and session_store.py are byte-identical to certified D/HB/H snapshots; identifier doctrine is independently certified. |
 | Handoff / Continuity | RECONCILED | Current handoff, handoff detection, Model Form continuity, and conversation continuity files are byte-identical to certified E-series snapshots. |
 | Hermes runtime adapter | RECONCILED | Current Hermes adapter is byte-identical to recovered Phase 14.11 L.9/L.10 certified source snapshots; base adapter also has an exact certified match. |
+| Resource Request / Governor | RECONCILED | Entire current resources package has exact certified matches; L.8 A+B independently certifies Governor semantics, residency-aware requirements, and fail-closed DEFER/DENY behavior. |
+| Colony Runtime / Identity | RECONCILED | Current Colony identity source is byte-identical to certified H/HB snapshots; H.7 final certification establishes execution-context isolation, shared residency, and lifecycle semantics. |
 | Benchmarks | EVIDENCE FOUND | Phase 14 benchmark material survives. |
 | Phase 14.11 L.9 | CERTIFIED | Recovery authority records A+B certification. |
 | Phase 14.11 L.10 | CERTIFIED | Recovery authority records independent A+B certification. |
-| Phase 14.11 L.11 | PARTIAL | Work began; expected generated evidence inventory has not been found. |
+| Phase 14.11 L.11 | PARTIAL | L.11A evidence-inventory builder survives and encodes certified chronology through L.10; expected l11_evidence_inventory.json and any final L.11 certification do not survive, so completion is not claimed. |
 
 ## Next recovery target
 
-Next reconcile the remaining late Phase 14.11 surfaces: **Resource Request / Governor, Colony runtime semantics, real-runtime certification, benchmark evidence, and the L.11 partial boundary**.
+Next consolidate **real-runtime J/L certification and benchmark evidence**, then establish the highest defensible reconstructed Bristlecone checkpoint and remaining modernization carry-forward items.
