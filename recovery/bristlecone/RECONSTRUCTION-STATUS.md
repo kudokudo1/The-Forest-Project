@@ -25,7 +25,7 @@ It is **not evidence by itself**. Every status must be traceable to the migratio
 | Layered Hot Context | RECONCILED | Current late cache/learning source is consistent with surviving Phase 14.6/14.7 lineage and the later master checkpoint that records 14.7 complete; selected as best recovered implementation, not byte-certified. |
 | Learning / User Context | RECONCILED | Current foundation, indexes, deterministic matchers, Context Route State, snapshot retrieval, and precedence/generation semantics match the recovered User Context checkpoint and later master checkpoint. |
 | Source Context / Turn Composition | RECONCILED | Surviving current source matches the explicit Phase 14.9 completed module family and behavioral checkpoint; checkpoint-backed, not byte-certified. |
-| Reasoning Controls | EVIDENCE FOUND | Phase 14.10 source/checkpoint material survives. |
+| Reasoning Controls | RECONCILED | Current control.py is byte-identical to a Phase 14.11 G7 certified copy; current model/router match completed 14.10 doctrine and later L.6 certifies runtime reasoning/model-form independence. |
 | Model Forms | EVIDENCE FOUND | Phase 14.11 model-form source and certified snapshots survive. |
 | Session Identity / Store | EVIDENCE FOUND | Certified Phase 14.11 runtime snapshots survive. |
 | Handoff / Continuity | EVIDENCE FOUND | Handoff and continuity source snapshots survive. |
@@ -37,4 +37,4 @@ It is **not evidence by itself**. Every status must be traceable to the migratio
 
 ## Next recovery target
 
-Next reconcile **Reasoning Controls**, then the certified-heavy **Task Session / Session Identity / Model Form / Handoff** surface through the Phase 14.11 boundary.
+Next reconcile the certified-heavy **Task Session / Session Identity / Model Form / Handoff** surface through the Phase 14.11 boundary.
