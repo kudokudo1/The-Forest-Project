@@ -21,14 +21,14 @@ It is **not evidence by itself**. Every status must be traceable to the migratio
 | Tree identity / Seed 0.0.2 | RECONCILED | Seed 0.0.2 package reconstructed verbatim with SHA-256 provenance; later identity evolution remains a separate reconciliation task. |
 | Workshop system | RECONCILED | Current controller, Workshop profiles, capability registry/mapping, resolver, and runtime-adapter path match the later master checkpoint; adapter core has certified anchors. |
 | Capability resolver | RECONCILED | Current resolver is the documented later cached implementation; earlier Phase 14.6 lineage explains its evolution and no later conflicting source was found. |
-| Task Sessions | EVIDENCE FOUND | Numerous certified and pre-change snapshots survive through Phase 14.11. |
+| Task Sessions | RECONCILED | Current task_session.py is byte-identical to numerous certified checkpoints through real-runtime J-series work and L.9/L.10 source snapshots. |
 | Layered Hot Context | RECONCILED | Current late cache/learning source is consistent with surviving Phase 14.6/14.7 lineage and the later master checkpoint that records 14.7 complete; selected as best recovered implementation, not byte-certified. |
 | Learning / User Context | RECONCILED | Current foundation, indexes, deterministic matchers, Context Route State, snapshot retrieval, and precedence/generation semantics match the recovered User Context checkpoint and later master checkpoint. |
 | Source Context / Turn Composition | RECONCILED | Surviving current source matches the explicit Phase 14.9 completed module family and behavioral checkpoint; checkpoint-backed, not byte-certified. |
 | Reasoning Controls | RECONCILED | Current control.py is byte-identical to a Phase 14.11 G7 certified copy; current model/router match completed 14.10 doctrine and later L.6 certifies runtime reasoning/model-form independence. |
-| Model Forms | EVIDENCE FOUND | Phase 14.11 model-form source and certified snapshots survive. |
-| Session Identity / Store | EVIDENCE FOUND | Certified Phase 14.11 runtime snapshots survive. |
-| Handoff / Continuity | EVIDENCE FOUND | Handoff and continuity source snapshots survive. |
+| Model Forms | RECONCILED | Current Model Form package and bindings are extensively byte-identical to certified B/D/E/G snapshots; G7 identifies the authoritative production routing path. |
+| Session Identity / Store | RECONCILED | Current session_identity.py and session_store.py are byte-identical to certified D/HB/H snapshots; identifier doctrine is independently certified. |
+| Handoff / Continuity | RECONCILED | Current handoff, handoff detection, Model Form continuity, and conversation continuity files are byte-identical to certified E-series snapshots. |
 | Hermes runtime adapter | RECONCILED | Current Hermes adapter is byte-identical to recovered Phase 14.11 L.9/L.10 certified source snapshots; base adapter also has an exact certified match. |
 | Benchmarks | EVIDENCE FOUND | Phase 14 benchmark material survives. |
 | Phase 14.11 L.9 | CERTIFIED | Recovery authority records A+B certification. |
@@ -37,4 +37,4 @@ It is **not evidence by itself**. Every status must be traceable to the migratio
 
 ## Next recovery target
 
-Next reconcile the certified-heavy **Task Session / Session Identity / Model Form / Handoff** surface through the Phase 14.11 boundary.
+Next reconcile the remaining late Phase 14.11 surfaces: **Resource Request / Governor, Colony runtime semantics, real-runtime certification, benchmark evidence, and the L.11 partial boundary**.
