@@ -1,0 +1,77 @@
+schema_version: 1
+tree: bristlecone
+runtime: hermes
+
+capabilities:
+
+  todo:
+    type: toolset
+    target: todo
+
+  clarify:
+    type: toolset
+    target: clarify
+
+  session:
+    type: toolset
+    target: session_search
+
+  memory:
+    type: toolset
+    target: memory
+
+  web:
+    type: toolset
+    target: web
+
+  file:
+    type: toolset
+    target: file
+
+  terminal:
+    type: toolset
+    target: terminal
+
+  code-execution:
+    type: toolset
+    target: code_execution
+
+skills:
+
+  debugging:
+    target: systematic-debugging
+
+  testing:
+    target: test-driven-development
+
+  model-evaluation:
+    target: evaluation
+
+  model-inference:
+    target: inference
+
+unresolved:
+
+  leaf:
+    reason: >
+      Forest-native Leaf Foliage access has not been implemented yet.
+
+  special:
+    reason: >
+      Placeholder for task-specific capabilities.
+
+  model-benchmarking:
+    reason: >
+      No exact Hermes mapping has been verified yet.
+
+  quantization:
+    reason: >
+      No exact Hermes mapping has been verified yet.
+
+  training:
+    reason: >
+      No exact Hermes mapping has been verified yet.
+
+  runtime-inspection:
+    reason: >
+      No exact Hermes mapping has been verified yet.
