@@ -1,0 +1,67 @@
+Phase: 14.11L.6
+Role: Terminal A authoritative reasoning-level dataset freeze
+Status: 0
+
+LIGHT statistics:
+- Minimum: 23.792714929 s
+- Median: 75.879709192 s
+- Mean: 103.352293831 s
+- Maximum: 280.016025499 s
+- Range: 256.223310570 s
+- Sample stdev: 103.379349470 s
+- P90: 280.016025499 s
+
+NORMAL statistics:
+- Minimum: 34.744085970 s
+- Median: 51.113125039 s
+- Mean: 64.460301213 s
+- Maximum: 136.659077629 s
+- Range: 101.914991659 s
+- Sample stdev: 41.648640777 s
+- P90: 136.659077629 s
+
+DEEP statistics:
+- Minimum: 22.102046084 s
+- Median: 36.872109413 s
+- Mean: 74.160230828 s
+- Maximum: 239.373765086 s
+- Range: 217.271719002 s
+- Sample stdev: 92.596184454 s
+- P90: 239.373765086 s
+
+Matched-set observations:
+- Light fastest: 1/5
+- Normal fastest: 1/5
+- Deep fastest: 3/5
+- Median order: deep < normal < light
+
+Certified conditions:
+- 5 Light trials
+- 5 Normal trials
+- 5 Deep trials
+- interleaved matched sets
+- warm resident Small before every measured turn
+- fresh Task/context/session per measured turn
+- binding-0001
+- Model Form Small for all 15 turns
+- Light -> expected Hermes low
+- Normal -> expected Hermes medium
+- Deep -> expected Hermes high
+- session_created=True
+- session_reused=False
+- session_recovered=False
+- persist=False
+- active.yaml frozen
+- production hashes frozen
+- benchmark harness frozen
+- all 15 raw measurements retained
+
+Interpretation:
+- Reasoning and Model Form remained independent
+- Deep never silently escalated to Big
+- observed median order was Deep < Normal < Light
+- matched-set ordering was not stable
+- Light and Deep showed very large run-to-run variance
+- no clean monotonic latency effect from reasoning effort is established
+
+CERTIFIED
