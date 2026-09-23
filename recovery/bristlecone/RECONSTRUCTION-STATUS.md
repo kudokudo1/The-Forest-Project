@@ -32,11 +32,13 @@ It is **not evidence by itself**. Every status must be traceable to the migratio
 | Hermes runtime adapter | RECONCILED | Current Hermes adapter is byte-identical to recovered Phase 14.11 L.9/L.10 certified source snapshots; base adapter also has an exact certified match. |
 | Resource Request / Governor | RECONCILED | Entire current resources package has exact certified matches; L.8 A+B independently certifies Governor semantics, residency-aware requirements, and fail-closed DEFER/DENY behavior. |
 | Colony Runtime / Identity | RECONCILED | Current Colony identity source is byte-identical to certified H/HB snapshots; H.7 final certification establishes execution-context isolation, shared residency, and lifecycle semantics. |
-| Benchmarks | EVIDENCE FOUND | Phase 14 benchmark material survives. |
+| Benchmarks | RECONCILED | Real-runtime J-series plus L.6/L.8/L.9/L.10 certification evidence is consolidated; surviving L.11A source records the benchmark chronology through L.10. |
 | Phase 14.11 L.9 | CERTIFIED | Recovery authority records A+B certification. |
 | Phase 14.11 L.10 | CERTIFIED | Recovery authority records independent A+B certification. |
 | Phase 14.11 L.11 | PARTIAL | L.11A evidence-inventory builder survives and encodes certified chronology through L.10; expected l11_evidence_inventory.json and any final L.11 certification do not survive, so completion is not claimed. |
+| Reconstructed historical checkpoint | RECONCILED | Highest defensible boundary is Phase 14.11 L.10 A+B certified, followed by an incomplete/unproven L.11A start. See RECONSTRUCTED-CHECKPOINT.md. |
+| Historical UI / auxiliary runtime helpers | EVIDENCE FOUND | Qubes/i3 presentation and a small set of later support helpers survive but are not required to establish the certified Bristlecone core boundary. |
 
 ## Next recovery target
 
-Next consolidate **real-runtime J/L certification and benchmark evidence**, then establish the highest defensible reconstructed Bristlecone checkpoint and remaining modernization carry-forward items.
+Next reconcile the remaining **historical UI / auxiliary runtime helpers** and later identity-evolution evidence, then freeze the recovery branch as the historical Bristlecone baseline before beginning the modern Rust/QML reconstruction.
