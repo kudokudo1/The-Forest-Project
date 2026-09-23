@@ -1,0 +1,62 @@
+Phase: 14.11J.3
+Name: Real Small Same-Session Reuse
+Status: CERTIFIED
+
+Task:
+forest-task-20260812T015856Z-ae624284
+
+Execution context:
+ctx-j3
+
+Binding:
+binding-0001
+
+Adapter:
+hermes
+
+Model Form:
+small
+
+Real Hermes session:
+api_1786499937_003a7e4c
+
+TURN 1
+
+session_created = True
+session_reused = False
+initial_session_created = True
+
+TURN 2
+
+session_created = False
+session_reused = True
+initial_session_created = False
+
+IDENTITY
+
+Turn 1 session:
+api_1786499937_003a7e4c
+
+Turn 2 session:
+api_1786499937_003a7e4c
+
+same session = True
+
+CERTIFIED INVARIANTS
+
+- Same Forest Task retained across both turns.
+- Same execution_context_id retained.
+- Same binding_id retained.
+- Same real Hermes session reused.
+- No unnecessary second runtime session was created.
+- Model Form remained Small.
+- No neighboring runtime context slot appeared.
+- Existing resident Small model remained shared.
+- TaskSession production source remained unchanged.
+- Persistent active.yaml remained unchanged.
+- J.3 used persist=False and therefore made no durable
+  active.yaml mutation.
+
+RESULT
+
+14.11J.3 REAL SAME-SESSION REUSE CERTIFIED.
