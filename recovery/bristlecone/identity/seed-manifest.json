@@ -1,0 +1,24 @@
+{
+  "seed_name": "Bristlecone Pine",
+  "common_name": "Bristlecone",
+  "role": "Treewright",
+  "seed_version": "0.0.2",
+  "profile_name": "bristlecone",
+  "workspace_default": "~/The-Forest/bristlecone",
+  "hermes_api": {
+    "scheme": "http",
+    "host": "127.0.0.1",
+    "port": 8643,
+    "base_url": "http://127.0.0.1:8643/v1",
+    "newelle_endpoint": "http://127.0.0.1:8643/v1/",
+    "advertised_model": "bristlecone",
+    "authentication": "Bearer token generated during planting",
+    "cors": "disabled"
+  },
+  "model_bootstrap": "Clone the default Hermes profile configuration; verify or change with 'bristlecone model'.",
+  "recommended_local_model": "qwen3:8b",
+  "authority": "user-final",
+  "contains_secrets": false,
+  "newelle_role": "Initial desktop Bark/front-end; deeper tool bridge is not included.",
+  "created_for": "Project Digital Cross / The Forest"
+}
