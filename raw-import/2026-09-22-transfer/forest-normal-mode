@@ -1,0 +1,33 @@
+#!/bin/bash
+set -e
+
+echo "This will stop Cherry-AI and Maple."
+read -r -p "Continue? [y/N] " answer
+
+case "$answer" in
+    y|Y) ;;
+    *) echo "Cancelled."; exit 0 ;;
+esac
+
+echo "Stopping Cherry-AI and Maple..."
+qvm-shutdown --wait Cherry-AI || true
+qvm-shutdown --wait Maple || true
+
+echo "Restoring Cherry-AI default configuration..."
+qvm-prefs Cherry-AI memory 8192
+qvm-prefs Cherry-AI maxmem 16000
+qvm-prefs Cherry-AI vcpus 9
+
+echo "Restoring Maple default configuration..."
+qvm-prefs Maple memory 800
+qvm-prefs Maple maxmem 8000
+qvm-prefs Maple vcpus 4
+
+echo "Starting Cherry-AI and Maple..."
+qvm-start Cherry-AI
+qvm-start Maple
+
+echo
+echo "Forest Normal Mode restored."
+echo "Cherry-AI: 8192 MB memory, 16000 MB maximum, 9 vCPUs"
+echo "Maple: 800 MB memory, 8000 MB maximum, 4 vCPUs"

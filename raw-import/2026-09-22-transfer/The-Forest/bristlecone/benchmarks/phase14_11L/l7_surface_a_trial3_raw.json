@@ -1,0 +1,72 @@
+{
+  "activation_enter_ns": 19640401,
+  "activation_enter_s": 0.019640401,
+  "activation_exit_ns": 4899,
+  "activation_exit_s": 4.899e-06,
+  "active_yaml_sha": "6b8fb9b44757917c1889a7368d43f393165080d248cdb3d9c5982aad53b270e5",
+  "base_toolsets": [
+    "file",
+    "terminal"
+  ],
+  "benchmark_neutral_active_ready": [],
+  "benchmark_neutral_task_sticky_skills": [],
+  "binding_id": "binding-0001",
+  "canonical_skills": [],
+  "cleanup_performed": false,
+  "execution_context_id": "ctx-l7-a-03",
+  "expected_hermes_reasoning_effort": "medium",
+  "message": "Reply only with: L2-COLD-01",
+  "model_form": "small",
+  "persist": false,
+  "persistent_source_active_ready": [
+    "debugging"
+  ],
+  "persistent_source_task_sticky_skills": [
+    "debugging"
+  ],
+  "phase": "14.11L.7",
+  "ready": [],
+  "requested_reasoning_mode": "normal",
+  "resident_after": [
+    "bristlecone-qwen35:4b-64k    af72fe9ad018    5.6 GB    100% CPU     64000      14 minutes from now"
+  ],
+  "resident_before": [
+    "bristlecone-qwen35:4b-64k    af72fe9ad018    5.6 GB    100% CPU     64000      14 minutes from now"
+  ],
+  "result_reasoning_mode": "normal",
+  "runtime_skills": [],
+  "scenario": "warm-small-controlled-tool-skill-surface",
+  "session_created": true,
+  "session_id": "api_1786572263_1981625f",
+  "session_recovered": false,
+  "session_reused": false,
+  "skill_bindings": [],
+  "skill_count": 0,
+  "skill_overlay_bytes": 0,
+  "skill_overlay_cache_hit": false,
+  "skill_overlay_hash": null,
+  "status": "success",
+  "surface": "a",
+  "surface_cycle_ns": 246549366259,
+  "surface_cycle_s": 246.549366259,
+  "surface_label": "baseline",
+  "task_id": "forest-task-20260812T220422Z-149d4676",
+  "temporary_toolsets": [],
+  "toolset_count_during": 2,
+  "toolsets_after_restore": [
+    "file",
+    "terminal"
+  ],
+  "toolsets_after_turn_before_exit": [
+    "file",
+    "terminal"
+  ],
+  "toolsets_during": [
+    "file",
+    "terminal"
+  ],
+  "trial": 3,
+  "turn_duration_ns": 246529720959,
+  "turn_duration_s": 246.529720959,
+  "workshop": "code-debug"
+}

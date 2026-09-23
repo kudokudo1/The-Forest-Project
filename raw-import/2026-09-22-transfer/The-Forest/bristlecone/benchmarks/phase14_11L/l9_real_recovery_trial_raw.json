@@ -1,0 +1,88 @@
+{
+  "binding_id": "binding-0001",
+  "cleanup": {
+    "attempted": true,
+    "error": null,
+    "session_id": "api_1786586619_7d9c4247",
+    "success": true
+  },
+  "establishment": {
+    "session_id": "api_1786586530_cdcd1e75",
+    "session_recovered": false,
+    "timing_ns": 89025076098,
+    "timing_seconds": 89.025076098
+  },
+  "execution_context_id": "l9d-1786586530076772254",
+  "expected_hermes_reasoning_effort": "medium",
+  "message": "Reply only with: L2-COLD-01",
+  "model": "bristlecone-qwen35:4b-64k",
+  "model_form": "small",
+  "persistent_production_state_modified": false,
+  "phase": "14.11L.9",
+  "production_recovery_logic_used": true,
+  "real_hermes_used": true,
+  "real_small_inference_executed": true,
+  "reasoning_mode": "normal",
+  "recovery": {
+    "binding_id": "binding-0001",
+    "effective_session_id": "api_1786586619_7d9c4247",
+    "model_form": "small",
+    "previous_session_id": "api_1786586530_cdcd1e75",
+    "reasoning_mode": "normal",
+    "recovery_binding_persisted": false,
+    "recovery_from_session_id": "api_1786586530_cdcd1e75",
+    "recovery_runtime_result": {
+      "adapter": "hermes",
+      "model": "bristlecone-qwen35:4b-64k",
+      "session": {
+        "object": "hermes.session",
+        "session": {
+          "actual_cost_usd": null,
+          "api_call_count": 0,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "end_reason": null,
+          "ended_at": null,
+          "estimated_cost_usd": null,
+          "has_model_config": true,
+          "has_system_prompt": false,
+          "id": "api_1786586619_7d9c4247",
+          "input_tokens": 0,
+          "message_count": 0,
+          "model": "bristlecone-qwen35:4b-64k",
+          "output_tokens": 0,
+          "parent_session_id": null,
+          "reasoning_tokens": 0,
+          "source": "api_server",
+          "started_at": 1786586619.7808812,
+          "title": null,
+          "tool_call_count": 0,
+          "user_id": null
+        }
+      },
+      "session_id": "api_1786586619_7d9c4247",
+      "task_id": "forest-task-20260813T020210Z-682108d8"
+    },
+    "recovery_session_id": "api_1786586619_7d9c4247",
+    "session_recovered": true,
+    "timing_ns": 49747931274,
+    "timing_seconds": 49.747931274
+  },
+  "resident_models_before": [
+    "bristlecone-qwen35:4b-64k    af72fe9ad018    5.6 GB    100% CPU     64000      14 minutes from now"
+  ],
+  "scenario": "genuine-hermes-stale-small-recovery",
+  "source_sha256": {
+    "hermes": "a09949eead5cb9772aca312c91630703c7ff8ce43df778730279445b25635084",
+    "live_providers": "40b49375dbe014b27b6fc5696bccf74274864e42953c473b42ffe10a3c552299",
+    "task_session": "d666cb1471b568bf43db4255f5e84e98c1ea502af467e1e2670e4a93dc364991"
+  },
+  "stale_trigger": {
+    "delete_timing_ns": 198256031,
+    "deleted_session_id": "api_1786586530_cdcd1e75",
+    "forest_binding_after_delete": "api_1786586530_cdcd1e75",
+    "method": "real-hermes-end_session"
+  },
+  "status": "success",
+  "task_id": "forest-task-20260813T020210Z-682108d8"
+}

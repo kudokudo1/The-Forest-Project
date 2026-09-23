@@ -1,0 +1,49 @@
+Phase: 14.11J.2
+Role: Terminal B Independent Certifier
+Status: INDEPENDENTLY CERTIFIED
+
+Reviewed checkpoint:
+bristlecone/backups/phase14_11J2_real_commit_certified_20260812T015243Z
+
+Verified:
+
+- J.2 certification artifact present.
+- All archived SHA256SUMS entries passed.
+- Archived real execution evidence passed integrity verification.
+- Archived TaskSession source passed integrity verification.
+- Archived live resource provider passed integrity verification.
+
+Production baselines independently verified:
+
+TaskSession:
+d666cb1471b568bf43db4255f5e84e98c1ea502af467e1e2670e4a93dc364991
+
+live_providers.py:
+40b49375dbe014b27b6fc5696bccf74274864e42953c473b42ffe10a3c552299
+
+Observed runtime read-only:
+
+Small:
+bristlecone-qwen35:4b-64k
+
+Residency:
+5.6 GB
+
+Processor:
+CPU
+
+Context:
+64000
+
+Hermes service:
+active / running
+
+MainPID:
+941
+
+No production modification was performed by Terminal B.
+No competing runtime turn was launched.
+No model load/unload or service restart was performed.
+
+FINAL:
+14.11J.2 independently certified.

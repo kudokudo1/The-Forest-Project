@@ -1,0 +1,32 @@
+execution_context_id: 'ctx-j5'
+binding_id: 'binding-0001'
+model_form: 'small'
+resolved_reasoning_mode: 'normal'
+session_id: 'api_1786503554_0fed4c96'
+initial_requested_session_id: 'api_1786503554_0fed4c96'
+requested_session_id: 'api_1786503554_0fed4c96'
+session_created: True
+initial_session_created: True
+session_reused: False
+session_recovered: False
+execution_context_id: 'ctx-j5'
+binding_id: 'binding-0001'
+model_form: 'small'
+resolved_reasoning_mode: 'normal'
+initial_requested_session_id: 'api_1786503554_0fed4c96'
+requested_session_id: 'api_1786503702_bd0d7591'
+session_id: 'api_1786503702_bd0d7591'
+previous_session_id: 'api_1786503554_0fed4c96'
+session_created: True
+initial_session_created: False
+session_reused: True
+session_recovered: True
+recovery_from_session_id: 'api_1786503554_0fed4c96'
+recovery_session_id: 'api_1786503702_bd0d7591'
+recovery_binding_persisted: False
+PASS: genuine stale A recovered to replacement B
+PASS: disposable replacement B cleaned up
+PASS: active.yaml unchanged
+PASS: Hermes PID unchanged
+PASS: six-file production baseline unchanged
+14.11J.5C4 evidence status: 0

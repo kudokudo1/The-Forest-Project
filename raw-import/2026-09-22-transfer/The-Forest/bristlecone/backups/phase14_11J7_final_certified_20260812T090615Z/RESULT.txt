@@ -1,0 +1,28 @@
+Phase: 14.11J.7
+Title: Final Real Small Runtime Certification Checkpoint
+Status: 0
+
+Certified chain:
+- J.2 real session commitment
+- J.3 real same-session reuse
+- J.4 real multi-context isolation and shared residency
+- J.5 real stale-session recovery and one-retry boundary
+- J.6 integrated Real Small certification
+
+Final invariants:
+- Small resolves to binding-0001.
+- Hermes is the certified runtime adapter.
+- Runtime sessions are execution-context + binding scoped.
+- Same context reuses its session.
+- Different contexts retain separate runtime sessions.
+- Resident model weights may be shared safely.
+- Stale session recovery performs one A -> B replacement.
+- Frozen routing/model/reasoning semantics survive recovery.
+- A second failure does not produce session C or reroute.
+- persist=False remains non-durable.
+- active.yaml remains frozen.
+- Six production files remain frozen.
+
+CERTIFIED
+
+14.11J REAL SMALL RUNTIME CERTIFICATION COMPLETE

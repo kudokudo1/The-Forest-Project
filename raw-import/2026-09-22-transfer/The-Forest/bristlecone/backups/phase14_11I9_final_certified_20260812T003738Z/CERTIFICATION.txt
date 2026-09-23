@@ -1,0 +1,75 @@
+Phase: 14.11I
+Name: Fake Adapter Execution Certification
+Status: FINAL CERTIFIED
+
+TaskSession SHA:
+d666cb1471b568bf43db4255f5e84e98c1ea502af467e1e2670e4a93dc364991
+
+Governor integration SHA:
+9822a79a0485f75c8d8804917bc0104fb5bcfdc6d1f015ac475fcea7ee3406bc
+
+Retry integration SHA:
+b0ba1f9e8c6148cab49a94bc0ea1c49c1f7d9a68cb0138792e91d7aa8d44b417
+
+Automatic retry-isolation SHA:
+9d91e275185ffc9c77b553e5fd369b9c39d3b0f362d8babc1bdd5b6b5bde201c
+
+I.2 SHA:
+483a491991c96a69a6bb62fe6a019db9cbb60c7c859b5a8402a334ee75cdc79d
+
+I.3 SHA:
+7910a5ec7f44996c0a40befa85a335fbd26ca51a5f4cbd71e9240ffe15741423
+
+I.4 SHA:
+c90c36f1a8e9889505df343a0b32f863b4469d286e82d5120c1c152942dc9b5d
+
+CERTIFIED RESULTS
+
+I.1 First Fake Small turn:
+PASS
+
+I.2 Forest-side session commit:
+8 PASS / 0 FAIL
+
+I.3 Second-turn session reuse:
+8 PASS / 0 FAIL
+
+I.4 Multi-context fake execution:
+8 PASS / 0 FAIL
+
+I.5 Stale-session recovery:
+PASS
+
+I.6 Failure boundaries:
+6 PASS / 0 FAIL
+
+I.7 Governor DEFER/DENY boundary:
+8 PASS / 0 FAIL
+
+I.8 Frozen retry provenance:
+8 PASS / 0 FAIL
+
+I.9 Full integration regression:
+33 tests PASS
+
+FINAL EXECUTION SEMANTICS
+
+- send_runtime_turn is the canonical public execution path.
+- Fake Small execution preserves frozen Task, context, Model Form,
+  Reasoning, and resource identity.
+- New sessions are committed to Forest Task state before runtime send.
+- A second turn reuses the existing context+binding session.
+- Multiple execution contexts using one Small binding retain separate
+  runtime sessions.
+- Stale failure allows exactly one replacement session and one retry.
+- Non-stale runtime failures do not stale-retry or reroute.
+- A second stale failure escapes after the single permitted retry.
+- Governor DEFER/DENY stops before runtime session/send effects.
+- Explicit/synthetic Big DEFER/DENY never silently downgrades to Small.
+- Stale recovery reuses the same frozen routing, Reasoning, Model Form,
+  reasons, Task identity, and Governor decision.
+- 14.11I certifies synthetic/fake runtime execution only.
+- Real Small-model execution belongs to 14.11J.
+
+FINAL RESULT:
+14.11I CERTIFIED

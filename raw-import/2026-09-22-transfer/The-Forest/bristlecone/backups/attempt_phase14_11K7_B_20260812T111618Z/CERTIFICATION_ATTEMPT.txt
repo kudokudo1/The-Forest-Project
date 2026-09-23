@@ -1,0 +1,23 @@
+The Forest — Bristlecone Pine
+Terminal B Independent Certification Attempt
+
+Phase:
+14.11K.7 — Integrated Unavailable-Big Certification
+
+RESULT:
+FAIL / NOT CERTIFIED
+
+Error: AssertionError: required checkpoint not found: phase14_11K1_A*certified_*
+
+Production modifications by Terminal B: NONE
+Production Big binding created by B: NO
+Real Big execution by B: NO
+Ollama model operation by B: NO
+llama-server operation by B: NO
+
+Traceback:
+Traceback (most recent call last):
+  File "<stdin>", line 912, in <module>
+  File "<stdin>", line 776, in certify
+  File "<stdin>", line 76, in latest
+AssertionError: required checkpoint not found: phase14_11K1_A*certified_*

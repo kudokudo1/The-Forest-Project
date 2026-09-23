@@ -1,0 +1,181 @@
+{
+  "binding_id": "binding-0001",
+  "expected_hermes_reasoning_effort": "medium",
+  "measurement_boundary": {
+    "normal_generation_count_per_timed_turn": 1,
+    "recovery_generation_count_per_timed_turn": 1,
+    "recovery_timed_turn_includes": [
+      "stale-send",
+      "stale-classification",
+      "replacement-session-creation",
+      "Forest-binding-rotation",
+      "one-retry",
+      "one-Small-generation"
+    ],
+    "session_creation_inside_timed_turn": false,
+    "stale_trigger_delete_inside_timed_turn": false
+  },
+  "message": "Reply only with: L2-COLD-01",
+  "model": "bristlecone-qwen35:4b-64k",
+  "model_form": "small",
+  "normal": {
+    "stats": {
+      "count": 3,
+      "max_ns": 108373263789,
+      "mean_ns": 73885651327,
+      "mean_seconds": 73.885651327,
+      "median_ns": 64655755843,
+      "median_seconds": 64.655755843,
+      "min_ns": 48627934349,
+      "stdev_ns": 30923604664.684635
+    },
+    "timings_ns": [
+      64655755843,
+      108373263789,
+      48627934349
+    ]
+  },
+  "pair_count": 3,
+  "paired_delta": {
+    "recovery_slower_pairs": 1,
+    "stats": {
+      "count": 3,
+      "max_ns": 3873740643,
+      "mean_ns": -9958132876.666666,
+      "mean_seconds": -9.958132876666665,
+      "median_ns": -8475349182,
+      "median_seconds": -8.475349182,
+      "min_ns": -25272790091,
+      "stdev_ns": 14629731681.43827
+    },
+    "timings_ns": [
+      -25272790091,
+      3873740643,
+      -8475349182
+    ]
+  },
+  "pairs": [
+    {
+      "delta_ns": -25272790091,
+      "delta_seconds": -25.272790091,
+      "normal": {
+        "execution_context_id": "l9e-pair1-normal-1786587152063391249",
+        "session_id": "api_1786587152_c0d87a71",
+        "session_recovered": false,
+        "setup_create_ns": 317909028,
+        "setup_session_id": "api_1786587152_c0d87a71",
+        "task_id": "forest-task-20260813T021232Z-0de7bc04",
+        "timing_ns": 64655755843,
+        "timing_seconds": 64.655755843
+      },
+      "order": "normal-recovery",
+      "pair": 1,
+      "recovery": {
+        "effective_session_id": "api_1786587218_3834df51",
+        "execution_context_id": "l9e-pair1-recovery-1786587217247907234",
+        "recovery_from_session_id": "api_1786587217_983001dd",
+        "recovery_session_id": "api_1786587218_3834df51",
+        "session_recovered": true,
+        "setup_create_ns": 353901907,
+        "setup_session_id": "api_1786587217_983001dd",
+        "stale_delete_ns": 210770564,
+        "task_id": "forest-task-20260813T021337Z-65838b6e",
+        "timing_ns": 39382965752,
+        "timing_seconds": 39.382965752
+      },
+      "recovery_slower": false
+    },
+    {
+      "delta_ns": 3873740643,
+      "delta_seconds": 3.873740643,
+      "normal": {
+        "execution_context_id": "l9e-pair2-normal-1786587370340227363",
+        "session_id": "api_1786587370_2faf91f4",
+        "session_recovered": false,
+        "setup_create_ns": 296213210,
+        "setup_session_id": "api_1786587370_2faf91f4",
+        "task_id": "forest-task-20260813T021610Z-d9c7e6ba",
+        "timing_ns": 108373263789,
+        "timing_seconds": 108.373263789
+      },
+      "order": "recovery-normal",
+      "pair": 2,
+      "recovery": {
+        "effective_session_id": "api_1786587258_c6e9c6c7",
+        "execution_context_id": "l9e-pair2-recovery-1786587257394325588",
+        "recovery_from_session_id": "api_1786587257_62e50884",
+        "recovery_session_id": "api_1786587258_c6e9c6c7",
+        "session_recovered": true,
+        "setup_create_ns": 309584947,
+        "setup_session_id": "api_1786587257_62e50884",
+        "stale_delete_ns": 191419724,
+        "task_id": "forest-task-20260813T021417Z-4a5f94a2",
+        "timing_ns": 112247004432,
+        "timing_seconds": 112.247004432
+      },
+      "recovery_slower": true
+    },
+    {
+      "delta_ns": -8475349182,
+      "delta_seconds": -8.475349182,
+      "normal": {
+        "execution_context_id": "l9e-pair3-normal-1786587479205899615",
+        "session_id": "api_1786587479_21e8bc88",
+        "session_recovered": false,
+        "setup_create_ns": 289761493,
+        "setup_session_id": "api_1786587479_21e8bc88",
+        "task_id": "forest-task-20260813T021759Z-a8f1b3e5",
+        "timing_ns": 48627934349,
+        "timing_seconds": 48.627934349
+      },
+      "order": "normal-recovery",
+      "pair": 3,
+      "recovery": {
+        "effective_session_id": "api_1786587529_f88abb02",
+        "execution_context_id": "l9e-pair3-recovery-1786587528315379023",
+        "recovery_from_session_id": "api_1786587528_cf9e525f",
+        "recovery_session_id": "api_1786587529_f88abb02",
+        "session_recovered": true,
+        "setup_create_ns": 290638835,
+        "setup_session_id": "api_1786587528_cf9e525f",
+        "stale_delete_ns": 178652558,
+        "task_id": "forest-task-20260813T021848Z-db0757a4",
+        "timing_ns": 40152585167,
+        "timing_seconds": 40.152585167
+      },
+      "recovery_slower": false
+    }
+  ],
+  "persistent_production_state_modified": false,
+  "phase": "14.11L.9",
+  "real_hermes_used": true,
+  "real_small_inference_executed": true,
+  "reasoning_mode": "normal",
+  "recovery": {
+    "stats": {
+      "count": 3,
+      "max_ns": 112247004432,
+      "mean_ns": 63927518450.333336,
+      "mean_seconds": 63.92751845033334,
+      "median_ns": 40152585167,
+      "median_seconds": 40.152585167,
+      "min_ns": 39382965752,
+      "stdev_ns": 41847671651.60264
+    },
+    "timings_ns": [
+      39382965752,
+      112247004432,
+      40152585167
+    ]
+  },
+  "resident_models_before": [
+    "bristlecone-qwen35:4b-64k    af72fe9ad018    5.6 GB    100% CPU     64000      6 minutes from now"
+  ],
+  "scenario": "matched-normal-vs-genuine-recovery",
+  "source_sha256": {
+    "hermes": "a09949eead5cb9772aca312c91630703c7ff8ce43df778730279445b25635084",
+    "live_providers": "40b49375dbe014b27b6fc5696bccf74274864e42953c473b42ffe10a3c552299",
+    "task_session": "d666cb1471b568bf43db4255f5e84e98c1ea502af467e1e2670e4a93dc364991"
+  },
+  "status": "success"
+}

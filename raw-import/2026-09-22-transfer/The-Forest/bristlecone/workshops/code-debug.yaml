@@ -1,0 +1,21 @@
+schema_version: 2
+tree: bristlecone
+id: code-debug
+name: Code / Debug
+
+purpose: >
+  Write, inspect, troubleshoot, test, and repair software and systems.
+
+core:
+  - file
+  - terminal
+
+ready:
+  - code-execution
+  - debugging
+  - testing
+  - special
+
+policy:
+  sticky_workshop: true
+  minimum_useful_canopy: true

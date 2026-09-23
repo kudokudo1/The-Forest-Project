@@ -1,0 +1,66 @@
+The Forest — Bristlecone Pine
+Terminal B Independent Certification
+
+Phase:
+14.11K.7 — Integrated Unavailable-Big Certification
+
+RESULT:
+INDEPENDENTLY CERTIFIED
+
+A K.7:
+bristlecone/backups/phase14_11K7_A_integrated_certified_20260812T111249Z
+
+Upstream verified:
+bristlecone/backups/phase14_11K1_big_binding_certified_20260812T104656Z
+bristlecone/backups/phase14_11K1_B_independent_certified_20260812T105820Z
+bristlecone/backups/phase14_11K6_zero_side_effect_certified_20260812T111048Z
+
+Prior B certifier attempts preserved:
+bristlecone/backups/attempt_phase14_11K7_B_20260812T111618Z
+bristlecone/backups/attempt_phase14_11K7_B_20260812T112316Z
+
+Independent invariants:
+
+- Big absent from production bindings.
+- Small remains binding-0001.
+- No alternate production Big target exists.
+- Explicit Big remains Big.
+- Unbound Big fails closed.
+- No silent Big -> Small fallback.
+
+- public send_runtime_turn delegates exactly once
+  to _send_runtime_turn_for_frozen_model_form.
+
+- ResourceRequest occurs before Governor.
+- ResourceRequest consumes frozen Model Form.
+- ResourceRequest consumes frozen Reasoning.
+- Workshop is an independent axis.
+- instruction composition is an independent axis.
+
+- Governor DEFER raises before handoff/runtime.
+- Governor DENY raises before handoff/runtime.
+- unsupported Governor outcome raises.
+- handoff preparation remains pure before
+  runtime I/O/persistence.
+
+- K.2/K.3 tests passed.
+- K.4 no-downgrade tests passed.
+- K.5 frozen-semantics tests passed.
+- automatic-routing retry/isolation tests passed.
+- failure/retry does not reroute.
+
+- active.yaml remained byte-for-byte frozen.
+- six production source files remained frozen.
+- Ollama had no resident model before or after.
+- no llama-server was active before or after.
+- Hermes remained active/running.
+
+- no production Big binding was created by B.
+- no real Big execution was performed by B.
+- no production source was modified by B.
+
+Terminal B production modifications:
+NONE
+
+14.11K.7 B status:
+CERTIFIED

@@ -1,0 +1,305 @@
+{
+  "main": {
+    "id": "b919136bf5fb240e",
+    "type": "split",
+    "children": [
+      {
+        "id": "25ce7eb637ed3aa5",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5ee5b2d11bae095a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "The-Forest-Project-zeta/Trees/True Trees/Maple/Maple.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Maple"
+            }
+          },
+          {
+            "id": "107585e9dfeddfb9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "The-Forest-Project-zeta/System/Architechture/Bristlecone_forest_complete_continuity_archive_2026-08-09.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Bristlecone_forest_complete_continuity_archive_2026-08-09"
+            }
+          },
+          {
+            "id": "01378361856caec3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "The-Forest-Project-zeta/System/Architechture/Forest_core_design_doctrine_seasons_spirit_progressive_depth_2026-08-09.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Forest_core_design_doctrine_seasons_spirit_progressive_depth_2026-08-09"
+            }
+          },
+          {
+            "id": "376f32e0c7cbd72c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "The-Forest-Project-zeta/System/Architechture/Optimization Techniques.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Optimization Techniques"
+            }
+          },
+          {
+            "id": "05306ccca6ce462f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Untitled 1.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Untitled 1"
+            }
+          },
+          {
+            "id": "8468cd447bc1143f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "The-Forest-Project-zeta/Projects/The Forest/THE-FOREST-PDC-PDF-PROJECT-KNOWLEDGE-SNAPSHOT(3).md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "THE-FOREST-PDC-PDF-PROJECT-KNOWLEDGE-SNAPSHOT(3)"
+            }
+          }
+        ],
+        "currentTab": 4
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "c41e9c585218530e",
+    "type": "split",
+    "children": [
+      {
+        "id": "de6943894fd990b0",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4f8035f5d3279308",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabeticalReverse",
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "fe8e6cf66d5eb3df",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "tag:skills-mangement",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": true,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "787f8eb4bba62869",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "right": {
+    "id": "85773b4ae8eb7dcb",
+    "type": "split",
+    "children": [
+      {
+        "id": "232f0daf65659d99",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "dc0552e64518c130",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "The-Forest-Project-zeta/System/Architechture/forest_workshop_skill_finder_and_operational_learning_architecture.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
+            }
+          },
+          {
+            "id": "b6653b4fad41d9db",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "3d327d7d053af556",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "7dd8548e6497eeec",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "a74868af0df64a31",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Untitled.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "05306ccca6ce462f",
+  "lastOpenFiles": [
+    "The-Forest-Project-zeta/Projects/The Forest/THE-FOREST-PDC-PDF-PROJECT-KNOWLEDGE-SNAPSHOT(3).md",
+    "Untitled 2.md",
+    "Untitled 1.md",
+    "The-Forest-Project-zeta/System/Architechture/Optimization Techniques.md",
+    "The-Forest-Project-zeta/Trees/True Trees/Maple/Maple.md",
+    "The-Forest-Project-zeta/System/Architechture/Bristlecone_forest_complete_continuity_archive_2026-08-09.md",
+    "The-Forest-Project-zeta/System/Architechture/Forest_core_design_doctrine_seasons_spirit_progressive_depth_2026-08-09.md",
+    "Untitled.md",
+    "Sercurity.md",
+    "The-Forest-Project-zeta/Projects/The Forest/forest_data_ecology_mycelium_maple_leaf_lifecycle_checkpoint_2026-08-09.md",
+    "The-Forest-Project-zeta/System/Architechture/forest_minimum_useful_canopy_and_tree_workshops.md",
+    "Language List.md",
+    "The-Forest-Project-zeta/System/Architechture/forest_phase14_10_revised_reasoning_control_plan_2026-08-10.md",
+    "The-Forest-Project-zeta/Projects/The Forest/Welcome to The Forest Project.md",
+    "The-Forest-Project-zeta/Projects/The Forest/THE-FOREST-PDC-PDF-PROJECT-KNOWLEDGE-SNAPSHOT(1) 1.md",
+    "The-Forest-Project-zeta/Projects/The Forest/project_forest_bristlecone_full_implementation_history_phase1_to_14_9_2026-08-09.md",
+    "The-Forest-Project-zeta/System/AI/forest_phase14_9_source_context_complete_checkpoint_2026-08-09.md",
+    "The-Forest-Project-zeta/System/AI/project_forest_bristlecone_chat_transfer_2026-08-09.md",
+    "The-Forest-Project-zeta/System/Architechture/forest_workshop_skill_finder_and_operational_learning_architecture.md",
+    "The-Forest-Project-zeta/System/Architechture/forest_phase14_7_colony_hot_context_checkpoint_2026-08-09.md",
+    "The-Forest-Project-zeta/System/Architechture/forest_user_context_routing_and_learning_checkpoint_2026-08-09.md",
+    "The-Forest-Project-zeta/System/Architechture/forest_product_doctrine_learning_ecosystem_and_colony_checkpoint_v2_2026-08-09 1.md",
+    "The-Forest-Project-zeta/System/Architechture/forest_tree_clone_colony_architecture_checkpoint_2026-08-09 2.md",
+    "The-Forest-Project-zeta/System/Architechture/forest_portable_tree_runtime_and_high_speed_workshop_architecture.md",
+    "The-Forest-Project-zeta/System/Architechture/forest_tree_clone_colony_architecture_checkpoint_2026-08-09 1.md",
+    "The-Forest-Project-zeta/System/Architechture/forest_product_doctrine_learning_ecosystem_and_colony_checkpoint_v2_2026-08-09.md",
+    "Untitled 1.canvas",
+    "The-Forest-Project-zeta/Untitled 1.canvas",
+    "System/forest-index.json",
+    "System",
+    "The-Forest-Project-zeta/Untitled.canvas",
+    "Untitled.canvas",
+    "The-Forest-Project-zeta/System/Infrastructure",
+    "The-Forest-Project-zeta/System/Templates",
+    "The-Forest-Project-zeta/Archive/-map.base",
+    "Untitled.base",
+    "The-Forest-Project-zeta/Trees/True Trees/Sycamore",
+    "The-Forest-Project-zeta/Trees/True Trees/Cedar",
+    "The-Forest-Project-zeta/Trees/True Trees/Maple",
+    "The-Forest-Project-zeta/Trees/True Trees/Cherry",
+    "The-Forest-Project-zeta/Untitled 2.canvas"
+  ]
+}

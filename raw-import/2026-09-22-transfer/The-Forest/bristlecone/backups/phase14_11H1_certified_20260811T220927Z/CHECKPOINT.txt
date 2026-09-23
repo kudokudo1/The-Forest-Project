@@ -1,0 +1,23 @@
+The Forest — Bristlecone Pine
+Phase 14.11H.1
+
+Status:
+CERTIFIED COLONY SEMANTIC IDENTITY CONTRACT
+
+Colony identity SHA256:
+0b95f47bc0f4321f722a4b6b092a40238ef4193a91ccc40e963233b6a1be627a
+
+Colony package SHA256:
+d30320794660e19ce6cfd1e593d5d59c10a79f5b02d06f4512244a0018f0af38
+
+Persistent test SHA256:
+9f5208300d2f60b8c683812ec44a75b2e834be86936ab3503fc0c0032f2d3f0b
+
+Certified doctrine:
+- Tree identity and execution-context identity are distinct
+- lineage_role and operational_role are independent
+- Ortet does not imply Main
+- Ramet may hold Main
+- runtime binding/session identity is excluded
+- low-level runtime identity remains lineage-neutral
+- G.7 TaskSession remains unchanged

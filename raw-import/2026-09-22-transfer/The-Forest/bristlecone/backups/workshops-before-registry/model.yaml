@@ -1,0 +1,32 @@
+schema_version: 1
+tree: bristlecone
+id: model
+name: Model
+
+purpose: >
+  Inspect, evaluate, benchmark, optimize, train, and compare AI models
+  and their runtimes.
+
+core:
+  - id: file
+    kind: toolset
+  - id: terminal
+    kind: toolset
+
+ready:
+  - id: model-evaluation
+    kind: skill
+  - id: model-benchmarking
+    kind: skill
+  - id: model-inference
+    kind: skill
+  - id: quantization
+    kind: skill
+  - id: training
+    kind: skill
+  - id: runtime-inspection
+    kind: capability
+
+policy:
+  sticky_workshop: true
+  minimum_useful_canopy: true

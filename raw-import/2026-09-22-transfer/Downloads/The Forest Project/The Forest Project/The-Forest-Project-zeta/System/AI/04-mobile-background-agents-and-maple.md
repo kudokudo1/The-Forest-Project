@@ -1,0 +1,9 @@
+---
+project: The Forest
+status: active
+created: 2026-08-08
+updated: 2026-08-08
+tags:
+  - the-forest
+---
+And I don’t know if this is a thing yet or why it isn’t if there’s a good reason, please tell me, but I was also thinking the garden or potted plants can have similar if not the same functionality as most AI agents like Hermes, where they can interact with the users device or that be through prompt or automated. Most phones can already detect when the user is sleeping or it has been at rest for for long period of time. I could imagine it would be possible to allow potted plants to temporarily run in the background and perform task like set reminders, organize files, etc., or even detect when the user is sleeping or the phone is not in use and perform automated task that the user has already permitted or queued like making a purchase, emailing a coworker, sending out math, social media post, organizing their calendar or anything else that would take more resources or the user screen. We can even implement a special garden on a potted plant or Settings that allows the user or trees to automatically detect the battery percentage and charger connectivity, and know if they should pause functions to reserve battery life I’m thinking maybe maple will be the best fit for this if we made it a tree’s responsibility because of his role and data management and the fact that he will probably be the main tree performing a lot of these task so having him the only tree running will keep the power usage low

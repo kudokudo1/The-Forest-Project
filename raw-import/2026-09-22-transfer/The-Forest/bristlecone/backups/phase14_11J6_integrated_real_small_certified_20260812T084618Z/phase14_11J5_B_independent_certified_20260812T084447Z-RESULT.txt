@@ -1,0 +1,18 @@
+Phase: 14.11J.5E
+Role: Terminal B independent certifier
+Source A certificate: bristlecone/backups/phase14_11J5_real_recovery_certified_20260812T084348Z
+
+Archive integrity status: checked
+Automatic retry test status: 0
+Retry integration test status: 0
+Overall independent status: 0
+
+CERTIFIED
+
+Independent conclusion:
+- Real Hermes stale session A was replaced by B.
+- Recovery remained ctx-j5 / binding-0001 / Small / Normal.
+- persist=False produced no durable recovery binding.
+- Replacement B was cleaned up.
+- Deterministic tests retain the one-retry failure boundary.
+- Production and active.yaml remain frozen.

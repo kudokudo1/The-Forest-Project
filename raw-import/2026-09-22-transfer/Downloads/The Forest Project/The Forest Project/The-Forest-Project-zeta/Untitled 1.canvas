@@ -1,0 +1,10 @@
+{
+	"nodes":[
+		{"id":"08065715bb548221","x":-105,"y":140,"width":205,"height":109,"type":"text","text":"\tWorkshop \nTool Acess Controler"},
+		{"id":"dc4a2ac57304efe6","x":-125,"y":-190,"width":250,"height":109,"type":"text","text":"\t\tReasoning\nHow hard to think"},
+		{"id":"f97466fe641b6a1d","x":-80,"y":-30,"width":160,"height":139,"type":"text","text":"\tForm\nWhich model to use"}
+	],
+	"edges":[
+		{"id":"b705bf5bde7fbe97","fromNode":"f97466fe641b6a1d","fromSide":"left","toNode":"08065715bb548221","toSide":"left"}
+	]
+}

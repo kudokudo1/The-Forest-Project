@@ -1,0 +1,18 @@
+Task: forest-task-20260812T012528Z-64174ff1
+Context: ctx-j2
+Model Form: small
+Traceback (most recent call last):
+  File "<stdin>", line 27, in <module>
+  File "/home/user/The-Forest/bristlecone/runtime/task_session.py", line 12254, in send_runtime_turn
+    self._send_runtime_turn_for_frozen_model_form(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        message,
+        ^^^^^^^^
+    ...<20 lines>...
+            resource_may_defer,
+            ^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/user/The-Forest/bristlecone/runtime/task_session.py", line 11090, in _send_runtime_turn_for_frozen_model_form
+    raise error
+runtime.task_session.TaskSessionError: Forest resource Governor denied this turn.

@@ -1,0 +1,34 @@
+The Forest — Bristlecone Pine
+
+Phase:
+14.11G.1
+
+Status:
+CERTIFIED PRE-POLICY CONTRACTS
+
+AutomaticModelFormRecommendation SHA256:
+bce0361131c560e1ff8b0bfa5919dfdc291984b1e34965fac8201cac245114e2
+
+Automatic routing evidence SHA256:
+f28df92e43f1d7b52edb58f35a597ae3f75df4595ef0c6ace333821bb1e9d4cb
+
+Certified 14.11F task_session.py SHA256:
+2e35143d63bf3d077edb95a4147035018453e019a8f1ee1673912061b883eb2a
+
+Model Form resolver observed SHA256:
+b28ec18d6b30b883a1ad334990cae518a3f1d8b54c00f62da28513d1fa3c91a1
+
+Certified boundaries:
+- Routing input is Task-bound
+- Routing input is execution-context-bound
+- Exact EffectiveReasoningDecision is observation-only
+- Routing evidence is normalized and immutable
+- Empty evidence is valid
+- Recommendation is Task-bound
+- Recommendation is execution-context-bound
+- Recommendation resolves only Small or Big
+- Recommendation carries semantic reasons
+- Deep Reasoning does not imply Big
+- Recommendation does not own auto_policy source
+- No Governor/resource/runtime authority is present
+- No automatic routing policy has been installed yet

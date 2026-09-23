@@ -1,0 +1,47 @@
+The Forest — Bristlecone Pine
+Terminal B independent certification
+Phase 14.11H.B3
+
+Status:
+CERTIFIED SHARED-MODEL RESIDENCY SEMANTICS
+
+Original frozen H.3 evidence:
+
+- runtime/model_residency.py SHA was recorded by H.3
+- tests/test_colony_model_residency.py SHA was recorded by H.3
+- both matched exactly during Terminal B certification
+
+Dependency note:
+
+- runtime/session_identity.py is exercised by this contract
+- original H.3 did not record its SHA
+- Terminal B records the current dependency SHA here
+- no claim is made that H.3 originally froze that dependency
+
+Certified behavior:
+
+- one shared residency may serve multiple execution contexts
+- residency compatibility is binding-based
+- same binding does not imply same runtime session
+- different binding is not accepted by the same residency contract
+- residency identity is not execution-context identity
+- residency identity is not session identity
+- residency identity is not Tree/Colony identity
+- residency contains no Task identity
+- residency contains no Reasoning/control state
+- residency contains no permissions
+- residency contains no KV/conversation context
+- SharedModelResidency is frozen/fail-closed
+
+Doctrine:
+
+shared immutable model weights are permitted
+
+shared conversational runtime state is not
+
+Scope intentionally excludes:
+
+- H.5 transitional Reasoning implementation
+- active TaskSession integration
+- model loader/eviction/scheduler policy
+- resource-manager behavior

@@ -1,0 +1,565 @@
+{
+  "adapter": "hermes",
+  "chat_endpoint_called_by_harness": false,
+  "create_end_round_trip": {
+    "stats": {
+      "count": 50,
+      "max_ns": 566334411,
+      "mean_ns": 532783001.42,
+      "mean_us": 532783.00142,
+      "median_ns": 532712742.0,
+      "median_us": 532712.742,
+      "min_ns": 490572567,
+      "p95_ns": 563685082,
+      "stdev_ns": 18485028.367679104
+    },
+    "timings_ns": [
+      539203921,
+      512145084,
+      563685082,
+      566307771,
+      547340010,
+      544629145,
+      538967549,
+      545933267,
+      535872735,
+      530115179,
+      518922260,
+      553483108,
+      539307373,
+      542698822,
+      529760566,
+      530329521,
+      517872023,
+      566334411,
+      539648593,
+      518578024,
+      528126848,
+      556056394,
+      524431923,
+      528803735,
+      532157633,
+      524525075,
+      533655757,
+      528444953,
+      504817479,
+      494933769,
+      549670411,
+      550712011,
+      533267851,
+      519209927,
+      490572567,
+      506994514,
+      523914243,
+      529329258,
+      540179687,
+      553688782,
+      552886891,
+      558789460,
+      502351824,
+      496732556,
+      507758684,
+      527512888,
+      533807870,
+      542247578,
+      529418915,
+      553016144
+    ]
+  },
+  "create_session": {
+    "stats": {
+      "count": 50,
+      "max_ns": 367924793,
+      "mean_ns": 326059299.16,
+      "mean_us": 326059.29916000005,
+      "median_ns": 327564179.5,
+      "median_us": 327564.1795,
+      "min_ns": 291415279,
+      "p95_ns": 353219178,
+      "stdev_ns": 15012466.647998758
+    },
+    "timings_ns": [
+      332101883,
+      312671575,
+      327817143,
+      353219178,
+      337777757,
+      329685109,
+      331902610,
+      336327573,
+      327910077,
+      327311216,
+      324253333,
+      338697809,
+      330044822,
+      331074500,
+      326818023,
+      325604883,
+      319808122,
+      367924793,
+      330026779,
+      310434597,
+      326573806,
+      328386539,
+      315680848,
+      325573244,
+      322073593,
+      322736944,
+      328109230,
+      325962331,
+      310377230,
+      291415279,
+      333184139,
+      333038787,
+      322832544,
+      320247034,
+      300670613,
+      300011509,
+      324255908,
+      331678931,
+      330025797,
+      335761964,
+      341196305,
+      362319442,
+      301780480,
+      302644657,
+      299441352,
+      325239648,
+      333625204,
+      345291721,
+      305580181,
+      335837916
+    ]
+  },
+  "end_session": {
+    "stats": {
+      "count": 50,
+      "max_ns": 235867939,
+      "mean_ns": 206723702.26,
+      "mean_us": 206723.70226,
+      "median_ns": 207023972.0,
+      "median_us": 207023.972,
+      "min_ns": 189901954,
+      "p95_ns": 223838734,
+      "stdev_ns": 8906516.81565895
+    },
+    "timings_ns": [
+      207102038,
+      199473509,
+      235867939,
+      213088593,
+      209562253,
+      214944036,
+      207064939,
+      209605694,
+      207962658,
+      202803963,
+      194668927,
+      214785299,
+      209262551,
+      211624322,
+      202942543,
+      204724638,
+      198063901,
+      198409618,
+      209621814,
+      208143427,
+      201553042,
+      227669855,
+      208751075,
+      203230491,
+      210084040,
+      201788131,
+      205546527,
+      202482622,
+      194440249,
+      203518490,
+      216486272,
+      217673224,
+      210435307,
+      198962893,
+      189901954,
+      206983005,
+      199658335,
+      197650327,
+      210153890,
+      217926818,
+      211690586,
+      196470018,
+      200571344,
+      194087899,
+      208317332,
+      202273240,
+      200182666,
+      196955857,
+      223838734,
+      217178228
+    ]
+  },
+  "forest_binding_persisted": false,
+  "iterations": 50,
+  "model_turn_executed_by_harness": false,
+  "persistent_production_state_modified": false,
+  "phase": "14.11L.9",
+  "samples": [
+    {
+      "create_ns": 332101883,
+      "end_ns": 207102038,
+      "measured": true,
+      "round_trip_ns": 539203921,
+      "session_id": "api_1786584615_0ea34a73"
+    },
+    {
+      "create_ns": 312671575,
+      "end_ns": 199473509,
+      "measured": true,
+      "round_trip_ns": 512145084,
+      "session_id": "api_1786584615_b837d5ad"
+    },
+    {
+      "create_ns": 327817143,
+      "end_ns": 235867939,
+      "measured": true,
+      "round_trip_ns": 563685082,
+      "session_id": "api_1786584616_09b58a4c"
+    },
+    {
+      "create_ns": 353219178,
+      "end_ns": 213088593,
+      "measured": true,
+      "round_trip_ns": 566307771,
+      "session_id": "api_1786584616_c421c9fa"
+    },
+    {
+      "create_ns": 337777757,
+      "end_ns": 209562253,
+      "measured": true,
+      "round_trip_ns": 547340010,
+      "session_id": "api_1786584617_a1e4d965"
+    },
+    {
+      "create_ns": 329685109,
+      "end_ns": 214944036,
+      "measured": true,
+      "round_trip_ns": 544629145,
+      "session_id": "api_1786584618_84d3de73"
+    },
+    {
+      "create_ns": 331902610,
+      "end_ns": 207064939,
+      "measured": true,
+      "round_trip_ns": 538967549,
+      "session_id": "api_1786584618_4e7a75b2"
+    },
+    {
+      "create_ns": 336327573,
+      "end_ns": 209605694,
+      "measured": true,
+      "round_trip_ns": 545933267,
+      "session_id": "api_1786584619_b8d4efd0"
+    },
+    {
+      "create_ns": 327910077,
+      "end_ns": 207962658,
+      "measured": true,
+      "round_trip_ns": 535872735,
+      "session_id": "api_1786584619_b1b2a2b1"
+    },
+    {
+      "create_ns": 327311216,
+      "end_ns": 202803963,
+      "measured": true,
+      "round_trip_ns": 530115179,
+      "session_id": "api_1786584620_e80842c6"
+    },
+    {
+      "create_ns": 324253333,
+      "end_ns": 194668927,
+      "measured": true,
+      "round_trip_ns": 518922260,
+      "session_id": "api_1786584620_6c3c09c6"
+    },
+    {
+      "create_ns": 338697809,
+      "end_ns": 214785299,
+      "measured": true,
+      "round_trip_ns": 553483108,
+      "session_id": "api_1786584621_4a15a207"
+    },
+    {
+      "create_ns": 330044822,
+      "end_ns": 209262551,
+      "measured": true,
+      "round_trip_ns": 539307373,
+      "session_id": "api_1786584621_f66ff469"
+    },
+    {
+      "create_ns": 331074500,
+      "end_ns": 211624322,
+      "measured": true,
+      "round_trip_ns": 542698822,
+      "session_id": "api_1786584622_6c294705"
+    },
+    {
+      "create_ns": 326818023,
+      "end_ns": 202942543,
+      "measured": true,
+      "round_trip_ns": 529760566,
+      "session_id": "api_1786584622_0f2a0919"
+    },
+    {
+      "create_ns": 325604883,
+      "end_ns": 204724638,
+      "measured": true,
+      "round_trip_ns": 530329521,
+      "session_id": "api_1786584623_3d16b242"
+    },
+    {
+      "create_ns": 319808122,
+      "end_ns": 198063901,
+      "measured": true,
+      "round_trip_ns": 517872023,
+      "session_id": "api_1786584623_05bbb08c"
+    },
+    {
+      "create_ns": 367924793,
+      "end_ns": 198409618,
+      "measured": true,
+      "round_trip_ns": 566334411,
+      "session_id": "api_1786584624_e4cbcf21"
+    },
+    {
+      "create_ns": 330026779,
+      "end_ns": 209621814,
+      "measured": true,
+      "round_trip_ns": 539648593,
+      "session_id": "api_1786584625_d81d4bab"
+    },
+    {
+      "create_ns": 310434597,
+      "end_ns": 208143427,
+      "measured": true,
+      "round_trip_ns": 518578024,
+      "session_id": "api_1786584625_bb6175ed"
+    },
+    {
+      "create_ns": 326573806,
+      "end_ns": 201553042,
+      "measured": true,
+      "round_trip_ns": 528126848,
+      "session_id": "api_1786584626_ea1908e9"
+    },
+    {
+      "create_ns": 328386539,
+      "end_ns": 227669855,
+      "measured": true,
+      "round_trip_ns": 556056394,
+      "session_id": "api_1786584626_4448d22b"
+    },
+    {
+      "create_ns": 315680848,
+      "end_ns": 208751075,
+      "measured": true,
+      "round_trip_ns": 524431923,
+      "session_id": "api_1786584627_e0e5790e"
+    },
+    {
+      "create_ns": 325573244,
+      "end_ns": 203230491,
+      "measured": true,
+      "round_trip_ns": 528803735,
+      "session_id": "api_1786584627_6fdb2fec"
+    },
+    {
+      "create_ns": 322073593,
+      "end_ns": 210084040,
+      "measured": true,
+      "round_trip_ns": 532157633,
+      "session_id": "api_1786584628_0ad917a3"
+    },
+    {
+      "create_ns": 322736944,
+      "end_ns": 201788131,
+      "measured": true,
+      "round_trip_ns": 524525075,
+      "session_id": "api_1786584628_cdd5813c"
+    },
+    {
+      "create_ns": 328109230,
+      "end_ns": 205546527,
+      "measured": true,
+      "round_trip_ns": 533655757,
+      "session_id": "api_1786584629_4cb2e535"
+    },
+    {
+      "create_ns": 325962331,
+      "end_ns": 202482622,
+      "measured": true,
+      "round_trip_ns": 528444953,
+      "session_id": "api_1786584629_64a73c54"
+    },
+    {
+      "create_ns": 310377230,
+      "end_ns": 194440249,
+      "measured": true,
+      "round_trip_ns": 504817479,
+      "session_id": "api_1786584630_f96ef11a"
+    },
+    {
+      "create_ns": 291415279,
+      "end_ns": 203518490,
+      "measured": true,
+      "round_trip_ns": 494933769,
+      "session_id": "api_1786584630_921567c9"
+    },
+    {
+      "create_ns": 333184139,
+      "end_ns": 216486272,
+      "measured": true,
+      "round_trip_ns": 549670411,
+      "session_id": "api_1786584631_c1d1dcac"
+    },
+    {
+      "create_ns": 333038787,
+      "end_ns": 217673224,
+      "measured": true,
+      "round_trip_ns": 550712011,
+      "session_id": "api_1786584631_044d83a6"
+    },
+    {
+      "create_ns": 322832544,
+      "end_ns": 210435307,
+      "measured": true,
+      "round_trip_ns": 533267851,
+      "session_id": "api_1786584632_c6137455"
+    },
+    {
+      "create_ns": 320247034,
+      "end_ns": 198962893,
+      "measured": true,
+      "round_trip_ns": 519209927,
+      "session_id": "api_1786584632_0bc6342d"
+    },
+    {
+      "create_ns": 300670613,
+      "end_ns": 189901954,
+      "measured": true,
+      "round_trip_ns": 490572567,
+      "session_id": "api_1786584633_9ba17cd6"
+    },
+    {
+      "create_ns": 300011509,
+      "end_ns": 206983005,
+      "measured": true,
+      "round_trip_ns": 506994514,
+      "session_id": "api_1786584633_aee98fce"
+    },
+    {
+      "create_ns": 324255908,
+      "end_ns": 199658335,
+      "measured": true,
+      "round_trip_ns": 523914243,
+      "session_id": "api_1786584634_e35aca4d"
+    },
+    {
+      "create_ns": 331678931,
+      "end_ns": 197650327,
+      "measured": true,
+      "round_trip_ns": 529329258,
+      "session_id": "api_1786584635_7d4e5da0"
+    },
+    {
+      "create_ns": 330025797,
+      "end_ns": 210153890,
+      "measured": true,
+      "round_trip_ns": 540179687,
+      "session_id": "api_1786584635_454e66aa"
+    },
+    {
+      "create_ns": 335761964,
+      "end_ns": 217926818,
+      "measured": true,
+      "round_trip_ns": 553688782,
+      "session_id": "api_1786584636_47d03b36"
+    },
+    {
+      "create_ns": 341196305,
+      "end_ns": 211690586,
+      "measured": true,
+      "round_trip_ns": 552886891,
+      "session_id": "api_1786584636_bc8cbfe5"
+    },
+    {
+      "create_ns": 362319442,
+      "end_ns": 196470018,
+      "measured": true,
+      "round_trip_ns": 558789460,
+      "session_id": "api_1786584637_6aa0b63f"
+    },
+    {
+      "create_ns": 301780480,
+      "end_ns": 200571344,
+      "measured": true,
+      "round_trip_ns": 502351824,
+      "session_id": "api_1786584637_3ab9e9fb"
+    },
+    {
+      "create_ns": 302644657,
+      "end_ns": 194087899,
+      "measured": true,
+      "round_trip_ns": 496732556,
+      "session_id": "api_1786584638_411e5d6e"
+    },
+    {
+      "create_ns": 299441352,
+      "end_ns": 208317332,
+      "measured": true,
+      "round_trip_ns": 507758684,
+      "session_id": "api_1786584638_cbb2ca14"
+    },
+    {
+      "create_ns": 325239648,
+      "end_ns": 202273240,
+      "measured": true,
+      "round_trip_ns": 527512888,
+      "session_id": "api_1786584639_ad54ed29"
+    },
+    {
+      "create_ns": 333625204,
+      "end_ns": 200182666,
+      "measured": true,
+      "round_trip_ns": 533807870,
+      "session_id": "api_1786584639_6a5e6972"
+    },
+    {
+      "create_ns": 345291721,
+      "end_ns": 196955857,
+      "measured": true,
+      "round_trip_ns": 542247578,
+      "session_id": "api_1786584640_5588e6d1"
+    },
+    {
+      "create_ns": 305580181,
+      "end_ns": 223838734,
+      "measured": true,
+      "round_trip_ns": 529418915,
+      "session_id": "api_1786584640_b9e4c483"
+    },
+    {
+      "create_ns": 335837916,
+      "end_ns": 217178228,
+      "measured": true,
+      "round_trip_ns": 553016144,
+      "session_id": "api_1786584641_2bdd8a21"
+    }
+  ],
+  "scenario": "real-hermes-session-create-end-cost",
+  "source_sha256": {
+    "hermes_adapter": "a09949eead5cb9772aca312c91630703c7ff8ce43df778730279445b25635084",
+    "task_session": "d666cb1471b568bf43db4255f5e84e98c1ea502af467e1e2670e4a93dc364991"
+  },
+  "status": "success",
+  "transient_hermes_sessions_created": 55,
+  "transient_hermes_sessions_deleted": 55,
+  "warmups": 5
+}

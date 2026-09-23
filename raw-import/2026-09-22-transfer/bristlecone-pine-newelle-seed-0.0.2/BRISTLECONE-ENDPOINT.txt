@@ -1,0 +1,9 @@
+BRISTLECONE API ENDPOINT CARD
+
+Hermes profile: bristlecone
+API base URL: http://127.0.0.1:8643/v1
+Newelle endpoint: http://127.0.0.1:8643/v1/
+Advertised model: bristlecone
+Authentication: Bearer key generated during planting
+Network exposure: localhost only
+CORS: disabled

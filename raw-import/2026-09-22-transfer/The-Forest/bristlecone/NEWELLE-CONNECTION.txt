@@ -1,0 +1,10 @@
+BRISTLECONE PINE — NEWELLE CONNECTION
+
+Provider: OpenAI API
+API Endpoint: http://127.0.0.1:8643/v1/
+Canonical Base URL: http://127.0.0.1:8643/v1
+OpenAI Model: bristlecone
+API Key: [REDACTED - OLD QUBES AI API KEY]
+
+This file contains a private local API key.
+Do not publish or commit it.

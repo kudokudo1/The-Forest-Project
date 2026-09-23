@@ -1,0 +1,21 @@
+{
+  "automatic_small": {
+    "max_ns": 1127430,
+    "mean_ns": 920428.3,
+    "median_ns": 886965,
+    "min_ns": 848889,
+    "n": 20,
+    "p90_ns": 1082286,
+    "stdev_ns": 87960.44873578125
+  },
+  "explicit_small": {
+    "max_ns": 957752,
+    "mean_ns": 879687.6,
+    "median_ns": 877227,
+    "min_ns": 833390,
+    "n": 20,
+    "p90_ns": 899504,
+    "stdev_ns": 26773.1704164331
+  },
+  "median_delta_ns": 9738
+}

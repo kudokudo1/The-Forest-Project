@@ -1,0 +1,42 @@
+Phase: 14.11G.6B-G.6C
+Lane: Terminal B
+Type: Synthetic certification against production routing contracts
+
+Tests:
+PASS 15
+FAIL 0
+
+Certified synthetic invariants:
+- one meaningful turn invokes the Auto router once
+- ordinary runtime send does not reroute
+- stale-session recovery does not reroute
+- stale recovery reuses the same frozen semantic turn
+- retry preserves Model Form
+- retry preserves router reasons
+- retry preserves EffectiveReasoningDecision identity
+- retry runtime failure does not reroute
+- second stale failure does not reroute
+- only one stale retry is permitted
+- recommendation Task identity is preserved
+- recommendation execution-context identity is preserved
+- Task mismatch fails closed
+- execution-context mismatch fails closed
+- separate Tasks/contexts route independently
+- Deep Reasoning does not mechanically select Big
+- Light Reasoning does not mechanically select Small
+- high task complexity recommends Big
+- known Small failure recommends Big
+- insufficient Small capability recommends Big
+- multiple escalation reasons have deterministic order
+
+Production certification:
+NOT YET
+
+Blocked production step:
+- G.6D awaits Terminal A's final certified G.4 integration
+
+Terminal B production files modified:
+NONE
+
+Terminal B test artifact:
+tests/test_model_form_automatic_routing_retry_isolation.py

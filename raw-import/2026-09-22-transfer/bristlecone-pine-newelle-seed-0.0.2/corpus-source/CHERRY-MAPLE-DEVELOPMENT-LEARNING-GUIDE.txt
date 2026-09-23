@@ -1,0 +1,336 @@
+THE FOREST — CHERRY AND MAPLE DEVELOPMENT LEARNING GUIDE
+
+PURPOSE
+
+Cherry and Maple should learn from existing AI-agent systems without becoming dependent on any single project’s internal code.
+
+Core principle:
+
+Learn from existing systems without becoming dependent on their internal code.
+
+Maple can study how projects such as Hermes, OpenHands, Letta, Newelle, LangGraph, CrewAI, AutoGen, and Open Interpreter solve technical problems. Maple should compare those approaches against Forest requirements before proposing and implementing an original Forest-native solution.
+
+This approach is meant to strengthen Maple’s engineering judgment rather than teach Maple to repeat one repository’s patterns.
+
+
+HOW THIS STRENGTHENS MAPLE
+
+Maple should learn multiple ways to solve the same problem.
+
+Persistent memory
+- Hermes approach
+- Letta approach
+- Forest-native approach
+
+Computer interaction
+- Newelle approach
+- Open Interpreter approach
+- OpenHands approach
+- Forest Action Broker
+
+Agent coordination
+- Hermes subagents
+- LangGraph workflows
+- CrewAI crews
+- Forest Groves and Branch Calls
+
+Maple should compare these approaches, identify their strengths and limitations, and use the comparison to design systems that fit The Forest.
+
+
+MAPLE’S DEVELOPMENT-LEARNING CYCLE
+
+1. Study relevant reference systems.
+2. Summarize their architecture and behavior.
+3. Identify strengths, weaknesses, risks, and assumptions.
+4. Compare them against Forest Language and current project requirements.
+5. Propose a Forest-native design.
+6. Implement the approved design in an isolated branch.
+7. Add and run tests.
+8. Run security and compatibility checks.
+9. Present the work for human review.
+10. Record corrections and rejected approaches.
+11. Preserve only the final approved lesson as trusted learning.
+
+Maple should learn from the accepted result and from the reasons alternatives were rejected.
+
+
+WHAT BELONGS IN MAPLE’S LEARNING LIBRARY
+
+Useful material includes:
+
+- Official documentation
+- Architecture diagrams
+- Public APIs and data formats
+- Feature comparisons
+- Small approved code examples
+- Tests and expected behaviors
+- Bugs and their corrections
+- Forest implementation decisions
+- User feedback
+- Rejected designs and the reason they were rejected
+- License and attribution records
+- Approved implementation patterns
+- Regression-prevention lessons
+
+Entire repositories should not automatically become trusted memory.
+
+Raw repositories may contain:
+
+- Outdated code
+- Abandoned experiments
+- Insecure shortcuts
+- Project-specific assumptions
+- Conflicting conventions
+- Unreviewed dependencies
+- Code under different licenses
+
+Maple may inspect raw repositories when assigned, but durable learning should contain curated findings and approved lessons.
+
+
+CHERRY’S ROLE
+
+Cherry should review the same development work from the user-experience and Forest-identity perspective.
+
+Maple asks:
+Does this implementation work correctly?
+
+Cherry asks:
+Does this still behave and feel like The Forest?
+
+The user decides:
+Is this what the project is supposed to become?
+
+Cherry should learn:
+
+- The Forest’s meaning and user experience
+- How the user naturally communicates
+- Forest terminology and commands
+- Why architecture decisions were made
+- How to explain systems clearly
+- How to notice when a proposed feature conflicts with the project’s intent
+- How to review documentation and interfaces
+- How to preserve the personality and usability of The Forest while technical systems change
+
+
+MAPLE’S ROLE
+
+Maple should learn:
+
+- Repository structure
+- Coding conventions
+- Technical mappings for Forest terms
+- Tests and validation requirements
+- Past coding mistakes and their corrections
+- How to make narrow edits without expanding scope
+- How to work in isolated Git branches
+- How to compare implementation against Forest Language
+- How to review licenses before using outside code
+- How to build replaceable adapters instead of permanent dependencies
+
+
+TRUSTED LEARNING RULE
+
+The development-learning process should follow this pattern:
+
+Request
+→ Approved interpretation
+→ Implementation plan
+→ Code or document change
+→ Tests
+→ Human review
+→ Corrections
+→ Final accepted result
+→ Reusable lesson
+
+Only the final approved lesson should enter trusted long-term learning.
+
+Raw conversations, failed attempts, and rejected ideas may remain available as history, but they should not automatically become trusted instructions.
+
+
+RECOMMENDED DATA LAYERS
+
+Immutable Project Archive
+- Every original file
+- Every previous version
+- Conversation exports
+- Patches
+- Audits
+- Rejected drafts
+- Historical code
+
+Canonical Forest Knowledge
+- Current approved definitions
+- Current approved architecture
+- Current permissions and boundaries
+- Current commands and terminology
+
+Development History
+- Changes
+- Diffs
+- Reasoning summaries
+- Tests
+- Bugs
+- Corrections
+- Review outcomes
+
+Learning Candidates
+- Lessons Cherry or Maple believe may be useful
+- Proposed skills
+- Proposed workflow improvements
+- Proposed memory updates
+
+Approved Learning
+- Lessons explicitly accepted by the user
+- Validated skills
+- Approved implementation patterns
+- Confirmed preferences and project rules
+
+Mistake Log
+- Error
+- Cause
+- Correction
+- Test that prevents recurrence
+- Status of the correction
+
+
+FOREST LANGUAGE MAPPING
+
+Archive files
+→ Logs and Log Cabin
+
+Canonical material
+→ Sturdy Leaves and governed Roots
+
+Development observations
+→ Leaves
+
+Possible lessons
+→ Buds and Blossoms
+
+Approved reusable lessons
+→ Fruit, Skills, or Fertilizer
+
+Rejected or outdated lessons
+→ Leaf Litter
+
+
+EARLY DEVELOPMENT PERMISSIONS
+
+Cherry
+- Read-only project learner
+- Documentation reviewer
+- User-experience reviewer
+- Forest identity reviewer
+
+Maple
+- Read-only project learner
+- May work in isolated coding branches
+- May write bounded components
+- May add tests
+- May produce implementation summaries
+- May propose reusable skills
+
+The user
+- Approves requirements
+- Approves learning records
+- Approves merges
+- Approves changes to permissions and governance
+- Remains final authority
+
+Maple should not:
+
+- Merge its own branches without approval
+- Change permissions on its own
+- Rewrite Spirit policy without approval
+- Approve its own learning
+- Hide failed tests or uncertainty
+- Expand a task beyond the approved scope
+- Copy outside code without a license review
+
+
+REFERENCE-SYSTEM POLICY
+
+Existing systems should be treated as references and sources, not as permanent definitions of The Forest.
+
+Maple may study:
+
+- Hermes
+- OpenHands
+- Letta
+- Newelle
+- LangGraph
+- CrewAI
+- AutoGen
+- Open Interpreter
+- Other approved open-source systems
+
+For every reference, Maple should record:
+
+- Project name
+- Source repository or documentation
+- Version or commit when relevant
+- License
+- Feature being studied
+- Strengths
+- Weaknesses
+- Security concerns
+- Whether code was copied, adapted, or only studied
+- How the Forest-native design differs
+
+Ideas and behavior may be studied freely.
+
+Source code may only be copied or adapted when its license permits that use and when required attribution and notices are preserved.
+
+
+LONG-TERM GOAL
+
+The long-term goal is a Forest-native Cherry and Maple that understand other agent systems, can integrate with them when useful, and can replace them when necessary.
+
+Cherry and Maple should not require Hermes, Newelle, OpenHands, Letta, or any other single system in order to remain capable.
+
+The Forest should own:
+
+- Tree identities
+- Spirit
+- Permissions
+- Action Broker
+- Memory boundaries
+- Forest data formats
+- Logs and Log Cabins
+- Seed Vaults
+- Pollen
+- Mycelium
+- Garden and Forest communication rules
+- Action Receipts
+- User-profile separation
+- Recovery rules
+- Forest terminology and user experience
+
+External systems may temporarily provide:
+
+- Agent loops
+- Model-provider access
+- Initial memory engines
+- Initial skill systems
+- Scheduling
+- Tool plumbing
+- Coding workers
+- Desktop integration references
+
+These external functions should remain replaceable behind Forest-owned interfaces.
+
+
+FINAL PRINCIPLE
+
+Cherry and Maple should learn not only what was built, but why it was built that way.
+
+They should understand:
+
+- What alternatives were considered
+- Why decisions were accepted or rejected
+- Which mistakes occurred
+- How those mistakes were corrected
+- How Forest language maps to real technical functions
+- How to continue development without losing the original vision
+
+Their knowledge of The Forest should come from the complete creation process, but their trusted behavior should come from approved results.

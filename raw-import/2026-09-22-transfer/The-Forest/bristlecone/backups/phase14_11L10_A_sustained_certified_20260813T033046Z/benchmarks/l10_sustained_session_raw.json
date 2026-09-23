@@ -1,0 +1,449 @@
+{
+  "benchmark_completed_utc": "2026-08-13T03:21:33.064588+00:00",
+  "benchmark_started_utc": "2026-08-13T03:16:38.857708+00:00",
+  "binding_id": "binding-0001",
+  "cleanup": {
+    "attempted": true,
+    "error": null,
+    "session_id": "api_1786590916_e86252fe",
+    "success": true
+  },
+  "early_turns_1_to_4": {
+    "count": 4,
+    "max_ns": 45875474043,
+    "mean_ns": 39796360960.5,
+    "mean_seconds": 39.7963609605,
+    "median_ns": 39241080712.0,
+    "median_seconds": 39.241080712,
+    "min_ns": 34827808375,
+    "stdev_ns": 4584889039.510448
+  },
+  "execution_context_id": "l10-sustained-1786590916534092074",
+  "first_to_last_ns": -3417929129,
+  "first_to_last_seconds": -3.417929129,
+  "late_minus_early_median_ns": -3533579380.0,
+  "late_minus_early_median_seconds": -3.53357938,
+  "late_turns_5_to_8": {
+    "count": 4,
+    "max_ns": 46379086747,
+    "mean_ns": 33642010243.5,
+    "mean_seconds": 33.6420102435,
+    "median_ns": 35707501332.0,
+    "median_seconds": 35.707501332,
+    "min_ns": 16773951563,
+    "stdev_ns": 12334532181.606747
+  },
+  "measured_turn_count": 8,
+  "measurement_notes": [
+    "Prime turn is real but unmeasured.",
+    "All eight measured turns reuse the prime session.",
+    "ollama ps and MemAvailable sampling occur outside each timed send boundary.",
+    "Early/late latency differences are descriptive only and do not establish causal drift."
+  ],
+  "model": "bristlecone-qwen35:4b-64k",
+  "model_form": "small",
+  "persistent_production_state_modified": false,
+  "phase": "14.11L.10",
+  "prime": {
+    "message": "Reply only with: L10-PRIME",
+    "session_created": true,
+    "session_id": "api_1786590916_e86252fe",
+    "session_recovered": false,
+    "session_reused": false,
+    "session_rotated": false
+  },
+  "real_hermes_used": true,
+  "real_small_inference_executed": true,
+  "reasoning_mode": "normal",
+  "resident_models_before_benchmark": [
+    "bristlecone-qwen35:4b-64k    af72fe9ad018    5.6 GB    100% CPU     64000      14 minutes from now"
+  ],
+  "scenario": "sustained-same-session-health",
+  "source_sha256": {
+    "hermes": "a09949eead5cb9772aca312c91630703c7ff8ce43df778730279445b25635084",
+    "l4_reuse_foundation": "ce343935d5c8078d3c9f802609d662a2650f9a4e269b1f209967f3aac7a5d9dd",
+    "live_providers": "40b49375dbe014b27b6fc5696bccf74274864e42953c473b42ffe10a3c552299",
+    "task_session": "d666cb1471b568bf43db4255f5e84e98c1ea502af467e1e2670e4a93dc364991"
+  },
+  "status": "success",
+  "task_id": "forest-task-20260813T031516Z-55688bc1",
+  "timing_stats": {
+    "count": 8,
+    "max_ns": 46379086747,
+    "mean_ns": 36719185602,
+    "mean_seconds": 36.719185602,
+    "median_ns": 37532116147.5,
+    "median_seconds": 37.5321161475,
+    "min_ns": 16773951563,
+    "stdev_ns": 9221386171.184765
+  },
+  "timings_ns": [
+    39875438474,
+    45875474043,
+    38606722950,
+    34827808375,
+    46379086747,
+    34957493319,
+    16773951563,
+    36457509345
+  ],
+  "turns": [
+    {
+      "binding_id": "binding-0001",
+      "checks": {
+        "created_false": true,
+        "initial_created_false": true,
+        "initial_request_is_s": true,
+        "not_recovered": true,
+        "not_rotated": true,
+        "requested_session_is_s": true,
+        "resident_after": true,
+        "reused_true": true,
+        "same_binding": true,
+        "same_context": true,
+        "same_model_form": true,
+        "same_reasoning": true,
+        "same_session": true
+      },
+      "duration_ns": 39875438474,
+      "duration_seconds": 39.875438474,
+      "execution_context_id": "l10-sustained-1786590916534092074",
+      "initial_requested_session_id": "api_1786590916_e86252fe",
+      "initial_session_created": false,
+      "mem_available_after_kib": 4095364,
+      "mem_available_before_kib": 4280468,
+      "mem_available_delta_kib": -185104,
+      "message": "Reply only with: L10-T01",
+      "model_form": "small",
+      "previous_session_id": null,
+      "reasoning_mode": "normal",
+      "requested_session_id": "api_1786590916_e86252fe",
+      "resident_after": [
+        "bristlecone-qwen35:4b-64k    af72fe9ad018    5.6 GB    100% CPU     64000      14 minutes from now"
+      ],
+      "resident_before": [
+        "bristlecone-qwen35:4b-64k    af72fe9ad018    5.6 GB    100% CPU     64000      14 minutes from now"
+      ],
+      "response_message": "L10-T01",
+      "session_created": false,
+      "session_id": "api_1786590916_e86252fe",
+      "session_recovered": false,
+      "session_reused": true,
+      "session_rotated": false,
+      "turn": 1
+    },
+    {
+      "binding_id": "binding-0001",
+      "checks": {
+        "created_false": true,
+        "initial_created_false": true,
+        "initial_request_is_s": true,
+        "not_recovered": true,
+        "not_rotated": true,
+        "requested_session_is_s": true,
+        "resident_after": true,
+        "reused_true": true,
+        "same_binding": true,
+        "same_context": true,
+        "same_model_form": true,
+        "same_reasoning": true,
+        "same_session": true
+      },
+      "duration_ns": 45875474043,
+      "duration_seconds": 45.875474043,
+      "execution_context_id": "l10-sustained-1786590916534092074",
+      "initial_requested_session_id": "api_1786590916_e86252fe",
+      "initial_session_created": false,
+      "mem_available_after_kib": 4385272,
+      "mem_available_before_kib": 4087912,
+      "mem_available_delta_kib": 297360,
+      "message": "Reply only with: L10-T02",
+      "model_form": "small",
+      "previous_session_id": null,
+      "reasoning_mode": "normal",
+      "requested_session_id": "api_1786590916_e86252fe",
+      "resident_after": [
+        "bristlecone-qwen35:4b-64k    af72fe9ad018    5.6 GB    100% CPU     64000      14 minutes from now"
+      ],
+      "resident_before": [
+        "bristlecone-qwen35:4b-64k    af72fe9ad018    5.6 GB    100% CPU     64000      14 minutes from now"
+      ],
+      "response_message": "L10-T02",
+      "session_created": false,
+      "session_id": "api_1786590916_e86252fe",
+      "session_recovered": false,
+      "session_reused": true,
+      "session_rotated": false,
+      "turn": 2
+    },
+    {
+      "binding_id": "binding-0001",
+      "checks": {
+        "created_false": true,
+        "initial_created_false": true,
+        "initial_request_is_s": true,
+        "not_recovered": true,
+        "not_rotated": true,
+        "requested_session_is_s": true,
+        "resident_after": true,
+        "reused_true": true,
+        "same_binding": true,
+        "same_context": true,
+        "same_model_form": true,
+        "same_reasoning": true,
+        "same_session": true
+      },
+      "duration_ns": 38606722950,
+      "duration_seconds": 38.60672295,
+      "execution_context_id": "l10-sustained-1786590916534092074",
+      "initial_requested_session_id": "api_1786590916_e86252fe",
+      "initial_session_created": false,
+      "mem_available_after_kib": 4307888,
+      "mem_available_before_kib": 4373052,
+      "mem_available_delta_kib": -65164,
+      "message": "Reply only with: L10-T03",
+      "model_form": "small",
+      "previous_session_id": null,
+      "reasoning_mode": "normal",
+      "requested_session_id": "api_1786590916_e86252fe",
+      "resident_after": [
+        "bristlecone-qwen35:4b-64k    af72fe9ad018    5.6 GB    100% CPU     64000      14 minutes from now"
+      ],
+      "resident_before": [
+        "bristlecone-qwen35:4b-64k    af72fe9ad018    5.6 GB    100% CPU     64000      14 minutes from now"
+      ],
+      "response_message": "L10-T03",
+      "session_created": false,
+      "session_id": "api_1786590916_e86252fe",
+      "session_recovered": false,
+      "session_reused": true,
+      "session_rotated": false,
+      "turn": 3
+    },
+    {
+      "binding_id": "binding-0001",
+      "checks": {
+        "created_false": true,
+        "initial_created_false": true,
+        "initial_request_is_s": true,
+        "not_recovered": true,
+        "not_rotated": true,
+        "requested_session_is_s": true,
+        "resident_after": true,
+        "reused_true": true,
+        "same_binding": true,
+        "same_context": true,
+        "same_model_form": true,
+        "same_reasoning": true,
+        "same_session": true
+      },
+      "duration_ns": 34827808375,
+      "duration_seconds": 34.827808375,
+      "execution_context_id": "l10-sustained-1786590916534092074",
+      "initial_requested_session_id": "api_1786590916_e86252fe",
+      "initial_session_created": false,
+      "mem_available_after_kib": 4365812,
+      "mem_available_before_kib": 4296224,
+      "mem_available_delta_kib": 69588,
+      "message": "Reply only with: L10-T04",
+      "model_form": "small",
+      "previous_session_id": null,
+      "reasoning_mode": "normal",
+      "requested_session_id": "api_1786590916_e86252fe",
+      "resident_after": [
+        "bristlecone-qwen35:4b-64k    af72fe9ad018    5.6 GB    100% CPU     64000      14 minutes from now"
+      ],
+      "resident_before": [
+        "bristlecone-qwen35:4b-64k    af72fe9ad018    5.6 GB    100% CPU     64000      14 minutes from now"
+      ],
+      "response_message": "L10-T04",
+      "session_created": false,
+      "session_id": "api_1786590916_e86252fe",
+      "session_recovered": false,
+      "session_reused": true,
+      "session_rotated": false,
+      "turn": 4
+    },
+    {
+      "binding_id": "binding-0001",
+      "checks": {
+        "created_false": true,
+        "initial_created_false": true,
+        "initial_request_is_s": true,
+        "not_recovered": true,
+        "not_rotated": true,
+        "requested_session_is_s": true,
+        "resident_after": true,
+        "reused_true": true,
+        "same_binding": true,
+        "same_context": true,
+        "same_model_form": true,
+        "same_reasoning": true,
+        "same_session": true
+      },
+      "duration_ns": 46379086747,
+      "duration_seconds": 46.379086747,
+      "execution_context_id": "l10-sustained-1786590916534092074",
+      "initial_requested_session_id": "api_1786590916_e86252fe",
+      "initial_session_created": false,
+      "mem_available_after_kib": 4369896,
+      "mem_available_before_kib": 4355272,
+      "mem_available_delta_kib": 14624,
+      "message": "Reply only with: L10-T05",
+      "model_form": "small",
+      "previous_session_id": null,
+      "reasoning_mode": "normal",
+      "requested_session_id": "api_1786590916_e86252fe",
+      "resident_after": [
+        "bristlecone-qwen35:4b-64k    af72fe9ad018    5.6 GB    100% CPU     64000      14 minutes from now"
+      ],
+      "resident_before": [
+        "bristlecone-qwen35:4b-64k    af72fe9ad018    5.6 GB    100% CPU     64000      14 minutes from now"
+      ],
+      "response_message": "L10-T05",
+      "session_created": false,
+      "session_id": "api_1786590916_e86252fe",
+      "session_recovered": false,
+      "session_reused": true,
+      "session_rotated": false,
+      "turn": 5
+    },
+    {
+      "binding_id": "binding-0001",
+      "checks": {
+        "created_false": true,
+        "initial_created_false": true,
+        "initial_request_is_s": true,
+        "not_recovered": true,
+        "not_rotated": true,
+        "requested_session_is_s": true,
+        "resident_after": true,
+        "reused_true": true,
+        "same_binding": true,
+        "same_context": true,
+        "same_model_form": true,
+        "same_reasoning": true,
+        "same_session": true
+      },
+      "duration_ns": 34957493319,
+      "duration_seconds": 34.957493319,
+      "execution_context_id": "l10-sustained-1786590916534092074",
+      "initial_requested_session_id": "api_1786590916_e86252fe",
+      "initial_session_created": false,
+      "mem_available_after_kib": 4209560,
+      "mem_available_before_kib": 4355392,
+      "mem_available_delta_kib": -145832,
+      "message": "Reply only with: L10-T06",
+      "model_form": "small",
+      "previous_session_id": null,
+      "reasoning_mode": "normal",
+      "requested_session_id": "api_1786590916_e86252fe",
+      "resident_after": [
+        "bristlecone-qwen35:4b-64k    af72fe9ad018    5.6 GB    100% CPU     64000      14 minutes from now"
+      ],
+      "resident_before": [
+        "bristlecone-qwen35:4b-64k    af72fe9ad018    5.6 GB    100% CPU     64000      14 minutes from now"
+      ],
+      "response_message": "L10-T06",
+      "session_created": false,
+      "session_id": "api_1786590916_e86252fe",
+      "session_recovered": false,
+      "session_reused": true,
+      "session_rotated": false,
+      "turn": 6
+    },
+    {
+      "binding_id": "binding-0001",
+      "checks": {
+        "created_false": true,
+        "initial_created_false": true,
+        "initial_request_is_s": true,
+        "not_recovered": true,
+        "not_rotated": true,
+        "requested_session_is_s": true,
+        "resident_after": true,
+        "reused_true": true,
+        "same_binding": true,
+        "same_context": true,
+        "same_model_form": true,
+        "same_reasoning": true,
+        "same_session": true
+      },
+      "duration_ns": 16773951563,
+      "duration_seconds": 16.773951563,
+      "execution_context_id": "l10-sustained-1786590916534092074",
+      "initial_requested_session_id": "api_1786590916_e86252fe",
+      "initial_session_created": false,
+      "mem_available_after_kib": 4251740,
+      "mem_available_before_kib": 4197408,
+      "mem_available_delta_kib": 54332,
+      "message": "Reply only with: L10-T07",
+      "model_form": "small",
+      "previous_session_id": null,
+      "reasoning_mode": "normal",
+      "requested_session_id": "api_1786590916_e86252fe",
+      "resident_after": [
+        "bristlecone-qwen35:4b-64k    af72fe9ad018    5.6 GB    100% CPU     64000      14 minutes from now"
+      ],
+      "resident_before": [
+        "bristlecone-qwen35:4b-64k    af72fe9ad018    5.6 GB    100% CPU     64000      14 minutes from now"
+      ],
+      "response_message": "L10-T07",
+      "session_created": false,
+      "session_id": "api_1786590916_e86252fe",
+      "session_recovered": false,
+      "session_reused": true,
+      "session_rotated": false,
+      "turn": 7
+    },
+    {
+      "binding_id": "binding-0001",
+      "checks": {
+        "created_false": true,
+        "initial_created_false": true,
+        "initial_request_is_s": true,
+        "not_recovered": true,
+        "not_rotated": true,
+        "requested_session_is_s": true,
+        "resident_after": true,
+        "reused_true": true,
+        "same_binding": true,
+        "same_context": true,
+        "same_model_form": true,
+        "same_reasoning": true,
+        "same_session": true
+      },
+      "duration_ns": 36457509345,
+      "duration_seconds": 36.457509345,
+      "execution_context_id": "l10-sustained-1786590916534092074",
+      "initial_requested_session_id": "api_1786590916_e86252fe",
+      "initial_session_created": false,
+      "mem_available_after_kib": 4328780,
+      "mem_available_before_kib": 4242708,
+      "mem_available_delta_kib": 86072,
+      "message": "Reply only with: L10-T08",
+      "model_form": "small",
+      "previous_session_id": null,
+      "reasoning_mode": "normal",
+      "requested_session_id": "api_1786590916_e86252fe",
+      "resident_after": [
+        "bristlecone-qwen35:4b-64k    af72fe9ad018    5.6 GB    100% CPU     64000      14 minutes from now"
+      ],
+      "resident_before": [
+        "bristlecone-qwen35:4b-64k    af72fe9ad018    5.6 GB    100% CPU     64000      14 minutes from now"
+      ],
+      "response_message": "L10-T08",
+      "session_created": false,
+      "session_id": "api_1786590916_e86252fe",
+      "session_recovered": false,
+      "session_reused": true,
+      "session_rotated": false,
+      "turn": 8
+    }
+  ],
+  "unexpected_recovery_count": 0,
+  "unexpected_rotation_count": 0,
+  "unique_measured_session_ids": [
+    "api_1786590916_e86252fe"
+  ]
+}

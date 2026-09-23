@@ -1,0 +1,58 @@
+{
+  "certification": "A",
+  "core_performance": {
+    "live_availability_median_us": 22.843,
+    "live_budget_median_us": 1.713,
+    "nonresident_requirement_median_us": 373.534,
+    "pure_governor_approve_median_us": 2.795,
+    "whole_live_pipeline_median_us": 449.952
+  },
+  "core_raw_sha256": "2c9e70239070edac150646fe00f75593fea1baf7522ccbb182b32860ee47cb91",
+  "execution_notes": {
+    "controlled_unmeasured_prewarm_used": true,
+    "core_real_inference": false,
+    "persistent_production_state_modified": false,
+    "residency_script_real_inference": false,
+    "transient_runtime_residency_intentionally_changed": true
+  },
+  "harnesses": {
+    "governor_benchmark": {
+      "path": "certification/phase14_11L8/governor_benchmark.py",
+      "sha256": "f8ab314952c95fb01b2f5b0295eb89da605d6708e436e665c704d997dd7991f5"
+    },
+    "residency_effect": {
+      "path": "certification/phase14_11L8/residency_effect.py",
+      "sha256": "e7c50bac53094207562af09b470a030abef400eeb283bbc510c8d8531605035d"
+    }
+  },
+  "phase": "14.11L.8",
+  "residency_effect": {
+    "nonresident_requirement_mib": 6144,
+    "resident_provider_median_us": 406.4555,
+    "resident_requirement_mib": 759,
+    "resident_size_bytes": 5646906816
+  },
+  "residency_raw_sha256": "243c92316063a368712d690eb06b1fd636d571e881e812b572358e1682e8b166",
+  "result": "PASS",
+  "semantic_results": {
+    "live_pipeline_approve_count": 20,
+    "live_pipeline_decision_count": 20,
+    "priority_outcomes": {
+      "background": "approve",
+      "interactive": "approve",
+      "standard": "approve"
+    },
+    "pure_policy_case_count": 9,
+    "zero_requirement_bypass": "approve"
+  },
+  "source_sha256": {
+    "availability": "b6a9fe9bfbe23f8ada65d30ac76a8e8f62a4c2d33e2cc7199dc572c39c886eb7",
+    "budget": "3ab5a79d57b0ea5ea34e2c5634bd8ad9282f484e6f761a8ad62023fa6b2d3cdb",
+    "decision": "f9bf6f48620efcc2973e48abfb1d035658934aff623f79b280da8c3d48208c57",
+    "evaluation": "0d485027b490c4a55cbe2841f943bb1a5d65db3cb44b84ddb599747bc048723c",
+    "governor": "9d25c7802f6e58d4b9e8d21eff025a0c0aff0252afc84bcc13f6b78533e1aaea",
+    "live_providers": "40b49375dbe014b27b6fc5696bccf74274864e42953c473b42ffe10a3c552299",
+    "model": "7262ea30a432e8a454a4069f1d3b60e50e30600aa99308974e8f925877774da7",
+    "requirement": "4cebbfaa27e3360a5ec92edd311cd2f9424ee159c8a6c5c4bfa2a3335dc89f59"
+  }
+}

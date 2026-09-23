@@ -1,0 +1,29 @@
+{
+  "active_yaml_sha": "6b8fb9b44757917c1889a7368d43f393165080d248cdb3d9c5982aad53b270e5",
+  "binding_id": "binding-0001",
+  "cleanup_performed": false,
+  "duration_ns": 280016025499,
+  "duration_s": 280.016025499,
+  "execution_context_id": "ctx-l6-light-01",
+  "expected_hermes_reasoning_effort": "low",
+  "message": "Reply only with: L2-COLD-01",
+  "model_form": "small",
+  "persist": false,
+  "phase": "14.11L.6",
+  "requested_reasoning_mode": "light",
+  "resident_after": [
+    "bristlecone-qwen35:4b-64k    af72fe9ad018    5.6 GB    100% CPU     64000      14 minutes from now    "
+  ],
+  "resident_before": [
+    "bristlecone-qwen35:4b-64k    af72fe9ad018    5.6 GB    100% CPU     64000      12 minutes from now    "
+  ],
+  "resolved_reasoning_mode": "light",
+  "scenario": "warm-small-reasoning-level",
+  "session_created": true,
+  "session_id": "api_1786551264_e38fc090",
+  "session_recovered": false,
+  "session_reused": false,
+  "status": "success",
+  "task_id": "forest-task-20260812T161423Z-0b48031f",
+  "trial": 1
+}

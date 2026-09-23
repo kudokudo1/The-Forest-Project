@@ -1,0 +1,46 @@
+{
+  "a_analyzer_sha256": "146437f1e5d76d300ea24e8f26a03e1b8089d9431a5e050b21d41e30e748d308",
+  "a_archive": "/home/user/The-Forest/bristlecone/backups/phase14_11L9_A_recovery_certified_20260813T023040Z",
+  "a_manifest_entries": 15,
+  "a_manifest_sha256": "25bf82477b8384c16bed030aeff4418e23fac45988d493c7971af6fe7459a1fa",
+  "a_summary_sha256": "68b9ef58980c62c3686d90c087b45b020d54a2fa2c7cf119caad0a045abbce4f",
+  "certification": "B",
+  "control_recomputed": {
+    "nonstale_classifier_median_ns": 181.0,
+    "normal_median_ns": 860425.5,
+    "paired_delta_mean_ns": 85876.374,
+    "paired_delta_median_ns": 71605.0,
+    "paired_delta_stdev_ns": 215192.675270033,
+    "recovery_median_ns": 931828.5,
+    "recovery_slower_pairs": 465,
+    "stale_classifier_median_ns": 160.0
+  },
+  "hermes_session_recomputed": {
+    "create_median_ns": 327564179.5,
+    "end_median_ns": 207023972.0,
+    "round_trip_median_ns": 532712742.0
+  },
+  "inference_executed_by_certifier": false,
+  "matched_recomputed": {
+    "normal_median_ns": 64655755843,
+    "paired_delta_median_ns": -8475349182,
+    "recovery_median_ns": 40152585167,
+    "recovery_slower_pairs": 1
+  },
+  "persistent_production_state_modified": false,
+  "phase": "14.11L.9",
+  "production_source_integrity": true,
+  "real_recovery": {
+    "binding_rotated": true,
+    "cleanup_success": true,
+    "replacement_session_id": "api_1786586619_7d9c4247",
+    "semantic_identity_preserved": true,
+    "session_recovered": true,
+    "stale_session_id": "api_1786586530_cdcd1e75"
+  },
+  "recovery_speedup_claim_supported": false,
+  "runtime_mutation_by_certifier": false,
+  "status": "PASS",
+  "summary_fidelity": true,
+  "whole_turn_recovery_cost_cleanly_resolved": false
+}

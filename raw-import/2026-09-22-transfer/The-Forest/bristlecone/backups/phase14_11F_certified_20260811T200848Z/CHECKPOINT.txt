@@ -1,0 +1,29 @@
+The Forest — Bristlecone Pine
+Phase: 14.11F
+Checkpoint: Resource Request + Governor Integration
+Status: CERTIFIED
+
+task_session.py SHA256:
+2e35143d63bf3d077edb95a4147035018453e019a8f1ee1673912061b883eb2a
+
+Certified behaviors:
+- Frozen Model Form and Reasoning produce exact ResourceRequest
+- Governor executes before handoff/runtime work
+- APPROVE preserves existing E4E5 transaction path
+- DEFER stops before runtime
+- DENY stops before runtime
+- malformed Governor results fail closed
+- wrong ResourceRequest identity fails closed
+- provider failures fail closed
+- unknown requirements are not guessed
+- unknown availability is not guessed
+- may_defer controls defer-versus-deny semantics
+- Budget policy violations outrank temporary uncertainty
+- Governor does not silently downgrade Model Form
+- Governor does not silently downgrade Reasoning
+- no-Governor legacy path remains compatible
+- resource evaluation remains runtime-neutral
+- resource providers remain separate from model binding metadata
+
+Previous certified resource checkpoint:
+bristlecone/backups/phase14_11F5C2_certified_20260811T200207Z

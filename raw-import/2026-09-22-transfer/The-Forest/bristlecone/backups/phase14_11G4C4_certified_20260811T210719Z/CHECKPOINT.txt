@@ -1,0 +1,22 @@
+The Forest — Bristlecone Pine
+Phase 14.11G.4C4
+
+Status:
+CERTIFIED RECOMMENDATION IDENTITY + RESOLVER HANDOFF
+
+task_session.py SHA256:
+fa174d6da050fbb072f3b031dbea38d3bfd6ea3d080d3b17786adc6eaa61f9da
+
+resolver SHA256:
+6a2eac1af3c15231bc93850ae5176d4f64b331017377d3ecef5e50b4a6df162c
+
+Certified behavior:
+- live Auto router executes at one site
+- recommendation type is validated
+- recommendation Task identity is validated
+- recommendation execution-context identity is validated
+- recommendation form/reasons are trusted only after validation
+- trusted form/reasons enter Model Form resolution
+- resolver retains precedence authority
+- Model Form freezes before ResourceRequest
+- existing 22 Model Form regression tests pass

@@ -1,0 +1,9 @@
+---
+project: The Forest
+status: active
+created: 2026-08-08
+updated: 2026-08-08
+tags:
+  - the-forest
+---
+[[Cherry]][[Ceder]][[Maple]][[Sycamore]][[Bristlecone Pine]]

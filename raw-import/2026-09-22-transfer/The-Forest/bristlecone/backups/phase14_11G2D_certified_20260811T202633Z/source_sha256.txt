@@ -1,0 +1,2 @@
+3c0500762d56825ba64436faf021cc338e1c5e0c579482b2658500c9b09e42ee  model_form/automatic_router.py
+c841d0890e9ee52a307b6e3ddefe4f2df9995b77cbe111078defaf469a5bbcd8  tests/test_model_form_automatic_router.py

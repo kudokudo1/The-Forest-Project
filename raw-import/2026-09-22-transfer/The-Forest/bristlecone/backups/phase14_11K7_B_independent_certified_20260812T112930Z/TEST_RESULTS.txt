@@ -1,0 +1,33 @@
+===== test_big_boundary_k2_k3.py =====
+test_k2_explicit_big_reaches_governor_unchanged (__main__.ExplicitBigGovernorBoundaryTests.test_k2_explicit_big_reaches_governor_unchanged) ... ok
+test_k3_big_defer_stops_before_runtime (__main__.ExplicitBigGovernorBoundaryTests.test_k3_big_defer_stops_before_runtime) ... ok
+test_k3_big_deny_stops_before_runtime (__main__.ExplicitBigGovernorBoundaryTests.test_k3_big_deny_stops_before_runtime) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.006s
+
+OK
+
+===== test_big_boundary_k4_no_downgrade.py =====
+test_unbound_explicit_big_fails_before_governor_and_runtime (__main__.BigNoDowngradeTests.test_unbound_explicit_big_fails_before_governor_and_runtime) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.002s
+
+OK
+
+===== test_big_boundary_k5_frozen_semantics.py =====
+test_k5_big_semantics_survive_defer_unchanged (__main__.FrozenBigSemanticTurnTests.test_k5_big_semantics_survive_defer_unchanged) ... ok
+test_k5_big_semantics_survive_deny_unchanged (__main__.FrozenBigSemanticTurnTests.test_k5_big_semantics_survive_deny_unchanged) ... ok
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.004s
+
+OK
+
+===== test_model_form_automatic_routing_retry_isolation.py =====
+...............
+----------------------------------------------------------------------
+Ran 15 tests in 0.001s
+
+OK

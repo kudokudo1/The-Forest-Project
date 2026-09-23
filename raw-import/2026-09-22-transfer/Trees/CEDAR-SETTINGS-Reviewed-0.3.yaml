@@ -1,0 +1,110 @@
+pdc_id: CEDAR-SETTINGS
+uuid: 772b0ba4-a4af-4b0c-b7fc-609f9e2a5574
+canonical_path: trees/cedar/configuration/CEDAR-SETTINGS.yaml
+version: 0.3.0
+status: working-draft
+cedar_oil:
+  enabled: true
+  default_mode: non-destructive
+  confirm_target: true
+  static_inspection_first: true
+  quarantine_on_risk: true
+  execute_unknown_code: false
+  destructive_actions_require_separate_approval: true
+  dangerous_absorption_requires_recovery_seed: true
+  ask_to_backup_affected_tree: true
+leaf_litter:
+  direct_absorption:
+    cedar_only: true
+    other_trees_allowed: false
+  cedar_absorption:
+    allowed_sources:
+    - user-direct
+    - trusted-tree-generated
+    - untrusted-tree-generated
+    - other-user-tree
+    - service-imported
+    - external
+    - recovered
+    - unknown
+    require_authorized_scope: true
+    require_safety_check: true
+  mediated_transfer:
+    default_eligible_origins:
+    - user-direct
+    - trusted-tree-generated
+    explicit_user_approval_origins:
+    - untrusted-tree-generated
+    - other-user-tree
+    - service-imported
+    - external
+    - recovered
+    - unknown
+    cedar_observation_required: true
+    safe_for_transfer_attestation_required: true
+    block_when_cedar_failed_or_regrew: true
+    invalidate_unfinished_attestations_after_regrowth: true
+  sharing:
+    mode: user-request-only
+    automatic_allowed_trees: []
+    share_safe_summaries_only: true
+    transfer_active_mold: false
+  timing:
+    default_retention_window: <CONFIGURE>
+    custom_overrides_require_user_permission: true
+fruit:
+  default_spoilage_window: <CONFIGURE>
+  custom_overrides_require_user_permission: true
+  other_trees_may_absorb_spoiling_fruit_after_safety_check: true
+dangerous_absorption:
+  cedar_recovery_seed_required: true
+  affected_tree_backup_prompt: always-ask
+  compromised_tree_backup_type: quarantined-evidence-snapshot
+  refuse_when_recovery_seed_unavailable: true
+recovery_set:
+  target_healthy_seed_count: 3
+  selection_order:
+  - verified-stable
+  - stable
+  - watch-with-user-approval
+  exclude_states:
+  - unstable
+  - corrupted
+  - unknown
+  - quarantined
+  prefer_most_recent_within_best_stability: true
+  max_automatic_regrowth_attempts: 3
+  retry_failed_seed_in_same_cycle: false
+sapling_survival_test:
+  enabled: true
+  isolated: true
+  observation_period: <CONFIGURE>
+  failed_seed_state: unstable
+health_reports:
+  other_trees_may_report: true
+  other_trees_may_trigger_reset: false
+  user_decides_reset_after_tree_report: true
+  direct_user_reset_command: true
+self_felling:
+  on_confirmed_compromise: true
+  ask_permission_first: false
+  suspicion_action: quarantine-and-review
+  preserve_logs_and_evidence: true
+regrowth:
+  automatic: true
+  require_survival_test: true
+  stop_when_all_eligible_seeds_fail: true
+messages:
+  mode: random
+  wilt:
+  - Your Cedar Tree has wilted.
+  - Your Cedar Tree was struck by lightning.
+  - Your Cedar Tree was caught in a wildfire.
+  - Your Cedar Tree sacrificed itself for the Forest.
+  regrowth:
+  - But a new Sprout was born.
+  - But he left you a gift.
+  - But he's supposed to do that, right?
+  paired: []
+  custom_wilt: []
+  custom_regrowth: []

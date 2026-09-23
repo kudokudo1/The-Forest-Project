@@ -1,0 +1,27 @@
+Task: forest-task-20260812T015856Z-ae624284
+Context: ctx-j3
+
+=== TURN 1 ===
+turn1 session: api_1786499937_003a7e4c
+turn1 session_created: True
+turn1 session_reused: False
+turn1 initial_session_created: True
+
+=== TURN 2 ===
+turn2 session: api_1786499937_003a7e4c
+turn2 session_created: False
+turn2 session_reused: True
+turn2 initial_session_created: False
+
+=== IDENTITY CHECK ===
+same session: True
+runtime contexts: ['ctx-j3']
+
+PASS: same Task retained
+PASS: same ctx-j3 retained
+PASS: same binding-0001 retained
+PASS: Small remained Small
+PASS: second real turn used same Hermes session
+PASS: no neighboring context slot appeared
+
+14.11J.3A evidence status: 0

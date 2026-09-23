@@ -1,0 +1,37 @@
+Phase: 14.11L.4
+Role: Terminal A authoritative same-session dataset freeze
+Status: 0
+
+Trials: 5
+Minimum seconds: 31.749168953
+Median seconds: 44.451019889
+Mean seconds: 91.660296114
+Maximum seconds: 188.200975222
+Range seconds: 156.451806269
+Sample stdev seconds: 73.460268705
+P90 seconds: 188.200975222
+
+Comparisons:
+- L.2 cold median: 164.270725926 s
+- L.3 warm/fresh median: 42.701828285 s
+- L.4 speedup vs cold: 3.696x
+- L.4 reduction vs cold: 72.94%
+- L.4 delta vs L.3: 1.749191604 s
+- L.4 delta vs L.3: 4.10%
+
+Certified conditions:
+- warm resident Small
+- binding-0001
+- Normal reasoning
+- fresh Task/context per trial
+- unmeasured prime creates session
+- measured second turn reuses exact same session
+- session_created=False on measured turn
+- session_reused=True on measured turn
+- no recovery/rotation
+- persist=False
+- active.yaml frozen
+- production hashes frozen
+- all five measurements retained
+
+CERTIFIED

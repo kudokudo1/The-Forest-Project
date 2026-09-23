@@ -1,0 +1,126 @@
+{
+  "certification": "A",
+  "frozen_sha256": {
+    "harness": "f2397758642dd7c51c2240608df4846dfc8ee80258abf11619e392fa34a3bed4",
+    "raw": "e592c4ff7fa339b18a977cd1da0412a74035caee6c8f16a403f1b51a0697f6f7"
+  },
+  "inference_run_by_analyzer": false,
+  "interpretation": {
+    "latency_degradation_claim_supported": false,
+    "latency_improvement_claim_supported": false,
+    "memory_leak_claim_supported": false,
+    "obvious_latency_degradation_observed": false,
+    "reason": "All eight measured real Small turns reused the same session and preserved Model Form, Reasoning, binding, and execution context without recovery or rotation. Late-turn median latency was lower than early-turn median latency, but the run contains only eight samples and substantial natural generation variance, so neither improvement nor degradation should be claimed.",
+    "semantic_drift_observed": false,
+    "session_identity_stable": true,
+    "sustained_session_health_supported": true,
+    "unexpected_recovery_observed": false,
+    "unexpected_rotation_observed": false
+  },
+  "memory": {
+    "after_samples_kib": [
+      4095364,
+      4385272,
+      4307888,
+      4365812,
+      4369896,
+      4209560,
+      4251740,
+      4328780
+    ],
+    "before_samples_kib": [
+      4280468,
+      4087912,
+      4373052,
+      4296224,
+      4355272,
+      4355392,
+      4197408,
+      4242708
+    ],
+    "first_before_kib": 4280468,
+    "last_after_kib": 4328780,
+    "last_after_minus_first_before_kib": 48312,
+    "mean_per_turn_delta_kib": 15734.5,
+    "median_per_turn_delta_kib": 34478.0,
+    "memory_leak_claim_supported": false,
+    "per_turn_delta_kib": [
+      -185104,
+      297360,
+      -65164,
+      69588,
+      14624,
+      -145832,
+      54332,
+      86072
+    ],
+    "reason": "MemAvailable is a system-wide noisy snapshot rather than process-attributed memory. Eight observations can describe the run but cannot establish a leak."
+  },
+  "persistent_production_state_modified": false,
+  "phase": "14.11L.10",
+  "runtime_mutation_by_analyzer": false,
+  "scenario": "sustained-same-session-health",
+  "session": {
+    "all_exact_responses": true,
+    "all_residency_checks": true,
+    "cleanup_success": true,
+    "measured_turn_count": 8,
+    "session_s": "api_1786590916_e86252fe",
+    "unexpected_recovery_count": 0,
+    "unexpected_rotation_count": 0,
+    "unique_measured_session_ids": [
+      "api_1786590916_e86252fe"
+    ]
+  },
+  "source_sha256": {
+    "hermes": "a09949eead5cb9772aca312c91630703c7ff8ce43df778730279445b25635084",
+    "l4_reuse_foundation": "ce343935d5c8078d3c9f802609d662a2650f9a4e269b1f209967f3aac7a5d9dd",
+    "live_providers": "40b49375dbe014b27b6fc5696bccf74274864e42953c473b42ffe10a3c552299",
+    "task_session": "d666cb1471b568bf43db4255f5e84e98c1ea502af467e1e2670e4a93dc364991"
+  },
+  "status": "PASS",
+  "timing": {
+    "all_turns": {
+      "count": 8,
+      "max_ns": 46379086747,
+      "mean_ns": 36719185602,
+      "mean_seconds": 36.719185602,
+      "median_ns": 37532116147.5,
+      "median_seconds": 37.5321161475,
+      "min_ns": 16773951563,
+      "stdev_ns": 9221386171.184765
+    },
+    "early_turns_1_to_4": {
+      "count": 4,
+      "max_ns": 45875474043,
+      "mean_ns": 39796360960.5,
+      "mean_seconds": 39.7963609605,
+      "median_ns": 39241080712.0,
+      "median_seconds": 39.241080712,
+      "min_ns": 34827808375,
+      "stdev_ns": 4584889039.510448
+    },
+    "first_to_last_ns": -3417929129,
+    "late_minus_early_median_ns": -3533579380.0,
+    "late_turns_5_to_8": {
+      "count": 4,
+      "max_ns": 46379086747,
+      "mean_ns": 33642010243.5,
+      "mean_seconds": 33.6420102435,
+      "median_ns": 35707501332.0,
+      "median_seconds": 35.707501332,
+      "min_ns": 16773951563,
+      "stdev_ns": 12334532181.606747
+    },
+    "raw_timings_ns": [
+      39875438474,
+      45875474043,
+      38606722950,
+      34827808375,
+      46379086747,
+      34957493319,
+      16773951563,
+      36457509345
+    ]
+  }
+}

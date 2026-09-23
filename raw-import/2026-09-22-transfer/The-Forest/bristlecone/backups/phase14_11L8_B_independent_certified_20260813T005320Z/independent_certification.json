@@ -1,0 +1,52 @@
+{
+  "a_summary_sha256": "7f51d85b38cb705cb495bfb56a142bc65d0f85d3f7905774ea7eab2e937ce3a5",
+  "certifier": "B-independent",
+  "core_raw_sha256": "2c9e70239070edac150646fe00f75593fea1baf7522ccbb182b32860ee47cb91",
+  "frozen_performance_metrics": {
+    "live_availability_median_us": 22.843,
+    "live_budget_median_us": 1.713,
+    "nonresident_requirement_median_us": 373.534,
+    "pure_governor_approve_median_us": 2.795,
+    "resident_requirement_median_us": 406.4555,
+    "whole_live_pipeline_median_us": 449.952
+  },
+  "independent_priority_outcomes": {
+    "background": "approve",
+    "interactive": "approve",
+    "standard": "approve"
+  },
+  "independent_residency_calculation": {
+    "calibrated_floor_mib": 6144,
+    "remaining_requirement_mib": 759,
+    "resident_size_bytes": 5646906816
+  },
+  "independent_semantic_outcomes": {
+    "approve": "approve",
+    "budget-deny-deferrable": "deny",
+    "budget-deny-nondeferrable": "deny",
+    "insufficient-availability-defer": "defer",
+    "insufficient-availability-deny": "deny",
+    "unknown-availability-defer": "defer",
+    "unknown-availability-deny": "deny",
+    "unknown-requirement-defer": "defer",
+    "unknown-requirement-deny": "deny"
+  },
+  "ollama_residency_changed": false,
+  "phase": "14.11L.8",
+  "production_state_modified": false,
+  "provider_order": [
+    "requirement",
+    "budget",
+    "availability",
+    "Governor"
+  ],
+  "real_inference_executed": false,
+  "residency_raw_sha256": "243c92316063a368712d690eb06b1fd636d571e881e812b572358e1682e8b166",
+  "result": "PASS",
+  "source_a_archive": "backups/phase14_11L8_A_governor_certified_20260813T005056Z",
+  "source_a_manifest_sha256": "aa2c724800b9774e272bf01a7e2227d169590feb2150bad27999a900040a0978",
+  "timing_sample_recomputation": {
+    "performed": false,
+    "reason": "Frozen L.8 raw artifacts retain aggregate timing statistics, not individual per-iteration timing samples."
+  }
+}

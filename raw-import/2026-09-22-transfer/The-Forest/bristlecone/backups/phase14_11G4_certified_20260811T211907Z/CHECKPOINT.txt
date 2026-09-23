@@ -1,0 +1,52 @@
+The Forest — Bristlecone Pine
+Phase 14.11G.4
+
+Status:
+CERTIFIED TASKSESSION AUTOMATIC ESCALATION INTEGRATION
+
+task_session.py:
+fa174d6da050fbb072f3b031dbea38d3bfd6ea3d080d3b17786adc6eaa61f9da
+
+resolution.py:
+6a2eac1af3c15231bc93850ae5176d4f64b331017377d3ecef5e50b4a6df162c
+
+automatic_routing.py:
+bce0361131c560e1ff8b0bfa5919dfdc291984b1e34965fac8201cac245114e2
+
+automatic_routing_evidence.py:
+f28df92e43f1d7b52edb58f35a597ae3f75df4595ef0c6ace333821bb1e9d4cb
+
+automatic_routing_policy.py:
+01dde179a3ad57306e5542580665bd5db20fc9e8c021324eb08c072e594f7b4c
+
+Certified integration:
+
+Reasoning freeze
+→ canonical Auto eligibility
+→ normalized AutomaticModelFormRoutingInput
+→ pure router exactly once when eligible
+→ legacy automatic_model_form bypass preserved
+→ recommendation type validation
+→ Task identity validation
+→ execution-context identity validation
+→ recommendation form/reasons
+→ resolver-owned precedence
+→ FrozenModelFormTurn
+→ ResourceRequest
+→ Governor
+→ runtime only after allowed
+
+Certified invariants:
+- higher-authority Model Form suppresses Auto routing
+- router does not own permission
+- Governor does not own semantic routing
+- recommendation cannot cross Task identity
+- recommendation cannot cross execution-context identity
+- ResourceRequest follows frozen Model Form
+- stale runtime recovery reuses frozen decisions
+- no real Big model was activated
+
+Supporting tests/recon:
+- Model Form automatic router regression: 22/22
+- Governor/router synthetic contract: 8/8
+- G.4C5 production ordering recon: PASS

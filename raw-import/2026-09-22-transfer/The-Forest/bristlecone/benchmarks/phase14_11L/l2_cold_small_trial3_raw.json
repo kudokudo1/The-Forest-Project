@@ -1,0 +1,83 @@
+{
+  "active_yaml_sha_after": "6b8fb9b44757917c1889a7368d43f393165080d248cdb3d9c5982aad53b270e5",
+  "active_yaml_sha_before": "6b8fb9b44757917c1889a7368d43f393165080d248cdb3d9c5982aad53b270e5",
+  "after": {
+    "cpu_count": 9,
+    "hermes": {
+      "ActiveState": "active",
+      "MainPID": "941",
+      "SubState": "running"
+    },
+    "llama_server": [
+      "63129 /usr/local/lib/ollama/llama-server --model /usr/share/ollama/.ollama/models/blobs/sha256-81fb60c7daa80fc1123380b98970b320ae233409f0f71a72ed7b9b0d62f40490 --port 45175 --host 127.0.0.1 --no-webui --offline -c 64000 -np 1 --log-verbosity 4 --no-log-prefix --no-log-timestamps --no-jinja --chat-template chatml --mmproj /usr/share/ollama/.ollama/models/blobs/sha256-81fb60c7daa80fc1123380b98970b320ae233409f0f71a72ed7b9b0d62f40490 --no-mmap --flash-attn auto -b 2048 -ub 2048 --context-shift --keep 4"
+    ],
+    "load_average": {
+      "15m": 4.376953125,
+      "1m": 8.84619140625,
+      "5m": 6.099609375
+    },
+    "mem_available_kib": 5483332,
+    "ollama_ps_raw": "NAME                         ID              SIZE      PROCESSOR    CONTEXT    UNTIL               \nbristlecone-qwen35:4b-64k    af72fe9ad018    5.6 GB    100% CPU     64000      14 minutes from now    \n",
+    "resident_models": [
+      "bristlecone-qwen35:4b-64k    af72fe9ad018    5.6 GB    100% CPU     64000      14 minutes from now"
+    ],
+    "runtime_sockets": [],
+    "utc": "2026-08-12T12:13:01.800940+00:00"
+  },
+  "before": {
+    "cpu_count": 9,
+    "hermes": {
+      "ActiveState": "active",
+      "MainPID": "941",
+      "SubState": "running"
+    },
+    "llama_server": [],
+    "load_average": {
+      "15m": 3.55810546875,
+      "1m": 1.42431640625,
+      "5m": 4.11328125
+    },
+    "mem_available_kib": 9652564,
+    "ollama_ps_raw": "NAME    ID    SIZE    PROCESSOR    CONTEXT    UNTIL \n",
+    "resident_models": [],
+    "runtime_sockets": [],
+    "utc": "2026-08-12T12:10:39.954900+00:00"
+  },
+  "binding_expected": "binding-0001",
+  "cleanup_performed": false,
+  "completed_utc": "2026-08-12T12:13:01.831828+00:00",
+  "duration_ms": 141777.837884,
+  "duration_ns": 141777837884,
+  "duration_s": 141.777837884,
+  "execution_context_id": "ctx-l2-cold-03",
+  "message": "Reply only with: L2-COLD-01",
+  "model_form": "small",
+  "persist": false,
+  "phase": "14.11L.2",
+  "reasoning_mode": "normal",
+  "result": {
+    "adapter": "hermes",
+    "binding_id": "binding-0001",
+    "binding_persisted": false,
+    "binding_persisted_before_turn": false,
+    "execution_context_id": "ctx-l2-cold-03",
+    "initial_requested_session_id": "api_1786536640_f9f8810e",
+    "initial_session_created": true,
+    "model_form": "small",
+    "model_form_source": "exact_turn",
+    "requested_session_id": "api_1786536640_f9f8810e",
+    "resolved_reasoning_mode": "normal",
+    "runtime_result_repr": "{'adapter': 'hermes', 'requested_session_id': 'api_1786536640_f9f8810e', 'session_id': 'api_1786536640_f9f8810e', 'session_rotated': False, 'message': 'L2-COLD-01', 'usage': {'input_tokens': 4945, 'output_tokens': 59, 'total_tokens': 5004, 'runtime': {'provider': 'custom', 'model': 'bristlecone-qwen35:4b-64k', 'route_source': 'global', 'requested': {'provider': '', 'model': ''}}}, 'runtime': {'provider': 'custom', 'model': 'bristlecone-qwen35:4b-64k', 'route_source': 'global', 'requested': {'provider': '', 'model': ''}}, 'response': {'object': 'hermes.session.chat.completion', 'session_id': 'api_1786536640_f9f8810e', 'message': {'role': 'assistant', 'content': 'L2-COLD-01'}, 'usage': {'input_tokens': 4945, 'output_tokens': 59, 'total_tokens': 5004, 'runtime': {'provider': 'custom', 'model': 'bristlecone-qwen35:4b-64k', 'route_source': 'global', 'requested': {'provider': '', 'model': ''}}}, 'runtime': {'provider': 'custom', 'model': 'bristlecone-qwen35:4b-64k', 'route_source': 'global', 'requested': {'provider': '', 'model': ''}}}}",
+    "runtime_result_type": "dict",
+    "session_created": true,
+    "session_id": "api_1786536640_f9f8810e",
+    "session_recovered": false,
+    "session_reused": false,
+    "session_rotated": false
+  },
+  "scenario": "cold-real-small",
+  "started_utc": "2026-08-12T12:10:39.990837+00:00",
+  "status": "success",
+  "task_id": "forest-task-20260812T121039Z-1643fd49",
+  "trial": 3
+}

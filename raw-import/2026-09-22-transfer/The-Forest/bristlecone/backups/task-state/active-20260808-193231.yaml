@@ -1,0 +1,25 @@
+schema_version: 1
+tree: bristlecone
+workshop: code-debug
+active_general: []
+active_ready:
+- debugging
+reasoning: light
+model_form: small
+runtime:
+  adapter: hermes
+  platform: api_server
+policy:
+  sticky_workshop: true
+  sticky_capabilities: true
+  minimum_useful_canopy: true
+last_applied:
+  hermes_toolsets:
+  - file
+  - terminal
+  hermes_skills:
+  - systematic-debugging
+  timestamp: '2026-08-08T19:19:03'
+task_session:
+  task_sticky_skills:
+  - debugging

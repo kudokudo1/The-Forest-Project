@@ -1,0 +1,78 @@
+{
+  "activation_enter_ns": 677645826,
+  "activation_enter_s": 0.677645826,
+  "activation_exit_ns": 33885394,
+  "activation_exit_s": 0.033885394,
+  "active_yaml_sha": "6b8fb9b44757917c1889a7368d43f393165080d248cdb3d9c5982aad53b270e5",
+  "base_toolsets": [
+    "file",
+    "terminal"
+  ],
+  "benchmark_neutral_active_ready": [],
+  "benchmark_neutral_task_sticky_skills": [],
+  "binding_id": "binding-0001",
+  "canonical_skills": [],
+  "cleanup_performed": false,
+  "execution_context_id": "ctx-l7-b-04",
+  "expected_hermes_reasoning_effort": "medium",
+  "message": "Reply only with: L2-COLD-01",
+  "model_form": "small",
+  "persist": false,
+  "persistent_source_active_ready": [
+    "debugging"
+  ],
+  "persistent_source_task_sticky_skills": [
+    "debugging"
+  ],
+  "phase": "14.11L.7",
+  "ready": [
+    "code-execution"
+  ],
+  "requested_reasoning_mode": "normal",
+  "resident_after": [
+    "bristlecone-qwen35:4b-64k    af72fe9ad018    5.6 GB    100% CPU     64000      14 minutes from now"
+  ],
+  "resident_before": [
+    "bristlecone-qwen35:4b-64k    af72fe9ad018    5.6 GB    100% CPU     64000      13 minutes from now"
+  ],
+  "result_reasoning_mode": "normal",
+  "runtime_skills": [],
+  "scenario": "warm-small-controlled-tool-skill-surface",
+  "session_created": true,
+  "session_id": "api_1786574133_0f364142",
+  "session_recovered": false,
+  "session_reused": false,
+  "skill_bindings": [],
+  "skill_count": 0,
+  "skill_overlay_bytes": 0,
+  "skill_overlay_cache_hit": false,
+  "skill_overlay_hash": null,
+  "status": "success",
+  "surface": "b",
+  "surface_cycle_ns": 196503307484,
+  "surface_cycle_s": 196.503307484,
+  "surface_label": "tool",
+  "task_id": "forest-task-20260812T223532Z-96cb4b11",
+  "temporary_toolsets": [
+    "code_execution"
+  ],
+  "toolset_count_during": 3,
+  "toolsets_after_restore": [
+    "file",
+    "terminal"
+  ],
+  "toolsets_after_turn_before_exit": [
+    "code_execution",
+    "file",
+    "terminal"
+  ],
+  "toolsets_during": [
+    "code_execution",
+    "file",
+    "terminal"
+  ],
+  "trial": 4,
+  "turn_duration_ns": 195791776264,
+  "turn_duration_s": 195.791776264,
+  "workshop": "code-debug"
+}

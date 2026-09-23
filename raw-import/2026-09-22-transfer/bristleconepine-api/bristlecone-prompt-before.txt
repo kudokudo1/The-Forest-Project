@@ -1,0 +1,52 @@
+Prompt-size breakdown (platform=cli, model=bristlecone-qwen35:4b-64k)
+
+  System prompt total :   26,238 B  (25.6 KB, 25,888 chars)
+
+  Major blocks:
+    skills index       :    3,680 B  (3.6 KB)
+    memory             :        0 B  (0.0 KB)
+    user profile       :      582 B  (0.6 KB)
+
+  Prompt tiers:
+    stable (identity/guidance/skills)   :   16,528 B  (16.1 KB)
+    context (AGENTS.md/cwd files)       :    3,784 B  (3.7 KB)
+    volatile (memory/profile/timestamp) :    5,922 B  (5.8 KB)
+
+  Tool schemas         :   43,090 B  (42.1 KB, 16 tools)
+
+  Toolsets by size (tool-schema JSON, largest first):
+    toolset                tools      schema
+    computer_use               1     9,699 B  (9.5 KB)
+    session_search             1     6,457 B  (6.3 KB)
+    file                       4     6,328 B  (6.2 KB)
+    skills                     3     5,638 B  (5.5 KB)
+    terminal                   2     4,819 B  (4.7 KB)
+    memory                     1     2,833 B  (2.8 KB)
+    clarify                    1     2,414 B  (2.4 KB)
+    code_execution             1     2,089 B  (2.0 KB)
+    tts                        1     1,855 B  (1.8 KB)
+    vision                     1       926 B  (0.9 KB)
+
+  Skills by size (SKILL.md on-disk = read cost; index cost = attributed always-on bytes, largest first):
+    skill                          SKILL.md  index cost
+    claude-code                    34,283 B        70 B
+    computer-use                   16,658 B        82 B
+    simplify-code                  14,702 B        69 B
+    systematic-debugging           14,065 B        88 B
+    github-repo-management         13,738 B        80 B
+    github-code-review             13,620 B        76 B
+    python-debugpy                 13,351 B        68 B
+    weights-and-biases             12,676 B        86 B
+    evaluating-llms-harness        12,204 B        83 B
+    hermes-agent                   11,962 B        80 B
+    hermes-agent-skill-authoring   11,357 B        93 B
+    grounded-citations             11,241 B        84 B
+    node-inspect-debugger          10,898 B        88 B
+    test-driven-development        10,306 B        82 B
+    arxiv                          10,085 B        69 B
+    github-pr-workflow             10,040 B        79 B
+    serving-llms-vllm               9,335 B        85 B
+    github-issues                   9,320 B        80 B
+    llama-cpp                       8,880 B        73 B
+    spike                           8,730 B        68 B
+    … and 10 more (use --json for the full list)

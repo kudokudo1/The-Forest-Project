@@ -1,0 +1,9 @@
+./RESULT.txt: OK
+./active-yaml-sha.txt: OK
+./archive-integrity.txt: OK
+./automatic-retry-isolation.txt: OK
+./evidence-assertions.txt: OK
+./production-integrity.txt: OK
+./real-recovery-evidence.txt: OK
+./retry-task-session-integration.txt: OK
+./test-integrity.txt: OK

@@ -1,0 +1,20 @@
+The Forest — Bristlecone Pine
+Terminal B Independent Certification Attempt
+
+Phase: 14.11K.1 — Real Big Boundary
+RESULT: FAIL / NOT CERTIFIED
+
+Error: AssertionError: binding-0001 adapter is Hermes
+
+Production modifications by Terminal B: NONE
+Big execution attempted: NO
+Big binding created: NO
+Big model loaded: NO
+llama-server started: NO
+
+Traceback:
+Traceback (most recent call last):
+  File "<stdin>", line 534, in <module>
+  File "<stdin>", line 406, in certify
+  File "<stdin>", line 55, in check
+AssertionError: binding-0001 adapter is Hermes

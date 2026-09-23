@@ -1,0 +1,36 @@
+{
+  "active_yaml_sha": "6b8fb9b44757917c1889a7368d43f393165080d248cdb3d9c5982aad53b270e5",
+  "binding_expected": "binding-0001",
+  "binding_id": "binding-0001",
+  "cleanup_performed": false,
+  "completed_utc": "2026-08-12T13:16:10.572023+00:00",
+  "duration_ms": 44451.019889,
+  "duration_ns": 44451019889,
+  "duration_s": 44.451019889,
+  "execution_context_id": "ctx-l4-reuse-02",
+  "initial_session_created": false,
+  "measured_message": "Reply only with: L2-COLD-01",
+  "measured_session_id": "api_1786540496_5da2ff00",
+  "model_form": "small",
+  "persist": false,
+  "phase": "14.11L.4",
+  "prime_message": "Reply only with: L4-PRIME",
+  "prime_session_id": "api_1786540496_5da2ff00",
+  "reasoning_mode": "normal",
+  "resident_after": [
+    "bristlecone-qwen35:4b-64k    af72fe9ad018    5.6 GB    100% CPU     64000      14 minutes from now    "
+  ],
+  "resident_before": [
+    "bristlecone-qwen35:4b-64k    af72fe9ad018    5.6 GB    100% CPU     64000      10 minutes from now    "
+  ],
+  "resolved_reasoning_mode": "normal",
+  "scenario": "warm-small-same-session-reuse",
+  "session_created": false,
+  "session_recovered": false,
+  "session_reused": true,
+  "session_rotated": false,
+  "started_utc": "2026-08-12T13:15:26.104050+00:00",
+  "status": "success",
+  "task_id": "forest-task-20260812T131456Z-e9b3f89c",
+  "trial": 2
+}

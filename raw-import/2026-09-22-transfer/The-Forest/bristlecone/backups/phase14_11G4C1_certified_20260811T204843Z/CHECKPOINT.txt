@@ -1,0 +1,17 @@
+The Forest — Bristlecone Pine
+Phase 14.11G.4C1
+
+Status:
+CERTIFIED AUTOMATIC REASONS PASSTHROUGH
+
+task_session.py SHA256:
+267c4394ead63647732ec47658a2da3c2bad8c91ac283a92c3bea287d5100abc
+
+G.4B resolver SHA256:
+6a2eac1af3c15231bc93850ae5176d4f64b331017377d3ecef5e50b4a6df162c
+
+Certified behavior:
+- prepare_model_form_turn accepts automatic_reasons=()
+- automatic_reasons pass directly to resolve_model_form_turn
+- no automatic router execution is installed yet
+- resolver remains unchanged

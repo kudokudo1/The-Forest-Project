@@ -1,0 +1,60 @@
+{
+  "aggregate_percent_change": -8.58782848342994,
+  "concurrent": {
+    "max_s": 216.060928237,
+    "mean_s": 185.1951313946,
+    "median_s": 197.993528336,
+    "min_s": 139.306043348,
+    "n": 5,
+    "p90_s": 216.060928237,
+    "range_s": 76.75488488900001,
+    "stdev_s": 33.35545427196923
+  },
+  "concurrent_faster_pairs": 1,
+  "concurrent_slower_pairs": 4,
+  "concurrent_total_s": 925.975656973,
+  "interpretation": "Four of five matched pairs had higher concurrent wall time. Pair 1 is an extreme counterexample that reverses aggregate mean/total direction. Do not claim universal concurrency speedup or slowdown. Concurrent client-call overlap does not alone establish simultaneous internal llama-server inference.",
+  "matched_difference": {
+    "max_s": 82.966946974,
+    "mean_s": -17.398383584999994,
+    "median_s": 32.78704497999999,
+    "min_s": -285.881185348,
+    "n": 5,
+    "p90_s": 82.966946974,
+    "range_s": 368.84813232199997,
+    "stdev_s": 152.0987241175193
+  },
+  "matched_percent_change": {
+    "max_s": 64.76981536794992,
+    "mean_s": 15.97442603530693,
+    "median_s": 25.46248495398271,
+    "min_s": -67.23654099977662,
+    "n": 5,
+    "p90_s": 64.76981536794992,
+    "range_s": 132.00635636772654,
+    "stdev_s": 50.89201674449205
+  },
+  "matched_ratio": {
+    "max_s": 1.6476981536794992,
+    "mean_s": 1.1597442603530694,
+    "median_s": 1.2546248495398271,
+    "min_s": 0.3276345900022339,
+    "n": 5,
+    "p90_s": 1.6476981536794992,
+    "range_s": 1.3200635636772653,
+    "stdev_s": 0.5089201674449205
+  },
+  "median_distribution_delta_s": 62.866845598,
+  "median_distribution_percent_change": 46.52437573702143,
+  "sequential": {
+    "max_s": 425.187228696,
+    "mean_s": 202.5935149796,
+    "median_s": 135.126682738,
+    "min_s": 128.095080251,
+    "n": 5,
+    "p90_s": 425.187228696,
+    "range_s": 297.09214844499996,
+    "stdev_s": 127.61905704355904
+  },
+  "sequential_total_s": 1012.967574898
+}

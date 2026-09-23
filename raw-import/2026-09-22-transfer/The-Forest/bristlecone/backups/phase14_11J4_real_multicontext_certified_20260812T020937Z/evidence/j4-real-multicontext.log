@@ -1,0 +1,33 @@
+Task: forest-task-20260812T020528Z-d56df134
+Context R1: ctx-j4-r1
+Context R2: ctx-j4-r2
+
+=== CONTEXT R1 TURN ===
+r1 session: api_1786500329_47c45902
+r1 session_created: True
+r1 session_reused: False
+r1 initial_session_created: True
+
+=== CONTEXT R2 TURN ===
+r2 session: api_1786500419_78e30923
+r2 session_created: True
+r2 session_reused: False
+r2 initial_session_created: True
+
+=== ISOLATION CHECK ===
+r1 final session: api_1786500329_47c45902
+r2 final session: api_1786500419_78e30923
+sessions distinct: True
+runtime contexts: ['ctx-j4-r1', 'ctx-j4-r2']
+
+PASS: same Forest Task retained
+PASS: R1 retained ctx-j4-r1
+PASS: R2 retained ctx-j4-r2
+PASS: both retained binding-0001
+PASS: both retained Small
+PASS: R1 retained its own Hermes session
+PASS: R2 retained its own Hermes session
+PASS: R1 and R2 sessions are distinct
+PASS: exactly two context slots exist
+
+14.11J.4A evidence status: 0

@@ -1,0 +1,33 @@
+Phase: 14.11G.1D
+Component: Isolated Automatic Escalation Router
+
+Contract validation:
+PASS 14
+FAIL 0
+
+Router behavior matrix:
+PASS 14
+FAIL 0
+
+Integration performed:
+NO
+
+runtime/task_session.py modified:
+NO
+
+resources/* modified:
+NO
+
+Certified properties:
+- deterministic Small/Big recommendation
+- routine work defaults Small
+- semantic escalation can recommend Big
+- known Small failure can recommend Big
+- broad canonical capability demand can recommend Big
+- Reasoning mode is independent of Model Form
+- current Model Form is not treated as a pin
+- execution-context identity is preserved
+- reasons are stable
+- malformed router input fails closed
+- no resource/Governor dependency
+- no runtime-adapter dependency

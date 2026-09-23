@@ -1,0 +1,15 @@
+STAGE 1: construct manager
+STAGE 2: load Forest state
+existing task status: inactive
+existing task id: None
+STAGE 3: start temporary in-memory Task
+temporary task id: forest-task-20260812T011952Z-0d2550e4
+temporary task status: active
+STAGE 4: calling REAL send_runtime_turn()
+STAGE 4 RESULT: RETURNED
+result type: dict
+result keys: ['adapter', 'binding_id', 'binding_persisted', 'binding_persisted_before_turn', 'execution_context_id', 'initial_requested_session_id', 'initial_session_created', 'message', 'model_form', 'model_form_reasons', 'model_form_source', 'previous_session_id', 'recovery_binding_persisted', 'recovery_from_session_id', 'recovery_runtime_result', 'recovery_session_id', 'requested_session_id', 'resolved_reasoning_mode', 'runtime_result', 'session_created', 'session_id', 'session_recovered', 'session_reused', 'session_rotated', 'state', 'task_session']
+returned task id: forest-task-20260812T011952Z-0d2550e4
+runtime contexts: ['ctx-j1']
+ctx-j1/binding-0001: {'adapter': 'hermes', 'session_id': 'api_1786497593_f96859fc', 'previous_session_id': None, 'updated_at': '2026-08-12T01:24:07+00:00'}
+14.11J.1 probe status: 0

@@ -1,0 +1,114 @@
+=== bristlecone/tests/test_colony_h5_integrated_isolation.py ===
+PASS 01: one Tree / three execution contexts
+PASS 02: lineage and operational role remain independent
+PASS 03: R1 Model Form change leaves O unchanged
+PASS 04: R1 Model Form change leaves R2 unchanged
+PASS 05: R1 Reasoning lease 5 -> 4
+PASS 06: Ortet Reasoning lease remains 2
+PASS 07: R2 Reasoning lease remains 3
+PASS 08: Ramets do not create legacy global Reasoning
+PASS 09: R1 runtime session is context-local
+PASS 10: R2 receives a separate runtime session
+PASS 11: same binding does not imply same session
+PASS 12: R1 temporary capabilities do not leak
+PASS 13: R1 task-sticky Skills do not leak
+PASS 14: Workshop plan derives from supplied context state
+PASS 15: nested plan does not load global Task state
+
+15 PASS / 0 FAIL
+14.11H.5F status: 0
+status: 0
+
+=== bristlecone/tests/test_colony_h6_identity_resource_residency.py ===
+PASS 01: one Tree contains Ortet + two Ramets
+PASS 02: ResourceRequest targets exact execution context
+PASS 03: shared Task/model form does not erase member identity
+PASS 04: Resource target joins same context to session identity
+PASS 05: same binding still yields three session identities
+PASS 06: one shared residency supports Ortet
+PASS 07: same residency supports Ramet R1
+PASS 08: same residency supports Ramet R2
+PASS 09: residency rejects wrong binding
+PASS 10: residency does not belong to one execution context
+PASS 11: residency contains no Colony-member ownership
+PASS 12: session identity owns context + binding only
+PASS 13: resource request retains exact context target
+
+13 PASS / 0 FAIL
+14.11H.6B status: 0
+status: 0
+
+=== bristlecone/tests/test_colony_h6_lifecycle_resource_composition.py ===
+PASS 01: all six certified H.4 lifecycle cases still pass
+PASS 02: composition uses canonical session-store primitives
+PASS 03: ResourceRequest explicitly targets ctx-A
+PASS 04: A and B have separate same-binding sessions
+PASS 05: ctx-A lifecycle change modifies A
+PASS 06: ctx-A lifecycle change leaves B untouched
+PASS 07: Resource target joins the same A session identity
+PASS 08: A and B remain distinct despite shared binding
+PASS 09: shared residency still supports changed A
+PASS 10: shared residency still supports untouched B
+PASS 11: lifecycle composition does not weaken binding ownership
+PASS 12: changing resource target creates a distinct request
+
+12 PASS / 0 FAIL
+14.11H.6C status: 0
+----------------------------------------------------------------------
+Ran 6 tests in 0.001s
+
+OK
+status: 0
+
+=== bristlecone/tests/test_fake_adapter_i2_session_commit.py ===
+PASS 01: returned Task remains task-g5d
+PASS 02: runtime binding stored under ctx-g5d
+PASS 03: runtime binding stored under binding-0001
+PASS 04: stored adapter is hermes
+PASS 05: created session equals sent session
+PASS 06: sent session equals returned-state session
+PASS 07: binding exists before send_turn executes
+PASS 08: Governor context agrees with stored session context
+
+8 PASS / 0 FAIL
+14.11I.2 status: 0
+status: 0
+
+=== bristlecone/tests/test_fake_adapter_i3_session_reuse.py ===
+PASS 01: turn 1 created g5d-session-1
+PASS 02: turn 2 reused g5d-session-1
+PASS 03: only one session creation occurred
+PASS 04: both turns reached send_turn
+PASS 05: both sends used the same session
+PASS 06: Governor ran once per logical turn
+PASS 07: Task/context/Small identity stayed stable
+PASS 08: no neighboring runtime-session slot appeared
+
+8 PASS / 0 FAIL
+14.11I.3 status: 0
+status: 0
+
+=== bristlecone/tests/test_model_form_governor_task_session_integration.py ===
+..........
+----------------------------------------------------------------------
+Ran 10 tests in 0.012s
+
+OK
+status: 0
+
+=== bristlecone/tests/test_model_form_automatic_routing_retry_isolation.py ===
+...............
+----------------------------------------------------------------------
+Ran 15 tests in 0.001s
+
+OK
+status: 0
+
+=== bristlecone/tests/test_model_form_retry_task_session_integration.py ===
+........
+----------------------------------------------------------------------
+Ran 8 tests in 0.015s
+
+OK
+status: 0
+

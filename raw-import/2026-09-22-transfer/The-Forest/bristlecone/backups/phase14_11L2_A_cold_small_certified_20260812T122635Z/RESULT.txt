@@ -1,0 +1,28 @@
+Phase: 14.11L.2
+Role: Terminal A authoritative cold-Small dataset freeze
+Status: 0
+
+Trials: 3
+Minimum seconds: 141.777837884
+Median seconds: 164.270725926
+Mean seconds: 178.493042080
+Maximum seconds: 229.430562429
+Range seconds: 87.652724545
+Sample stdev seconds: 45.524232422
+P90 seconds: 229.430562429
+
+Certified conditions:
+- Real Small runtime
+- binding-0001
+- Normal reasoning
+- identical fixed prompt
+- persist=False
+- fresh Task/context per trial
+- fresh runtime session per trial
+- no reuse/recovery/rotation
+- no resident model before each trial
+- Small resident after each trial
+- active.yaml frozen
+- production hashes frozen
+
+CERTIFIED

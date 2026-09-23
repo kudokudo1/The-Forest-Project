@@ -1,0 +1,32 @@
+Phase: 14.11J.6
+Role: A-side Integrated Real Small certification
+Status: 1
+
+Upstream independently certified evidence:
+- J.2 real Forest-side session commitment
+- J.3 real same-session reuse
+- J.4 real multi-context session isolation
+- J.4 shared Small model residency
+- J.5 real Hermes stale-session A -> B recovery
+- J.5 deterministic one-retry failure boundary
+
+Integrated invariants:
+- Real Small resolves to binding-0001.
+- Runtime adapter remains Hermes.
+- Runtime session identity is execution-context + binding scoped.
+- Same context reuses its real runtime session.
+- Separate contexts receive separate runtime sessions.
+- Separate contexts may share resident Small model weights.
+- Stale real session A is replaced by B once.
+- Recovery retains frozen context, binding, Small, and Reasoning semantics.
+- A second failure escapes without session C or rerouting.
+- persist=False does not create durable recovery state.
+- active.yaml remains frozen.
+- Six production files remain frozen.
+
+Failures:
+- Upstream integrity failed: phase14_11J2_B_independent_certified_20260812T015719Z
+- Upstream integrity failed: phase14_11J3_B_independent_certified_20260812T020403Z
+- Upstream integrity failed: phase14_11J4_B_independent_certified_20260812T021158Z
+
+NOT CERTIFIED

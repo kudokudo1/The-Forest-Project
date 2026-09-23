@@ -1,0 +1,743 @@
+[
+  {
+    "title": "Untitled",
+    "path": "Untitled.md",
+    "project": null,
+    "tree": null,
+    "status": null,
+    "tags": [],
+    "created": null,
+    "updated": null
+  },
+  {
+    "title": "Untitled 2",
+    "path": "Untitled 2.md",
+    "project": null,
+    "tree": null,
+    "status": null,
+    "tags": [],
+    "created": null,
+    "updated": null
+  },
+  {
+    "title": "Language List",
+    "path": "Language List.md",
+    "project": null,
+    "tree": null,
+    "status": null,
+    "tags": [],
+    "created": null,
+    "updated": null
+  },
+  {
+    "title": "Sercurity",
+    "path": "Sercurity.md",
+    "project": null,
+    "tree": null,
+    "status": null,
+    "tags": [],
+    "created": null,
+    "updated": null
+  },
+  {
+    "title": "Untitled 1",
+    "path": "Untitled 1.md",
+    "project": null,
+    "tree": null,
+    "status": null,
+    "tags": [],
+    "created": null,
+    "updated": null
+  },
+  {
+    "title": "Qubes OS",
+    "path": "The-Forest-Project-zeta/System/Qubes OS/Qubes OS.md",
+    "project": "The Forest",
+    "tree": null,
+    "status": "active",
+    "tags": [
+      "the-forest"
+    ],
+    "created": "2026-08-08",
+    "updated": "2026-08-08"
+  },
+  {
+    "title": "Qubes_PC_System_Technical_Context",
+    "path": "The-Forest-Project-zeta/System/Qubes OS/Qubes_PC_System_Technical_Context.md",
+    "project": null,
+    "tree": null,
+    "status": "active-reference",
+    "tags": [
+      "qubes",
+      "pc",
+      "hardware",
+      "cherry-ai",
+      "maple",
+      "hermes",
+      "ollama",
+      "bristlecone",
+      "nas",
+      "networking"
+    ],
+    "created": null,
+    "updated": "2026-08-07"
+  },
+  {
+    "title": "QUBES-PC-SYSTEM-AND-AI-RUNTIME-SNAPSHOT",
+    "path": "The-Forest-Project-zeta/System/Qubes OS/QUBES-PC-SYSTEM-AND-AI-RUNTIME-SNAPSHOT.md",
+    "project": "The Forest",
+    "tree": null,
+    "status": "active",
+    "tags": [
+      "the-forest"
+    ],
+    "created": "2026-08-08",
+    "updated": "2026-08-08"
+  },
+  {
+    "title": "bristlecone_forest_complete_continuity_archive_2026-08-08",
+    "path": "The-Forest-Project-zeta/System/Architechture/bristlecone_forest_complete_continuity_archive_2026-08-08.md",
+    "project": null,
+    "tree": null,
+    "status": null,
+    "tags": [],
+    "created": null,
+    "updated": null
+  },
+  {
+    "title": "forest_tree_clone_colony_architecture_checkpoint_2026-08-09",
+    "path": "The-Forest-Project-zeta/System/Architechture/forest_tree_clone_colony_architecture_checkpoint_2026-08-09.md",
+    "project": null,
+    "tree": null,
+    "status": null,
+    "tags": [],
+    "created": null,
+    "updated": null
+  },
+  {
+    "title": "bristlecone_task_sessions_and_session_sticky_skills_update",
+    "path": "The-Forest-Project-zeta/System/Architechture/bristlecone_task_sessions_and_session_sticky_skills_update.md",
+    "project": "The Forest",
+    "tree": "Bristlecone Pine",
+    "status": "active",
+    "tags": [
+      "the-forest",
+      "bristlecone-pine",
+      "bristlecone",
+      "AI",
+      "Trees"
+    ],
+    "created": [],
+    "updated": []
+  },
+  {
+    "title": "forest_workshop_skill_finder_and_operational_learning_architecture",
+    "path": "The-Forest-Project-zeta/System/Architechture/forest_workshop_skill_finder_and_operational_learning_architecture.md",
+    "project": "The Forest",
+    "tree": "All",
+    "status": "active-reference",
+    "tags": [
+      "the-forest",
+      "architecture",
+      "Trees",
+      "software",
+      "Optimization",
+      "routing",
+      "Tool-management",
+      "skills-management"
+    ],
+    "created": "2026-08-08",
+    "updated": []
+  },
+  {
+    "title": "forest_tree_clone_colony_architecture_checkpoint_2026-08-09 2",
+    "path": "The-Forest-Project-zeta/System/Architechture/forest_tree_clone_colony_architecture_checkpoint_2026-08-09 2.md",
+    "project": null,
+    "tree": null,
+    "status": null,
+    "tags": [],
+    "created": null,
+    "updated": null
+  },
+  {
+    "title": "bristlecone_phase14_3_14_4_hot_path_audit",
+    "path": "The-Forest-Project-zeta/System/Architechture/bristlecone_phase14_3_14_4_hot_path_audit.md",
+    "project": null,
+    "tree": null,
+    "status": null,
+    "tags": [],
+    "created": null,
+    "updated": null
+  },
+  {
+    "title": "pruning_policy",
+    "path": "The-Forest-Project-zeta/System/Architechture/pruning_policy.md",
+    "project": null,
+    "tree": null,
+    "status": null,
+    "tags": [],
+    "created": null,
+    "updated": null
+  },
+  {
+    "title": "Forest_core_design_doctrine_seasons_spirit_progressive_depth_2026-08-09",
+    "path": "The-Forest-Project-zeta/System/Architechture/Forest_core_design_doctrine_seasons_spirit_progressive_depth_2026-08-09.md",
+    "project": null,
+    "tree": null,
+    "status": null,
+    "tags": [],
+    "created": null,
+    "updated": null
+  },
+  {
+    "title": "bristlecone_workshop_runtime_continuity_and_infrastructure_plan_2026-08-08",
+    "path": "The-Forest-Project-zeta/System/Architechture/bristlecone_workshop_runtime_continuity_and_infrastructure_plan_2026-08-08.md",
+    "project": "The Forest",
+    "tree": "Bristlecone Pine",
+    "status": "active",
+    "tags": [
+      "the-forest",
+      "bristlecone-pine",
+      "bristlecone",
+      "AI",
+      "Trees"
+    ],
+    "created": [],
+    "updated": []
+  },
+  {
+    "title": "forest_product_doctrine_learning_ecosystem_and_colony_checkpoint_v2_2026-08-09 1",
+    "path": "The-Forest-Project-zeta/System/Architechture/forest_product_doctrine_learning_ecosystem_and_colony_checkpoint_v2_2026-08-09 1.md",
+    "project": null,
+    "tree": null,
+    "status": null,
+    "tags": [],
+    "created": null,
+    "updated": null
+  },
+  {
+    "title": "forest_phase14_7_colony_hot_context_checkpoint_2026-08-09",
+    "path": "The-Forest-Project-zeta/System/Architechture/forest_phase14_7_colony_hot_context_checkpoint_2026-08-09.md",
+    "project": null,
+    "tree": null,
+    "status": null,
+    "tags": [],
+    "created": null,
+    "updated": null
+  },
+  {
+    "title": "Optimization Techniques",
+    "path": "The-Forest-Project-zeta/System/Architechture/Optimization Techniques.md",
+    "project": null,
+    "tree": null,
+    "status": null,
+    "tags": [],
+    "created": null,
+    "updated": null
+  },
+  {
+    "title": "forest_tree_clone_colony_architecture_checkpoint_2026-08-09 1",
+    "path": "The-Forest-Project-zeta/System/Architechture/forest_tree_clone_colony_architecture_checkpoint_2026-08-09 1.md",
+    "project": null,
+    "tree": null,
+    "status": null,
+    "tags": [],
+    "created": null,
+    "updated": null
+  },
+  {
+    "title": "forest_user_context_routing_and_learning_checkpoint_2026-08-09",
+    "path": "The-Forest-Project-zeta/System/Architechture/forest_user_context_routing_and_learning_checkpoint_2026-08-09.md",
+    "project": null,
+    "tree": null,
+    "status": null,
+    "tags": [],
+    "created": null,
+    "updated": null
+  },
+  {
+    "title": "forest_phase14_10_revised_reasoning_control_plan_2026-08-10",
+    "path": "The-Forest-Project-zeta/System/Architechture/forest_phase14_10_revised_reasoning_control_plan_2026-08-10.md",
+    "project": null,
+    "tree": null,
+    "status": null,
+    "tags": [],
+    "created": null,
+    "updated": null
+  },
+  {
+    "title": "Bristlecone_forest_complete_continuity_archive_2026-08-09",
+    "path": "The-Forest-Project-zeta/System/Architechture/Bristlecone_forest_complete_continuity_archive_2026-08-09.md",
+    "project": "The Forest",
+    "tree": [],
+    "status": "active",
+    "tags": [
+      "the-forest"
+    ],
+    "created": "2026-08-09",
+    "updated": []
+  },
+  {
+    "title": "bristlecone_steps_since_last_archive_2026-08-08",
+    "path": "The-Forest-Project-zeta/System/Architechture/bristlecone_steps_since_last_archive_2026-08-08.md",
+    "project": null,
+    "tree": null,
+    "status": null,
+    "tags": [],
+    "created": null,
+    "updated": null
+  },
+  {
+    "title": "00-combined-original-prompts-and-suggestions",
+    "path": "The-Forest-Project-zeta/System/Architechture/00-combined-original-prompts-and-suggestions.md",
+    "project": "The Forest",
+    "tree": null,
+    "status": "active",
+    "tags": [
+      "the-forest"
+    ],
+    "created": "2026-08-08",
+    "updated": "2026-08-08"
+  },
+  {
+    "title": "bristlecone_capability_registry_and_individual_tool_activation",
+    "path": "The-Forest-Project-zeta/System/Architechture/bristlecone_capability_registry_and_individual_tool_activation.md",
+    "project": "The Forest",
+    "tree": "All",
+    "status": "active",
+    "tags": [
+      "the-forest",
+      "bristlecone-pine",
+      "bristlecone",
+      "AI",
+      "Trees",
+      "architecture",
+      "Optimization"
+    ],
+    "created": "2026-08-08",
+    "updated": []
+  },
+  {
+    "title": "bristlecone_skill_session_implementation_decision",
+    "path": "The-Forest-Project-zeta/System/Architechture/bristlecone_skill_session_implementation_decision.md",
+    "project": null,
+    "tree": null,
+    "status": null,
+    "tags": [],
+    "created": null,
+    "updated": null
+  },
+  {
+    "title": "bristlecone_phase14_1_performance_baseline",
+    "path": "The-Forest-Project-zeta/System/Architechture/bristlecone_phase14_1_performance_baseline.md",
+    "project": null,
+    "tree": null,
+    "status": null,
+    "tags": [],
+    "created": null,
+    "updated": null
+  },
+  {
+    "title": "bristlecone_phase14_2_latency_baseline",
+    "path": "The-Forest-Project-zeta/System/Architechture/bristlecone_phase14_2_latency_baseline.md",
+    "project": null,
+    "tree": null,
+    "status": null,
+    "tags": [],
+    "created": null,
+    "updated": null
+  },
+  {
+    "title": "bristlecone_layered_hot_context_and_task_session_cache_update",
+    "path": "The-Forest-Project-zeta/System/Architechture/bristlecone_layered_hot_context_and_task_session_cache_update.md",
+    "project": null,
+    "tree": null,
+    "status": null,
+    "tags": [],
+    "created": null,
+    "updated": null
+  },
+  {
+    "title": "forest_product_doctrine_learning_ecosystem_and_colony_checkpoint_v2_2026-08-09",
+    "path": "The-Forest-Project-zeta/System/Architechture/forest_product_doctrine_learning_ecosystem_and_colony_checkpoint_v2_2026-08-09.md",
+    "project": null,
+    "tree": null,
+    "status": null,
+    "tags": [],
+    "created": null,
+    "updated": null
+  },
+  {
+    "title": "forest_minimum_useful_canopy_and_tree_workshops",
+    "path": "The-Forest-Project-zeta/System/Architechture/forest_minimum_useful_canopy_and_tree_workshops.md",
+    "project": "The Forest",
+    "tree": "All",
+    "status": "active",
+    "tags": [
+      "the-forest",
+      "architecture",
+      "Optimization",
+      "AI",
+      "Trees"
+    ],
+    "created": "2026-08-08",
+    "updated": []
+  },
+  {
+    "title": "forest_portable_tree_runtime_and_high_speed_workshop_architecture",
+    "path": "The-Forest-Project-zeta/System/Architechture/forest_portable_tree_runtime_and_high_speed_workshop_architecture.md",
+    "project": "The Forest",
+    "tree": "All",
+    "status": "active-reference",
+    "tags": [
+      "the-forest",
+      "architecture",
+      "AI",
+      "Trees",
+      "Optimization",
+      "Tool-management",
+      "skills-management"
+    ],
+    "created": [],
+    "updated": []
+  },
+  {
+    "title": "project_forest_bristlecone_chat_transfer_2026-08-09",
+    "path": "The-Forest-Project-zeta/System/AI/project_forest_bristlecone_chat_transfer_2026-08-09.md",
+    "project": null,
+    "tree": null,
+    "status": null,
+    "tags": [],
+    "created": null,
+    "updated": null
+  },
+  {
+    "title": "04-mobile-background-agents-and-maple",
+    "path": "The-Forest-Project-zeta/System/AI/04-mobile-background-agents-and-maple.md",
+    "project": "The Forest",
+    "tree": null,
+    "status": "active",
+    "tags": [
+      "the-forest"
+    ],
+    "created": "2026-08-08",
+    "updated": "2026-08-08"
+  },
+  {
+    "title": "forest_workshops_and_modes_quick_draft",
+    "path": "The-Forest-Project-zeta/System/AI/forest_workshops_and_modes_quick_draft.md",
+    "project": "The Forest",
+    "tree": [],
+    "status": "active-reference",
+    "tags": [
+      "the-forest",
+      "Trees",
+      "architecture",
+      "AI"
+    ],
+    "created": null,
+    "updated": "2026-08-08"
+  },
+  {
+    "title": "forest_phase14_9_source_context_complete_checkpoint_2026-08-09",
+    "path": "The-Forest-Project-zeta/System/AI/forest_phase14_9_source_context_complete_checkpoint_2026-08-09.md",
+    "project": null,
+    "tree": null,
+    "status": null,
+    "tags": [],
+    "created": null,
+    "updated": null
+  },
+  {
+    "title": "The_Forest_Shared_Knowledge_Canopy_and_Spirit_Concept",
+    "path": "The-Forest-Project-zeta/System/Canopy/The_Forest_Shared_Knowledge_Canopy_and_Spirit_Concept.md",
+    "project": "\"The Forest\"",
+    "tree": null,
+    "status": "concept",
+    "tags": [
+      "the-forest",
+      "architecture",
+      "canopy",
+      "spirit-of-the-forest",
+      "voice-of-the-forest",
+      "maple",
+      "cherry",
+      "cedar",
+      "bristlecone-pine",
+      "obsidian",
+      "knowledge-management",
+      "retrieval",
+      "routing",
+      "qrexec",
+      "qubes",
+      "local-first"
+    ],
+    "created": "2026-08-07",
+    "updated": "2026-08-07"
+  },
+  {
+    "title": "02-leaf-foliage-and-all-in-one-forest",
+    "path": "The-Forest-Project-zeta/System/Canopy/02-leaf-foliage-and-all-in-one-forest.md",
+    "project": "The Forest",
+    "tree": null,
+    "status": "active",
+    "tags": [
+      "the-forest"
+    ],
+    "created": "2026-08-08",
+    "updated": "2026-08-08"
+  },
+  {
+    "title": "Trees",
+    "path": "The-Forest-Project-zeta/Trees/True Trees/Trees.md",
+    "project": "The Forest",
+    "tree": null,
+    "status": "active",
+    "tags": [
+      "the-forest"
+    ],
+    "created": "2026-08-08",
+    "updated": "2026-08-08"
+  },
+  {
+    "title": "01-early-seed-training-obsidian",
+    "path": "The-Forest-Project-zeta/Trees/Tree Training/01-early-seed-training-obsidian.md",
+    "project": "The Forest",
+    "tree": null,
+    "status": "active",
+    "tags": [
+      "the-forest"
+    ],
+    "created": "2026-08-08",
+    "updated": "2026-08-08"
+  },
+  {
+    "title": "Ceder",
+    "path": "The-Forest-Project-zeta/Trees/True Trees/Cedar/Ceder.md",
+    "project": "The Forest",
+    "tree": "Cedar",
+    "status": "active",
+    "tags": [
+      "the-forest"
+    ],
+    "created": "2026-08-08",
+    "updated": "2026-08-08"
+  },
+  {
+    "title": "Sycamore",
+    "path": "The-Forest-Project-zeta/Trees/True Trees/Sycamore/Sycamore.md",
+    "project": "The Forest",
+    "tree": "Sycamore",
+    "status": "active",
+    "tags": [
+      "the-forest"
+    ],
+    "created": "2026-08-08",
+    "updated": "2026-08-08"
+  },
+  {
+    "title": "Cherry",
+    "path": "The-Forest-Project-zeta/Trees/True Trees/Cherry/Cherry.md",
+    "project": "The Forest",
+    "tree": "Cherry",
+    "status": "active",
+    "tags": [
+      "the-forest"
+    ],
+    "created": "2026-08-08",
+    "updated": "2026-08-08"
+  },
+  {
+    "title": "Maple_Forest_Vault_Indexing_Infrastructure",
+    "path": "The-Forest-Project-zeta/Trees/True Trees/Maple/Maple_Forest_Vault_Indexing_Infrastructure.md",
+    "project": "The Forest",
+    "tree": "Maple",
+    "status": "active-reference",
+    "tags": [
+      "the-forest",
+      "maple",
+      "obsidian",
+      "indexing",
+      "inotify",
+      "systemd",
+      "metadata",
+      "retrieval",
+      "AI",
+      "software",
+      "infrastructure"
+    ],
+    "created": "2026-08-08",
+    "updated": "2026-08-08"
+  },
+  {
+    "title": "Maple",
+    "path": "The-Forest-Project-zeta/Trees/True Trees/Maple/Maple.md",
+    "project": "The Forest",
+    "tree": "Maple",
+    "status": "active-reference",
+    "tags": [
+      "the-forest",
+      "maple",
+      "AI",
+      "Trees",
+      "software"
+    ],
+    "created": "2026-08-08",
+    "updated": "2026-08-08"
+  },
+  {
+    "title": "bristlecone_pine_optimization_master_v2",
+    "path": "The-Forest-Project-zeta/Trees/True Trees/Bristlecone Pine/bristlecone_pine_optimization_master_v2.md",
+    "project": "The Forest",
+    "tree": "Bristlecone Pine",
+    "status": "active-reference",
+    "tags": [
+      "AI",
+      "bristlecone-pine",
+      "knowledge-management",
+      "Trees",
+      "the-forest",
+      "Optimization",
+      "architecture",
+      "bristlecone"
+    ],
+    "created": "2026-08-07",
+    "updated": []
+  },
+  {
+    "title": "bristlecone_workshops_reasoning_model_forms_plan_and_rejected_concepts",
+    "path": "The-Forest-Project-zeta/Trees/True Trees/Bristlecone Pine/bristlecone_workshops_reasoning_model_forms_plan_and_rejected_concepts.md",
+    "project": "The Forest",
+    "tree": "Bristlecone Pine",
+    "status": "active-reference",
+    "tags": [
+      "the-forest",
+      "bristlecone-pine",
+      "bristlecone",
+      "AI",
+      "Trees"
+    ],
+    "created": "2026-08-08",
+    "updated": []
+  },
+  {
+    "title": "bristlecone_pine_full_continuity_packet_v1_1",
+    "path": "The-Forest-Project-zeta/Trees/True Trees/Bristlecone Pine/bristlecone_pine_full_continuity_packet_v1_1.md",
+    "project": "The Forest",
+    "tree": "Bristlecone Pine",
+    "status": "active",
+    "tags": [
+      "the-forest"
+    ],
+    "created": "2026-08-08",
+    "updated": "2026-08-08"
+  },
+  {
+    "title": "Bristlecone Pine",
+    "path": "The-Forest-Project-zeta/Trees/True Trees/Bristlecone Pine/Bristlecone Pine.md",
+    "project": "The Forest",
+    "tree": "Bristlecone Pine",
+    "status": "active",
+    "tags": [
+      "the-forest"
+    ],
+    "created": "2026-08-08",
+    "updated": "2026-08-08"
+  },
+  {
+    "title": "Temp Test",
+    "path": "The-Forest-Project-zeta/Trees/True Trees/Bristlecone Pine/Temp Test.md",
+    "project": "The Forest",
+    "tree": "Bristlecone Pine",
+    "status": "active",
+    "tags": [
+      "the-forest"
+    ],
+    "created": "2026-08-08",
+    "updated": "2026-08-08"
+  },
+  {
+    "title": "bristlecone_maple_remote_compute_continuity 1",
+    "path": "The-Forest-Project-zeta/Trees/True Trees/Bristlecone Pine/bristlecone_maple_remote_compute_continuity 1.md",
+    "project": "The Forest",
+    "tree": "Bristlecone Pine",
+    "status": "active",
+    "tags": [
+      "the-forest"
+    ],
+    "created": "2026-08-08",
+    "updated": "2026-08-08"
+  },
+  {
+    "title": "THE-FOREST-PDC-PDF-PROJECT-KNOWLEDGE-SNAPSHOT(1) 1",
+    "path": "The-Forest-Project-zeta/Projects/The Forest/THE-FOREST-PDC-PDF-PROJECT-KNOWLEDGE-SNAPSHOT(1) 1.md",
+    "project": "The Forest",
+    "tree": null,
+    "status": "active",
+    "tags": [
+      "the-forest"
+    ],
+    "created": "2026-08-08",
+    "updated": "2026-08-08"
+  },
+  {
+    "title": "Welcome to The Forest Project",
+    "path": "The-Forest-Project-zeta/Projects/The Forest/Welcome to The Forest Project.md",
+    "project": "The Forest",
+    "tree": null,
+    "status": "active",
+    "tags": [
+      "the-forest"
+    ],
+    "created": "2026-08-08",
+    "updated": "2026-08-08"
+  },
+  {
+    "title": "forest_data_ecology_mycelium_maple_leaf_lifecycle_checkpoint_2026-08-09",
+    "path": "The-Forest-Project-zeta/Projects/The Forest/forest_data_ecology_mycelium_maple_leaf_lifecycle_checkpoint_2026-08-09.md",
+    "project": null,
+    "tree": null,
+    "status": null,
+    "tags": [],
+    "created": null,
+    "updated": null
+  },
+  {
+    "title": "project_forest_bristlecone_full_implementation_history_phase1_to_14_9_2026-08-09",
+    "path": "The-Forest-Project-zeta/Projects/The Forest/project_forest_bristlecone_full_implementation_history_phase1_to_14_9_2026-08-09.md",
+    "project": null,
+    "tree": null,
+    "status": "current-authoritative-history",
+    "tags": [
+      "project-forest",
+      "bristlecone-pine",
+      "hermes",
+      "ollama",
+      "qubes",
+      "runtime",
+      "workshops",
+      "task-sessions",
+      "seasonal-lifecycle",
+      "cache",
+      "learning",
+      "user-context",
+      "source-context",
+      "continuity",
+      "implementation-history"
+    ],
+    "created": null,
+    "updated": null
+  },
+  {
+    "title": "THE-FOREST-PDC-PDF-PROJECT-KNOWLEDGE-SNAPSHOT(3)",
+    "path": "The-Forest-Project-zeta/Projects/The Forest/THE-FOREST-PDC-PDF-PROJECT-KNOWLEDGE-SNAPSHOT(3).md",
+    "project": "The Forest",
+    "tree": null,
+    "status": "active",
+    "tags": [
+      "the-forest"
+    ],
+    "created": "2026-08-08",
+    "updated": "2026-08-08"
+  }
+]

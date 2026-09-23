@@ -1,0 +1,33 @@
+Task: forest-task-20260812T022129Z-1d5e9849
+Context: ctx-j5
+
+=== TURN 1 — CREATE DISPOSABLE SESSION A ===
+session A: api_1786501290_5bc252fb
+turn1 session_created: True
+turn1 session_reused: False
+
+PASS: disposable session A created
+PASS: Forest working state holds session A
+
+=== TARGETED INVALIDATION OF SESSION A ===
+Traceback (most recent call last):
+  File "/home/user/The-Forest/bristlecone/runtime/task_session.py", line 332, in _runtime_adapter_for_state
+    return create_runtime_adapter(
+        state,
+        forest_root=self.forest,
+    )
+  File "/home/user/The-Forest/bristlecone/runtime/adapters/factory.py", line 39, in create_runtime_adapter
+    raise RuntimeAdapterError(
+        "state.runtime.adapter is not configured."
+    )
+runtime.adapters.base.RuntimeAdapterError: state.runtime.adapter is not configured.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "<stdin>", line 99, in <module>
+  File "/home/user/The-Forest/bristlecone/runtime/task_session.py", line 341, in _runtime_adapter_for_state
+    raise TaskSessionError(
+    ...<2 lines>...
+    ) from exc
+runtime.task_session.TaskSessionError: Forest could not resolve the configured runtime adapter: state.runtime.adapter is not configured.

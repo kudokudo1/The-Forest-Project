@@ -1,0 +1,99 @@
+{
+  "activation_enter_ns": 669308490,
+  "activation_enter_s": 0.66930849,
+  "activation_exit_ns": 34092381,
+  "activation_exit_s": 0.034092381,
+  "active_yaml_sha": "6b8fb9b44757917c1889a7368d43f393165080d248cdb3d9c5982aad53b270e5",
+  "base_toolsets": [
+    "file",
+    "terminal"
+  ],
+  "benchmark_neutral_active_ready": [],
+  "benchmark_neutral_task_sticky_skills": [],
+  "binding_id": "binding-0001",
+  "canonical_skills": [
+    "debugging",
+    "testing"
+  ],
+  "cleanup_performed": false,
+  "execution_context_id": "ctx-l7-d-05",
+  "expected_hermes_reasoning_effort": "medium",
+  "message": "Reply only with: L2-COLD-01",
+  "model_form": "small",
+  "persist": false,
+  "persistent_source_active_ready": [
+    "debugging"
+  ],
+  "persistent_source_task_sticky_skills": [
+    "debugging"
+  ],
+  "phase": "14.11L.7",
+  "ready": [
+    "code-execution",
+    "debugging",
+    "testing"
+  ],
+  "requested_reasoning_mode": "normal",
+  "resident_after": [
+    "bristlecone-qwen35:4b-64k    af72fe9ad018    5.6 GB    100% CPU     64000      14 minutes from now"
+  ],
+  "resident_before": [
+    "bristlecone-qwen35:4b-64k    af72fe9ad018    5.6 GB    100% CPU     64000      14 minutes from now"
+  ],
+  "result_reasoning_mode": "normal",
+  "runtime_skills": [
+    "systematic-debugging",
+    "test-driven-development"
+  ],
+  "scenario": "warm-small-controlled-tool-skill-surface",
+  "session_created": true,
+  "session_id": "api_1786578479_c79e12c9",
+  "session_recovered": false,
+  "session_reused": false,
+  "skill_bindings": [
+    {
+      "adapter": "hermes",
+      "canonical_id": "debugging",
+      "kind": "skill",
+      "runtime_id": "systematic-debugging"
+    },
+    {
+      "adapter": "hermes",
+      "canonical_id": "testing",
+      "kind": "skill",
+      "runtime_id": "test-driven-development"
+    }
+  ],
+  "skill_count": 2,
+  "skill_overlay_bytes": 25357,
+  "skill_overlay_cache_hit": false,
+  "skill_overlay_hash": "93ff659611cd1ec2cee1998375ffb8067fef22f82e6370f12fa645f2788e92ca",
+  "status": "success",
+  "surface": "d",
+  "surface_cycle_ns": 328511881463,
+  "surface_cycle_s": 328.511881463,
+  "surface_label": "full",
+  "task_id": "forest-task-20260812T234758Z-1aca62ad",
+  "temporary_toolsets": [
+    "code_execution"
+  ],
+  "toolset_count_during": 3,
+  "toolsets_after_restore": [
+    "file",
+    "terminal"
+  ],
+  "toolsets_after_turn_before_exit": [
+    "code_execution",
+    "file",
+    "terminal"
+  ],
+  "toolsets_during": [
+    "code_execution",
+    "file",
+    "terminal"
+  ],
+  "trial": 5,
+  "turn_duration_ns": 327808480592,
+  "turn_duration_s": 327.808480592,
+  "workshop": "code-debug"
+}

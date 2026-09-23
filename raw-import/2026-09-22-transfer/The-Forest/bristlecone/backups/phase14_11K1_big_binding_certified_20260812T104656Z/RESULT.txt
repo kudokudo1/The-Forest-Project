@@ -1,0 +1,23 @@
+Phase: 14.11K.1
+Title: Big Binding + Availability Certification
+Status: 0
+
+Observed semantics:
+- Small binding: binding-0001
+- Big binding: None
+- Registered binding IDs: ['binding-0001']
+- binding-0001 runtime: {'adapter': 'hermes', 'profile': 'bristlecone', 'platform': 'api_server'}
+- Resident Ollama models: 0
+- llama-server processes: 0
+
+Certified invariants:
+- Small resolves to binding-0001.
+- Big has no registered binding.
+- No alternate Big runtime target exists.
+- Big cannot be executed from the current binding registry.
+- No model became resident during certification.
+- No llama-server became active during certification.
+- active.yaml remains frozen.
+- Six production files remain frozen.
+
+CERTIFIED

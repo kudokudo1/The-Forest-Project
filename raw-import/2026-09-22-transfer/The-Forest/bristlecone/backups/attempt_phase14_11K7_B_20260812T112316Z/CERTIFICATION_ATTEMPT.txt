@@ -1,0 +1,24 @@
+The Forest — Bristlecone Pine
+Terminal B Independent Certification Attempt
+
+Phase:
+14.11K.7 — Integrated Unavailable-Big Certification
+
+RESULT:
+FAIL / NOT CERTIFIED
+
+Error: AssertionError: Governor call located
+
+Production modifications by Terminal B: NONE
+Production Big binding created by B: NO
+Real Big execution by B: NO
+Ollama model operation by B: NO
+llama-server operation by B: NO
+
+Traceback:
+Traceback (most recent call last):
+  File "<stdin>", line 840, in <module>
+  File "<stdin>", line 773, in certify
+  File "<stdin>", line 458, in verify_k5b_structure
+  File "<stdin>", line 89, in check
+AssertionError: Governor call located

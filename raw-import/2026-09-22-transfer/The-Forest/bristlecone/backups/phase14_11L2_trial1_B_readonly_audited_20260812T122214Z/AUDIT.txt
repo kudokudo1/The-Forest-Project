@@ -1,0 +1,66 @@
+The Forest — Bristlecone Pine
+Terminal B Read-Only Audit
+
+Phase:
+14.11L.2 — Cold Small Runtime Benchmark
+
+Evidence:
+Trial 1
+
+RESULT:
+READ-ONLY AUDIT PASSED
+
+Artifact:
+bristlecone/benchmarks/phase14_11L/l2_cold_small_trial1_raw.json
+
+SHA256:
+4fc65acb1c96738b0082fc1be5aa2213bb9f5a966682b219559c992bad03beb0
+
+Verified conditions:
+
+- scenario = cold-real-small
+- status = success
+- requested Model Form = Small
+- actual Model Form = Small
+- expected binding = binding-0001
+- actual binding = binding-0001
+- requested Reasoning = Normal
+- resolved Reasoning = Normal
+- adapter = Hermes
+- persist=False
+- active.yaml unchanged
+- cleanup_performed=False
+
+Fresh runtime identity:
+
+- execution context = ctx-l2-cold-01
+- session ID = api_1786535817_ee622130
+- initial session created = True
+- session created = True
+- session reused = False
+- session recovered = False
+- session rotated = False
+- binding persisted = False
+
+Cold/runtime evidence:
+
+- before resident models = empty
+- after resident models = nonempty
+- Bristlecone Small became resident afterward
+
+Timing:
+
+duration_ns = 229430562429
+duration_ms = 229430.562429
+duration_s = 229.430562429
+wall envelope seconds = 229.491114
+wall-minus-measured seconds = 0.06055157100001907
+
+Terminal B live runtime operations:
+NONE
+
+Terminal B production modifications:
+NONE
+
+14.11L.2 Trial 1 B status:
+AUDIT PASSED

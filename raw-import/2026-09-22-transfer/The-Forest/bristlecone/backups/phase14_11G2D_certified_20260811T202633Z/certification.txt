@@ -1,0 +1,48 @@
+Phase: 14.11G.2D
+Lane: Terminal B
+Component: Automatic Escalation Router
+
+Owned source files:
+- model_form/automatic_router.py
+- tests/test_model_form_automatic_router.py
+
+Permanent regression tests:
+PASS 22
+FAIL 0
+
+Integration into runtime/task_session.py:
+NO
+
+resources/* modified:
+NO
+
+model_form/resolution.py modified:
+NO
+
+Certified properties:
+- immutable automatic routing signals
+- immutable Small/Big recommendation
+- deterministic routing
+- routine work defaults Small
+- semantic complexity can escalate Big
+- known Small failure can escalate Big
+- broad canonical capability demand can escalate Big
+- Reasoning and Model Form remain independent
+- current Model Form does not behave as a pin
+- execution-context identity is preserved
+- detailed router reasons are stable
+- malformed contracts fail closed
+- Auto eligibility matches existing resolver precedence
+- mismatched Task override does not block current Task Auto
+- router recommendation feeds existing automatic_form seam
+- exact Model Form still outranks automatic recommendation
+- no Governor/resource dependency
+- no runtime-adapter dependency
+- no runtime work performed
+
+Known integration gap:
+- current resolve_model_form_turn() accepts automatic_form only
+- detailed automatic-router reasons are not yet preserved in
+  FrozenModelFormTurn / ModelFormDecision
+- production integration must avoid calling the router when
+  exact, matching Task, or pinned Model Form precedence already wins

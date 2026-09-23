@@ -1,0 +1,51 @@
+{
+  "active_yaml_sha": "6b8fb9b44757917c1889a7368d43f393165080d248cdb3d9c5982aad53b270e5",
+  "binding_a": "binding-0001",
+  "binding_b": "binding-0001",
+  "cleanup_performed": false,
+  "client_overlap_ns": 103152566647,
+  "client_overlap_s": 103.152566647,
+  "context_a": "ctx-l5-con-a4",
+  "context_b": "ctx-l5-con-b4",
+  "different_sessions": true,
+  "latency_a_ns": 216060791180,
+  "latency_a_s": 216.06079118,
+  "latency_b_ns": 103152566647,
+  "latency_b_s": 103.152566647,
+  "latency_sum_s": 319.213357827,
+  "max_individual_latency_s": 216.06079118,
+  "model_form_a": "small",
+  "model_form_b": "small",
+  "pair": 4,
+  "pair_wall_ns": 216060928237,
+  "pair_wall_s": 216.060928237,
+  "persist": false,
+  "phase": "14.11L.5B",
+  "reasoning_a": "normal",
+  "reasoning_b": "normal",
+  "resident_after": [
+    "bristlecone-qwen35:4b-64k    af72fe9ad018    5.6 GB    100% CPU     64000      14 minutes from now    "
+  ],
+  "resident_before": [
+    "bristlecone-qwen35:4b-64k    af72fe9ad018    5.6 GB    100% CPU     64000      12 minutes from now    "
+  ],
+  "runtime_keys_a": [
+    "ctx-l5-con-a4"
+  ],
+  "runtime_keys_b": [
+    "ctx-l5-con-b4"
+  ],
+  "scenario": "concurrent-multicontext-shared-residency",
+  "session_a": "api_1786547429_056da9f8",
+  "session_b": "api_1786547429_41bcee86",
+  "session_created_a": true,
+  "session_created_b": true,
+  "session_reused_a": false,
+  "session_reused_b": false,
+  "start_skew_ms": 0.199613,
+  "start_skew_ns": 199613,
+  "status": "success",
+  "task_id": "forest-task-20260812T151029Z-952a8656",
+  "wall_vs_latency_sum_ratio": 0.6768542823765408,
+  "wall_vs_max_latency_ratio": 1.0000006343446177
+}

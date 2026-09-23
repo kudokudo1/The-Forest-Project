@@ -1,0 +1,178 @@
+#!/usr/bin/env python3
+
+from pathlib import Path
+import argparse
+import sys
+import yaml
+
+ROOT = Path.home() / "The-Forest" / "bristlecone"
+
+REGISTRY_FILE = ROOT / "capabilities" / "registry.yaml"
+ADAPTER_FILE = ROOT / "adapters" / "hermes.yaml"
+WORKSHOP_DIR = ROOT / "workshops"
+
+
+def load_yaml(path):
+    with path.open("r", encoding="utf-8") as f:
+        return yaml.safe_load(f)
+
+
+def unique(items):
+    seen = set()
+    result = []
+
+    for item in items:
+        if item not in seen:
+            seen.add(item)
+            result.append(item)
+
+    return result
+
+
+def main():
+    parser = argparse.ArgumentParser(
+        description="Resolve a Bristlecone Workshop into minimal Hermes capabilities."
+    )
+
+    parser.add_argument(
+        "workshop",
+        help="Workshop ID: research, design, code-debug, or model",
+    )
+
+    parser.add_argument(
+        "--general",
+        nargs="*",
+        default=[],
+        help="General Ready capabilities to activate individually",
+    )
+
+    parser.add_argument(
+        "--ready",
+        nargs="*",
+        default=[],
+        help="Workshop Ready capabilities to activate individually",
+    )
+
+    args = parser.parse_args()
+
+    workshop_file = WORKSHOP_DIR / f"{args.workshop}.yaml"
+
+    if not workshop_file.exists():
+        print(f"ERROR: Unknown Workshop: {args.workshop}")
+        sys.exit(1)
+
+    registry = load_yaml(REGISTRY_FILE)
+    adapter = load_yaml(ADAPTER_FILE)
+    workshop = load_yaml(workshop_file)
+
+    capabilities = registry["capabilities"]
+    general_ready = set(registry.get("general_ready", []))
+    workshop_ready = set(workshop.get("ready", []))
+
+    # Validate requested General capabilities.
+    for name in args.general:
+        if name not in general_ready:
+            print(
+                f"ERROR: {name!r} is not in Bristlecone's General Ready box."
+            )
+            sys.exit(2)
+
+    # Validate requested Workshop Ready capabilities.
+    for name in args.ready:
+        if name not in workshop_ready:
+            print(
+                f"ERROR: {name!r} is not Ready in Workshop "
+                f"{workshop['name']!r}."
+            )
+            sys.exit(3)
+
+    active_ids = unique(
+        list(workshop.get("core", []))
+        + list(args.general)
+        + list(args.ready)
+    )
+
+    hermes_tools = []
+    hermes_skills = []
+    unresolved = []
+
+    tool_map = adapter.get("capabilities", {})
+    skill_map = adapter.get("skills", {})
+    unresolved_map = adapter.get("unresolved", {})
+
+    for name in active_ids:
+        if name not in capabilities:
+            unresolved.append((name, "not defined in capability registry"))
+            continue
+
+        kind = capabilities[name].get("kind")
+
+        if kind == "skill":
+            mapping = skill_map.get(name)
+
+            if mapping:
+                hermes_skills.append(mapping["target"])
+            elif name in unresolved_map:
+                unresolved.append(
+                    (name, unresolved_map[name]["reason"].strip())
+                )
+            else:
+                unresolved.append((name, "no Hermes Skill mapping"))
+
+        else:
+            mapping = tool_map.get(name)
+
+            if mapping:
+                hermes_tools.append(mapping["target"])
+            elif name in unresolved_map:
+                unresolved.append(
+                    (name, unresolved_map[name]["reason"].strip())
+                )
+            else:
+                unresolved.append((name, "no Hermes capability mapping"))
+
+    hermes_tools = unique(hermes_tools)
+    hermes_skills = unique(hermes_skills)
+
+    print()
+    print(f"WORKSHOP: {workshop['name']}")
+    print("=" * 48)
+
+    print("\nForest active capabilities:")
+    for name in active_ids:
+        if name in workshop.get("core", []):
+            source = "CORE"
+        elif name in args.general:
+            source = "GENERAL"
+        else:
+            source = "READY"
+
+        print(f"  {source:7} {name}")
+
+    print("\nHermes toolsets:")
+    if hermes_tools:
+        for name in hermes_tools:
+            print(f"  - {name}")
+    else:
+        print("  (none)")
+
+    print("\nHermes Skills:")
+    if hermes_skills:
+        for name in hermes_skills:
+            print(f"  - {name}")
+    else:
+        print("  (none)")
+
+    if unresolved:
+        print("\nUNRESOLVED:")
+        for name, reason in unresolved:
+            print(f"  - {name}: {reason}")
+
+        print("\nRESULT: Cannot activate requested profile yet.")
+        sys.exit(4)
+
+    print("\nRESULT: Profile resolved successfully.")
+
+
+if __name__ == "__main__":
+    main()

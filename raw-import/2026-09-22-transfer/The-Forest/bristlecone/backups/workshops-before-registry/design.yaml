@@ -1,0 +1,28 @@
+schema_version: 1
+tree: bristlecone
+id: design
+name: Design
+
+purpose: >
+  Design architecture, plans, systems, tradeoffs, and Forest concepts
+  using relevant existing context.
+
+core:
+  - id: memory
+    kind: context
+  - id: clarify
+    kind: behavior
+
+ready:
+  - id: file
+    kind: toolset
+  - id: session
+    kind: context
+  - id: leaf
+    kind: context
+  - id: terminal
+    kind: toolset
+
+policy:
+  sticky_workshop: true
+  minimum_useful_canopy: true

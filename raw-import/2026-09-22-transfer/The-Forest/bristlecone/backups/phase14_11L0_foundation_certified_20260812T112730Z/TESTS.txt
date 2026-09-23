@@ -1,0 +1,40 @@
+=== bristlecone/tests/test_benchmark_foundation.py ===
+test_backwards_clock_rejected (__main__.BenchmarkFoundationTests.test_backwards_clock_rejected) ... ok
+test_duplicate_mark_rejected (__main__.BenchmarkFoundationTests.test_duplicate_mark_rejected) ... ok
+test_jsonl_round_trip (__main__.BenchmarkFoundationTests.test_jsonl_round_trip) ... ok
+test_monotonic_timeline_duration (__main__.BenchmarkFoundationTests.test_monotonic_timeline_duration) ... ok
+test_trial_is_frozen (__main__.BenchmarkFoundationTests.test_trial_is_frozen) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+OK
+
+STATUS=0
+
+=== bristlecone/tests/test_benchmark_environment.py ===
+test_empty_ollama_ps (__main__.BenchmarkEnvironmentTests.test_empty_ollama_ps) ... ok
+test_llama_server_pids (__main__.BenchmarkEnvironmentTests.test_llama_server_pids) ... ok
+test_mem_available (__main__.BenchmarkEnvironmentTests.test_mem_available) ... ok
+test_resident_ollama_models (__main__.BenchmarkEnvironmentTests.test_resident_ollama_models) ... ok
+test_systemctl_properties (__main__.BenchmarkEnvironmentTests.test_systemctl_properties) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.000s
+
+OK
+
+STATUS=0
+
+=== bristlecone/tests/test_benchmark_baseline.py ===
+test_baseline_is_frozen (__main__.BenchmarkBaselineTests.test_baseline_is_frozen) ... ok
+test_big_cannot_be_authorized (__main__.BenchmarkBaselineTests.test_big_cannot_be_authorized) ... ok
+test_jsonl_write (__main__.BenchmarkBaselineTests.test_jsonl_write) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.001s
+
+OK
+
+STATUS=0
+

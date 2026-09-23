@@ -1,0 +1,10 @@
+OLLAMA PS
+NAME    ID    SIZE    PROCESSOR    CONTEXT    UNTIL
+
+LLAMA-SERVER
+NONE
+
+HERMES
+ActiveState=active
+SubState=running
+MainPID=941

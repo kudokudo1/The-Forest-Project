@@ -1,0 +1,18 @@
+Phase: 14.11J.6B
+Role: Terminal B independent certifier
+Source A certificate: bristlecone/backups/phase14_11J6_A_integrated_real_small_certified_20260812T090301Z
+Overall independent status: 0
+
+CERTIFIED
+
+Independent conclusion:
+- J.2 through J.5 upstream evidence remains certified.
+- Real Small session commitment is retained.
+- Same-context real session reuse is retained.
+- Multi-context runtime isolation is retained.
+- Shared Small model residency semantics are retained.
+- Real stale-session recovery semantics are retained.
+- One-retry failure boundary is retained.
+- active.yaml remains frozen.
+- Six production files remain frozen.
+- Focused deterministic integration pack passes independently.

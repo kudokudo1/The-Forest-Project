@@ -1,0 +1,115 @@
+{
+  "a_analyzer_sha256": "7a9a5800159f63791108bf77fa7c95467c1fa8190dab7164829fe889d035ad9d",
+  "a_archive": "/home/user/The-Forest/bristlecone/backups/phase14_11L10_A_sustained_certified_20260813T033046Z",
+  "a_manifest_entries": 9,
+  "a_manifest_sha256": "3dccc25349079a1dc2ce79f9be5f66506e0c1f9eed3b59ebe4a10152378736e0",
+  "a_summary_sha256": "99884aff29cba88c8057f916b83b6dad537aa26a29e850737ca471942454fd46",
+  "certification": "B",
+  "frozen_harness_sha256": "f2397758642dd7c51c2240608df4846dfc8ee80258abf11619e392fa34a3bed4",
+  "frozen_raw_sha256": "e592c4ff7fa339b18a977cd1da0412a74035caee6c8f16a403f1b51a0697f6f7",
+  "inference_executed_by_certifier": false,
+  "interpretation": {
+    "latency_degradation_claim_supported": false,
+    "latency_improvement_claim_supported": false,
+    "memory_leak_claim_supported": false,
+    "reason": "Eight consecutive measured real Small turns reused one runtime session and preserved Model Form, Reasoning, binding, execution context, exact expected responses, and warm residency with no recovery or rotation. The timing sample is too small and variable to support improvement or degradation claims. System-wide MemAvailable observations are not process-attributed and therefore do not establish a memory leak.",
+    "semantic_drift_observed": false,
+    "session_identity_stable": true,
+    "sustained_session_health_supported": true,
+    "unexpected_recovery_observed": false,
+    "unexpected_rotation_observed": false
+  },
+  "memory_recomputed": {
+    "after_samples_kib": [
+      4095364,
+      4385272,
+      4307888,
+      4365812,
+      4369896,
+      4209560,
+      4251740,
+      4328780
+    ],
+    "before_samples_kib": [
+      4280468,
+      4087912,
+      4373052,
+      4296224,
+      4355272,
+      4355392,
+      4197408,
+      4242708
+    ],
+    "mean_per_turn_delta_kib": 15734.5,
+    "median_per_turn_delta_kib": 34478.0,
+    "per_turn_delta_kib": [
+      -185104,
+      297360,
+      -65164,
+      69588,
+      14624,
+      -145832,
+      54332,
+      86072
+    ]
+  },
+  "persistent_production_state_modified": false,
+  "phase": "14.11L.10",
+  "production_source_integrity": true,
+  "runtime_mutation_by_certifier": false,
+  "session": {
+    "cleanup_success": true,
+    "exact_response_count": 8,
+    "measured_turn_count": 8,
+    "session_s": "api_1786590916_e86252fe",
+    "unexpected_recovery_count": 0,
+    "unexpected_rotation_count": 0,
+    "unique_session_count": 1
+  },
+  "status": "PASS",
+  "summary_fidelity": true,
+  "timing_recomputed": {
+    "all_turns": {
+      "count": 8,
+      "max_ns": 46379086747,
+      "mean_ns": 36719185602,
+      "mean_seconds": 36.719185602,
+      "median_ns": 37532116147.5,
+      "median_seconds": 37.5321161475,
+      "min_ns": 16773951563,
+      "stdev_ns": 9221386171.184765
+    },
+    "early_turns_1_to_4": {
+      "count": 4,
+      "max_ns": 45875474043,
+      "mean_ns": 39796360960.5,
+      "mean_seconds": 39.7963609605,
+      "median_ns": 39241080712.0,
+      "median_seconds": 39.241080712,
+      "min_ns": 34827808375,
+      "stdev_ns": 4584889039.510448
+    },
+    "first_to_last_ns": -3417929129,
+    "late_minus_early_median_ns": -3533579380.0,
+    "late_turns_5_to_8": {
+      "count": 4,
+      "max_ns": 46379086747,
+      "mean_ns": 33642010243.5,
+      "mean_seconds": 33.6420102435,
+      "median_ns": 35707501332.0,
+      "median_seconds": 35.707501332,
+      "min_ns": 16773951563,
+      "stdev_ns": 12334532181.606747
+    },
+    "raw_timings_ns": [
+      39875438474,
+      45875474043,
+      38606722950,
+      34827808375,
+      46379086747,
+      34957493319,
+      16773951563,
+      36457509345
+    ]
+  }
+}

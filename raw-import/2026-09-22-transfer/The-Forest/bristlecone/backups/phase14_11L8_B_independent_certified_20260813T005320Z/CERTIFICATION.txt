@@ -1,0 +1,64 @@
+PHASE 14.11L.8 — B INDEPENDENT CERTIFICATION
+
+A source archive:
+backups/phase14_11L8_A_governor_certified_20260813T005056Z
+
+A manifest SHA256:
+aa2c724800b9774e272bf01a7e2227d169590feb2150bad27999a900040a0978
+
+Core raw SHA256:
+2c9e70239070edac150646fe00f75593fea1baf7522ccbb182b32860ee47cb91
+
+Residency raw SHA256:
+243c92316063a368712d690eb06b1fd636d571e881e812b572358e1682e8b166
+
+A summary SHA256:
+7f51d85b38cb705cb495bfb56a142bc65d0f85d3f7905774ea7eab2e937ce3a5
+
+A archive integrity:
+PASS
+
+Frozen/live production source integrity:
+PASS
+
+Independent Governor semantic matrix:
+PASS
+
+Independent zero-requirement bypass:
+PASS
+
+Independent priority semantics:
+PASS
+
+Independent provider-order check:
+PASS
+
+Independent residency calculation:
+6144 MiB -> 759 MiB
+PASS
+
+A summary / raw aggregate-statistic agreement:
+PASS
+
+Per-iteration timing-sample recomputation:
+NOT POSSIBLE FROM FROZEN ARTIFACT
+Reason:
+L.8 stores aggregate timing statistics rather than individual
+per-iteration timing samples.
+
+This limitation does not invalidate the frozen measurements;
+B independently verifies their artifact integrity and A-summary
+consistency but does not claim to reconstruct the original
+sample medians.
+
+Real inference executed by B:
+NO
+
+Ollama residency changed by B:
+NO
+
+Production state modified by B:
+NO
+
+FINAL B RESULT:
+PASS

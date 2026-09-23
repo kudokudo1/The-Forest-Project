@@ -1,0 +1,49 @@
+PHASE 14.11L.7 — B INDEPENDENT CERTIFICATION
+
+Source A archive:
+backups/phase14_11L7_A_surface_certified_20260813T000538Z
+
+A manifest SHA256:
+990cc2cab7a223a737d20ca454e47ad739b9ae9a2efe577d074e03b2fa3cfcbc
+
+A summary SHA256:
+a388736294fe4c24caed7f0aeeb2b875481b39ab65508692240ef3aac6cfa418
+
+Frozen harness SHA256:
+4ba7d460167269851b9c9d1f6ac966c9228b59d189b76f6178b63b57758cdedb
+
+Raw measurements independently validated:
+20 / 20
+
+Unique Tasks:
+20
+
+Unique execution contexts:
+20
+
+Unique runtime sessions:
+20
+
+Independent statistical recomputation:
+PASS
+
+A/B statistical agreement:
+PASS
+
+D slower than A:
+5 / 5 matched sets
+
+D slower than B:
+5 / 5 matched sets
+
+D slower than C:
+5 / 5 matched sets
+
+Real inference executed by B:
+NO
+
+Production state modified by B:
+NO
+
+FINAL B RESULT:
+PASS

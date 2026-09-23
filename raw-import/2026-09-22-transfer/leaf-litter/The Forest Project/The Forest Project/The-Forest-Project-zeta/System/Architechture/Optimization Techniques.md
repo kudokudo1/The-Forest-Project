@@ -1,0 +1,71 @@
+- [ ] chain of thought prompting = planned steps divided into multiple prompts
+- [ ] 
+- [ ] 0 and few shot prompting = examples
+- [ ] reverse prompting for nessisary clarification
+- [ ] surface implied context
+- [ ] give agent a "done"
+- [x] workshops/ dynamictool seclection
+- [x] General tool box
+- [x] Sticky tools -> sticky tool sessions
+- [ ] Tool drop out 
+- [ ] Minimum useful tool selection
+- [ ] Backup Tool finder
+- [ ] Narrow Scoop Trees
+- [x] Automatic reasoning switching Quick/Normal.Deep
+- [x] Big and small model model switching
+- [ ] operational learning
+- [ ] s
+- [ ] smart approvals = do things that are safe or tree have permissions for
+- [ ] durable bk jobs, delivery ledger, profile routing, per task effort
+- [ ] moe model 
+- [ ] Quantinzation and memory 
+- [ ] Anti Big tech liseanse
+- [ ] colibri expret splitting
+- [x] Stop trees from repeatedly loading, rebuilding, resolving, or transmitting information that hasn't changed.
+- [ ] context engenring 
+- [ ] prompt engenring
+- [ ] harness engernring, looping, memory system, skill files, tool hook checks
+- [ ] RAG, MCP,  CLI and tools>MCP, mcp tool search clean structure extract
+- [ ] Evals
+- [ ] agent train.py trainning
+- [ ] embeddings, vector map
+- [ ] context windows
+- [ ] lang chain
+- [ ] agent live testing
+- [ ] agentic code review and 
+- [ ] progression testing
+- [ ] CICD Checks?
+- [ ] linters?
+- [ ] complexity monerting
+- [ ] graph engernering
+- [ ] knowledge graphs
+- [ ] agent graphs
+- [ ] artifacts 
+- [ ] inline visuals
+- [ ] code training
+- [ ] Always agreeing with the user
+- [ ] PUSH BACK and disagreability (/roast)
+- [ ] session handoff
+- [ ] modelhandoff
+- [ ] load on demand and hot context
+- [ ] user and memory  and skill .md
+- [ ] vps manager
+- [ ] kanban board
+- [ ] daylightssaving time 
+- [ ] context, connections, cababilities, cadence
+- [ ] auto save reshearch and scraping paths 
+- [ ] .env = secret files
+- [ ] auto step giver for begginers
+- [ ] global skills
+- [ ] autocheck points and rewind
+- [ ] ralph loop
+- [ ] auto chat organize
+- [ ] decode vs ~~prefill~~
+- [ ] ge
+
+
+
+
+chatbots
+- llm = nurons in layers
+- weight = inclunce on other nodes 

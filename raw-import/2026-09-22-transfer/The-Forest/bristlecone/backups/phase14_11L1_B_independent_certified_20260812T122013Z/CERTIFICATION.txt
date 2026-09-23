@@ -1,0 +1,95 @@
+The Forest — Bristlecone Pine
+Terminal B Independent Certification
+
+Phase:
+14.11L.1 — Control-Path Benchmark
+
+RESULT:
+INDEPENDENTLY CERTIFIED
+
+Harness:
+bristlecone/certification/phase14_11L1/control_path_benchmark.py
+SHA256: c72bbe2b3bb563939e806dfa98e4e2c141bbc32f6451e22ec30b0359cac625b4
+
+Raw:
+bristlecone/benchmarks/phase14_11L/l1_control_path.jsonl
+SHA256: 1c9f1b3cd4a48e5033daa97cce1733e1e3473f4208c913b6f83dbcb3e96e01b6
+
+Summary:
+bristlecone/benchmarks/phase14_11L/l1_control_path_summary.json
+SHA256: 8e5f27faa480a36287ee2943a49a3a7fd5d19b51fdd976949b4e253ad0838d29
+
+Independent verification:
+
+- exactly 40 measured records
+- exactly 20 explicit-Small
+- exactly 20 automatic-Small
+- trials 1-20 exactly once per series
+- Small only
+- binding-0001 only
+- Normal reasoning only
+- persist=False
+- FakeRuntimeAdapter
+- fake-runtime-no-model residency
+- new fake sessions
+- no real inference payload/timing
+- no Big execution
+- no model load
+- no persistence
+- no measured-record exclusion
+
+Statistics independently recomputed from raw records:
+
+Explicit Small:
+{
+  "max_ns": 957752,
+  "mean_ns": 879687.6,
+  "median_ns": 877227,
+  "min_ns": 833390,
+  "n": 20,
+  "p90_ns": 899504,
+  "stdev_ns": 26773.1704164331
+}
+
+Automatic Small:
+{
+  "max_ns": 1127430,
+  "mean_ns": 920428.3,
+  "median_ns": 886965,
+  "min_ns": 848889,
+  "n": 20,
+  "p90_ns": 1082286,
+  "stdev_ns": 87960.44873578125
+}
+
+Median automatic - explicit:
+9738 ns
+
+Statistics definitions:
+- median: int(statistics.median)
+- mean: statistics.mean
+- min/max: exact
+- stdev: statistics.stdev (sample)
+- p90: nearest-rank
+
+Harness safety:
+- llama-server text is a passive "unexpectedly active"
+  assertion, not an execution command.
+- passive environment observations are permitted.
+- no llama-server launch found.
+- no Ollama model mutation found.
+- no service mutation found.
+
+Production/state hashes remained frozen.
+
+Prior B-only certifier false positive:
+- textual occurrence of "llama-server" was initially
+  treated as execution.
+- source inspection proved it was only a passive
+  safety assertion.
+
+Terminal B production modifications:
+NONE
+
+14.11L.1 B status:
+CERTIFIED

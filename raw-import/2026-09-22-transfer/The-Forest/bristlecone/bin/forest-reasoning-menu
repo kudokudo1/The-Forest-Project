@@ -1,0 +1,15 @@
+#!/bin/sh
+set -eu
+
+# Ignore stale inherited GTK debug flags.
+# Current rendering policy remains inherited through
+# GDK_DISABLE and GSK_RENDERER.
+unset GDK_DEBUG
+
+ROOT="$HOME/The-Forest/bristlecone"
+
+export PYTHONPATH="$ROOT${PYTHONPATH:+:$PYTHONPATH}"
+
+exec python3 \
+    "$ROOT/ui/reasoning_menu.py" \
+    "$@"

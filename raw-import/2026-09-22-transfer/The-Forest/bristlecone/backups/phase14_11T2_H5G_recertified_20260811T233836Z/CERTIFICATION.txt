@@ -1,0 +1,78 @@
+The Forest — Bristlecone Pine
+Terminal 2 Independent Recertification
+
+Phase:
+14.11H.5G
+
+Status:
+INDEPENDENTLY RECERTIFIED
+
+Frozen source checkpoint:
+phase14_11H5G_certified_20260811T233141Z
+
+Frozen TaskSession SHA:
+d666cb1471b568bf43db4255f5e84e98c1ea502af467e1e2670e4a93dc364991
+
+Frozen H.5F test SHA:
+c0ac6bb4cca9eaf737660d5c041218fccc9cd9a4a17468eecbf209db23db2f4b
+
+Checkpoint integrity:
+PASS
+
+Checkpoint artifacts verified by sha256sum -c:
+- CERTIFICATION.txt
+- colony/__init__.py
+- colony/identity.py
+- runtime/model_residency.py
+- runtime/task_session.py
+- test_colony_h5_integrated_isolation.py
+- test_colony_identity.py
+- test_colony_model_residency.py
+- test_colony_runtime_lifecycle.py
+- test_colony_runtime_session_isolation.py
+
+Independent regression results:
+
+H.1 Colony identity:
+9 PASS / 0 FAIL
+
+H.2 context+binding runtime-session isolation:
+6 PASS / 0 FAIL
+
+H.3 shared model residency:
+7 PASS / 0 FAIL
+
+H.4 Colony lifecycle:
+6 PASS / 0 FAIL
+
+H.5F integrated Ortet/Ramet isolation:
+15 PASS / 0 FAIL
+
+TOTAL:
+43 PASS / 0 FAIL
+
+H.5F independently confirmed:
+
+- one Tree may contain Ortet + multiple Ramets
+- lineage and operational role remain independent
+- Model Form mutation remains context-local
+- Reasoning lease consumption remains context-local
+- sibling Reasoning leases remain unchanged
+- Ramets do not create/inherit legacy global Reasoning
+- same binding does not imply same runtime session
+- runtime sessions remain execution-context-local
+- temporary capabilities do not leak
+- Task-sticky Skills do not leak
+- Workshop planning derives from supplied context state
+- nested planning does not load unrelated global Task state
+
+Post-run integrity:
+
+- runtime/task_session.py unchanged
+- H.5F test unchanged
+
+Terminal 2 production modifications:
+NONE
+
+RESULT:
+Phase 14.11H.5G frozen ground independently verified.

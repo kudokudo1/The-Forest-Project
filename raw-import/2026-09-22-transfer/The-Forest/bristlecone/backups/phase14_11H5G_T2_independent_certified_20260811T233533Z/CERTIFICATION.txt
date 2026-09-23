@@ -1,0 +1,23 @@
+Phase: 14.11H.5G
+Certifier: Terminal 2
+Status: INDEPENDENTLY CERTIFIED
+
+Frozen H.5G checkpoint:
+phase14_11H5G_certified_20260811T233141Z
+
+Production TaskSession SHA:
+d666cb1471b568bf43db4255f5e84e98c1ea502af467e1e2670e4a93dc364991
+
+H.5F integrated-test SHA:
+c0ac6bb4cca9eaf737660d5c041218fccc9cd9a4a17468eecbf209db23db2f4b
+
+Independent results:
+- Frozen checkpoint SHA256 verification: PASS
+- Colony identity tests: PASS
+- Runtime session isolation tests: PASS
+- Shared model residency tests: PASS
+- Colony runtime lifecycle tests: PASS
+- H.5F Ortet/Ramet integrated matrix: 15 PASS / 0 FAIL
+
+Conclusion:
+Terminal 2 independently reproduced the certified H.5G result without modifying production.

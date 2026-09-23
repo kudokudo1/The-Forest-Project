@@ -1,0 +1,23 @@
+The Forest — Bristlecone Pine
+Phase 14.11G.4C3B
+
+Status:
+CERTIFIED FIRST LIVE AUTO ROUTER INVOCATION
+
+task_session.py SHA256:
+d8174699327e7d8afdb5a58a6c884119d9027f554c8951258b95f7bf4322e904
+
+resolver SHA256:
+6a2eac1af3c15231bc93850ae5176d4f64b331017377d3ecef5e50b4a6df162c
+
+pure router SHA256:
+01dde179a3ad57306e5542580665bd5db20fc9e8c021324eb08c072e594f7b4c
+
+Certified:
+- canonical eligibility gates router execution
+- legacy automatic_model_form bypasses internal router
+- typed RoutingInput is constructed
+- exact frozen Reasoning decision is supplied
+- normalized evidence is supplied directly
+- router is invoked once in the live turn
+- recommendation is not yet trusted or consumed

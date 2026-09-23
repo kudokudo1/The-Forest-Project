@@ -1,0 +1,20 @@
+The Forest — Bristlecone Pine
+Phase 14.11G.2A pre-change checkpoint
+
+Target:
+bristlecone/model_form/automatic_routing_policy.py
+
+Pre-change state:
+ABSENT
+
+Certified F task_session.py:
+2e35143d63bf3d077edb95a4147035018453e019a8f1ee1673912061b883eb2a
+
+Certified G.1B:
+bce0361131c560e1ff8b0bfa5919dfdc291984b1e34965fac8201cac245114e2
+
+Certified G.1C:
+f28df92e43f1d7b52edb58f35a597ae3f75df4595ef0c6ace333821bb1e9d4cb
+
+Resolver observed SHA256:
+b28ec18d6b30b883a1ad334990cae518a3f1d8b54c00f62da28513d1fa3c91a1

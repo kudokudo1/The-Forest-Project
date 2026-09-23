@@ -1,0 +1,29 @@
+Phase: 14.11J.5
+Status: A-SIDE CERTIFIED
+
+Real stale recovery:
+  stale A: api_1786503554_0fed4c96
+  replacement B: api_1786503702_bd0d7591
+  execution_context_id: ctx-j5
+  binding_id: binding-0001
+  model_form: small
+  reasoning_mode: normal
+  session_recovered: true
+  persist: false
+
+J.5D deterministic failure boundary:
+  retry integration: 8 tests PASS
+  status: 0
+
+Harness SHA:
+  c682ea0b7c2c3bbd74e6393f86a44d332aaa0aed0535cac829663c2b0552a2d1
+
+Evidence log SHA:
+  5f7d287267e352667f2e073026383349700a3972e9bf209e5fe2c557a284bc99
+
+Frozen retry test SHAs:
+  9d91e275185ffc9c77b553e5fd369b9c39d3b0f362d8babc1bdd5b6b5bde201c
+  b0ba1f9e8c6148cab49a94bc0ea1c49c1f7d9a68cb0138792e91d7aa8d44b417
+
+active.yaml:
+  6b8fb9b44757917c1889a7368d43f393165080d248cdb3d9c5982aad53b270e5

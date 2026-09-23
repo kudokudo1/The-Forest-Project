@@ -1,0 +1,201 @@
+{
+  "certification": "A",
+  "control": {
+    "classifier_nonstale": {
+      "count": 10000,
+      "max_ns": 13415,
+      "mean_ns": 188.646,
+      "mean_seconds": 1.8864599999999998e-07,
+      "mean_us": 0.18864599999999998,
+      "median_ns": 181.0,
+      "median_seconds": 1.81e-07,
+      "median_us": 0.181,
+      "min_ns": 170,
+      "p95_ns": 191,
+      "stdev_ns": 144.2026196833898
+    },
+    "classifier_stale": {
+      "count": 10000,
+      "max_ns": 25027,
+      "mean_ns": 170.33,
+      "mean_seconds": 1.7033000000000002e-07,
+      "mean_us": 0.17033,
+      "median_ns": 160.0,
+      "median_seconds": 1.6e-07,
+      "median_us": 0.16,
+      "min_ns": 150,
+      "p95_ns": 170,
+      "stdev_ns": 375.0399058674947
+    },
+    "normal": {
+      "count": 500,
+      "max_ns": 1309160,
+      "mean_ns": 871571.792,
+      "mean_seconds": 0.000871571792,
+      "mean_us": 871.571792,
+      "median_ns": 860425.5,
+      "median_seconds": 0.0008604255,
+      "median_us": 860.4255,
+      "min_ns": 799736,
+      "p95_ns": 966749,
+      "stdev_ns": 51680.176669026776
+    },
+    "pair_count": 500,
+    "paired_delta": {
+      "count": 500,
+      "max_ns": 2571143,
+      "mean_ns": 85876.374,
+      "mean_seconds": 8.5876374e-05,
+      "mean_us": 85.876374,
+      "median_ns": 71605.0,
+      "median_seconds": 7.1605e-05,
+      "median_us": 71.605,
+      "min_ns": -369702,
+      "p95_ns": 153978,
+      "stdev_ns": 215192.675270033
+    },
+    "recovery": {
+      "count": 500,
+      "max_ns": 3447904,
+      "mean_ns": 957448.166,
+      "mean_seconds": 0.0009574481659999999,
+      "mean_us": 957.448166,
+      "median_ns": 931828.5,
+      "median_seconds": 0.0009318285,
+      "median_us": 931.8285,
+      "min_ns": 871391,
+      "p95_ns": 1012355,
+      "stdev_ns": 214231.00289410137
+    },
+    "recovery_slower_pairs": 465
+  },
+  "frozen_hashes": {
+    "control_harness": "4eaa7b4ce6153973f55566fa7087b5aed0b758fc58216aed4c2d4e61869c9eab",
+    "control_raw": "944c68ded31899f29b5ae1ef6d0f55cca1451b3f065f6e124ccea7bf018a3553",
+    "matched_harness": "c8d1bc70f629b14f3314fd1c5e89078db1625f9db8af97fd5699c35b8b78e99e",
+    "matched_raw": "c66535846e9ec532eef8d1c7f750b0119a20e3b0d66ec81e6ac184e2cb8de944",
+    "real_recovery_harness": "69a83958e9d4f8951b18fbb59825ae664eff93d8ae88b4fb0a380bdff46b5a5f",
+    "real_recovery_raw": "14ec9478a04c1760677c18c8981449b959f153b7a232c60fd8dd3b48268b7fbf",
+    "session_harness": "2e7a911e39c1b4fae8b6f18deb28af0cf14b2994adb84c53702538be87cbf1ac",
+    "session_raw": "cbe31786ff78742442eee72c39282cbcfb888db4b178338605ed4453f104f4f1"
+  },
+  "hermes_session_cost": {
+    "create": {
+      "count": 50,
+      "max_ns": 367924793,
+      "mean_ns": 326059299.16,
+      "mean_seconds": 0.32605929916000004,
+      "mean_us": 326059.29916000005,
+      "median_ns": 327564179.5,
+      "median_seconds": 0.3275641795,
+      "median_us": 327564.1795,
+      "min_ns": 291415279,
+      "p95_ns": 353219178,
+      "stdev_ns": 15012466.647998758
+    },
+    "end": {
+      "count": 50,
+      "max_ns": 235867939,
+      "mean_ns": 206723702.26,
+      "mean_seconds": 0.20672370226,
+      "mean_us": 206723.70226,
+      "median_ns": 207023972.0,
+      "median_seconds": 0.207023972,
+      "median_us": 207023.972,
+      "min_ns": 189901954,
+      "p95_ns": 223838734,
+      "stdev_ns": 8906516.81565895
+    },
+    "round_trip": {
+      "count": 50,
+      "max_ns": 566334411,
+      "mean_ns": 532783001.42,
+      "mean_seconds": 0.53278300142,
+      "mean_us": 532783.00142,
+      "median_ns": 532712742.0,
+      "median_seconds": 0.532712742,
+      "median_us": 532712.742,
+      "min_ns": 490572567,
+      "p95_ns": 563685082,
+      "stdev_ns": 18485028.367679104
+    },
+    "sample_count": 50
+  },
+  "inference_run_by_analyzer": false,
+  "interpretation": {
+    "reason": "L.9E whole-turn variation is much larger than the isolated recovery machinery. Recovered turns were faster in 2/3 pairs, despite recovery objectively adding stale classification, replacement creation, binding rotation, and retry control. Therefore current Small-generation variance dominates the whole-turn comparison.",
+    "recovery_speedup_claim_supported": false,
+    "supported_findings": [
+      "The stale classifier cost is effectively negligible.",
+      "Forest-side additional recovery control cost is tens of microseconds.",
+      "Real Hermes replacement-session creation cost is hundreds of milliseconds.",
+      "Production stale recovery successfully rotates S to R while preserving frozen Small/Normal/binding/context semantics.",
+      "Recovery is exactly one-shot; a second failure escapes rather than looping.",
+      "Whole-turn Small inference variance prevents a clean recovery-latency estimate from L.9E alone."
+    ],
+    "whole_turn_recovery_cost_cleanly_resolved": false
+  },
+  "live_source_sha256": {
+    "hermes": "a09949eead5cb9772aca312c91630703c7ff8ce43df778730279445b25635084",
+    "live_providers": "40b49375dbe014b27b6fc5696bccf74274864e42953c473b42ffe10a3c552299",
+    "retry_test_scaffold": "b0ba1f9e8c6148cab49a94bc0ea1c49c1f7d9a68cb0138792e91d7aa8d44b417",
+    "task_session": "d666cb1471b568bf43db4255f5e84e98c1ea502af467e1e2670e4a93dc364991"
+  },
+  "matched_real": {
+    "normal": {
+      "count": 3,
+      "max_ns": 108373263789,
+      "mean_ns": 73885651327,
+      "mean_seconds": 73.885651327,
+      "mean_us": 73885651.327,
+      "median_ns": 64655755843,
+      "median_seconds": 64.655755843,
+      "median_us": 64655755.843,
+      "min_ns": 48627934349,
+      "p95_ns": 108373263789,
+      "stdev_ns": 30923604664.684635
+    },
+    "pair_count": 3,
+    "paired_delta": {
+      "count": 3,
+      "max_ns": 3873740643,
+      "mean_ns": -9958132876.666666,
+      "mean_seconds": -9.958132876666665,
+      "mean_us": -9958132.876666667,
+      "median_ns": -8475349182,
+      "median_seconds": -8.475349182,
+      "median_us": -8475349.182,
+      "min_ns": -25272790091,
+      "p95_ns": 3873740643,
+      "stdev_ns": 14629731681.43827
+    },
+    "recovery": {
+      "count": 3,
+      "max_ns": 112247004432,
+      "mean_ns": 63927518450.333336,
+      "mean_seconds": 63.92751845033334,
+      "mean_us": 63927518.450333335,
+      "median_ns": 40152585167,
+      "median_seconds": 40.152585167,
+      "median_us": 40152585.167,
+      "min_ns": 39382965752,
+      "p95_ns": 112247004432,
+      "stdev_ns": 41847671651.60264
+    },
+    "recovery_slower_pairs": 1
+  },
+  "persistent_production_state_modified": false,
+  "phase": "14.11L.9",
+  "real_recovery": {
+    "binding_rotated": true,
+    "cleanup_success": true,
+    "establishment_timing_ns": 89025076098,
+    "recovery_timing_ns": 49747931274,
+    "replacement_session_id": "api_1786586619_7d9c4247",
+    "semantic_identity_preserved": true,
+    "session_recovered": true,
+    "stale_session_id": "api_1786586530_cdcd1e75"
+  },
+  "runtime_mutation_by_analyzer": false,
+  "status": "PASS"
+}

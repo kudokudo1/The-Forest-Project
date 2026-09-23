@@ -1,0 +1,33 @@
+Phase: 14.11L.3
+Role: Terminal A authoritative warm-Small dataset freeze
+Status: 0
+
+Trials: 5
+Minimum seconds: 32.029349374
+Median seconds: 42.701828285
+Mean seconds: 74.316977775
+Maximum seconds: 169.996093683
+Range seconds: 137.966744309
+Sample stdev seconds: 57.346213679
+P90 seconds: 169.996093683
+
+Cold comparison:
+- L.2 cold median: 164.270725926 s
+- Warm median speedup: 3.847x
+- Warm median reduction: 74.01%
+
+Certified conditions:
+- Real Small runtime
+- binding-0001
+- Normal reasoning
+- identical L.2/L.3 fixed prompt
+- resident Small before every measured turn
+- fresh runtime session every measured turn
+- persist=False
+- no reuse/recovery/rotation
+- Small remained resident afterward
+- active.yaml frozen
+- production hashes frozen
+- all five measurements retained
+
+CERTIFIED

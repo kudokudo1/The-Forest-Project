@@ -1,0 +1,29 @@
+The Forest — Bristlecone Pine
+
+Phase:
+14.11G.3B
+
+Status:
+CERTIFIED MODEL FORM AUTO PROVENANCE EXTENSION
+
+Resolver SHA256:
+17548170c5d925eb276e5dc91739a42cbf1b5d8f2b94877b657abe0cc68873ae
+
+Previous resolver SHA256:
+b28ec18d6b30b883a1ad334990cae518a3f1d8b54c00f62da28513d1fa3c91a1
+
+Certified 14.11F task_session.py SHA256:
+2e35143d63bf3d077edb95a4147035018453e019a8f1ee1673912061b883eb2a
+
+Certified behavior:
+- legacy automatic_form callers preserve old provenance
+- automatic_reasons are appended only when Auto wins
+- resolver remains owner of source=auto_policy
+- reason strings normalize
+- malformed winning-Auto reasons fail closed
+- Auto reasons without Auto form fail closed when Auto routing wins
+- exact-turn control outranks automatic routing
+- Auto reasons do not leak into exact-turn decisions
+- irrelevant malformed Auto metadata cannot block exact control
+- resolver does not import router implementation
+- existing automatic Model Form tests remain passing

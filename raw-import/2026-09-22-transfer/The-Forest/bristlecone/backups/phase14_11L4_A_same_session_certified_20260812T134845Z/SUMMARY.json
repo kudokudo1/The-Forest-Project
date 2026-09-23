@@ -1,0 +1,16 @@
+{
+  "delta_vs_warm_fresh_fraction": 0.04096292065823438,
+  "delta_vs_warm_fresh_s": 1.7491916040000035,
+  "l2_cold_median_s": 164.270725926,
+  "l3_warm_fresh_median_s": 42.701828285,
+  "max_s": 188.200975222,
+  "mean_s": 91.6602961138,
+  "median_s": 44.451019889,
+  "min_s": 31.749168953,
+  "n": 5,
+  "p90_s": 188.200975222,
+  "range_s": 156.451806269,
+  "reduction_vs_cold_fraction": 0.7294038871598819,
+  "speedup_vs_cold": 3.695544586743014,
+  "stdev_s": 73.46026870532094
+}

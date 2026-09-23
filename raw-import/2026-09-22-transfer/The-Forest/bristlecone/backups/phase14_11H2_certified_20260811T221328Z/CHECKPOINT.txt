@@ -1,0 +1,26 @@
+The Forest — Bristlecone Pine
+Phase 14.11H.2
+
+Status:
+CERTIFIED CONTEXT+BINDING SESSION OWNERSHIP
+
+TaskSession baseline:
+fa174d6da050fbb072f3b031dbea38d3bfd6ea3d080d3b17786adc6eaa61f9da
+
+Colony identity:
+0b95f47bc0f4321f722a4b6b092a40238ef4193a91ccc40e963233b6a1be627a
+
+Session-isolation test:
+e8a7e5cd6a7f9faa1381fa71ac8d33ba2dfc794f04f4f73a2233eb5174dae3bf
+
+Certified behavior:
+- same binding may be used by different execution contexts
+- different execution contexts retain different sessions
+- same context may retain separate sessions for different bindings
+- exact context+binding resolves its canonical session entry
+- updating one identity does not modify neighboring identities
+- session-store writes are pure/non-mutating
+- G.7 TaskSession remains unchanged
+
+Canonical runtime identity:
+(execution_context_id, binding_id) -> session binding

@@ -1,0 +1,86 @@
+Phase: 14.11J.2
+Name: Real Small Session Commitment
+Status: CERTIFIED
+
+REAL EXECUTION
+
+execution_context_id:
+ctx-j2
+
+binding_id:
+binding-0001
+
+adapter:
+hermes
+
+model_form:
+small
+
+real session:
+api_1786498440_24c21ddc
+
+Observed first-session result:
+
+initial_session_created = True
+session_created = True
+session_reused = False
+session_rotated = False
+session_recovered = False
+
+WORKING-STATE COMMITMENT
+
+The newly created runtime session is written through
+_write_runtime_session_binding_for_identity() before
+optional durable persistence.
+
+The canonical working Forest state therefore receives:
+
+execution_context_id + binding_id
+-> adapter
+-> session_id
+
+before runtime/model I/O continues.
+
+DURABLE PERSISTENCE
+
+J.2 used persist=False.
+
+Therefore:
+
+binding_persisted = False
+binding_persisted_before_turn = False
+
+correctly means active.yaml was not durably rewritten.
+
+It does NOT mean the in-memory Forest session binding
+was absent.
+
+RESOURCE FINDING / FIX
+
+The original live Small provider double-counted already
+resident model weights.
+
+Observed resident model:
+bristlecone-qwen35:4b-64k
+
+Ollama resident bytes:
+5646906816
+
+Calibrated full requirement:
+6144 MiB
+
+Residency-aware remaining requirement:
+759 MiB
+
+The corrected provider credits the exact matching Small
+residency while retaining the remaining calibrated margin.
+
+J.2B:
+6 PASS / 0 FAIL
+
+Persistent active.yaml remained unchanged.
+
+TaskSession production source remained unchanged.
+
+FINAL:
+14.11J.2 CERTIFIED

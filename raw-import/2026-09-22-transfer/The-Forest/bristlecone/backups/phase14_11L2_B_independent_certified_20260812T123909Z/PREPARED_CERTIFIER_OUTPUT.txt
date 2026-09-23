@@ -1,0 +1,141 @@
+PASS: exactly three trial artifacts supplied
+PASS: artifact exists: bristlecone/benchmarks/phase14_11L/l2_cold_small_trial1_raw.json
+PASS: artifact exists: bristlecone/benchmarks/phase14_11L/l2_cold_small_trial2_raw.json
+PASS: artifact exists: bristlecone/benchmarks/phase14_11L/l2_cold_small_trial3_raw.json
+PASS: inputs are exactly Trials 1-3
+PASS: Trial 1 phase correct
+PASS: Trial 1 scenario correct
+PASS: Trial 1 succeeded
+PASS: Trial 1 requested Small
+PASS: Trial 1 expected binding-0001
+PASS: Trial 1 requested Normal
+PASS: Trial 1 persist=False
+PASS: Trial 1 active.yaml baseline correct
+PASS: Trial 1 active.yaml unchanged
+PASS: Trial 1 genuinely cold before
+PASS: Trial 1 resident after
+PASS: Trial 1 resident model is Small
+PASS: Trial 1 actual binding correct
+PASS: Trial 1 actual Model Form Small
+PASS: Trial 1 resolved Normal
+PASS: Trial 1 adapter Hermes
+PASS: Trial 1 fresh initial session
+PASS: Trial 1 reports session creation
+PASS: Trial 1 no reuse
+PASS: Trial 1 no recovery
+PASS: Trial 1 no rotation
+PASS: Trial 1 no persistence
+PASS: Trial 1 timing internally consistent
+PASS: Trial 2 phase correct
+PASS: Trial 2 scenario correct
+PASS: Trial 2 succeeded
+PASS: Trial 2 requested Small
+PASS: Trial 2 expected binding-0001
+PASS: Trial 2 requested Normal
+PASS: Trial 2 persist=False
+PASS: Trial 2 active.yaml baseline correct
+PASS: Trial 2 active.yaml unchanged
+PASS: Trial 2 genuinely cold before
+PASS: Trial 2 resident after
+PASS: Trial 2 resident model is Small
+PASS: Trial 2 actual binding correct
+PASS: Trial 2 actual Model Form Small
+PASS: Trial 2 resolved Normal
+PASS: Trial 2 adapter Hermes
+PASS: Trial 2 fresh initial session
+PASS: Trial 2 reports session creation
+PASS: Trial 2 no reuse
+PASS: Trial 2 no recovery
+PASS: Trial 2 no rotation
+PASS: Trial 2 no persistence
+PASS: Trial 2 timing internally consistent
+PASS: Trial 3 phase correct
+PASS: Trial 3 scenario correct
+PASS: Trial 3 succeeded
+PASS: Trial 3 requested Small
+PASS: Trial 3 expected binding-0001
+PASS: Trial 3 requested Normal
+PASS: Trial 3 persist=False
+PASS: Trial 3 active.yaml baseline correct
+PASS: Trial 3 active.yaml unchanged
+PASS: Trial 3 genuinely cold before
+PASS: Trial 3 resident after
+PASS: Trial 3 resident model is Small
+PASS: Trial 3 actual binding correct
+PASS: Trial 3 actual Model Form Small
+PASS: Trial 3 resolved Normal
+PASS: Trial 3 adapter Hermes
+PASS: Trial 3 fresh initial session
+PASS: Trial 3 reports session creation
+PASS: Trial 3 no reuse
+PASS: Trial 3 no recovery
+PASS: Trial 3 no rotation
+PASS: Trial 3 no persistence
+PASS: Trial 3 timing internally consistent
+PASS: three unique Forest Tasks
+PASS: three unique execution contexts
+PASS: three unique runtime sessions
+PASS: frozen SHA: bristlecone/runtime/task_session.py
+PASS: frozen SHA: bristlecone/runtime/session_store.py
+PASS: frozen SHA: bristlecone/runtime/session_identity.py
+PASS: frozen SHA: bristlecone/runtime/adapters/hermes.py
+PASS: frozen SHA: bristlecone/resources/live_providers.py
+PASS: frozen SHA: bristlecone/model_form/bindings.yaml
+PASS: frozen SHA: bristlecone/state/active.yaml
+{
+  "max_s": 229.430562429,
+  "mean_s": 178.49304207966668,
+  "median_s": 164.270725926,
+  "min_s": 141.777837884,
+  "n": 3,
+  "outlier_rule": "advisory only: absolute deviation from median >25%; no observation excluded",
+  "outliers": [
+    {
+      "advisory_outlier": true,
+      "duration_s": 229.430562429,
+      "excluded": false,
+      "relative_deviation_from_median": 0.3966612805519159,
+      "trial": 1
+    },
+    {
+      "advisory_outlier": false,
+      "duration_s": 164.270725926,
+      "excluded": false,
+      "relative_deviation_from_median": 0.0,
+      "trial": 2
+    },
+    {
+      "advisory_outlier": false,
+      "duration_s": 141.777837884,
+      "excluded": false,
+      "relative_deviation_from_median": 0.13692572377218631,
+      "trial": 3
+    }
+  ],
+  "p90_s": 229.430562429,
+  "stdev_s": 45.52423242210182,
+  "trials": [
+    {
+      "duration_s": 229.430562429,
+      "path": "bristlecone/benchmarks/phase14_11L/l2_cold_small_trial1_raw.json",
+      "sha256": "4fc65acb1c96738b0082fc1be5aa2213bb9f5a966682b219559c992bad03beb0",
+      "trial": 1
+    },
+    {
+      "duration_s": 164.270725926,
+      "path": "bristlecone/benchmarks/phase14_11L/l2_cold_small_trial2_raw.json",
+      "sha256": "bcdab875e7120a1bde9e7186a21652afefc178a03bd2371800b46a2d8b324500",
+      "trial": 2
+    },
+    {
+      "duration_s": 141.777837884,
+      "path": "bristlecone/benchmarks/phase14_11L/l2_cold_small_trial3_raw.json",
+      "sha256": "24983d0fb8d204d3d2f44c69070bd529c968b21933b55a3f6808c57a7e81ed59",
+      "trial": 3
+    }
+  ]
+}
+
+PASS: all three raw timings preserved
+PASS: no outlier silently discarded
+STATUS=0

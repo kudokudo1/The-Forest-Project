@@ -1,0 +1,124 @@
+Phase: 14.11G
+Checkpoint: G.7
+Status: FINAL CERTIFIED
+
+System:
+Automatic Escalation Router
+
+PRODUCTION ROUTING PATH
+
+Frozen effective Reasoning
+    ->
+AutomaticModelFormRoutingInput
+    ->
+recommend_automatic_model_form()
+    ->
+Task/context-bound AutomaticModelFormRecommendation
+    ->
+canonical Model Form precedence/resolution
+    ->
+FrozenModelFormTurn
+    ->
+exact ResourceRequest
+    ->
+Governor
+    ->
+runtime/session execution
+
+CERTIFIED AUTHORITY BOUNDARIES
+
+Router:
+- decides whether Small or Big would be useful
+- consumes normalized semantic evidence only
+- observes already-resolved Reasoning
+- cannot mutate Reasoning
+- does not inspect Governor state
+- does not inspect resource availability
+- does not perform runtime/session work
+
+Model Form:
+- exact-turn override outranks Auto
+- matching Task override outranks Auto
+- pinned baseline outranks Auto
+- Auto participates only when canonically eligible
+- explicit/unavailable forms fail closed
+- no silent semantic downgrade
+
+Governor:
+- receives the exact frozen ResourceRequest
+- cannot rewrite Model Form
+- cannot rewrite Reasoning
+- APPROVE permits runtime continuation
+- DEFER stops before runtime/session side effects
+- DENY stops before runtime/session side effects
+- resource pressure does not trigger rerouting
+
+Retry/recovery:
+- Reasoning resolves once per meaningful turn
+- Auto router runs once per meaningful turn
+- Model Form freezes once
+- stale recovery uses the SAME FrozenModelFormTurn
+- replacement session keeps frozen semantic identity
+- one stale retry only
+- retry failure does not reroute
+- second stale failure does not reroute
+
+Isolation:
+- recommendations are Task-local
+- recommendations are execution-context-local
+- Task mismatch fails closed before freeze/runtime
+- execution-context mismatch fails closed before freeze/runtime
+- separate Tasks/contexts route independently
+
+Reasoning/Form independence:
+- Deep does not mechanically imply Big
+- Light does not mechanically imply Small
+
+Resource boundary:
+- ResourceRequest is downstream of frozen Reasoning and Model Form
+- Governor cannot silently change Big to Small
+
+PRODUCTION BIG STATUS
+
+Production model_form/bindings.yaml currently exposes Small only.
+
+Big production activation was NOT performed during Phase G.
+
+Integrated Big certification used a temporary test-only binding registry
+while exercising the exact production TaskSession implementation.
+
+CERTIFICATION FINDING / REPAIR
+
+G.5D exposed a real package-export defect:
+runtime/task_session.py imported
+automatic_model_form_is_eligible from model_form,
+but model_form/__init__.py did not re-export the symbol.
+
+Repair:
+- model_form/__init__.py only
+
+Unchanged:
+- runtime/task_session.py
+- model_form/resolution.py
+- production routing semantics
+
+EARLIER PROTOTYPE NOTE
+
+model_form/automatic_router.py is retained as the earlier isolated
+Automatic Router prototype/regression artifact.
+
+The authoritative production routing implementation is:
+
+- model_form/automatic_routing.py
+- model_form/automatic_routing_evidence.py
+- model_form/automatic_routing_policy.py
+- model_form/resolution.py
+- runtime/task_session.py
+
+PHASE RESULT
+
+Automatic Escalation Router:
+CERTIFIED
+
+Phase 14.11G:
+CLOSED

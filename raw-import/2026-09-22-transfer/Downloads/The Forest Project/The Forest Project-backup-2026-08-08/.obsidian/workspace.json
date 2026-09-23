@@ -1,0 +1,248 @@
+{
+  "main": {
+    "id": "b919136bf5fb240e",
+    "type": "split",
+    "children": [
+      {
+        "id": "25ce7eb637ed3aa5",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a32d7aaf351a9fa9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "The-Forest-Project-zeta/Trees/True Trees/Bristlecone Pine/bristlecone_maple_remote_compute_continuity 1.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "bristlecone_maple_remote_compute_continuity 1"
+            }
+          },
+          {
+            "id": "ba012784543192e9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "The-Forest-Project-zeta/Trees/True Trees/Bristlecone Pine/Temp Test.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Temp Test"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "c41e9c585218530e",
+    "type": "split",
+    "children": [
+      {
+        "id": "de6943894fd990b0",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4f8035f5d3279308",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabeticalReverse",
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "fe8e6cf66d5eb3df",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "tag:#maple",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": true,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "787f8eb4bba62869",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "right": {
+    "id": "85773b4ae8eb7dcb",
+    "type": "split",
+    "children": [
+      {
+        "id": "232f0daf65659d99",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "dc0552e64518c130",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
+            }
+          },
+          {
+            "id": "b6653b4fad41d9db",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "3d327d7d053af556",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "7dd8548e6497eeec",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "a74868af0df64a31",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Untitled.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "ba012784543192e9",
+  "lastOpenFiles": [
+    "The-Forest-Project-zeta/System/Templates/Bristlecone Pine Template.md",
+    "The-Forest-Project-zeta/System/Templates/Template.md",
+    "The-Forest-Project-zeta/Trees/True Trees/Bristlecone Pine/Temp Test.md",
+    "The-Forest-Project-zeta/Trees/True Trees/Bristlecone Pine/bristlecone_pine_optimization_master_v2.md",
+    "The-Forest-Project-zeta/Trees/True Trees/Bristlecone Pine/bristlecone_maple_remote_compute_continuity 1.md",
+    "The-Forest-Project-zeta/Trees/True Trees/Bristlecone Pine/bristlecone_pine_full_continuity_packet_v1_1.md",
+    "The-Forest-Project-zeta/System/Templates",
+    "The-Forest-Project-zeta/Archive/-map.base",
+    "The-Forest-Project-zeta/System/Aritucture/00-combined-original-prompts-and-suggestions.md",
+    "The-Forest-Project-zeta/Trees/True Trees/THE-FOREST-PDC-PDF-PROJECT-KNOWLEDGE-SNAPSHOT(3).md",
+    "The-Forest-Project-zeta/Untitled 1.canvas",
+    "Untitled.canvas",
+    "The-Forest-Project-zeta/Untitled.canvas",
+    "The-Forest-Project-zeta/System/Canopy/The_Forest_Shared_Knowledge_Canopy_and_Spirit_Concept.md",
+    "The-Forest-Project-zeta/System/Canopy/02-leaf-foliage-and-all-in-one-forest.md",
+    "The-Forest-Project-zeta/System/Qubes OS/QUBES-PC-SYSTEM-AND-AI-RUNTIME-SNAPSHOT.md",
+    "The-Forest-Project-zeta/Trees/True Trees/Sycamore/Sycamore.md",
+    "The-Forest-Project-zeta/Trees/True Trees/Trees.md",
+    "The-Forest-Project-zeta/Trees/True Trees/THE-FOREST-PDC-PDF-PROJECT-KNOWLEDGE-SNAPSHOT(1) 1.md",
+    "Untitled.base",
+    "The-Forest-Project-zeta/System/AI/forest_workshops_and_modes_quick_draft.md",
+    "2026-08-08.md",
+    "The-Forest-Project-zeta/System/AI/04-mobile-background-agents-and-maple.md",
+    "The-Forest-Project-zeta/Projects/The Forest/Welcome to The Forest Project.md",
+    "The-Forest-Project-zeta/System/Qubes OS/Qubes_PC_System_Technical_Context.md",
+    "The-Forest-Project-zeta/Trees/True Trees/Sycamore",
+    "The-Forest-Project-zeta/Trees/True Trees/Cedar",
+    "The-Forest-Project-zeta/Trees/True Trees/Maple",
+    "The-Forest-Project-zeta/Trees/True Trees/Cherry",
+    "The-Forest-Project-zeta/Trees/True Trees",
+    "The-Forest-Project-zeta/System/Qubes OS",
+    "THE-FOREST-PDC-PDF-PROJECT-KNOWLEDGE-SNAPSHOT(1).md",
+    "The-Forest-Project-zeta/Trees/Tree Training/01-early-seed-training-obsidian.md",
+    "The-Forest-Project-zeta/System/Aritucture",
+    "The-Forest-Project-zeta/Trees/True Trees/Bristlecone Pine/Bristlecone Pine.md",
+    "bristlecone_maple_remote_compute_continuity.md",
+    "The-Forest-Project-zeta/Projects.md",
+    "The-Forest-Project-zeta/System.md",
+    "The-Forest-Project-zeta/System/Qubes OS/Qubes OS.md",
+    "Untitled 1.canvas",
+    "The-Forest-Project-zeta/Untitled 2.canvas"
+  ]
+}

@@ -1,0 +1,32 @@
+Phase: 14.11G.5D
+Lane: Terminal B
+Type: Real integrated production-path certification
+
+Tests:
+PASS 10
+FAIL 0
+
+Certified:
+- real TaskSession public turn entrypoint
+- real automatic Model Form routing
+- real FrozenModelFormTurn
+- real ResourceRequest preparation
+- exact Governor request identity
+- APPROVE reaches runtime
+- DEFER stops before runtime/session side effects
+- DENY stops before runtime/session side effects
+- Big never silently downgrades to Small
+- unavailable production Big fails closed
+- malformed Governor result fails closed
+- wrong ResourceRequest identity fails closed
+- Governor exception fails closed
+
+Certification finding:
+- G.5D exposed missing package export for
+  automatic_model_form_is_eligible.
+- Repair was limited to model_form/__init__.py.
+- runtime/task_session.py remained unchanged.
+
+Production Big activation:
+NOT performed.
+Big tests used a temporary test-only binding registry.

@@ -1,0 +1,51 @@
+Phase: 14.11L.5
+Role: Terminal A authoritative multi-context dataset freeze
+Status: 0
+
+Sequential pair-wall statistics:
+- Minimum: 128.095080251 s
+- Median: 135.126682738 s
+- Mean: 202.593514980 s
+- Maximum: 425.187228696 s
+- Stdev: 127.619057044 s
+
+Concurrent pair-wall statistics:
+- Minimum: 139.306043348 s
+- Median: 197.993528336 s
+- Mean: 185.195131395 s
+- Maximum: 216.060928237 s
+- Stdev: 33.355454272 s
+
+Matched comparison:
+- Concurrent slower: 4/5
+- Concurrent faster: 1/5
+- Median paired difference: 32.787044980 s
+- Median paired percent change: 25.4625%
+- Distribution median delta: 62.866845598 s
+- Distribution median change: 46.5244%
+- Sequential total: 1012.967574898 s
+- Concurrent total: 925.975656973 s
+- Aggregate change: -8.5878%
+
+Certified architecture conditions:
+- five sequential multi-context pairs
+- five synchronized concurrent multi-context pairs
+- separate execution contexts
+- separate Hermes sessions
+- one shared resident Small model per pair
+- binding-0001
+- Normal reasoning
+- persist=False
+- active.yaml frozen
+- production hashes frozen
+- all measurements retained
+
+Interpretation:
+- multi-context isolation remained intact
+- resident Small sharing remained intact
+- 4/5 matched pairs had higher concurrent wall time
+- Pair 1 is an extreme opposite-direction observation
+- inference variance remains substantial
+- client overlap does not prove internal parallel inference
+
+CERTIFIED

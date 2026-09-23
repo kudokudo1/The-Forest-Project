@@ -1,0 +1,14 @@
+The Forest — Bristlecone Pine
+Terminal B Phase 14.11L.2 certification attempt
+
+RESULT: NOT CERTIFIED
+
+AssertionError: authoritative summary equals frozen A archive summary
+
+Terminal B live-runtime operations: NONE
+Terminal B production modifications: NONE
+
+Traceback (most recent call last):
+  File "<stdin>", line 1086, in <module>
+  File "<stdin>", line 83, in check
+AssertionError: authoritative summary equals frozen A archive summary

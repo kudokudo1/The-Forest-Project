@@ -1,0 +1,44 @@
+Phase: 14.11J.3
+Role: Terminal B Independent Certifier
+Status: INDEPENDENTLY CERTIFIED
+
+Reviewed checkpoint:
+bristlecone/backups/phase14_11J3_real_reuse_certified_20260812T020325Z
+
+Verified archive integrity:
+PASS
+
+Production TaskSession SHA:
+d666cb1471b568bf43db4255f5e84e98c1ea502af467e1e2670e4a93dc364991
+
+Production live_providers.py SHA:
+40b49375dbe014b27b6fc5696bccf74274864e42953c473b42ffe10a3c552299
+
+REAL SESSION REUSE
+
+Turn 1 created one real Hermes session.
+
+Turn 2 reused that exact same real Hermes session.
+
+Observed invariants:
+
+- Same Forest Task retained.
+- Same execution_context_id retained.
+- Same binding_id retained.
+- Same Model Form retained.
+- Turn 1 session_created=True.
+- Turn 1 session_reused=False.
+- Turn 2 session_created=False.
+- Turn 2 session_reused=True.
+- Turn 1 and Turn 2 session IDs are identical.
+- No neighboring execution-context slot appeared.
+- Persistent active.yaml was not modified.
+- Production TaskSession remained unchanged.
+
+Terminal B performed no competing inference.
+Terminal B performed no model load/unload.
+Terminal B performed no service restart.
+Terminal B performed no production modification.
+
+FINAL:
+14.11J.3 independently certified.

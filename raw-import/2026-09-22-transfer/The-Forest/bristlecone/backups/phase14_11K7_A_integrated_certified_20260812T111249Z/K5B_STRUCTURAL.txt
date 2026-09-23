@@ -1,0 +1,15 @@
+=== K.5B STRUCTURAL RESULT ===
+Wrapper delegate: 12254
+Router: 10877
+Freeze: 10941
+Governor: 11038
+Post-Governor instruction refs: 1
+
+PASS: wrapper delegates correctly
+PASS: instruction composition forwarded unchanged
+PASS: Router -> freeze -> Governor
+PASS: Workshop/instructions independent of routing
+PASS: Workshop/instructions independent of Model Form freeze
+PASS: independent instruction axis continues afterward
+
+K.5B structural status: 0

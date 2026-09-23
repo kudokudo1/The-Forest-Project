@@ -1,0 +1,29 @@
+Phase: 14.11H.5G
+Status: CERTIFIED
+
+Production TaskSession SHA:
+d666cb1471b568bf43db4255f5e84e98c1ea502af467e1e2670e4a93dc364991  bristlecone/runtime/task_session.py
+
+H.5F integrated test SHA:
+c0ac6bb4cca9eaf737660d5c041218fccc9cd9a4a17468eecbf209db23db2f4b  bristlecone/tests/test_colony_h5_integrated_isolation.py
+
+H.5F result:
+15 PASS / 0 FAIL
+
+Focused Colony suite:
+PASS
+
+Certified semantics:
+- One Tree may contain an Ortet and multiple Ramets.
+- lineage_role is independent from operational_role.
+- Model Form is execution-context isolated.
+- Reasoning control is execution-context isolated.
+- Temporary Reasoning leases are execution-context isolated.
+- Legacy reasoning_control belongs only to ctx-default compatibility.
+- Ramets do not inherit legacy Tree-global Reasoning.
+- Runtime sessions are owned by execution_context_id + binding_id.
+- Multiple execution contexts may use the same model binding without sharing runtime sessions.
+- Task-local temporary capabilities do not leak between execution contexts.
+- Task-sticky Skills do not leak between execution contexts.
+- Workshop/application state derives from the supplied context-local Task state.
+- Active runtime operations require active Forest Task identity.

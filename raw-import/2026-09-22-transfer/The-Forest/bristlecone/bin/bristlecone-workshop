@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+export HERMES_HOME="$HOME/.hermes/profiles/bristlecone"
+
+exec \
+"$HOME/.hermes/hermes-agent/venv/bin/python" \
+"$HOME/The-Forest/bristlecone/bin/bristlecone-workshop.py" \
+"$@"

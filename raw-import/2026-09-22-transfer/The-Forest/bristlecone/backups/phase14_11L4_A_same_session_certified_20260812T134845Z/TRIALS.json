@@ -1,0 +1,47 @@
+[
+  {
+    "duration_ns": 153481200115,
+    "duration_s": 153.481200115,
+    "execution_context_id": "ctx-l4-reuse-01",
+    "session_id": "api_1786539958_0b52cb25",
+    "sha256": "0b7c99ca91dab189d214b426d16bece53a96307683338a8bbcac11e0b1f061ef",
+    "task_id": "forest-task-20260812T130557Z-632da219",
+    "trial": 1
+  },
+  {
+    "duration_ns": 44451019889,
+    "duration_s": 44.451019889,
+    "execution_context_id": "ctx-l4-reuse-02",
+    "session_id": "api_1786540496_5da2ff00",
+    "sha256": "366454b297d090aa29e6ab0d89dcd334462134accb96f0429ed3f22f6e43889f",
+    "task_id": "forest-task-20260812T131456Z-e9b3f89c",
+    "trial": 2
+  },
+  {
+    "duration_ns": 31749168953,
+    "duration_s": 31.749168953,
+    "execution_context_id": "ctx-l4-reuse-03",
+    "session_id": "api_1786541182_dc001221",
+    "sha256": "4d08c4b7f8077dfa6e353f36e41fbb3a9d9d5b2fa5e646bf2cc540a4c52167f5",
+    "task_id": "forest-task-20260812T132622Z-08822978",
+    "trial": 3
+  },
+  {
+    "duration_ns": 188200975222,
+    "duration_s": 188.200975222,
+    "execution_context_id": "ctx-l4-reuse-04",
+    "session_id": "api_1786541871_57f201e7",
+    "sha256": "302eecb79c462ee11bf570a8228789bb96e6ce2e5de77345a675fbd12733f1a5",
+    "task_id": "forest-task-20260812T133750Z-2ca54aea",
+    "trial": 4
+  },
+  {
+    "duration_ns": 40419116390,
+    "duration_s": 40.41911639,
+    "execution_context_id": "ctx-l4-reuse-05",
+    "session_id": "api_1786542244_ee475dff",
+    "sha256": "cb5bd44bc4aa67d9bb8a1b335cb71ecfaca7ba960fbd5b1ec90b7b551ca5b95e",
+    "task_id": "forest-task-20260812T134404Z-f5c933e4",
+    "trial": 5
+  }
+]

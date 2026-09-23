@@ -1,0 +1,30 @@
+Phase: 14.11G.5B-G.5C
+Lane: Terminal B
+Type: Synthetic certification
+
+Tests:
+PASS 8
+FAIL 0
+
+Certified synthetic invariants:
+- Small + APPROVE remains Small
+- Big + APPROVE remains Big
+- Big + DEFER stops without downgrade
+- Big + DENY stops without downgrade
+- Governor does not replace the exact ResourceRequest
+- wrong request identity fails closed
+- malformed Governor result fails closed
+- Governor exception fails closed
+- Governor failure does not rerun the router
+- Model Form is not rewritten by Governor
+- Reasoning is not rewritten by Governor
+- recommendation provenance survives into the synthetic request
+
+Production certification:
+NOT YET
+
+Blocked production steps:
+- G.5D awaits certified G.4C5 production integration
+
+Production files modified by Terminal B:
+NONE

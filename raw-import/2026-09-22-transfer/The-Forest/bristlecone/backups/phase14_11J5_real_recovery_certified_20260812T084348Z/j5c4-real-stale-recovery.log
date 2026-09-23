@@ -1,0 +1,93 @@
+=== 14.11J.5C4 — CLEAN REAL STALE RECOVERY ===
+
+=== PRE-FLIGHT PRODUCTION GUARD ===
+runtime/task_session.py: d666cb1471b568bf43db4255f5e84e98c1ea502af467e1e2670e4a93dc364991
+runtime/session_store.py: 3c3449fa878920ea27f39b6216cf38a687d09a08da1d5b57af68c1a2f4beb48f
+runtime/session_identity.py: 8a1d668e898dc2df7b60fd5099be0cf42dd2d4c864cbe163164f0a061a777353
+runtime/adapters/hermes.py: a09949eead5cb9772aca312c91630703c7ff8ce43df778730279445b25635084
+resources/live_providers.py: 40b49375dbe014b27b6fc5696bccf74274864e42953c473b42ffe10a3c552299
+model_form/bindings.yaml: 74110afd51de7ceddd02948d0430b0f9f1b5443a6eaaaa0b8a6e4164a52b0583
+active.yaml: 6b8fb9b44757917c1889a7368d43f393165080d248cdb3d9c5982aad53b270e5
+Hermes MainPID: 941
+PASS: pre-flight baseline certified
+
+configured runtime: {'adapter': 'hermes', 'platform': 'api_server', 'profile': 'bristlecone'}
+configured adapter: HermesRuntimeAdapter
+Task: None
+Context: ctx-j5
+
+=== TURN 1 — CREATE DISPOSABLE SESSION A ===
+
+--- TURN 1 RESULT ---
+execution_context_id: 'ctx-j5'
+binding_id: 'binding-0001'
+model_form: 'small'
+resolved_reasoning_mode: 'normal'
+session_id: 'api_1786503554_0fed4c96'
+initial_requested_session_id: 'api_1786503554_0fed4c96'
+requested_session_id: 'api_1786503554_0fed4c96'
+session_created: True
+initial_session_created: True
+session_reused: False
+session_recovered: False
+binding_persisted: False
+binding_persisted_before_turn: False
+
+session A: api_1786503554_0fed4c96
+runtime contexts: ['ctx-j5']
+PASS: real disposable session A created
+
+=== TARGETED HERMES DELETE SESSION A ===
+delete A result: {'adapter': 'hermes', 'session_id': 'api_1786503554_0fed4c96', 'ended': True, 'response': {'object': 'hermes.session.deleted', 'id': 'api_1786503554_0fed4c96', 'deleted': True}}
+PASS: Hermes deleted disposable session A
+PASS: Forest intentionally still holds stale A
+
+=== TURN 2 — GENUINE STALE RECOVERY ===
+
+--- RECOVERY RESULT ---
+execution_context_id: 'ctx-j5'
+binding_id: 'binding-0001'
+model_form: 'small'
+resolved_reasoning_mode: 'normal'
+initial_requested_session_id: 'api_1786503554_0fed4c96'
+requested_session_id: 'api_1786503702_bd0d7591'
+session_id: 'api_1786503702_bd0d7591'
+previous_session_id: 'api_1786503554_0fed4c96'
+session_created: True
+initial_session_created: False
+session_reused: True
+session_rotated: False
+session_recovered: True
+recovery_from_session_id: 'api_1786503554_0fed4c96'
+recovery_session_id: 'api_1786503702_bd0d7591'
+binding_persisted: False
+binding_persisted_before_turn: False
+recovery_binding_persisted: False
+adapter: 'hermes'
+runtime contexts: ['ctx-j5']
+
+PASS: genuine stale A recovered to replacement B
+PASS: recovery remained ctx-j5 / binding-0001 / Small / Normal
+PASS: persist=False prevented durable recovery persistence
+
+=== CLEANUP DISPOSABLE SESSION B ===
+cleanup B result: {'adapter': 'hermes', 'session_id': 'api_1786503702_bd0d7591', 'ended': True, 'response': {'object': 'hermes.session.deleted', 'id': 'api_1786503702_bd0d7591', 'deleted': True}}
+PASS: disposable replacement B cleaned up
+
+=== POST-FLIGHT INTEGRITY ===
+active.yaml before: 6b8fb9b44757917c1889a7368d43f393165080d248cdb3d9c5982aad53b270e5
+active.yaml after:  6b8fb9b44757917c1889a7368d43f393165080d248cdb3d9c5982aad53b270e5
+Hermes MainPID before: 941
+Hermes MainPID after:  941
+runtime/task_session.py: d666cb1471b568bf43db4255f5e84e98c1ea502af467e1e2670e4a93dc364991
+runtime/session_store.py: 3c3449fa878920ea27f39b6216cf38a687d09a08da1d5b57af68c1a2f4beb48f
+runtime/session_identity.py: 8a1d668e898dc2df7b60fd5099be0cf42dd2d4c864cbe163164f0a061a777353
+runtime/adapters/hermes.py: a09949eead5cb9772aca312c91630703c7ff8ce43df778730279445b25635084
+resources/live_providers.py: 40b49375dbe014b27b6fc5696bccf74274864e42953c473b42ffe10a3c552299
+model_form/bindings.yaml: 74110afd51de7ceddd02948d0430b0f9f1b5443a6eaaaa0b8a6e4164a52b0583
+
+PASS: active.yaml unchanged
+PASS: Hermes PID unchanged
+PASS: six-file production baseline unchanged
+
+14.11J.5C4 evidence status: 0

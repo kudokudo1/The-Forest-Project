@@ -1,0 +1,34 @@
+Task: forest-task-20260812T013359Z-e7915e21
+Context: ctx-j2
+Model Form: small
+
+=== CANONICAL COMMITMENT FIELDS ===
+execution_context_id: 'ctx-j2'
+binding_id: 'binding-0001'
+session_id: 'api_1786498440_24c21ddc'
+requested_session_id: 'api_1786498440_24c21ddc'
+initial_requested_session_id: 'api_1786498440_24c21ddc'
+initial_session_created: True
+session_created: True
+session_reused: False
+session_rotated: False
+session_recovered: False
+binding_persisted: False
+binding_persisted_before_turn: False
+
+=== RETURNED FOREST STATE ===
+task id: forest-task-20260812T013359Z-e7915e21
+task status: active
+runtime contexts: ['ctx-j2']
+binding adapter: hermes
+binding session: api_1786498440_24c21ddc
+previous session: None
+
+PASS: exact Task identity retained
+PASS: exact ctx-j2 identity retained
+PASS: exact binding-0001 retained
+PASS: returned state stores real Hermes session
+PASS: returned-state session matches result session
+PASS: Small remained Small
+
+14.11J.2C evidence status: 0

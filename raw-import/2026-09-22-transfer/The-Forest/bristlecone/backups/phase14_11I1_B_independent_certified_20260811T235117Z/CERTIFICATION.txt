@@ -1,0 +1,26 @@
+Phase: 14.11I.1
+Certifier: Terminal B
+Status: INDEPENDENTLY CERTIFIED
+
+Authoritative H.7 baseline:
+bristlecone/backups/phase14_11H7_final_certified_20260811T234518Z
+
+TaskSession SHA:
+d666cb1471b568bf43db4255f5e84e98c1ea502af467e1e2670e4a93dc364991
+
+Governor integration test SHA:
+9822a79a0485f75c8d8804917bc0104fb5bcfdc6d1f015ac475fcea7ee3406bc
+
+Result:
+
+- Fake Small APPROVE turn: PASS
+- ResourceRequest model_form=small: PASS
+- execution_context_id=ctx-g5d: PASS
+- task_id=task-g5d: PASS
+- reasoning_mode=normal: PASS
+- exactly one session creation: PASS
+- exactly one runtime send: PASS
+- post-run source drift: NONE
+
+Terminal B production modifications:
+NONE

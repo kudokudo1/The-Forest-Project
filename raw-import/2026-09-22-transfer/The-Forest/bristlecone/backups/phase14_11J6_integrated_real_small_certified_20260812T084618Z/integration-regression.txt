@@ -1,0 +1,22 @@
+=== bristlecone/tests/test_colony_h5_integrated_isolation.py ===
+PASS 01: one Tree / three execution contexts
+PASS 02: lineage and operational role remain independent
+PASS 03: R1 Model Form change leaves O unchanged
+PASS 04: R1 Model Form change leaves R2 unchanged
+PASS 05: R1 Reasoning lease 5 -> 4
+PASS 06: Ortet Reasoning lease remains 2
+PASS 07: R2 Reasoning lease remains 3
+PASS 08: Ramets do not create legacy global Reasoning
+PASS 09: R1 runtime session is context-local
+PASS 10: R2 receives a separate runtime session
+PASS 11: same binding does not imply same session
+PASS 12: R1 temporary capabilities do not leak
+PASS 13: R1 task-sticky Skills do not leak
+PASS 14: Workshop plan derives from supplied context state
+PASS 15: nested plan does not load global Task state
+
+15 PASS / 0 FAIL
+14.11H.5F status: 0
+status: 0
+
+exit

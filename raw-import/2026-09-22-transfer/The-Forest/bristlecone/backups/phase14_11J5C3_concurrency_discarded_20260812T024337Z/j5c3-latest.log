@@ -1,0 +1,7 @@
+configured runtime: {'adapter': 'hermes', 'platform': 'api_server', 'profile': 'bristlecone'}
+configured adapter: HermesRuntimeAdapter
+
+Task: forest-task-20260812T023416Z-2618fde5
+Context: ctx-j5
+
+=== TURN 1 — CREATE DISPOSABLE SESSION A ===

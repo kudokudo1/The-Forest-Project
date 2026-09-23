@@ -1,0 +1,131 @@
+{
+  "outlier_policy": "retain all measured pairs; no silent exclusions",
+  "pairs": [
+    {
+      "concurrent_client_overlap_s": 49.233121311,
+      "concurrent_over_sequential_ratio": 0.3276345900022339,
+      "concurrent_sha256": "e79d176361ab268fa31e92a704f0c0ebd34ba3d222bf2291b1efc4ece821e404",
+      "concurrent_start_skew_ms": 1.302688,
+      "concurrent_wall_s": 139.306043348,
+      "concurrent_wall_vs_max_latency_ratio": 1.0000007144490555,
+      "difference_s": -285.881185348,
+      "pair": 1,
+      "percent_change": -67.23654099977662,
+      "sequential_sha256": "28acddfd8ef1e59af5635c4fcee12704737d99693bdb44b44f4447b6fab2e546",
+      "sequential_wall_s": 425.187228696
+    },
+    {
+      "concurrent_client_overlap_s": 42.957249413,
+      "concurrent_over_sequential_ratio": 1.2546248495398271,
+      "concurrent_sha256": "c5c549ac8e6b4cc8c9f89add8f4c786b64411544cd317bd0e0e4807138f24b2e",
+      "concurrent_start_skew_ms": 1.2611,
+      "concurrent_wall_s": 161.553129827,
+      "concurrent_wall_vs_max_latency_ratio": 1.0000087041596846,
+      "difference_s": 32.78704497999999,
+      "pair": 2,
+      "percent_change": 25.46248495398271,
+      "sequential_sha256": "875fa1a9aeb32cd0a880d9e002d47b47544424c4172b70586e86312d77fbd9e7",
+      "sequential_wall_s": 128.766084847
+    },
+    {
+      "concurrent_client_overlap_s": 126.812865199,
+      "concurrent_over_sequential_ratio": 1.6476981536794992,
+      "concurrent_sha256": "1450ec55dab5b15e96f17df3dfa54fd4a33eb7152ff9a82a898b00142e0aa074",
+      "concurrent_start_skew_ms": 1.295936,
+      "concurrent_wall_s": 211.062027225,
+      "concurrent_wall_vs_max_latency_ratio": 1.0000007738299899,
+      "difference_s": 82.966946974,
+      "pair": 3,
+      "percent_change": 64.76981536794992,
+      "sequential_sha256": "5bbb32de0c16bc15269e71930ec2a87e4e4c95f11ff56ae70150c1279adb390c",
+      "sequential_wall_s": 128.095080251
+    },
+    {
+      "concurrent_client_overlap_s": 103.152566647,
+      "concurrent_over_sequential_ratio": 1.103519951173572,
+      "concurrent_sha256": "e3cf9d58f9fb404db83f546fb7253cd75cf0e7694109bcc08ea66fb0247221c2",
+      "concurrent_start_skew_ms": 0.199613,
+      "concurrent_wall_s": 216.060928237,
+      "concurrent_wall_vs_max_latency_ratio": 1.0000006343446177,
+      "difference_s": 20.268429871000023,
+      "pair": 4,
+      "percent_change": 10.351995117357214,
+      "sequential_sha256": "4b003a8b6da2d51aff929d668a8166ef8aef5a583e74d2924028259f6871e1ff",
+      "sequential_wall_s": 195.792498366
+    },
+    {
+      "concurrent_client_overlap_s": 162.560644867,
+      "concurrent_over_sequential_ratio": 1.4652437573702144,
+      "concurrent_sha256": "a1d96631c8bf038e9c40a5136671dc59910c5c43ef50b49f20c544f24b0b0821",
+      "concurrent_start_skew_ms": 1.132469,
+      "concurrent_wall_s": 197.993528336,
+      "concurrent_wall_vs_max_latency_ratio": 1.000006379461331,
+      "difference_s": 62.866845598,
+      "pair": 5,
+      "percent_change": 46.52437573702143,
+      "sequential_sha256": "001a7a3fb671f698f07dcb4aa0d8410235d0d8213f4c676950a5e5820f56a07d",
+      "sequential_wall_s": 135.126682738
+    }
+  ],
+  "phase": "14.11L.5",
+  "statistics": {
+    "aggregate_percent_change": -8.58782848342994,
+    "concurrent": {
+      "max_s": 216.060928237,
+      "mean_s": 185.1951313946,
+      "median_s": 197.993528336,
+      "min_s": 139.306043348,
+      "n": 5,
+      "p90_s": 216.060928237,
+      "range_s": 76.75488488900001,
+      "stdev_s": 33.35545427196923
+    },
+    "concurrent_faster_pairs": 1,
+    "concurrent_slower_pairs": 4,
+    "concurrent_total_s": 925.975656973,
+    "interpretation": "Four of five matched pairs had higher concurrent wall time. Pair 1 is an extreme counterexample that reverses aggregate mean/total direction. Do not claim universal concurrency speedup or slowdown. Concurrent client-call overlap does not alone establish simultaneous internal llama-server inference.",
+    "matched_difference": {
+      "max_s": 82.966946974,
+      "mean_s": -17.398383584999994,
+      "median_s": 32.78704497999999,
+      "min_s": -285.881185348,
+      "n": 5,
+      "p90_s": 82.966946974,
+      "range_s": 368.84813232199997,
+      "stdev_s": 152.0987241175193
+    },
+    "matched_percent_change": {
+      "max_s": 64.76981536794992,
+      "mean_s": 15.97442603530693,
+      "median_s": 25.46248495398271,
+      "min_s": -67.23654099977662,
+      "n": 5,
+      "p90_s": 64.76981536794992,
+      "range_s": 132.00635636772654,
+      "stdev_s": 50.89201674449205
+    },
+    "matched_ratio": {
+      "max_s": 1.6476981536794992,
+      "mean_s": 1.1597442603530694,
+      "median_s": 1.2546248495398271,
+      "min_s": 0.3276345900022339,
+      "n": 5,
+      "p90_s": 1.6476981536794992,
+      "range_s": 1.3200635636772653,
+      "stdev_s": 0.5089201674449205
+    },
+    "median_distribution_delta_s": 62.866845598,
+    "median_distribution_percent_change": 46.52437573702143,
+    "sequential": {
+      "max_s": 425.187228696,
+      "mean_s": 202.5935149796,
+      "median_s": 135.126682738,
+      "min_s": 128.095080251,
+      "n": 5,
+      "p90_s": 425.187228696,
+      "range_s": 297.09214844499996,
+      "stdev_s": 127.61905704355904
+    },
+    "sequential_total_s": 1012.967574898
+  }
+}

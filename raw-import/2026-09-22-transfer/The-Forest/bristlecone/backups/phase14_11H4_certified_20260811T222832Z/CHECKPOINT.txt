@@ -1,0 +1,21 @@
+The Forest — Bristlecone Pine
+Phase 14.11H.4
+
+Status:
+CERTIFIED COLONY RUNTIME LIFECYCLE ISOLATION
+
+TaskSession baseline:
+fa174d6da050fbb072f3b031dbea38d3bfd6ea3d080d3b17786adc6eaa61f9da
+
+Lifecycle test:
+6a7a1c235b9bb9f4abb899f0c6e37067674e79a1e138fb80ca13dc2842ac265c
+
+Certified behavior:
+- create is context-local
+- reuse is context-local
+- stale recovery replaces only the owning context session
+- rotation changes only the owning context session
+- retirement cannot end a neighboring context session
+- non-stale runtime failure cannot disturb neighboring contexts
+- shared binding does not imply shared lifecycle ownership
+- G.7 TaskSession remains unchanged

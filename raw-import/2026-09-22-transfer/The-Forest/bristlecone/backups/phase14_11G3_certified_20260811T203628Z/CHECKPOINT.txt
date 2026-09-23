@@ -1,0 +1,46 @@
+The Forest — Bristlecone Pine
+
+Phase:
+14.11G.3
+
+Status:
+CERTIFIED AUTOMATIC ROUTER + RESOLVER PROVENANCE
+
+Certified 14.11F task_session.py SHA256:
+2e35143d63bf3d077edb95a4147035018453e019a8f1ee1673912061b883eb2a
+
+AutomaticModelFormRecommendation SHA256:
+bce0361131c560e1ff8b0bfa5919dfdc291984b1e34965fac8201cac245114e2
+
+Automatic routing evidence SHA256:
+f28df92e43f1d7b52edb58f35a597ae3f75df4595ef0c6ace333821bb1e9d4cb
+
+Automatic routing policy SHA256:
+01dde179a3ad57306e5542580665bd5db20fc9e8c021324eb08c072e594f7b4c
+
+Model Form resolver SHA256:
+17548170c5d925eb276e5dc91739a42cbf1b5d8f2b94877b657abe0cc68873ae
+
+Certified precedence:
+exact_turn
+>
+matching task_override
+>
+pinned_baseline
+>
+auto_policy
+>
+safe_default
+
+Certified semantics:
+- exact turn outranks matching Task override
+- matching Task override outranks pinned baseline
+- mismatched Task override does not cross Task identity
+- pinned baseline outranks Auto
+- Auto outranks safe Small default
+- Auto provenance appears only when Auto wins
+- malformed irrelevant Auto metadata cannot block higher authority
+- malformed winning-Auto metadata fails closed
+- legacy automatic_form callers remain compatible
+- resolver owns source=auto_policy
+- resolver does not import Auto-router implementation

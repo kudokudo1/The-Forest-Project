@@ -1,0 +1,64 @@
+PHASE 14.11L.7 — WORKSHOP / TOOL-SURFACE BENCHMARK
+A-SIDE CERTIFICATION
+
+Measurements:
+20 / 20 valid
+
+Configuration:
+Model Form: Small
+Binding: binding-0001
+Reasoning: Normal
+Hermes effort: medium
+Workshop: code-debug
+Persist: false
+
+Surface turn medians:
+A baseline: 224.609125841 s
+B + tool:   189.462367399 s
+C + Skill:  200.307306890 s
+D full:     331.175307632 s
+
+Matched median differences:
+B-A:   +1.506394785 s
+C-A:   -4.808663119 s
+D-A: +201.455960732 s
+D-B: +196.216275519 s
+D-C: +136.254216330 s
+
+Matched direction:
+B slower than A: 3/5
+C slower than A: 2/5
+D slower than A: 5/5
+D slower than B: 5/5
+D slower than C: 5/5
+
+Median activation overhead:
+A: 0.020217682 s
+B: 0.711531220 s
+C: 0.136165004 s
+D: 0.768246054 s
+
+Interpretation:
+The single-tool and single-Skill surfaces did not exhibit a
+consistent turn-latency direction against baseline.
+
+The full resolved Code/Debug surface was slower than A, B, and C
+in all five matched sets. This is evidence of a repeatable
+full-surface penalty under the tested configuration, but does not
+isolate the penalty to any one individual capability or Skill.
+
+Workshop activation/restoration remained sub-second, indicating
+that the large observed D-surface penalty occurred primarily
+inside the runtime/model turn rather than Forest control logic.
+
+Corrected L.7 harness SHA256:
+4ba7d460167269851b9c9d1f6ac966c9228b59d189b76f6178b63b57758cdedb
+
+L.7 summary SHA256:
+a388736294fe4c24caed7f0aeeb2b875481b39ab65508692240ef3aac6cfa418
+
+Semantic validation:
+PASS
+
+Production state modified by certification:
+NO

@@ -1,0 +1,1279 @@
+WARNING gateway.run: No env user allowlists configured. Messaging platforms default to pairing/allowlist policies and will deny unknown senders unless you configure platform allowlists (e.g., TELEGRAM_ALLOWED_USERS=your_id) or explicitly opt in with GATEWAY_ALLOW_ALL_USERS=true plus dm_policy/group_policy: open on the platform.
+WARNING tools.registry: check_fn check_bfl_requirements returned False; dependent tools will be unavailable this turn
+WARNING tools.registry: check_fn _browser_cdp_check returned False; dependent tools will be unavailable this turn
+WARNING tools.registry: check_fn _browser_dialog_check returned False; dependent tools will be unavailable this turn
+WARNING agent.auxiliary_client: resolve_provider_client: named custom provider 'Ollama' has no resolvable api_key — request will be sent with placeholder no-key-required and will 401 on auth-required endpoints
+WARNING tools.registry: check_fn check_close_terminal_requirements returned False; dependent tools will be unavailable this turn
+WARNING tools.registry: check_fn check_focus_pane_requirements returned False; dependent tools will be unavailable this turn
+WARNING tools.registry: check_fn check_image_generation_requirements returned False; dependent tools will be unavailable this turn
+WARNING tools.registry: check_fn check_open_preview_requirements returned False; dependent tools will be unavailable this turn
+WARNING tools.registry: check_fn check_react_requirements returned False; dependent tools will be unavailable this turn
+WARNING tools.registry: check_fn check_read_terminal_requirements returned False; dependent tools will be unavailable this turn
+WARNING agent.auxiliary_client: resolve_provider_client: named custom provider 'Ollama' has no resolvable api_key — request will be sent with placeholder no-key-required and will 401 on auth-required endpoints
+WARNING tools.registry: check_fn check_web_api_key returned False; dependent tools will be unavailable this turn
+ERROR gateway.platforms.api_server: Error running agent for chat completions: Model qwen3:8b has a context window of 40,960 tokens, which is below the minimum 64,000 required by Hermes Agent.  Choose a model with at least 64K context.  If your server reports a window smaller than the model's true window, set model.context_length in config.yaml to the real value (this must be at least 64K).
+Traceback (most recent call last):
+  File "/home/user/.hermes/hermes-agent/gateway/platforms/api_server.py", line 4108, in _handle_chat_completions
+    result, usage = await _compute_completion()
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/gateway/platforms/api_server.py", line 4082, in _compute_completion
+    return await self._run_agent(
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/gateway/platforms/api_server.py", line 6134, in _run_agent
+    return await loop.run_in_executor(None, _run)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.local/share/uv/python/cpython-3.11.15-linux-x86_64-gnu/lib/python3.11/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/gateway/platforms/api_server.py", line 5976, in _run
+    agent = self._create_agent(
+            ^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/gateway/platforms/api_server.py", line 2794, in _create_agent
+    agent = AIAgent(**agent_kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/run_agent.py", line 518, in __init__
+    init_agent(
+  File "/home/user/.hermes/hermes-agent/agent/agent_init.py", line 2522, in init_agent
+    raise ValueError(
+ValueError: Model qwen3:8b has a context window of 40,960 tokens, which is below the minimum 64,000 required by Hermes Agent.  Choose a model with at least 64K context.  If your server reports a window smaller than the model's true window, set model.context_length in config.yaml to the real value (this must be at least 64K).
+WARNING gateway.run: Shutdown context: signal=SIGTERM under_systemd=yes parent_pid=1 parent_name=systemd loadavg_1m=0.00 parent_cmdline='/sbin/init'
+┌─────────────────────────────────────────────────────────┐
+│           ⚕ Hermes Gateway Starting...                 │
+├─────────────────────────────────────────────────────────┤
+│  Messaging platforms + cron scheduler                    │
+│  Press Ctrl+C to stop                                   │
+└─────────────────────────────────────────────────────────┘
+
+WARNING gateway.run: No env user allowlists configured. Messaging platforms default to pairing/allowlist policies and will deny unknown senders unless you configure platform allowlists (e.g., TELEGRAM_ALLOWED_USERS=your_id) or explicitly opt in with GATEWAY_ALLOW_ALL_USERS=true plus dm_policy/group_policy: open on the platform.
+WARNING tools.registry: check_fn check_bfl_requirements returned False; dependent tools will be unavailable this turn
+WARNING tools.registry: check_fn _browser_cdp_check returned False; dependent tools will be unavailable this turn
+WARNING tools.registry: check_fn _browser_dialog_check returned False; dependent tools will be unavailable this turn
+WARNING agent.auxiliary_client: resolve_provider_client: named custom provider 'Ollama' has no resolvable api_key — request will be sent with placeholder no-key-required and will 401 on auth-required endpoints
+WARNING tools.registry: check_fn check_close_terminal_requirements returned False; dependent tools will be unavailable this turn
+WARNING tools.registry: check_fn check_focus_pane_requirements returned False; dependent tools will be unavailable this turn
+WARNING tools.registry: check_fn check_image_generation_requirements returned False; dependent tools will be unavailable this turn
+WARNING tools.registry: check_fn check_open_preview_requirements returned False; dependent tools will be unavailable this turn
+WARNING tools.registry: check_fn check_react_requirements returned False; dependent tools will be unavailable this turn
+WARNING tools.registry: check_fn check_read_terminal_requirements returned False; dependent tools will be unavailable this turn
+WARNING agent.auxiliary_client: resolve_provider_client: named custom provider 'Ollama' has no resolvable api_key — request will be sent with placeholder no-key-required and will 401 on auth-required endpoints
+WARNING tools.registry: check_fn check_web_api_key returned False; dependent tools will be unavailable this turn
+ERROR gateway.platforms.api_server: Error running agent for chat completions: Model qwen3:8b has a context window of 40,960 tokens, which is below the minimum 64,000 required by Hermes Agent.  Choose a model with at least 64K context.  If your server reports a window smaller than the model's true window, set model.context_length in config.yaml to the real value (this must be at least 64K).
+Traceback (most recent call last):
+  File "/home/user/.hermes/hermes-agent/gateway/platforms/api_server.py", line 4108, in _handle_chat_completions
+    result, usage = await _compute_completion()
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/gateway/platforms/api_server.py", line 4082, in _compute_completion
+    return await self._run_agent(
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/gateway/platforms/api_server.py", line 6134, in _run_agent
+    return await loop.run_in_executor(None, _run)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.local/share/uv/python/cpython-3.11.15-linux-x86_64-gnu/lib/python3.11/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/gateway/platforms/api_server.py", line 5976, in _run
+    agent = self._create_agent(
+            ^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/gateway/platforms/api_server.py", line 2794, in _create_agent
+    agent = AIAgent(**agent_kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/run_agent.py", line 518, in __init__
+    init_agent(
+  File "/home/user/.hermes/hermes-agent/agent/agent_init.py", line 2522, in init_agent
+    raise ValueError(
+ValueError: Model qwen3:8b has a context window of 40,960 tokens, which is below the minimum 64,000 required by Hermes Agent.  Choose a model with at least 64K context.  If your server reports a window smaller than the model's true window, set model.context_length in config.yaml to the real value (this must be at least 64K).
+WARNING gateway.run: Shutdown context: signal=SIGTERM under_systemd=yes parent_pid=1 parent_name=systemd loadavg_1m=0.04 parent_cmdline='/sbin/init'
+┌─────────────────────────────────────────────────────────┐
+│           ⚕ Hermes Gateway Starting...                 │
+├─────────────────────────────────────────────────────────┤
+│  Messaging platforms + cron scheduler                    │
+│  Press Ctrl+C to stop                                   │
+└─────────────────────────────────────────────────────────┘
+
+WARNING gateway.run: No env user allowlists configured. Messaging platforms default to pairing/allowlist policies and will deny unknown senders unless you configure platform allowlists (e.g., TELEGRAM_ALLOWED_USERS=your_id) or explicitly opt in with GATEWAY_ALLOW_ALL_USERS=true plus dm_policy/group_policy: open on the platform.
+WARNING tools.registry: check_fn check_bfl_requirements returned False; dependent tools will be unavailable this turn
+WARNING tools.registry: check_fn _browser_cdp_check returned False; dependent tools will be unavailable this turn
+WARNING tools.registry: check_fn _browser_dialog_check returned False; dependent tools will be unavailable this turn
+WARNING tools.registry: check_fn check_close_terminal_requirements returned False; dependent tools will be unavailable this turn
+WARNING tools.registry: check_fn check_focus_pane_requirements returned False; dependent tools will be unavailable this turn
+WARNING tools.registry: check_fn check_image_generation_requirements returned False; dependent tools will be unavailable this turn
+WARNING tools.registry: check_fn check_open_preview_requirements returned False; dependent tools will be unavailable this turn
+WARNING tools.registry: check_fn check_react_requirements returned False; dependent tools will be unavailable this turn
+WARNING tools.registry: check_fn check_read_terminal_requirements returned False; dependent tools will be unavailable this turn
+WARNING tools.registry: check_fn check_web_api_key returned False; dependent tools will be unavailable this turn
+WARNING gateway.run: Shutdown context: signal=SIGTERM under_systemd=yes parent_pid=1 parent_name=systemd loadavg_1m=0.01 parent_cmdline='/sbin/init'
+┌─────────────────────────────────────────────────────────┐
+│           ⚕ Hermes Gateway Starting...                 │
+├─────────────────────────────────────────────────────────┤
+│  Messaging platforms + cron scheduler                    │
+│  Press Ctrl+C to stop                                   │
+└─────────────────────────────────────────────────────────┘
+
+WARNING gateway.run: No env user allowlists configured. Messaging platforms default to pairing/allowlist policies and will deny unknown senders unless you configure platform allowlists (e.g., TELEGRAM_ALLOWED_USERS=your_id) or explicitly opt in with GATEWAY_ALLOW_ALL_USERS=true plus dm_policy/group_policy: open on the platform.
+WARNING tools.registry: check_fn check_bfl_requirements returned False; dependent tools will be unavailable this turn
+WARNING tools.registry: check_fn _browser_cdp_check returned False; dependent tools will be unavailable this turn
+WARNING tools.registry: check_fn _browser_dialog_check returned False; dependent tools will be unavailable this turn
+WARNING tools.registry: check_fn check_close_terminal_requirements returned False; dependent tools will be unavailable this turn
+WARNING tools.registry: check_fn check_focus_pane_requirements returned False; dependent tools will be unavailable this turn
+WARNING tools.registry: check_fn check_image_generation_requirements returned False; dependent tools will be unavailable this turn
+WARNING tools.registry: check_fn check_open_preview_requirements returned False; dependent tools will be unavailable this turn
+WARNING tools.registry: check_fn check_react_requirements returned False; dependent tools will be unavailable this turn
+WARNING tools.registry: check_fn check_read_terminal_requirements returned False; dependent tools will be unavailable this turn
+WARNING tools.registry: check_fn check_web_api_key returned False; dependent tools will be unavailable this turn
+WARNING gateway.run: Shutdown context: signal=SIGTERM under_systemd=yes parent_pid=1 parent_name=systemd loadavg_1m=4.38 parent_cmdline='/sbin/init'
+ERROR agent.chat_completion_helpers: Streaming failed before delivery: Connection error.
+Traceback (most recent call last):
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpx/_transports/default.py", line 101, in map_httpcore_exceptions
+    yield
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpx/_transports/default.py", line 250, in handle_request
+    resp = self._pool.handle_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpcore/_sync/connection_pool.py", line 256, in handle_request
+    raise exc from None
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpcore/_sync/connection_pool.py", line 236, in handle_request
+    response = connection.handle_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpcore/_sync/connection.py", line 103, in handle_request
+    return self._connection.handle_request(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpcore/_sync/http11.py", line 136, in handle_request
+    raise exc
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpcore/_sync/http11.py", line 106, in handle_request
+    ) = self._receive_response_headers(**kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpcore/_sync/http11.py", line 177, in _receive_response_headers
+    event = self._receive_event(timeout=timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpcore/_sync/http11.py", line 231, in _receive_event
+    raise RemoteProtocolError(msg)
+httpcore.RemoteProtocolError: Server disconnected without sending a response.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_base_client.py", line 1005, in request
+    response = self._client.send(
+               ^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpx/_client.py", line 914, in send
+    response = self._send_handling_auth(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpx/_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpx/_client.py", line 979, in _send_handling_redirects
+    response = self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpx/_client.py", line 1014, in _send_single_request
+    response = transport.handle_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpx/_transports/default.py", line 249, in handle_request
+    with map_httpcore_exceptions():
+  File "/home/user/.local/share/uv/python/cpython-3.11.15-linux-x86_64-gnu/lib/python3.11/contextlib.py", line 158, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpx/_transports/default.py", line 118, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.RemoteProtocolError: Server disconnected without sending a response.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/user/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 3708, in _call
+    result["response"] = _call_chat_completions(stream_attempt_id)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 3118, in _call_chat_completions
+    relay_llm.stream(
+  File "/home/user/.hermes/hermes-agent/agent/relay_llm.py", line 333, in stream
+    return ManagedLlmStream(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/agent/relay_llm.py", line 399, in __init__
+    raw_stream = stream_factory(request)
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 3056, in _open_stream
+    return request_client.chat.completions.create(**stream_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_utils/_utils.py", line 286, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/resources/chat/completions/completions.py", line 1204, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_base_client.py", line 1297, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_base_client.py", line 1037, in request
+    raise APIConnectionError(request=request) from err
+openai.APIConnectionError: Connection error.
+WARNING gateway.run: Gateway drain timed out after 0.0s with 0 active agent(s), 0 in-flight cron job(s), and 1 api_server run(s); interrupting remaining work.
+WARNING agent.conversation_loop: API call failed (attempt 1/3) error_type=APIConnectionError thread=asyncio_0:135584227546816 provider=custom base_url=http://127.0.0.1:11434/v1 model=bristlecone-qwen35:4b-64k summary=Connection error.
+WARNING agent.conversation_loop: Retrying API call in 2.6137096220750733s (attempt 1/3) thread=asyncio_0:135584227546816 provider=custom base_url=http://127.0.0.1:11434/v1 model=bristlecone-qwen35:4b-64k policy=default error=Connection error.
+ERROR agent.chat_completion_helpers: Streaming failed before delivery: Connection error.
+Traceback (most recent call last):
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpx/_transports/default.py", line 101, in map_httpcore_exceptions
+    yield
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpx/_transports/default.py", line 250, in handle_request
+    resp = self._pool.handle_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpcore/_sync/connection_pool.py", line 256, in handle_request
+    raise exc from None
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpcore/_sync/connection_pool.py", line 236, in handle_request
+    response = connection.handle_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpcore/_sync/connection.py", line 101, in handle_request
+    raise exc
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpcore/_sync/connection.py", line 78, in handle_request
+    stream = self._connect(request)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpcore/_sync/connection.py", line 124, in _connect
+    stream = self._network_backend.connect_tcp(**kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpcore/_backends/sync.py", line 207, in connect_tcp
+    with map_exceptions(exc_map):
+  File "/home/user/.local/share/uv/python/cpython-3.11.15-linux-x86_64-gnu/lib/python3.11/contextlib.py", line 158, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpcore/_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ConnectError: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_base_client.py", line 1005, in request
+    response = self._client.send(
+               ^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpx/_client.py", line 914, in send
+    response = self._send_handling_auth(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpx/_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpx/_client.py", line 979, in _send_handling_redirects
+    response = self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpx/_client.py", line 1014, in _send_single_request
+    response = transport.handle_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpx/_transports/default.py", line 249, in handle_request
+    with map_httpcore_exceptions():
+  File "/home/user/.local/share/uv/python/cpython-3.11.15-linux-x86_64-gnu/lib/python3.11/contextlib.py", line 158, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpx/_transports/default.py", line 118, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ConnectError: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/user/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 3708, in _call
+    result["response"] = _call_chat_completions(stream_attempt_id)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 3118, in _call_chat_completions
+    relay_llm.stream(
+  File "/home/user/.hermes/hermes-agent/agent/relay_llm.py", line 333, in stream
+    return ManagedLlmStream(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/agent/relay_llm.py", line 399, in __init__
+    raw_stream = stream_factory(request)
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 3056, in _open_stream
+    return request_client.chat.completions.create(**stream_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_utils/_utils.py", line 286, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/resources/chat/completions/completions.py", line 1204, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_base_client.py", line 1297, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_base_client.py", line 1037, in request
+    raise APIConnectionError(request=request) from err
+openai.APIConnectionError: Connection error.
+WARNING agent.conversation_loop: API call failed (attempt 2/3) error_type=APIConnectionError thread=asyncio_0:135584227546816 provider=custom base_url=http://127.0.0.1:11434/v1 model=bristlecone-qwen35:4b-64k summary=Connection error.
+WARNING agent.conversation_loop: Retrying API call in 4.917943908780639s (attempt 2/3) thread=asyncio_0:135584227546816 provider=custom base_url=http://127.0.0.1:11434/v1 model=bristlecone-qwen35:4b-64k policy=default error=Connection error.
+WARNING gateway.run: ✗ api_server disconnect timed out after 5.0s - forcing continue
+ERROR agent.chat_completion_helpers: Streaming failed before delivery: Connection error.
+Traceback (most recent call last):
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpx/_transports/default.py", line 101, in map_httpcore_exceptions
+    yield
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpx/_transports/default.py", line 250, in handle_request
+    resp = self._pool.handle_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpcore/_sync/connection_pool.py", line 256, in handle_request
+    raise exc from None
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpcore/_sync/connection_pool.py", line 236, in handle_request
+    response = connection.handle_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpcore/_sync/connection.py", line 101, in handle_request
+    raise exc
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpcore/_sync/connection.py", line 78, in handle_request
+    stream = self._connect(request)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpcore/_sync/connection.py", line 124, in _connect
+    stream = self._network_backend.connect_tcp(**kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpcore/_backends/sync.py", line 207, in connect_tcp
+    with map_exceptions(exc_map):
+  File "/home/user/.local/share/uv/python/cpython-3.11.15-linux-x86_64-gnu/lib/python3.11/contextlib.py", line 158, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpcore/_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ConnectError: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_base_client.py", line 1005, in request
+    response = self._client.send(
+               ^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpx/_client.py", line 914, in send
+    response = self._send_handling_auth(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpx/_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpx/_client.py", line 979, in _send_handling_redirects
+    response = self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpx/_client.py", line 1014, in _send_single_request
+    response = transport.handle_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpx/_transports/default.py", line 249, in handle_request
+    with map_httpcore_exceptions():
+  File "/home/user/.local/share/uv/python/cpython-3.11.15-linux-x86_64-gnu/lib/python3.11/contextlib.py", line 158, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpx/_transports/default.py", line 118, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ConnectError: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/user/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 3708, in _call
+    result["response"] = _call_chat_completions(stream_attempt_id)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 3118, in _call_chat_completions
+    relay_llm.stream(
+  File "/home/user/.hermes/hermes-agent/agent/relay_llm.py", line 333, in stream
+    return ManagedLlmStream(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/agent/relay_llm.py", line 399, in __init__
+    raw_stream = stream_factory(request)
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 3056, in _open_stream
+    return request_client.chat.completions.create(**stream_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_utils/_utils.py", line 286, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/resources/chat/completions/completions.py", line 1204, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_base_client.py", line 1297, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_base_client.py", line 1037, in request
+    raise APIConnectionError(request=request) from err
+openai.APIConnectionError: Connection error.
+WARNING agent.conversation_loop: API call failed (attempt 3/3) error_type=APIConnectionError thread=asyncio_0:135584227546816 provider=custom base_url=http://127.0.0.1:11434/v1 model=bristlecone-qwen35:4b-64k summary=Connection error.
+ERROR agent.chat_completion_helpers: Streaming failed before delivery: Connection error.
+Traceback (most recent call last):
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpx/_transports/default.py", line 101, in map_httpcore_exceptions
+    yield
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpx/_transports/default.py", line 250, in handle_request
+    resp = self._pool.handle_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpcore/_sync/connection_pool.py", line 256, in handle_request
+    raise exc from None
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpcore/_sync/connection_pool.py", line 236, in handle_request
+    response = connection.handle_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpcore/_sync/connection.py", line 101, in handle_request
+    raise exc
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpcore/_sync/connection.py", line 78, in handle_request
+    stream = self._connect(request)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpcore/_sync/connection.py", line 124, in _connect
+    stream = self._network_backend.connect_tcp(**kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpcore/_backends/sync.py", line 207, in connect_tcp
+    with map_exceptions(exc_map):
+  File "/home/user/.local/share/uv/python/cpython-3.11.15-linux-x86_64-gnu/lib/python3.11/contextlib.py", line 158, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpcore/_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ConnectError: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_base_client.py", line 1005, in request
+    response = self._client.send(
+               ^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpx/_client.py", line 914, in send
+    response = self._send_handling_auth(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpx/_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpx/_client.py", line 979, in _send_handling_redirects
+    response = self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpx/_client.py", line 1014, in _send_single_request
+    response = transport.handle_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpx/_transports/default.py", line 249, in handle_request
+    with map_httpcore_exceptions():
+  File "/home/user/.local/share/uv/python/cpython-3.11.15-linux-x86_64-gnu/lib/python3.11/contextlib.py", line 158, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpx/_transports/default.py", line 118, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ConnectError: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/user/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 3708, in _call
+    result["response"] = _call_chat_completions(stream_attempt_id)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 3118, in _call_chat_completions
+    relay_llm.stream(
+  File "/home/user/.hermes/hermes-agent/agent/relay_llm.py", line 333, in stream
+    return ManagedLlmStream(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/agent/relay_llm.py", line 399, in __init__
+    raw_stream = stream_factory(request)
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 3056, in _open_stream
+    return request_client.chat.completions.create(**stream_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_utils/_utils.py", line 286, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/resources/chat/completions/completions.py", line 1204, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_base_client.py", line 1297, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_base_client.py", line 1037, in request
+    raise APIConnectionError(request=request) from err
+openai.APIConnectionError: Connection error.
+WARNING agent.conversation_loop: API call failed (attempt 1/3) error_type=APIConnectionError thread=asyncio_0:135584227546816 provider=custom base_url=http://127.0.0.1:11434/v1 model=bristlecone-qwen35:4b-64k summary=Connection error.
+WARNING agent.conversation_loop: Retrying API call in 2.063213312845s (attempt 1/3) thread=asyncio_0:135584227546816 provider=custom base_url=http://127.0.0.1:11434/v1 model=bristlecone-qwen35:4b-64k policy=default error=Connection error.
+ERROR agent.chat_completion_helpers: Streaming failed before delivery: Connection error.
+Traceback (most recent call last):
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpx/_transports/default.py", line 101, in map_httpcore_exceptions
+    yield
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpx/_transports/default.py", line 250, in handle_request
+    resp = self._pool.handle_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpcore/_sync/connection_pool.py", line 256, in handle_request
+    raise exc from None
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpcore/_sync/connection_pool.py", line 236, in handle_request
+    response = connection.handle_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpcore/_sync/connection.py", line 101, in handle_request
+    raise exc
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpcore/_sync/connection.py", line 78, in handle_request
+    stream = self._connect(request)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpcore/_sync/connection.py", line 124, in _connect
+    stream = self._network_backend.connect_tcp(**kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpcore/_backends/sync.py", line 207, in connect_tcp
+    with map_exceptions(exc_map):
+  File "/home/user/.local/share/uv/python/cpython-3.11.15-linux-x86_64-gnu/lib/python3.11/contextlib.py", line 158, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpcore/_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ConnectError: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_base_client.py", line 1005, in request
+    response = self._client.send(
+               ^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpx/_client.py", line 914, in send
+    response = self._send_handling_auth(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpx/_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpx/_client.py", line 979, in _send_handling_redirects
+    response = self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpx/_client.py", line 1014, in _send_single_request
+    response = transport.handle_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpx/_transports/default.py", line 249, in handle_request
+    with map_httpcore_exceptions():
+  File "/home/user/.local/share/uv/python/cpython-3.11.15-linux-x86_64-gnu/lib/python3.11/contextlib.py", line 158, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpx/_transports/default.py", line 118, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ConnectError: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/user/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 3708, in _call
+    result["response"] = _call_chat_completions(stream_attempt_id)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 3118, in _call_chat_completions
+    relay_llm.stream(
+  File "/home/user/.hermes/hermes-agent/agent/relay_llm.py", line 333, in stream
+    return ManagedLlmStream(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/agent/relay_llm.py", line 399, in __init__
+    raw_stream = stream_factory(request)
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 3056, in _open_stream
+    return request_client.chat.completions.create(**stream_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_utils/_utils.py", line 286, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/resources/chat/completions/completions.py", line 1204, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_base_client.py", line 1297, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_base_client.py", line 1037, in request
+    raise APIConnectionError(request=request) from err
+openai.APIConnectionError: Connection error.
+WARNING agent.conversation_loop: API call failed (attempt 2/3) error_type=APIConnectionError thread=asyncio_0:135584227546816 provider=custom base_url=http://127.0.0.1:11434/v1 model=bristlecone-qwen35:4b-64k summary=Connection error.
+WARNING agent.conversation_loop: Retrying API call in 5.956778396999105s (attempt 2/3) thread=asyncio_0:135584227546816 provider=custom base_url=http://127.0.0.1:11434/v1 model=bristlecone-qwen35:4b-64k policy=default error=Connection error.
+ERROR agent.chat_completion_helpers: Streaming failed before delivery: Connection error.
+Traceback (most recent call last):
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpx/_transports/default.py", line 101, in map_httpcore_exceptions
+    yield
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpx/_transports/default.py", line 250, in handle_request
+    resp = self._pool.handle_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpcore/_sync/connection_pool.py", line 256, in handle_request
+    raise exc from None
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpcore/_sync/connection_pool.py", line 236, in handle_request
+    response = connection.handle_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpcore/_sync/connection.py", line 101, in handle_request
+    raise exc
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpcore/_sync/connection.py", line 78, in handle_request
+    stream = self._connect(request)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpcore/_sync/connection.py", line 124, in _connect
+    stream = self._network_backend.connect_tcp(**kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpcore/_backends/sync.py", line 207, in connect_tcp
+    with map_exceptions(exc_map):
+  File "/home/user/.local/share/uv/python/cpython-3.11.15-linux-x86_64-gnu/lib/python3.11/contextlib.py", line 158, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpcore/_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ConnectError: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_base_client.py", line 1005, in request
+    response = self._client.send(
+               ^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpx/_client.py", line 914, in send
+    response = self._send_handling_auth(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpx/_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpx/_client.py", line 979, in _send_handling_redirects
+    response = self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpx/_client.py", line 1014, in _send_single_request
+    response = transport.handle_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpx/_transports/default.py", line 249, in handle_request
+    with map_httpcore_exceptions():
+  File "/home/user/.local/share/uv/python/cpython-3.11.15-linux-x86_64-gnu/lib/python3.11/contextlib.py", line 158, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpx/_transports/default.py", line 118, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ConnectError: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/user/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 3708, in _call
+    result["response"] = _call_chat_completions(stream_attempt_id)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 3118, in _call_chat_completions
+    relay_llm.stream(
+  File "/home/user/.hermes/hermes-agent/agent/relay_llm.py", line 333, in stream
+    return ManagedLlmStream(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/agent/relay_llm.py", line 399, in __init__
+    raw_stream = stream_factory(request)
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 3056, in _open_stream
+    return request_client.chat.completions.create(**stream_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_utils/_utils.py", line 286, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/resources/chat/completions/completions.py", line 1204, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_base_client.py", line 1297, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_base_client.py", line 1037, in request
+    raise APIConnectionError(request=request) from err
+openai.APIConnectionError: Connection error.
+WARNING agent.conversation_loop: API call failed (attempt 3/3) error_type=APIConnectionError thread=asyncio_0:135584227546816 provider=custom base_url=http://127.0.0.1:11434/v1 model=bristlecone-qwen35:4b-64k summary=Connection error.
+ERROR agent.conversation_loop: API call failed after 3 retries. Connection error. | provider=custom model=bristlecone-qwen35:4b-64k msgs=2 tokens=~5,060
+┌─────────────────────────────────────────────────────────┐
+│           ⚕ Hermes Gateway Starting...                 │
+├─────────────────────────────────────────────────────────┤
+│  Messaging platforms + cron scheduler                    │
+│  Press Ctrl+C to stop                                   │
+└─────────────────────────────────────────────────────────┘
+
+🔁 Transient APIConnectionError on custom — rebuilt client, waiting 6s before one last primary attempt.
+⚠️  API call failed (attempt 1/3): APIConnectionError
+   🔌 Provider: custom  Model: bristlecone-qwen35:4b-64k
+   🌐 Endpoint: http://127.0.0.1:11434/v1
+   📝 Error: Connection error.
+   ⏱️  Elapsed: 82.60s  Context: 2 msgs, ~5,060 tokens
+⏳ Retrying in 2.6s (attempt 1/3)...
+⚠️  API call failed (attempt 2/3): APIConnectionError
+   🔌 Provider: custom  Model: bristlecone-qwen35:4b-64k
+   🌐 Endpoint: http://127.0.0.1:11434/v1
+   📝 Error: Connection error.
+   ⏱️  Elapsed: 85.52s  Context: 2 msgs, ~5,060 tokens
+⏳ Retrying in 4.9s (attempt 2/3)...
+⚠️  API call failed (attempt 3/3): APIConnectionError
+   🔌 Provider: custom  Model: bristlecone-qwen35:4b-64k
+   🌐 Endpoint: http://127.0.0.1:11434/v1
+   📝 Error: Connection error.
+   ⏱️  Elapsed: 90.60s  Context: 2 msgs, ~5,060 tokens
+⚠️  API call failed (attempt 1/3): APIConnectionError
+   🔌 Provider: custom  Model: bristlecone-qwen35:4b-64k
+   🌐 Endpoint: http://127.0.0.1:11434/v1
+   📝 Error: Connection error.
+   ⏱️  Elapsed: 96.68s  Context: 2 msgs, ~5,060 tokens
+⏳ Retrying in 2.1s (attempt 1/3)...
+⚠️  API call failed (attempt 2/3): APIConnectionError
+   🔌 Provider: custom  Model: bristlecone-qwen35:4b-64k
+   🌐 Endpoint: http://127.0.0.1:11434/v1
+   📝 Error: Connection error.
+   ⏱️  Elapsed: 98.92s  Context: 2 msgs, ~5,060 tokens
+⏳ Retrying in 6.0s (attempt 2/3)...
+⚠️  API call failed (attempt 3/3): APIConnectionError
+   🔌 Provider: custom  Model: bristlecone-qwen35:4b-64k
+   🌐 Endpoint: http://127.0.0.1:11434/v1
+   📝 Error: Connection error.
+   ⏱️  Elapsed: 104.96s  Context: 2 msgs, ~5,060 tokens
+❌ API failed after 3 retries — Connection error.
+   💀 Final error: Connection error.
+🧾 Request debug dump written to: /home/user/.hermes/profiles/bristlecone/sessions/request_dump_api-0b2f602768cc22dc_20260805_213632_630370.json
+WARNING gateway.run: No env user allowlists configured. Messaging platforms default to pairing/allowlist policies and will deny unknown senders unless you configure platform allowlists (e.g., TELEGRAM_ALLOWED_USERS=your_id) or explicitly opt in with GATEWAY_ALLOW_ALL_USERS=true plus dm_policy/group_policy: open on the platform.
+WARNING tools.registry: check_fn check_bfl_requirements returned False; dependent tools will be unavailable this turn
+WARNING tools.registry: check_fn _browser_cdp_check returned False; dependent tools will be unavailable this turn
+WARNING tools.registry: check_fn _browser_dialog_check returned False; dependent tools will be unavailable this turn
+WARNING tools.registry: check_fn check_close_terminal_requirements returned False; dependent tools will be unavailable this turn
+WARNING tools.registry: check_fn check_focus_pane_requirements returned False; dependent tools will be unavailable this turn
+WARNING tools.registry: check_fn check_image_generation_requirements returned False; dependent tools will be unavailable this turn
+WARNING tools.registry: check_fn check_open_preview_requirements returned False; dependent tools will be unavailable this turn
+WARNING tools.registry: check_fn check_react_requirements returned False; dependent tools will be unavailable this turn
+WARNING tools.registry: check_fn check_read_terminal_requirements returned False; dependent tools will be unavailable this turn
+WARNING tools.registry: check_fn check_web_api_key returned False; dependent tools will be unavailable this turn
+WARNING gateway.run: Shutdown context: signal=SIGTERM under_systemd=yes parent_pid=1 parent_name=systemd loadavg_1m=6.33 parent_cmdline='/sbin/init'
+WARNING gateway.run: Gateway drain timed out after 0.0s with 0 active agent(s), 0 in-flight cron job(s), and 1 api_server run(s); interrupting remaining work.
+WARNING agent.stream_diag: Stream drop on attempt 2/3 — retrying. subagent_id=- depth=0 provider=custom base_url=http://127.0.0.1:11434/v1 error_type=RemoteProtocolError error=peer closed connection without sending complete message body (incomplete chunked read) chain=RemoteProtocolError(peer closed connection without sending complete message body (incomplete chunked read)) <- RemoteProtocolError(peer closed connection without sending complete message body (incomplete chunked read)) <- RemoteProtocolError(peer closed connection without sending complete message body (incomplete chunked read)) http_status=200 bytes=353 chunks=8 elapsed=107.21s ttfb=104.22s upstream=[-]
+ERROR agent.chat_completion_helpers: Streaming failed before delivery: Connection error.
+Traceback (most recent call last):
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpx/_transports/default.py", line 101, in map_httpcore_exceptions
+    yield
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpx/_transports/default.py", line 250, in handle_request
+    resp = self._pool.handle_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpcore/_sync/connection_pool.py", line 256, in handle_request
+    raise exc from None
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpcore/_sync/connection_pool.py", line 236, in handle_request
+    response = connection.handle_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpcore/_sync/connection.py", line 101, in handle_request
+    raise exc
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpcore/_sync/connection.py", line 78, in handle_request
+    stream = self._connect(request)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpcore/_sync/connection.py", line 124, in _connect
+    stream = self._network_backend.connect_tcp(**kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpcore/_backends/sync.py", line 207, in connect_tcp
+    with map_exceptions(exc_map):
+  File "/home/user/.local/share/uv/python/cpython-3.11.15-linux-x86_64-gnu/lib/python3.11/contextlib.py", line 158, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpcore/_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ConnectError: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_base_client.py", line 1005, in request
+    response = self._client.send(
+               ^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpx/_client.py", line 914, in send
+    response = self._send_handling_auth(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpx/_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpx/_client.py", line 979, in _send_handling_redirects
+    response = self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpx/_client.py", line 1014, in _send_single_request
+    response = transport.handle_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpx/_transports/default.py", line 249, in handle_request
+    with map_httpcore_exceptions():
+  File "/home/user/.local/share/uv/python/cpython-3.11.15-linux-x86_64-gnu/lib/python3.11/contextlib.py", line 158, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpx/_transports/default.py", line 118, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ConnectError: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/user/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 3708, in _call
+    result["response"] = _call_chat_completions(stream_attempt_id)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 3118, in _call_chat_completions
+    relay_llm.stream(
+  File "/home/user/.hermes/hermes-agent/agent/relay_llm.py", line 333, in stream
+    return ManagedLlmStream(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/agent/relay_llm.py", line 399, in __init__
+    raw_stream = stream_factory(request)
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 3056, in _open_stream
+    return request_client.chat.completions.create(**stream_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_utils/_utils.py", line 286, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/resources/chat/completions/completions.py", line 1204, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_base_client.py", line 1297, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_base_client.py", line 1037, in request
+    raise APIConnectionError(request=request) from err
+openai.APIConnectionError: Connection error.
+WARNING agent.conversation_loop: API call failed (attempt 1/3) error_type=APIConnectionError thread=asyncio_5:129159086974656 provider=custom base_url=http://127.0.0.1:11434/v1 model=bristlecone-qwen35:4b-64k summary=Connection error.
+WARNING agent.conversation_loop: Retrying API call in 2.0880290367738974s (attempt 1/3) thread=asyncio_5:129159086974656 provider=custom base_url=http://127.0.0.1:11434/v1 model=bristlecone-qwen35:4b-64k policy=default error=Connection error.
+ERROR agent.chat_completion_helpers: Streaming failed before delivery: Connection error.
+Traceback (most recent call last):
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpx/_transports/default.py", line 101, in map_httpcore_exceptions
+    yield
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpx/_transports/default.py", line 250, in handle_request
+    resp = self._pool.handle_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpcore/_sync/connection_pool.py", line 256, in handle_request
+    raise exc from None
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpcore/_sync/connection_pool.py", line 236, in handle_request
+    response = connection.handle_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpcore/_sync/connection.py", line 101, in handle_request
+    raise exc
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpcore/_sync/connection.py", line 78, in handle_request
+    stream = self._connect(request)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpcore/_sync/connection.py", line 124, in _connect
+    stream = self._network_backend.connect_tcp(**kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpcore/_backends/sync.py", line 207, in connect_tcp
+    with map_exceptions(exc_map):
+  File "/home/user/.local/share/uv/python/cpython-3.11.15-linux-x86_64-gnu/lib/python3.11/contextlib.py", line 158, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpcore/_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ConnectError: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_base_client.py", line 1005, in request
+    response = self._client.send(
+               ^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpx/_client.py", line 914, in send
+    response = self._send_handling_auth(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpx/_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpx/_client.py", line 979, in _send_handling_redirects
+    response = self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpx/_client.py", line 1014, in _send_single_request
+    response = transport.handle_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpx/_transports/default.py", line 249, in handle_request
+    with map_httpcore_exceptions():
+  File "/home/user/.local/share/uv/python/cpython-3.11.15-linux-x86_64-gnu/lib/python3.11/contextlib.py", line 158, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpx/_transports/default.py", line 118, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ConnectError: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/user/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 3708, in _call
+    result["response"] = _call_chat_completions(stream_attempt_id)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 3118, in _call_chat_completions
+    relay_llm.stream(
+  File "/home/user/.hermes/hermes-agent/agent/relay_llm.py", line 333, in stream
+    return ManagedLlmStream(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/agent/relay_llm.py", line 399, in __init__
+    raw_stream = stream_factory(request)
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 3056, in _open_stream
+    return request_client.chat.completions.create(**stream_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_utils/_utils.py", line 286, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/resources/chat/completions/completions.py", line 1204, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_base_client.py", line 1297, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_base_client.py", line 1037, in request
+    raise APIConnectionError(request=request) from err
+openai.APIConnectionError: Connection error.
+WARNING agent.conversation_loop: API call failed (attempt 2/3) error_type=APIConnectionError thread=asyncio_5:129159086974656 provider=custom base_url=http://127.0.0.1:11434/v1 model=bristlecone-qwen35:4b-64k summary=Connection error.
+WARNING agent.conversation_loop: Retrying API call in 5.6516750124502355s (attempt 2/3) thread=asyncio_5:129159086974656 provider=custom base_url=http://127.0.0.1:11434/v1 model=bristlecone-qwen35:4b-64k policy=default error=Connection error.
+WARNING gateway.run: ✗ api_server disconnect timed out after 5.0s - forcing continue
+ERROR agent.chat_completion_helpers: Streaming failed before delivery: Connection error.
+Traceback (most recent call last):
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpx/_transports/default.py", line 101, in map_httpcore_exceptions
+    yield
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpx/_transports/default.py", line 250, in handle_request
+    resp = self._pool.handle_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpcore/_sync/connection_pool.py", line 256, in handle_request
+    raise exc from None
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpcore/_sync/connection_pool.py", line 236, in handle_request
+    response = connection.handle_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpcore/_sync/connection.py", line 101, in handle_request
+    raise exc
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpcore/_sync/connection.py", line 78, in handle_request
+    stream = self._connect(request)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpcore/_sync/connection.py", line 124, in _connect
+    stream = self._network_backend.connect_tcp(**kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpcore/_backends/sync.py", line 207, in connect_tcp
+    with map_exceptions(exc_map):
+  File "/home/user/.local/share/uv/python/cpython-3.11.15-linux-x86_64-gnu/lib/python3.11/contextlib.py", line 158, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpcore/_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ConnectError: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_base_client.py", line 1005, in request
+    response = self._client.send(
+               ^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpx/_client.py", line 914, in send
+    response = self._send_handling_auth(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpx/_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpx/_client.py", line 979, in _send_handling_redirects
+    response = self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpx/_client.py", line 1014, in _send_single_request
+    response = transport.handle_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpx/_transports/default.py", line 249, in handle_request
+    with map_httpcore_exceptions():
+  File "/home/user/.local/share/uv/python/cpython-3.11.15-linux-x86_64-gnu/lib/python3.11/contextlib.py", line 158, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpx/_transports/default.py", line 118, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ConnectError: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/user/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 3708, in _call
+    result["response"] = _call_chat_completions(stream_attempt_id)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 3118, in _call_chat_completions
+    relay_llm.stream(
+  File "/home/user/.hermes/hermes-agent/agent/relay_llm.py", line 333, in stream
+    return ManagedLlmStream(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/agent/relay_llm.py", line 399, in __init__
+    raw_stream = stream_factory(request)
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 3056, in _open_stream
+    return request_client.chat.completions.create(**stream_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_utils/_utils.py", line 286, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/resources/chat/completions/completions.py", line 1204, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_base_client.py", line 1297, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_base_client.py", line 1037, in request
+    raise APIConnectionError(request=request) from err
+openai.APIConnectionError: Connection error.
+WARNING agent.conversation_loop: API call failed (attempt 3/3) error_type=APIConnectionError thread=asyncio_5:129159086974656 provider=custom base_url=http://127.0.0.1:11434/v1 model=bristlecone-qwen35:4b-64k summary=Connection error.
+ERROR agent.chat_completion_helpers: Streaming failed before delivery: Connection error.
+Traceback (most recent call last):
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpx/_transports/default.py", line 101, in map_httpcore_exceptions
+    yield
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpx/_transports/default.py", line 250, in handle_request
+    resp = self._pool.handle_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpcore/_sync/connection_pool.py", line 256, in handle_request
+    raise exc from None
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpcore/_sync/connection_pool.py", line 236, in handle_request
+    response = connection.handle_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpcore/_sync/connection.py", line 101, in handle_request
+    raise exc
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpcore/_sync/connection.py", line 78, in handle_request
+    stream = self._connect(request)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpcore/_sync/connection.py", line 124, in _connect
+    stream = self._network_backend.connect_tcp(**kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpcore/_backends/sync.py", line 207, in connect_tcp
+    with map_exceptions(exc_map):
+  File "/home/user/.local/share/uv/python/cpython-3.11.15-linux-x86_64-gnu/lib/python3.11/contextlib.py", line 158, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpcore/_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ConnectError: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_base_client.py", line 1005, in request
+    response = self._client.send(
+               ^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpx/_client.py", line 914, in send
+    response = self._send_handling_auth(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpx/_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpx/_client.py", line 979, in _send_handling_redirects
+    response = self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpx/_client.py", line 1014, in _send_single_request
+    response = transport.handle_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpx/_transports/default.py", line 249, in handle_request
+    with map_httpcore_exceptions():
+  File "/home/user/.local/share/uv/python/cpython-3.11.15-linux-x86_64-gnu/lib/python3.11/contextlib.py", line 158, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpx/_transports/default.py", line 118, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ConnectError: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/user/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 3708, in _call
+    result["response"] = _call_chat_completions(stream_attempt_id)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 3118, in _call_chat_completions
+    relay_llm.stream(
+  File "/home/user/.hermes/hermes-agent/agent/relay_llm.py", line 333, in stream
+    return ManagedLlmStream(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/agent/relay_llm.py", line 399, in __init__
+    raw_stream = stream_factory(request)
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 3056, in _open_stream
+    return request_client.chat.completions.create(**stream_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_utils/_utils.py", line 286, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/resources/chat/completions/completions.py", line 1204, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_base_client.py", line 1297, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_base_client.py", line 1037, in request
+    raise APIConnectionError(request=request) from err
+openai.APIConnectionError: Connection error.
+WARNING agent.conversation_loop: API call failed (attempt 1/3) error_type=APIConnectionError thread=asyncio_5:129159086974656 provider=custom base_url=http://127.0.0.1:11434/v1 model=bristlecone-qwen35:4b-64k summary=Connection error.
+WARNING agent.conversation_loop: Retrying API call in 2.426667312408382s (attempt 1/3) thread=asyncio_5:129159086974656 provider=custom base_url=http://127.0.0.1:11434/v1 model=bristlecone-qwen35:4b-64k policy=default error=Connection error.
+ERROR agent.chat_completion_helpers: Streaming failed before delivery: Connection error.
+Traceback (most recent call last):
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpx/_transports/default.py", line 101, in map_httpcore_exceptions
+    yield
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpx/_transports/default.py", line 250, in handle_request
+    resp = self._pool.handle_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpcore/_sync/connection_pool.py", line 256, in handle_request
+    raise exc from None
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpcore/_sync/connection_pool.py", line 236, in handle_request
+    response = connection.handle_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpcore/_sync/connection.py", line 101, in handle_request
+    raise exc
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpcore/_sync/connection.py", line 78, in handle_request
+    stream = self._connect(request)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpcore/_sync/connection.py", line 124, in _connect
+    stream = self._network_backend.connect_tcp(**kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpcore/_backends/sync.py", line 207, in connect_tcp
+    with map_exceptions(exc_map):
+  File "/home/user/.local/share/uv/python/cpython-3.11.15-linux-x86_64-gnu/lib/python3.11/contextlib.py", line 158, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpcore/_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ConnectError: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_base_client.py", line 1005, in request
+    response = self._client.send(
+               ^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpx/_client.py", line 914, in send
+    response = self._send_handling_auth(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpx/_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpx/_client.py", line 979, in _send_handling_redirects
+    response = self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpx/_client.py", line 1014, in _send_single_request
+    response = transport.handle_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpx/_transports/default.py", line 249, in handle_request
+    with map_httpcore_exceptions():
+  File "/home/user/.local/share/uv/python/cpython-3.11.15-linux-x86_64-gnu/lib/python3.11/contextlib.py", line 158, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpx/_transports/default.py", line 118, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ConnectError: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/user/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 3708, in _call
+    result["response"] = _call_chat_completions(stream_attempt_id)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 3118, in _call_chat_completions
+    relay_llm.stream(
+  File "/home/user/.hermes/hermes-agent/agent/relay_llm.py", line 333, in stream
+    return ManagedLlmStream(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/agent/relay_llm.py", line 399, in __init__
+    raw_stream = stream_factory(request)
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 3056, in _open_stream
+    return request_client.chat.completions.create(**stream_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_utils/_utils.py", line 286, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/resources/chat/completions/completions.py", line 1204, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_base_client.py", line 1297, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_base_client.py", line 1037, in request
+    raise APIConnectionError(request=request) from err
+openai.APIConnectionError: Connection error.
+WARNING agent.conversation_loop: API call failed (attempt 2/3) error_type=APIConnectionError thread=asyncio_5:129159086974656 provider=custom base_url=http://127.0.0.1:11434/v1 model=bristlecone-qwen35:4b-64k summary=Connection error.
+WARNING agent.conversation_loop: Retrying API call in 5.016784887072901s (attempt 2/3) thread=asyncio_5:129159086974656 provider=custom base_url=http://127.0.0.1:11434/v1 model=bristlecone-qwen35:4b-64k policy=default error=Connection error.
+ERROR agent.chat_completion_helpers: Streaming failed before delivery: Connection error.
+Traceback (most recent call last):
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpx/_transports/default.py", line 101, in map_httpcore_exceptions
+    yield
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpx/_transports/default.py", line 250, in handle_request
+    resp = self._pool.handle_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpcore/_sync/connection_pool.py", line 256, in handle_request
+    raise exc from None
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpcore/_sync/connection_pool.py", line 236, in handle_request
+    response = connection.handle_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpcore/_sync/connection.py", line 101, in handle_request
+    raise exc
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpcore/_sync/connection.py", line 78, in handle_request
+    stream = self._connect(request)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpcore/_sync/connection.py", line 124, in _connect
+    stream = self._network_backend.connect_tcp(**kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpcore/_backends/sync.py", line 207, in connect_tcp
+    with map_exceptions(exc_map):
+  File "/home/user/.local/share/uv/python/cpython-3.11.15-linux-x86_64-gnu/lib/python3.11/contextlib.py", line 158, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpcore/_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ConnectError: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_base_client.py", line 1005, in request
+    response = self._client.send(
+               ^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpx/_client.py", line 914, in send
+    response = self._send_handling_auth(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpx/_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpx/_client.py", line 979, in _send_handling_redirects
+    response = self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpx/_client.py", line 1014, in _send_single_request
+    response = transport.handle_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpx/_transports/default.py", line 249, in handle_request
+    with map_httpcore_exceptions():
+  File "/home/user/.local/share/uv/python/cpython-3.11.15-linux-x86_64-gnu/lib/python3.11/contextlib.py", line 158, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpx/_transports/default.py", line 118, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ConnectError: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/user/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 3708, in _call
+    result["response"] = _call_chat_completions(stream_attempt_id)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 3118, in _call_chat_completions
+    relay_llm.stream(
+  File "/home/user/.hermes/hermes-agent/agent/relay_llm.py", line 333, in stream
+    return ManagedLlmStream(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/agent/relay_llm.py", line 399, in __init__
+    raw_stream = stream_factory(request)
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 3056, in _open_stream
+    return request_client.chat.completions.create(**stream_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_utils/_utils.py", line 286, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/resources/chat/completions/completions.py", line 1204, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_base_client.py", line 1297, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_base_client.py", line 1037, in request
+    raise APIConnectionError(request=request) from err
+openai.APIConnectionError: Connection error.
+WARNING agent.conversation_loop: API call failed (attempt 3/3) error_type=APIConnectionError thread=asyncio_5:129159086974656 provider=custom base_url=http://127.0.0.1:11434/v1 model=bristlecone-qwen35:4b-64k summary=Connection error.
+ERROR agent.conversation_loop: API call failed after 3 retries. Connection error. | provider=custom model=bristlecone-qwen35:4b-64k msgs=4 tokens=~6,343
+┌─────────────────────────────────────────────────────────┐
+│           ⚕ Hermes Gateway Starting...                 │
+├─────────────────────────────────────────────────────────┤
+│  Messaging platforms + cron scheduler                    │
+│  Press Ctrl+C to stop                                   │
+└─────────────────────────────────────────────────────────┘
+
+⚡ Interrupted during API call.
+⚡ Interrupted during API call.
+🔁 Transient APIConnectionError on custom — rebuilt client, waiting 6s before one last primary attempt.
+⚠️ custom stream drop (RemoteProtocolError) after 107.2s — reconnecting, retry 2/3
+⚠️  API call failed (attempt 1/3): APIConnectionError
+   🔌 Provider: custom  Model: bristlecone-qwen35:4b-64k
+   🌐 Endpoint: http://127.0.0.1:11434/v1
+   📝 Error: Connection error.
+   ⏱️  Elapsed: 107.41s  Context: 4 msgs, ~6,343 tokens
+⏳ Retrying in 2.1s (attempt 1/3)...
+⚠️  API call failed (attempt 2/3): APIConnectionError
+   🔌 Provider: custom  Model: bristlecone-qwen35:4b-64k
+   🌐 Endpoint: http://127.0.0.1:11434/v1
+   📝 Error: Connection error.
+   ⏱️  Elapsed: 109.74s  Context: 4 msgs, ~6,343 tokens
+⏳ Retrying in 5.7s (attempt 2/3)...
+⚠️  API call failed (attempt 3/3): APIConnectionError
+   🔌 Provider: custom  Model: bristlecone-qwen35:4b-64k
+   🌐 Endpoint: http://127.0.0.1:11434/v1
+   📝 Error: Connection error.
+   ⏱️  Elapsed: 115.67s  Context: 4 msgs, ~6,343 tokens
+⚠️  API call failed (attempt 1/3): APIConnectionError
+   🔌 Provider: custom  Model: bristlecone-qwen35:4b-64k
+   🌐 Endpoint: http://127.0.0.1:11434/v1
+   📝 Error: Connection error.
+   ⏱️  Elapsed: 121.76s  Context: 4 msgs, ~6,343 tokens
+⏳ Retrying in 2.4s (attempt 1/3)...
+⚠️  API call failed (attempt 2/3): APIConnectionError
+   🔌 Provider: custom  Model: bristlecone-qwen35:4b-64k
+   🌐 Endpoint: http://127.0.0.1:11434/v1
+   📝 Error: Connection error.
+   ⏱️  Elapsed: 124.41s  Context: 4 msgs, ~6,343 tokens
+⏳ Retrying in 5.0s (attempt 2/3)...
+⚠️  API call failed (attempt 3/3): APIConnectionError
+   🔌 Provider: custom  Model: bristlecone-qwen35:4b-64k
+   🌐 Endpoint: http://127.0.0.1:11434/v1
+   📝 Error: Connection error.
+   ⏱️  Elapsed: 129.65s  Context: 4 msgs, ~6,343 tokens
+❌ API failed after 3 retries — Connection error.
+   💀 Final error: Connection error.
+WARNING gateway.run: No env user allowlists configured. Messaging platforms default to pairing/allowlist policies and will deny unknown senders unless you configure platform allowlists (e.g., TELEGRAM_ALLOWED_USERS=your_id) or explicitly opt in with GATEWAY_ALLOW_ALL_USERS=true plus dm_policy/group_policy: open on the platform.
+WARNING tools.registry: check_fn check_bfl_requirements returned False; dependent tools will be unavailable this turn
+WARNING tools.registry: check_fn _browser_cdp_check returned False; dependent tools will be unavailable this turn
+WARNING tools.registry: check_fn _browser_dialog_check returned False; dependent tools will be unavailable this turn
+WARNING tools.registry: check_fn check_close_terminal_requirements returned False; dependent tools will be unavailable this turn
+WARNING tools.registry: check_fn check_focus_pane_requirements returned False; dependent tools will be unavailable this turn
+WARNING tools.registry: check_fn check_image_generation_requirements returned False; dependent tools will be unavailable this turn
+WARNING tools.registry: check_fn check_open_preview_requirements returned False; dependent tools will be unavailable this turn
+WARNING tools.registry: check_fn check_react_requirements returned False; dependent tools will be unavailable this turn
+WARNING tools.registry: check_fn check_read_terminal_requirements returned False; dependent tools will be unavailable this turn
+WARNING tools.registry: check_fn check_web_api_key returned False; dependent tools will be unavailable this turn
+WARNING tools.registry: check_fn check_bfl_requirements returned False; dependent tools will be unavailable this turn
+WARNING tools.registry: check_fn _browser_cdp_check returned False; dependent tools will be unavailable this turn
+WARNING tools.registry: check_fn _browser_dialog_check returned False; dependent tools will be unavailable this turn
+WARNING tools.registry: check_fn check_close_terminal_requirements returned False; dependent tools will be unavailable this turn
+WARNING tools.registry: check_fn check_focus_pane_requirements returned False; dependent tools will be unavailable this turn
+WARNING tools.registry: check_fn check_image_generation_requirements returned False; dependent tools will be unavailable this turn
+WARNING tools.registry: check_fn check_open_preview_requirements returned False; dependent tools will be unavailable this turn
+WARNING tools.registry: check_fn check_react_requirements returned False; dependent tools will be unavailable this turn
+WARNING tools.registry: check_fn check_read_terminal_requirements returned False; dependent tools will be unavailable this turn
+WARNING tools.registry: check_fn check_web_api_key returned False; dependent tools will be unavailable this turn
+WARNING gateway.run: Shutdown context: signal=SIGTERM under_systemd=yes parent_pid=1 parent_name=systemd loadavg_1m=0.00 parent_cmdline='/sbin/init'
+┌─────────────────────────────────────────────────────────┐
+│           ⚕ Hermes Gateway Starting...                 │
+├─────────────────────────────────────────────────────────┤
+│  Messaging platforms + cron scheduler                    │
+│  Press Ctrl+C to stop                                   │
+└─────────────────────────────────────────────────────────┘
+
+⚡ Interrupted during API call.

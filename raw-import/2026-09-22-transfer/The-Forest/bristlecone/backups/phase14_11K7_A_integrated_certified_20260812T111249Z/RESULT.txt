@@ -1,0 +1,29 @@
+Phase: 14.11K.7
+Title: Integrated Unavailable-Big Certification
+Status: 0
+
+Integrated invariants:
+- Big has no production binding.
+- Explicit Big intent remains Big.
+- Big DEFER stops before runtime.
+- Big DENY stops before runtime.
+- Unbound Big fails closed before Governor/runtime.
+- No silent Big -> Small downgrade occurs.
+- Task and execution-context identity remain frozen.
+- Reasoning remains independent and frozen.
+- Workshop/instruction composition remains an independent axis.
+- Automatic Model Form routing occurs before freeze.
+- Governor occurs after freeze.
+- Failure/retry does not reroute.
+- No runtime/session side effects occur on denied/unavailable Big.
+- No Ollama model is resident.
+- No llama-server is active.
+- active.yaml remains frozen.
+- Six production files remain frozen.
+- The 119B Big model was not executed.
+
+- Upstream verified: phase14_11K1_big_binding_certified_20260812T104656Z
+- Upstream verified: phase14_11K1_B_independent_certified_20260812T105820Z
+- Upstream verified: phase14_11K6_zero_side_effect_certified_20260812T111048Z
+
+CERTIFIED

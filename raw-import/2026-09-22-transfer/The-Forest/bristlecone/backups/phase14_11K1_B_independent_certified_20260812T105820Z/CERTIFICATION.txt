@@ -1,0 +1,54 @@
+The Forest — Bristlecone Pine
+Terminal B Independent Certification
+
+Phase:
+14.11K.1 — Real Big Binding + Availability Boundary
+
+RESULT:
+INDEPENDENTLY CERTIFIED
+
+Foundation:
+bristlecone/backups/phase14_11J7_final_certified_20260812T090615Z
+
+Prior failed B certifier attempt preserved:
+bristlecone/backups/attempt_phase14_11K1_B_20260812T105401Z
+
+Note:
+The prior attempt failed because the B-only certifier
+incorrectly assumed adapter/profile/platform were direct
+binding keys. Production correctly stores them under the
+ModelBinding runtime mapping.
+
+Certified properties:
+
+- production forms contains only:
+  small -> binding-0001
+- Big has no production Model Form binding
+- binding-0001 is the only production binding
+- binding-0001 runtime.adapter = hermes
+- binding-0001 runtime.profile = bristlecone
+- binding-0001 runtime.platform = api_server
+- production ModelBindingRegistry resolves Small exactly
+  to binding-0001
+- production ModelBindingRegistry rejects Big because
+  Big has no configured binding
+- binding_for_form('big') cannot silently return Small
+- explicit unbound Model Form resolution fails closed
+- no post-binding-lookup Small fallback exists
+- no Big model was loaded
+- no Big binding was created
+- no Big TaskSession turn was sent
+- no llama-server was started
+- Ollama had no resident inference model
+- Hermes remained active/running
+- active.yaml remained byte-for-byte frozen
+- all six J production surfaces remained frozen
+
+Terminal B production modifications:
+NONE
+
+Big execution:
+NONE
+
+14.11K.1 B status:
+0

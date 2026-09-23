@@ -1,0 +1,48 @@
+The Forest — Bristlecone Pine
+Terminal B Independent Recertification
+
+Phase:
+14.11I — Fake Adapter Certification
+
+Status:
+INDEPENDENTLY CERTIFIED
+
+Authoritative source checkpoint:
+bristlecone/backups/phase14_11I9_final_certified_20260812T003738Z
+
+Terminal B verification:
+
+- final I.9 checkpoint integrity: PASS
+
+Custom Fake Adapter execution surface:
+- I.2 first-session commit: PASS
+- I.3 persisted same-session reuse: PASS
+- I.4 multi-context isolation: PASS
+
+Full integration recertification:
+- Governor / TaskSession integration: PASS
+- retry / frozen-turn integration: PASS
+- Automatic Model Form routing retry/isolation: PASS
+
+Integration test count:
+33 PASS / 0 FAIL
+
+Certified behavioral boundary:
+
+- Small Fake Adapter path obeys Forest Model Form semantics
+- canonical runtime-session ownership remains:
+  (execution_context_id, binding_id)
+- first/new session persistence is supported
+- same-session reuse is supported
+- separate execution contexts retain separate runtime sessions
+- retry preserves frozen semantic identity
+- Governor ordering remains intact
+- Automatic routing remains isolated from runtime recovery
+- no silent Model Form downgrade
+- no production modifications were made by Terminal B
+
+Terminal B production modifications:
+NONE
+
+RESULT:
+14.11I independently recertified.

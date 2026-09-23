@@ -1,0 +1,22 @@
+The Forest — Bristlecone Pine
+Phase 14.11G.4C3A
+
+Status:
+CERTIFIED NORMALIZED ROUTING EVIDENCE PASSTHROUGH
+
+task_session.py SHA256:
+176760e9602fa98b0c948960f6f469b189fa9b80bbac8c6d5c3586836c418b4d
+
+resolver SHA256:
+6a2eac1af3c15231bc93850ae5176d4f64b331017377d3ecef5e50b4a6df162c
+
+routing evidence contract SHA256:
+f28df92e43f1d7b52edb58f35a597ae3f75df4595ef0c6ace333821bb1e9d4cb
+
+Certified behavior:
+- send_runtime_turn accepts automatic_model_form_evidence=()
+- frozen send path accepts automatic_model_form_evidence=()
+- evidence is forwarded exactly once
+- evidence remains transport-only
+- Auto router remains unwired
+- existing 22 Model Form regression tests pass

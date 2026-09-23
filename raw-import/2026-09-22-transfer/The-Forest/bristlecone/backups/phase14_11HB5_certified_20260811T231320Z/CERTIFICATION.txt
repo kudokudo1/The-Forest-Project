@@ -1,0 +1,64 @@
+The Forest — Bristlecone Pine
+Terminal B independent certification
+Phase 14.11H.B5
+
+Status:
+CERTIFIED COLONY IDENTIFIER DOCTRINE
+
+Identifier doctrine:
+
+tree_id
+= durable Tree / Colony identity
+
+execution_context_id
+= individual Ortet or Ramet execution context
+
+lineage_role
+= lineage/origin role: Ortet or Ramet
+
+operational_role
+= current operational responsibility
+
+binding_id
+= selected model/runtime binding
+
+session_id
+= one live runtime session
+
+residency_id
+= one shared immutable model-weight residency
+
+Certified separation:
+
+- Tree identity is not execution-context identity
+- execution-context identity is not binding identity
+- binding identity is not session identity
+- session identity is not residency identity
+- residency identity is not execution-context identity
+- lineage role is independent of operational role
+- Colony semantic identity does not contain runtime session state
+- runtime-session identity does not contain Tree/lineage state
+- shared residency does not contain per-context/session/Task/control/KV state
+- runtime-session lookup/write requires both
+  execution_context_id and binding_id
+
+Resource-management doctrine protected:
+
+A particular Ortet/Ramet is addressed by execution_context_id.
+
+Targeting an execution context must not be confused with targeting:
+- the whole Tree
+- the model binding
+- a particular runtime session
+- the shared model residency
+
+Certification scope:
+
+- frozen H.1-H.4 semantic surfaces
+- Terminal-B-owned doctrine test
+
+Explicitly excluded:
+
+- transitional H.5 Reasoning implementation
+- H.5 mutation/finalization behavior
+- Resource Manager implementation behavior

@@ -1,0 +1,465 @@
+"""Phase 14.11H.5F integrated Colony state-isolation certification."""
+
+from copy import deepcopy
+import inspect
+
+from colony.identity import ColonyExecutionContext
+from reasoning import resolve_effective_reasoning
+from runtime.task_session import TaskSessionManager
+
+
+TREE = "bristlecone"
+CTX_O = "ctx-O"
+CTX_R1 = "ctx-R1"
+CTX_R2 = "ctx-R2"
+
+BINDING = "binding-0001"
+
+
+def state_from(result):
+    """Accept either a state or a {'state': state} result."""
+    if (
+        isinstance(result, dict)
+        and isinstance(result.get("state"), dict)
+    ):
+        return result["state"]
+
+    return result
+
+
+def values_for_key(value, wanted):
+    """Collect all values stored under an exact mapping key."""
+    found = []
+
+    if isinstance(value, dict):
+        for key, item in value.items():
+            if key == wanted:
+                found.append(deepcopy(item))
+
+            found.extend(
+                values_for_key(
+                    item,
+                    wanted,
+                )
+            )
+
+    elif isinstance(value, list):
+        for item in value:
+            found.extend(
+                values_for_key(
+                    item,
+                    wanted,
+                )
+            )
+
+    return found
+
+
+manager = TaskSessionManager.__new__(
+    TaskSessionManager
+)
+
+
+# ==================================================
+# 1. COLONY IDENTITY
+# ==================================================
+
+ortet = ColonyExecutionContext(
+    tree_id=TREE,
+    execution_context_id=CTX_O,
+    lineage_role="ortet",
+    operational_role="worker",
+)
+
+ramet1 = ColonyExecutionContext(
+    tree_id=TREE,
+    execution_context_id=CTX_R1,
+    lineage_role="ramet",
+    operational_role="main",
+)
+
+ramet2 = ColonyExecutionContext(
+    tree_id=TREE,
+    execution_context_id=CTX_R2,
+    lineage_role="ramet",
+    operational_role="specialist",
+)
+
+members = (
+    ortet,
+    ramet1,
+    ramet2,
+)
+
+assert {
+    member.tree_id
+    for member in members
+} == {TREE}
+
+assert len({
+    member.execution_context_id
+    for member in members
+}) == 3
+
+assert ortet.lineage_role == "ortet"
+assert ramet1.lineage_role == "ramet"
+assert ramet2.lineage_role == "ramet"
+
+# Ramet may be operational Main.
+assert ramet1.operational_role == "main"
+assert ortet.operational_role != "main"
+
+print("PASS 01: one Tree / three execution contexts")
+print("PASS 02: lineage and operational role remain independent")
+
+
+# ==================================================
+# 2. MODEL FORM CONTEXT ISOLATION
+# ==================================================
+
+model_state = manager.start_task(
+    state={},
+    persist=False,
+)["state"]
+
+for context_id, form in (
+    (CTX_O, "small"),
+    (CTX_R1, "small"),
+    (CTX_R2, "small"),
+):
+    result = (
+        manager
+        ._write_effective_model_form_for_context(
+            model_state,
+            context_id,
+            form,
+        )
+    )
+
+    model_state = state_from(
+        result
+    )
+
+before_o = values_for_key(
+    model_state,
+    CTX_O,
+)
+
+before_r1 = values_for_key(
+    model_state,
+    CTX_R1,
+)
+
+before_r2 = values_for_key(
+    model_state,
+    CTX_R2,
+)
+
+assert before_o
+assert before_r1
+assert before_r2
+
+result = (
+    manager
+    ._write_effective_model_form_for_context(
+        model_state,
+        CTX_R1,
+        "big",
+    )
+)
+
+model_after = state_from(
+    result
+)
+
+after_o = values_for_key(
+    model_after,
+    CTX_O,
+)
+
+after_r1 = values_for_key(
+    model_after,
+    CTX_R1,
+)
+
+after_r2 = values_for_key(
+    model_after,
+    CTX_R2,
+)
+
+assert before_o == after_o
+assert before_r2 == after_r2
+assert before_r1 != after_r1
+
+print("PASS 03: R1 Model Form change leaves O unchanged")
+print("PASS 04: R1 Model Form change leaves R2 unchanged")
+
+
+# ==================================================
+# 3. REASONING CONTROL ISOLATION
+# ==================================================
+
+reasoning_state = {}
+
+reasoning_state = manager.set_temporary_reasoning_mode(
+    "normal",
+    state=reasoning_state,
+    persist=False,
+    execution_context_id=CTX_O,
+    turns=2,
+)["state"]
+
+reasoning_state = manager.set_temporary_reasoning_mode(
+    "deep",
+    state=reasoning_state,
+    persist=False,
+    execution_context_id=CTX_R1,
+    turns=5,
+)["state"]
+
+reasoning_state = manager.set_temporary_reasoning_mode(
+    "light",
+    state=reasoning_state,
+    persist=False,
+    execution_context_id=CTX_R2,
+    turns=3,
+)["state"]
+
+o_before = manager.get_reasoning_control(
+    state=reasoning_state,
+    execution_context_id=CTX_O,
+)["control"]
+
+r1_before = manager.get_reasoning_control(
+    state=reasoning_state,
+    execution_context_id=CTX_R1,
+)["control"]
+
+r2_before = manager.get_reasoning_control(
+    state=reasoning_state,
+    execution_context_id=CTX_R2,
+)["control"]
+
+assert o_before.temporary.turns_remaining == 2
+assert r1_before.temporary.turns_remaining == 5
+assert r2_before.temporary.turns_remaining == 3
+
+decision = resolve_effective_reasoning(
+    r1_before,
+    "Integrated Colony R1 turn",
+    explicit_mode=None,
+)
+
+assert decision.consumes_temporary
+
+finalized = (
+    manager
+    ._finalize_reasoning_control_after_success(
+        working=reasoning_state,
+        turn_control=r1_before,
+        decision=decision,
+        persist=False,
+        execution_context_id=CTX_R1,
+    )
+)
+
+reasoning_after = finalized["state"]
+
+o_after = manager.get_reasoning_control(
+    state=reasoning_after,
+    execution_context_id=CTX_O,
+)["control"]
+
+r1_after = manager.get_reasoning_control(
+    state=reasoning_after,
+    execution_context_id=CTX_R1,
+)["control"]
+
+r2_after = manager.get_reasoning_control(
+    state=reasoning_after,
+    execution_context_id=CTX_R2,
+)["control"]
+
+assert o_after.temporary.turns_remaining == 2
+assert r1_after.temporary.turns_remaining == 4
+assert r2_after.temporary.turns_remaining == 3
+
+assert "reasoning_control" not in reasoning_after
+
+print("PASS 05: R1 Reasoning lease 5 -> 4")
+print("PASS 06: Ortet Reasoning lease remains 2")
+print("PASS 07: R2 Reasoning lease remains 3")
+print("PASS 08: Ramets do not create legacy global Reasoning")
+
+
+# ==================================================
+# 4. RUNTIME SESSION ISOLATION
+# ==================================================
+
+runtime_state = manager.start_task(
+    state={},
+    persist=False,
+)["state"]
+
+manager._write_runtime_session_binding_for_identity(
+    runtime_state,
+    CTX_R1,
+    BINDING,
+    "fake",
+    "session-R1",
+    None,
+)
+
+r1_session = (
+    manager
+    ._runtime_session_binding_for_identity(
+        runtime_state,
+        CTX_R1,
+        BINDING,
+    )
+)
+
+o_session = (
+    manager
+    ._runtime_session_binding_for_identity(
+        runtime_state,
+        CTX_O,
+        BINDING,
+    )
+)
+
+r2_session = (
+    manager
+    ._runtime_session_binding_for_identity(
+        runtime_state,
+        CTX_R2,
+        BINDING,
+    )
+)
+
+assert r1_session is not None
+assert o_session is None
+assert r2_session is None
+
+manager._write_runtime_session_binding_for_identity(
+    runtime_state,
+    CTX_R2,
+    BINDING,
+    "fake",
+    "session-R2",
+    None,
+)
+
+r1_after_session = (
+    manager
+    ._runtime_session_binding_for_identity(
+        runtime_state,
+        CTX_R1,
+        BINDING,
+    )
+)
+
+r2_after_session = (
+    manager
+    ._runtime_session_binding_for_identity(
+        runtime_state,
+        CTX_R2,
+        BINDING,
+    )
+)
+
+assert r1_after_session == r1_session
+assert r2_after_session is not None
+assert r1_after_session != r2_after_session
+
+print("PASS 09: R1 runtime session is context-local")
+print("PASS 10: R2 receives a separate runtime session")
+print("PASS 11: same binding does not imply same session")
+
+
+# ==================================================
+# 5. TASK-LOCAL PAYLOAD ISOLATION
+# ==================================================
+
+task_states = {}
+
+for context_id in (
+    CTX_O,
+    CTX_R1,
+    CTX_R2,
+):
+    task_states[context_id] = {
+        "task_session":
+            manager.normalize_task_session({})
+    }
+
+task_states[CTX_R1][
+    "task_session"
+][
+    "temporary_capabilities"
+] = [
+    "cap-R1"
+]
+
+task_states[CTX_R1][
+    "task_session"
+][
+    "task_sticky_skills"
+] = [
+    "skill-R1"
+]
+
+o_task = manager.normalize_task_session(
+    task_states[CTX_O]
+)
+
+r1_task = manager.normalize_task_session(
+    task_states[CTX_R1]
+)
+
+r2_task = manager.normalize_task_session(
+    task_states[CTX_R2]
+)
+
+assert o_task["temporary_capabilities"] == []
+assert o_task["task_sticky_skills"] == []
+
+assert r1_task["temporary_capabilities"] == [
+    "cap-R1"
+]
+assert r1_task["task_sticky_skills"] == [
+    "skill-R1"
+]
+
+assert r2_task["temporary_capabilities"] == []
+assert r2_task["task_sticky_skills"] == []
+
+print("PASS 12: R1 temporary capabilities do not leak")
+print("PASS 13: R1 task-sticky Skills do not leak")
+
+
+# ==================================================
+# 6. WORKSHOP OWNERSHIP STRUCTURAL PROOF
+# ==================================================
+
+plan_source = inspect.getsource(
+    TaskSessionManager.build_application_plan
+)
+
+assert "source_state" in plan_source
+assert "normalize_task_session" in plan_source
+assert "workshop" in plan_source
+assert "temporary_capabilities" in plan_source
+assert "task_sticky_skills" in plan_source
+
+# build_application_plan must derive from its supplied
+# context working state, not silently load one global state.
+assert "self.load_state(" not in plan_source
+
+print("PASS 14: Workshop plan derives from supplied context state")
+print("PASS 15: application plan does not load global Task state")
+
+
+print()
+print("15 PASS / 0 FAIL")
+print("14.11H.5F status: 0")

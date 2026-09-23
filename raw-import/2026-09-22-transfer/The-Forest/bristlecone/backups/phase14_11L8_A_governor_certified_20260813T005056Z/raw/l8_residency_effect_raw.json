@@ -1,0 +1,26 @@
+{
+  "accelerator_memory_mib": 0,
+  "calibrated_floor_mib": 6144,
+  "comparison_nonresident_requirement_mib": 6144,
+  "cpu_threads": 1,
+  "expected_remaining_requirement_mib": 759,
+  "iterations": 20,
+  "model": "bristlecone-qwen35:4b-64k",
+  "observed_memory_mib_values": [
+    759
+  ],
+  "phase": "14.11L.8",
+  "production_state_modified": false,
+  "provider_timing": {
+    "mean_ns": 435204.45,
+    "mean_us": 435.20445,
+    "median_ns": 406455.5,
+    "median_us": 406.4555,
+    "stdev_ns": 76608.0906703415
+  },
+  "real_inference_executed_by_this_script": false,
+  "resident": true,
+  "resident_size_bytes": 5646906816,
+  "scenario": "residency-aware-requirement-effect",
+  "status": "success"
+}

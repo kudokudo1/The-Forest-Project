@@ -1,0 +1,16 @@
+The Forest — Bristlecone Pine
+Phase 14.11G.4B
+
+Status:
+CERTIFIED CANONICAL AUTO ELIGIBILITY
+
+Resolver SHA256:
+6a2eac1af3c15231bc93850ae5176d4f64b331017377d3ecef5e50b4a6df162c
+
+Certified F task_session.py SHA256:
+2e35143d63bf3d077edb95a4147035018453e019a8f1ee1673912061b883eb2a
+
+Verified:
+- canonical Auto eligibility matrix passed
+- existing 22 Model Form tests passed
+- task_session.py remained unchanged

@@ -1,0 +1,20 @@
+Terminal 2 H.5 preparation state
+
+Pre-H.5 independent certification:
+H.B1  9/9 PASS
+H.B2  6/6 PASS
+H.B3  7/7 PASS
+H.B4  6/6 PASS
+H.B5  7/7 PASS
+
+Total:
+35/35 PASS
+
+Current production SHAs below are OBSERVATIONAL ONLY.
+They are NOT H.5 certification SHAs.
+
+runtime/task_session.py
+d666cb1471b568bf43db4255f5e84e98c1ea502af467e1e2670e4a93dc364991
+
+reasoning/control.py
+097a6eee9386d1b4db4310308ff8e053f9fad11f787430d87896bf20975a5779

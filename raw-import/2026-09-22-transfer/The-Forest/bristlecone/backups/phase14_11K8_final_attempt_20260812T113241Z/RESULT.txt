@@ -1,0 +1,35 @@
+Phase: 14.11K.8
+Title: Final Real Big Boundary Checkpoint
+Status: 1
+
+Phase K conclusion:
+- Big has no production runtime binding.
+- Explicit Big intent remains Big.
+- Unavailable Big fails closed.
+- Governor DEFER/DENY stop before runtime effects.
+- No silent Big -> Small downgrade occurs.
+- Task and execution-context identity remain frozen.
+- Reasoning remains an independent frozen axis.
+- Workshop/instruction composition remains independent.
+- Automatic routing occurs before Model Form freeze.
+- Governor evaluates the frozen resource request.
+- Failure/recovery does not reroute the frozen turn.
+- Denied/unavailable Big causes no runtime/session effects.
+- K.6 physically certified zero Big activation evidence.
+- K.7 was certified by Terminal A and independently by Terminal B.
+- Six production files remain frozen.
+- active.yaml remains frozen.
+- The 119B Big model was never executed in Phase K.
+
+Final architecture rule:
+Unavailable resources fail closed; they do not silently rewrite semantics.
+
+- Verified certificate: phase14_11K1_big_binding_certified_20260812T104656Z
+- Verified certificate: phase14_11K6_zero_side_effect_certified_20260812T111048Z
+- Verified certificate: phase14_11K7_A_integrated_certified_20260812T111249Z
+
+Failures:
+- phase14_11K1_B_independent_certified_20260812T105820Z: RESULT.txt missing
+- phase14_11K7_B_independent_certified_20260812T112930Z: RESULT.txt missing
+
+NOT CERTIFIED

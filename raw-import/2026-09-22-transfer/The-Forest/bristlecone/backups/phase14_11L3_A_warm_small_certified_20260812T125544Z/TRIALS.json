@@ -1,0 +1,47 @@
+[
+  {
+    "duration_ns": 85508143341,
+    "duration_s": 85.508143341,
+    "execution_context_id": "ctx-l3-warm-01",
+    "session_id": "api_1786538177_116e4f3a",
+    "sha256": "abc98dac7c089d05002e3e90306555048f912965216faa2d04ed34fd1ef08190",
+    "task_id": "forest-task-20260812T123617Z-3fbed551",
+    "trial": 1
+  },
+  {
+    "duration_ns": 41349474192,
+    "duration_s": 41.349474192,
+    "execution_context_id": "ctx-l3-warm-02",
+    "session_id": "api_1786538441_2635773a",
+    "sha256": "f4e83a0def05e44b099c54acbeaa215ead5c2cf4d1fb75adf8bba5d2293b4f00",
+    "task_id": "forest-task-20260812T124041Z-8dd27313",
+    "trial": 2
+  },
+  {
+    "duration_ns": 169996093683,
+    "duration_s": 169.996093683,
+    "execution_context_id": "ctx-l3-warm-03",
+    "session_id": "api_1786538585_8a96e095",
+    "sha256": "2417d94db74216ebb81de08fb3feae78c3411a7f529618f5e652aba9b4f9989f",
+    "task_id": "forest-task-20260812T124305Z-b3690895",
+    "trial": 3
+  },
+  {
+    "duration_ns": 32029349374,
+    "duration_s": 32.029349374,
+    "execution_context_id": "ctx-l3-warm-04",
+    "session_id": "api_1786539016_a84a9d53",
+    "sha256": "dc2f3b5f296716c215ac43490a1d5b45ce523db8c0afc1809832b2aae9b52140",
+    "task_id": "forest-task-20260812T125016Z-f07aa27a",
+    "trial": 4
+  },
+  {
+    "duration_ns": 42701828285,
+    "duration_s": 42.701828285,
+    "execution_context_id": "ctx-l3-warm-05",
+    "session_id": "api_1786539143_3dc3661d",
+    "sha256": "fc92b22745945f2c8e629685af12064069d2c134384a66e9536d1f758c489060",
+    "task_id": "forest-task-20260812T125223Z-f23c1a06",
+    "trial": 5
+  }
+]

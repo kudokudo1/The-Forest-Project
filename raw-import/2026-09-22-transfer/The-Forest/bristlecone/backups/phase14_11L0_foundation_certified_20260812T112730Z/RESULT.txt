@@ -1,0 +1,25 @@
+Phase: 14.11L.0
+Title: Benchmark Foundation Certification
+Status: 0
+
+Certified foundation:
+- Benchmark methodology frozen.
+- Monotonic elapsed-time primitive exists.
+- Immutable benchmark trial record exists.
+- Durable JSONL writer exists.
+- Passive environment observation exists.
+- Immutable baseline schema exists.
+- Initial baseline contains one record.
+- Small/binding-0001 is the runtime under test.
+- Big execution remains forbidden.
+- Benchmark package has no direct runtime-turn surface.
+- No model is resident during certification.
+- No llama-server is active.
+- No runtime socket is active.
+
+- Baseline contains exactly one canonical record.
+- Baseline authorizes Small/binding-0001 only.
+- Big execution allowed: False.
+- Passive environment snapshot succeeded.
+
+CERTIFIED

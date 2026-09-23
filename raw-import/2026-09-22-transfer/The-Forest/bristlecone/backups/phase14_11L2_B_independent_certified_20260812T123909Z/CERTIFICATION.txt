@@ -1,0 +1,135 @@
+The Forest — Bristlecone Pine
+Terminal B Independent Certification
+
+Phase:
+14.11L.2 — Cold Small Runtime Benchmark
+
+RESULT:
+INDEPENDENTLY CERTIFIED
+
+A authoritative archive:
+bristlecone/backups/phase14_11L2_A_cold_small_certified_20260812T122635Z
+
+Prior B attempt retained:
+bristlecone/backups/attempt_phase14_11L2_B_20260812T123552Z
+
+Prior attempt classification:
+B integrated-certifier schema defect.
+The live summary is a wrapper containing phase,
+scenario, statistics, and trials; archived SUMMARY.json
+contains only the statistics object, while archived
+TRIALS.json contains the trial list.
+
+No production or benchmark defect was found.
+
+Prepared B certifier:
+bristlecone/certification/phase14_11L2_B/l2_three_trial_certifier.py
+
+Prepared certifier SHA256:
+c27e9fb5d48fa09f04926c77b17c23caf6bf1bae892d7fb79e14f2cc0fe1eba5
+
+Prepared certifier result:
+STATUS=0
+
+Raw trial SHAs:
+
+Trial 1:
+4fc65acb1c96738b0082fc1be5aa2213bb9f5a966682b219559c992bad03beb0
+
+Trial 2:
+bcdab875e7120a1bde9e7186a21652afefc178a03bd2371800b46a2d8b324500
+
+Trial 3:
+24983d0fb8d204d3d2f44c69070bd529c968b21933b55a3f6808c57a7e81ed59
+
+Individual cold timings:
+
+Trial 1:
+229.430562429 s
+
+Trial 2:
+164.270725926 s
+
+Trial 3:
+141.777837884 s
+
+Independent statistics:
+
+{
+  "max_ns": 229430562429,
+  "max_s": 229.430562429,
+  "mean_ns": 178493042079.66666,
+  "mean_s": 178.49304207966668,
+  "median_ns": 164270725926,
+  "median_s": 164.270725926,
+  "min_ns": 141777837884,
+  "min_s": 141.777837884,
+  "n": 3,
+  "p90_ns": 229430562429,
+  "p90_s": 229.430562429,
+  "range_ns": 87652724545,
+  "range_s": 87.65272454499998,
+  "stdev_ns": 45524232422.10183,
+  "stdev_s": 45.52423242210182
+}
+
+Outlier review:
+
+[
+  {
+    "advisory_outlier": true,
+    "duration_s": 229.430562429,
+    "excluded": false,
+    "relative_deviation_from_median": 0.3966612805519159,
+    "trial": 1
+  },
+  {
+    "advisory_outlier": false,
+    "duration_s": 164.270725926,
+    "excluded": false,
+    "relative_deviation_from_median": 0.0,
+    "trial": 2
+  },
+  {
+    "advisory_outlier": false,
+    "duration_s": 141.777837884,
+    "excluded": false,
+    "relative_deviation_from_median": 0.13692572377218631,
+    "trial": 3
+  }
+]
+
+Certified invariants:
+
+- A archive-local SHA256SUMS verified.
+- A production hash inventory verified.
+- A active.yaml freeze verified.
+- A RESULT status 0 / CERTIFIED verified.
+- all three raw trial SHAs verified.
+- A TRIALS.json bound to exact raw artifacts.
+- live summary wrapper phase verified.
+- live summary wrapper scenario verified.
+- live.statistics semantically equals archived SUMMARY.json.
+- live.trials exactly equals archived TRIALS.json.
+- statistics independently recomputed from integer raw durations.
+- cold-Small median = 164.270725926 seconds.
+- all three timings retained.
+- outlier flags are advisory only.
+- real Small / binding-0001 / Normal.
+- identical fixed prompt.
+- persist=False.
+- fresh Task, context, and Hermes session per trial.
+- no reuse/recovery/rotation.
+- no resident model before each measured trial.
+- Small resident after each measured trial.
+- active.yaml remained frozen.
+- production hashes remained frozen.
+
+Terminal B live runtime operations:
+NONE
+
+Terminal B production modifications:
+NONE
+
+14.11L.2 B status:
+CERTIFIED

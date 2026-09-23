@@ -1,0 +1,19 @@
+Phase: 14.11J.5C
+Attempt: 1
+Status: FAILED SAFE — HARNESS DEFECT
+
+Turn 1 successfully created a disposable real Hermes session.
+
+The harness then attempted to resolve the runtime adapter
+from returned Task-local state rather than configured Forest
+runtime state.
+
+Failure:
+state.runtime.adapter is not configured.
+
+Production stale recovery was NOT exercised.
+
+No production source changed.
+active.yaml remained unchanged.
+Hermes was not restarted.
+The resident llama-server remained unchanged.

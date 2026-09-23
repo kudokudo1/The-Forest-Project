@@ -1,0 +1,61 @@
+{
+  "automatic_small": {
+    "max_ns": 1127430,
+    "mean_ns": 920428.3,
+    "median_ns": 886965,
+    "min_ns": 848889,
+    "n": 20,
+    "p90_ns": 1082286,
+    "stdev_ns": 87960.44873578125
+  },
+  "environment_after": {
+    "cpu_count": 9,
+    "hermes_active_state": "active",
+    "hermes_main_pid": 941,
+    "hermes_sub_state": "running",
+    "llama_server_pids": [],
+    "load_15m": 1.349609375,
+    "load_1m": 0.8212890625,
+    "load_5m": 1.15576171875,
+    "mem_available_kib": 10278644,
+    "ollama_resident_models": [],
+    "recorded_at_utc": "2026-08-12T11:31:20Z",
+    "runtime_socket_lines": []
+  },
+  "environment_before": {
+    "cpu_count": 9,
+    "hermes_active_state": "active",
+    "hermes_main_pid": 941,
+    "hermes_sub_state": "running",
+    "llama_server_pids": [],
+    "load_15m": 1.349609375,
+    "load_1m": 0.8212890625,
+    "load_5m": 1.15576171875,
+    "mem_available_kib": 10285464,
+    "ollama_resident_models": [],
+    "recorded_at_utc": "2026-08-12T11:31:20Z",
+    "runtime_socket_lines": []
+  },
+  "explicit_small": {
+    "max_ns": 957752,
+    "mean_ns": 879687.6,
+    "median_ns": 877227,
+    "min_ns": 833390,
+    "n": 20,
+    "p90_ns": 899504,
+    "stdev_ns": 26773.1704164331
+  },
+  "measured_per_series": 20,
+  "median_delta_ns": 9738,
+  "phase": "14.11L.1",
+  "prompt_id": "L1-control-path-v1",
+  "safety": {
+    "big_execution": false,
+    "model_load": false,
+    "persistence": false,
+    "real_inference": false,
+    "runtime_adapter": "FakeRuntimeAdapter"
+  },
+  "schema_version": 1,
+  "warmups_per_series": 5
+}

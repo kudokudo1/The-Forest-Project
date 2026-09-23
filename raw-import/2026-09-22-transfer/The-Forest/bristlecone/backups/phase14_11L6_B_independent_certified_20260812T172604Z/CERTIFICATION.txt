@@ -1,0 +1,72 @@
+Phase: 14.11L.6
+Role: Terminal B independent reasoning-level certification
+Status: 0
+
+LIGHT:
+- Minimum: 23.792714929 s
+- Median: 75.879709192 s
+- Mean: 103.352293831 s
+- Maximum: 280.016025499 s
+- Sample stdev: 103.379349470 s
+- P90: 280.016025499 s
+
+NORMAL:
+- Minimum: 34.744085970 s
+- Median: 51.113125039 s
+- Mean: 64.460301213 s
+- Maximum: 136.659077629 s
+- Sample stdev: 41.648640777 s
+- P90: 136.659077629 s
+
+DEEP:
+- Minimum: 22.102046084 s
+- Median: 36.872109413 s
+- Mean: 74.160230828 s
+- Maximum: 239.373765086 s
+- Sample stdev: 92.596184454 s
+- P90: 239.373765086 s
+
+Matched sets:
+- Light fastest: 1/5
+- Normal fastest: 1/5
+- Deep fastest: 3/5
+- Median order: deep < normal < light
+- Median Normal-Light delta: -1.930704145 s
+- Median Deep-Normal delta: -18.227530010 s
+- Median Deep-Light delta: -53.777663108 s
+
+Independent checks:
+- all 15 raw SHA256 values verified
+- statistics recomputed from raw duration_ns
+- A archived summary cross-checked
+- live summary cross-checked
+- 15 unique Task IDs
+- 15 unique execution contexts
+- 15 unique Hermes sessions
+- Light -> Normal -> Deep chronology verified per set
+- all five interleaved sets verified
+- warm Small residency verified from raw evidence
+- fresh session creation verified
+- no reuse verified
+- no recovery verified
+- binding-0001 verified
+- Model Form Small verified on all 15 turns
+- persist=False verified
+- active.yaml frozen
+- production hashes frozen
+- benchmark harness frozen
+- Hermes source mapping independently verified:
+  Light -> low
+  Normal -> medium
+  Deep -> high
+- no live runtime operations performed
+
+Independent interpretation:
+- Reasoning and Model Form remained independent
+- Deep remained on Small and did not become Big
+- observed median order is Deep < Normal < Light
+- matched-set ordering is inconsistent
+- Light and Deep show substantial run-to-run variance
+- no clean monotonic latency relationship with reasoning effort is established
+
+CERTIFIED

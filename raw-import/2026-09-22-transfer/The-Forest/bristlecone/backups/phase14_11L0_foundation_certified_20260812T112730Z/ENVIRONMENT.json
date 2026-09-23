@@ -1,0 +1,1 @@
+{"cpu_count": 9, "hermes_active_state": "active", "hermes_main_pid": 941, "hermes_sub_state": "running", "llama_server_pids": [], "load_15m": 1.48046875, "load_1m": 1.5068359375, "load_5m": 1.48095703125, "mem_available_kib": 10254992, "ollama_resident_models": [], "recorded_at_utc": "2026-08-12T11:27:31Z", "runtime_socket_lines": []}

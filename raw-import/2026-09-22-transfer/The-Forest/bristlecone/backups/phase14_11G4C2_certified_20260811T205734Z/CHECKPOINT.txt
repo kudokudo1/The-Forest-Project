@@ -1,0 +1,19 @@
+The Forest — Bristlecone Pine
+Phase 14.11G.4C2
+
+Status:
+CERTIFIED LIVE AUTO ELIGIBILITY
+
+task_session.py SHA256:
+f793a4cbc08820a2d28e0d73e67afda7d52b00780b8555e29bf761e6f813fa1d
+
+resolver SHA256:
+6a2eac1af3c15231bc93850ae5176d4f64b331017377d3ecef5e50b4a6df162c
+
+Certified ordering:
+Reasoning freeze
+→ canonical Auto eligibility
+→ Model Form freeze
+→ ResourceRequest
+
+Auto router remains unwired.

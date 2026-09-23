@@ -1,0 +1,30 @@
+The Forest — Bristlecone Pine
+
+Phase:
+14.11G.1B
+
+Artifact:
+AutomaticModelFormRecommendation
+
+Status:
+CERTIFIED
+
+Production source:
+bristlecone/model_form/automatic_routing.py
+
+Source SHA256:
+bce0361131c560e1ff8b0bfa5919dfdc291984b1e34965fac8201cac245114e2
+
+Certified 14.11F task_session.py SHA256:
+2e35143d63bf3d077edb95a4147035018453e019a8f1ee1673912061b883eb2a
+
+Contract:
+- Task-bound
+- execution-context-bound
+- resolved Small/Big only
+- ordered semantic reasons
+- immutable
+- no resolver source
+- no runtime binding/session data
+- no Governor/resource data
+- no Reasoning mutation/control data

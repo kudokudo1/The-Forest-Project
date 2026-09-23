@@ -1,0 +1,185 @@
+The Forest — Bristlecone Pine
+Terminal B Independent Certification
+
+Phase:
+14.11L.4 — Warm Small Same-Session Reuse
+
+RESULT:
+INDEPENDENTLY CERTIFIED
+
+A archive:
+bristlecone/backups/phase14_11L4_A_same_session_certified_20260812T134845Z
+
+Authoritative summary:
+bristlecone/benchmarks/phase14_11L/l4_same_session_summary.json
+
+Five measured same-session timings:
+
+[
+  {
+    "duration_s": 153.481200115,
+    "execution_context_id": "ctx-l4-reuse-01",
+    "measured_session_id": "api_1786539958_0b52cb25",
+    "prime_session_id": "api_1786539958_0b52cb25",
+    "sha256": "0b7c99ca91dab189d214b426d16bece53a96307683338a8bbcac11e0b1f061ef",
+    "task_id": "forest-task-20260812T130557Z-632da219",
+    "trial": 1
+  },
+  {
+    "duration_s": 44.451019889,
+    "execution_context_id": "ctx-l4-reuse-02",
+    "measured_session_id": "api_1786540496_5da2ff00",
+    "prime_session_id": "api_1786540496_5da2ff00",
+    "sha256": "366454b297d090aa29e6ab0d89dcd334462134accb96f0429ed3f22f6e43889f",
+    "task_id": "forest-task-20260812T131456Z-e9b3f89c",
+    "trial": 2
+  },
+  {
+    "duration_s": 31.749168953,
+    "execution_context_id": "ctx-l4-reuse-03",
+    "measured_session_id": "api_1786541182_dc001221",
+    "prime_session_id": "api_1786541182_dc001221",
+    "sha256": "4d08c4b7f8077dfa6e353f36e41fbb3a9d9d5b2fa5e646bf2cc540a4c52167f5",
+    "task_id": "forest-task-20260812T132622Z-08822978",
+    "trial": 3
+  },
+  {
+    "duration_s": 188.200975222,
+    "execution_context_id": "ctx-l4-reuse-04",
+    "measured_session_id": "api_1786541871_57f201e7",
+    "prime_session_id": "api_1786541871_57f201e7",
+    "sha256": "302eecb79c462ee11bf570a8228789bb96e6ce2e5de77345a675fbd12733f1a5",
+    "task_id": "forest-task-20260812T133750Z-2ca54aea",
+    "trial": 4
+  },
+  {
+    "duration_s": 40.41911639,
+    "execution_context_id": "ctx-l4-reuse-05",
+    "measured_session_id": "api_1786542244_ee475dff",
+    "prime_session_id": "api_1786542244_ee475dff",
+    "sha256": "cb5bd44bc4aa67d9bb8a1b335cb71ecfaca7ba960fbd5b1ec90b7b551ca5b95e",
+    "task_id": "forest-task-20260812T134404Z-f5c933e4",
+    "trial": 5
+  }
+]
+
+Independent L.4 statistics:
+
+{
+  "max_s": 188.200975222,
+  "mean_s": 91.6602961138,
+  "median_s": 44.451019889,
+  "min_s": 31.749168953,
+  "n": 5,
+  "p90_s": 188.200975222,
+  "range_s": 156.451806269,
+  "stdev_s": 73.46026870532094
+}
+
+Certified baseline comparisons:
+
+{
+  "delta_vs_warm_fresh_fraction": 0.04096292065823438,
+  "delta_vs_warm_fresh_s": 1.7491916040000035,
+  "l2_cold_median_s": 164.270725926,
+  "l3_warm_fresh_median_s": 42.701828285,
+  "l4_same_session_median_s": 44.451019889,
+  "reduction_vs_cold_fraction": 0.7294038871598819,
+  "speedup_vs_cold": 3.695544586743014
+}
+
+Outlier review:
+
+[
+  {
+    "advisory_outlier": true,
+    "duration_s": 153.481200115,
+    "excluded": false,
+    "relative_deviation_from_median": 2.452816167058992,
+    "trial": 1
+  },
+  {
+    "advisory_outlier": false,
+    "duration_s": 44.451019889,
+    "excluded": false,
+    "relative_deviation_from_median": 0.0,
+    "trial": 2
+  },
+  {
+    "advisory_outlier": true,
+    "duration_s": 31.749168953,
+    "excluded": false,
+    "relative_deviation_from_median": 0.2857493701543447,
+    "trial": 3
+  },
+  {
+    "advisory_outlier": true,
+    "duration_s": 188.200975222,
+    "excluded": false,
+    "relative_deviation_from_median": 3.2338955482227947,
+    "trial": 4
+  },
+  {
+    "advisory_outlier": false,
+    "duration_s": 40.41911639,
+    "excluded": false,
+    "relative_deviation_from_median": 0.09070440923668774,
+    "trial": 5
+  }
+]
+
+Certified invariants:
+
+- exactly five raw L.4 trials
+- every raw SHA matches A frozen TRIALS.json
+- A archive integrity verified
+- A status 0 / CERTIFIED
+- warm Small resident before measured turn
+- Small remains resident afterward
+- Small / binding-0001 / Normal
+- persist=False
+- prime session exists
+- measured session ID equals prime session ID
+- initial_session_created=False
+- session_created=False
+- session_reused=True
+- no stale-session recovery
+- no session rotation
+- one distinct Task/context/session lineage per trial
+- active.yaml frozen
+- production hashes frozen
+- statistics independently recomputed
+- all five timings retained
+- L.2 certified cold baseline verified
+- L.3 certified warm/fresh baseline verified
+- L.4 comparison metrics independently recomputed
+
+Interpretation:
+
+L.2 cold median:
+164.270725926 s
+
+L.3 warm/fresh median:
+42.701828285 s
+
+L.4 same-session median:
+44.451019889 s
+
+Reduction vs cold:
+72.940389 %
+
+Speedup vs cold:
+3.695544587x
+
+L.4 minus L.3:
++1.749191604 s
+(+4.096292 %)
+
+Terminal B live runtime operations:
+NONE
+
+Terminal B production modifications:
+NONE
+
+14.11L.4 B status:
+CERTIFIED

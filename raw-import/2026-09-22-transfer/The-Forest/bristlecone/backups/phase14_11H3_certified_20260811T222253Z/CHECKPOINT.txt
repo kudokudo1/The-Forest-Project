@@ -1,0 +1,29 @@
+The Forest — Bristlecone Pine
+Phase 14.11H.3
+
+Status:
+CERTIFIED SHARED-MODEL RESIDENCY SEMANTICS
+
+model_residency.py SHA256:
+a09e7c2a6203eafd8f1d748b65798d87d0b281635f0b2515addbba4027b7df63
+
+test_colony_model_residency.py SHA256:
+168a39da7e9bb9926f2261950a59a031e34ff943db35903e54a498a45e90fcc8
+
+G.7 TaskSession SHA256:
+fa174d6da050fbb072f3b031dbea38d3bfd6ea3d080d3b17786adc6eaa61f9da
+
+Certified behavior:
+- one residency may serve multiple execution contexts
+- residency compatibility is binding-based
+- different bindings do not share one residency contract
+- session identity is not residency identity
+- execution-context identity is not residency identity
+- Tree/Colony lineage is not residency identity
+- residency is frozen and fail-closed
+- no model loader, eviction policy, scheduler, or memory manager was added
+- G.7 TaskSession remains unchanged
+
+Doctrine:
+shared weights are permitted
+shared conversational runtime state is not

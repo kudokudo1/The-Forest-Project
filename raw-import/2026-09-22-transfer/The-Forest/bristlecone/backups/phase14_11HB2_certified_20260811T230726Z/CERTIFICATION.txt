@@ -1,0 +1,45 @@
+The Forest — Bristlecone Pine
+Terminal B independent certification
+Phase 14.11H.B2
+
+Status:
+CERTIFIED CONTEXT+BINDING SESSION OWNERSHIP
+
+Certification basis:
+
+- original H.2 frozen test artifact reused unchanged
+- original H.2 checkpoint did not record hashes for
+  runtime/session_identity.py or runtime/session_store.py
+- Terminal B therefore records the current standalone primitive
+  hashes in this checkpoint rather than claiming byte-for-byte
+  identity with unrecorded H.2 production sources
+
+Certified behavior:
+
+- runtime session identity is:
+  (execution_context_id, binding_id)
+
+- same binding may be used by multiple execution contexts
+  without sharing a runtime session
+
+- same execution context may use multiple bindings
+  without collapsing those sessions
+
+- exact context+binding resolves the canonical session entry
+
+- updating one context+binding identity does not modify
+  neighboring identities
+
+- session-store writes are pure/non-mutating
+
+Scope:
+
+- runtime/session_identity.py
+- runtime/session_store.py
+- tests/test_colony_runtime_session_isolation.py
+
+Not certified here:
+
+- transitional H.5 Reasoning implementation
+- current TaskSession integration
+- any Terminal A production work beyond frozen H.4 scope

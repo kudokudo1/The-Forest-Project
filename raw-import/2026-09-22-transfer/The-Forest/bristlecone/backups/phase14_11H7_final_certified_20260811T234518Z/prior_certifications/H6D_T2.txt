@@ -1,0 +1,30 @@
+Phase: 14.11H.6D
+Certifier: Terminal 2
+Status: INDEPENDENTLY CERTIFIED
+
+Production TaskSession SHA:
+d666cb1471b568bf43db4255f5e84e98c1ea502af467e1e2670e4a93dc364991
+
+H.5F SHA:
+c0ac6bb4cca9eaf737660d5c041218fccc9cd9a4a17468eecbf209db23db2f4b
+
+H.6B SHA:
+64b06bcca60593f4f111946b6cc17711966e3c83773252ff3eb733a1a086412e
+
+H.6C SHA:
+f9d07b51af86929fa94ba6a3b57ee2479a72cb7a9d0ee59bf5ef6770f321b33b
+
+Independent results:
+- Frozen H.6D checkpoint verification: PASS
+- H.1 Colony identity: PASS
+- H.2 runtime-session isolation: PASS
+- H.3 shared model residency: PASS
+- H.4 lifecycle isolation: PASS
+- H.5 integrated Ortet/Ramet isolation: 15 PASS / 0 FAIL
+- H.6B identity/resource/session/residency: 13 PASS / 0 FAIL
+- H.6C lifecycle/resource/residency composition: 12 PASS / 0 FAIL
+- Full independent H.6D regression: PASS
+
+Conclusion:
+Terminal 2 independently reproduced the frozen H.6D certification
+without modifying production.

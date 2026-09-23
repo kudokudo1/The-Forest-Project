@@ -1,0 +1,3 @@
+My current plan is to use Obsidian as a temporary, if not somewhat long-term substitute and model for what will eventually become my own user storage system aka leaf foliage 
+
+I also want to do the same for other Obsidian supporting apps and programs and implement them into the forest as well along with many Hermes and other ai agent features this would make the forest a fully compatible one time download all in one AI system that can be easily added to nearly any device, this would also make it a lot more user-friendly and avoid new users from having to learn how to stack programs or learn what programs are compatible or most optimal to be used together

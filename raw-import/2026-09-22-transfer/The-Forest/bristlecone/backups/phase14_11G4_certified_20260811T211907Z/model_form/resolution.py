@@ -1,0 +1,465 @@
+"""Per-turn Forest Model Form resolution.
+
+This module resolves Model Form exactly once for one
+meaningful execution-context turn, then freezes the
+selected runtime binding for reuse by session creation,
+stale-session recovery, and retry.
+
+It performs no runtime I/O.
+"""
+
+from dataclasses import dataclass
+from typing import Optional
+
+from .model import (
+    ModelFormDecision,
+    ModelFormError,
+    normalize_resolved_model_form,
+)
+
+from .control import (
+    ModelFormControlState,
+)
+
+from .registry import (
+    ModelBinding,
+    ModelBindingRegistry,
+    ModelBindingRegistryError,
+)
+
+
+class ModelFormResolutionError(ModelFormError):
+    """Model Form could not be resolved for a turn."""
+
+
+def _optional_nonempty_string(
+    value,
+    field_name,
+):
+    if value is None:
+        return None
+
+    if not isinstance(value, str):
+        raise ModelFormResolutionError(
+            f"{field_name} must be a string "
+            "or None."
+        )
+
+    normalized = value.strip()
+
+    if not normalized:
+        raise ModelFormResolutionError(
+            f"{field_name} cannot be empty "
+            "when provided."
+        )
+
+    return normalized
+
+
+def _resolved_form_input(
+    value,
+    field_name,
+):
+    """Normalize one explicit Small / Big input."""
+
+    if value is None:
+        return None
+
+    try:
+        return normalize_resolved_model_form(
+            value
+        )
+
+    except ModelFormError as exc:
+        raise ModelFormResolutionError(
+            f"{field_name} must resolve to "
+            "Small or Big."
+        ) from exc
+
+
+@dataclass(
+    frozen=True,
+    slots=True,
+)
+class FrozenModelFormTurn:
+    """Frozen Model Form execution choice for one turn.
+
+    ModelFormDecision remains runtime-neutral.
+
+    ModelBinding supplies the immutable runtime
+    configuration selected exactly once for this turn.
+
+    A retry must reuse this object rather than resolving
+    Model Form or consulting the registry again.
+    """
+
+    decision: ModelFormDecision
+    binding: ModelBinding
+    task_id: Optional[str] = None
+
+    def __post_init__(self):
+        if not isinstance(
+            self.decision,
+            ModelFormDecision,
+        ):
+            raise ModelFormResolutionError(
+                "decision must be "
+                "ModelFormDecision."
+            )
+
+        if not isinstance(
+            self.binding,
+            ModelBinding,
+        ):
+            raise ModelFormResolutionError(
+                "binding must be ModelBinding."
+            )
+
+        normalized_task_id = (
+            _optional_nonempty_string(
+                self.task_id,
+                "task_id",
+            )
+        )
+
+        object.__setattr__(
+            self,
+            "task_id",
+            normalized_task_id,
+        )
+
+    @property
+    def execution_context_id(self):
+        return (
+            self.decision
+            .execution_context_id
+        )
+
+    @property
+    def form(self):
+        return self.decision.form
+
+    @property
+    def source(self):
+        return self.decision.source
+
+    @property
+    def reasons(self):
+        return self.decision.reasons
+
+    @property
+    def binding_id(self):
+        return self.binding.binding_id
+
+    @property
+    def adapter(self):
+        return self.binding.adapter
+
+    @property
+    def runtime_state(self):
+        """Return a detached mutable runtime-state copy."""
+        return self.binding.runtime_state()
+
+
+
+def automatic_model_form_is_eligible(
+    control,
+    *,
+    task_id=None,
+    exact_form=None,
+):
+    """Return whether Auto Model Form may decide this turn.
+
+    Eligibility follows canonical Model Form precedence:
+
+        exact turn
+        > matching Task override
+        > pinned baseline
+        > Auto
+
+    This helper does not resolve a Model Form, inspect runtime
+    state, run the automatic router, access resources, or persist
+    anything.
+    """
+
+    task_id = _optional_nonempty_string(
+        task_id,
+        "task_id",
+    )
+
+    exact_form = _resolved_form_input(
+        exact_form,
+        "exact_form",
+    )
+
+    try:
+        task_override = control.task_override
+        baseline = control.baseline
+
+    except AttributeError as exc:
+        raise ModelFormResolutionError(
+            "Model Form control does not provide "
+            "canonical precedence state."
+        ) from exc
+
+    if exact_form is not None:
+        return False
+
+    if (
+        task_override is not None
+        and task_id is not None
+        and task_override.task_id == task_id
+    ):
+        return False
+
+    try:
+        baseline_policy = baseline.policy
+
+    except AttributeError as exc:
+        raise ModelFormResolutionError(
+            "Model Form baseline does not provide "
+            "a canonical policy."
+        ) from exc
+
+    if baseline_policy == "pinned":
+        return False
+
+    if baseline_policy != "auto":
+        raise ModelFormResolutionError(
+            "Model Form baseline policy must be "
+            "'auto' or 'pinned'."
+        )
+
+    return True
+
+
+def resolve_model_form_turn(
+    control,
+    registry,
+    *,
+    task_id=None,
+    exact_form=None,
+    automatic_form=None,
+    automatic_reasons=(),
+):
+    """Resolve and freeze Model Form exactly once.
+
+    Precedence:
+
+        exact-turn override
+        matching Task override
+        pinned baseline
+        supplied Auto-policy result
+        Small safe default
+
+    `automatic_form` is deliberately supplied by the
+    caller. The automatic escalation router belongs to
+    a later phase and is not implemented here.
+
+    Availability is determined by registry lookup after
+    form resolution. An explicitly selected unbound form
+    fails rather than silently becoming another form.
+    """
+
+    if not isinstance(
+        control,
+        ModelFormControlState,
+    ):
+        raise ModelFormResolutionError(
+            "control must be "
+            "ModelFormControlState."
+        )
+
+    if not isinstance(
+        registry,
+        ModelBindingRegistry,
+    ):
+        raise ModelFormResolutionError(
+            "registry must be "
+            "ModelBindingRegistry."
+        )
+
+    task_id = _optional_nonempty_string(
+        task_id,
+        "task_id",
+    )
+
+    exact_form = _resolved_form_input(
+        exact_form,
+        "exact_form",
+    )
+
+    automatic_form = _resolved_form_input(
+        automatic_form,
+        "automatic_form",
+    )
+
+    automatic_eligible = (
+        automatic_model_form_is_eligible(
+            control,
+            task_id=task_id,
+            exact_form=exact_form,
+        )
+    )
+
+    resolved_form = None
+    source = None
+    reasons = ()
+
+    # ----------------------------------------------
+    # 1. Exact-turn override
+    # ----------------------------------------------
+
+    if exact_form is not None:
+        resolved_form = exact_form
+        source = "exact_turn"
+        reasons = (
+            "exact_turn_override",
+        )
+
+    # ----------------------------------------------
+    # 2. Matching Task override
+    # ----------------------------------------------
+
+    elif (
+        control.task_override
+        is not None
+        and task_id is not None
+        and control.task_override.task_id
+        == task_id
+    ):
+        resolved_form = (
+            control.task_override.form
+        )
+
+        source = "task_override"
+
+        reasons = (
+            "matching_task_override",
+        )
+
+    # ----------------------------------------------
+    # 3. Pinned baseline
+    # ----------------------------------------------
+
+    elif control.baseline.policy == "pinned":
+        resolved_form = (
+            control.baseline.form
+        )
+
+        source = "pinned_baseline"
+
+        reasons = (
+            "pinned_baseline",
+        )
+
+    # ----------------------------------------------
+    # 4. Auto policy result
+    # ----------------------------------------------
+
+    elif (
+        automatic_eligible
+        and automatic_form is not None
+    ):
+        resolved_form = automatic_form
+        source = "auto_policy"
+
+        if not isinstance(
+            automatic_reasons,
+            tuple,
+        ):
+            raise ModelFormResolutionError(
+                "automatic_reasons must be a tuple."
+            )
+
+        normalized_automatic_reasons = []
+
+        for index, reason in enumerate(
+            automatic_reasons
+        ):
+            if not isinstance(reason, str):
+                raise ModelFormResolutionError(
+                    f"automatic_reasons[{index}] "
+                    "must be a string."
+                )
+
+            normalized_reason = reason.strip()
+
+            if not normalized_reason:
+                raise ModelFormResolutionError(
+                    f"automatic_reasons[{index}] "
+                    "must be nonempty."
+                )
+
+            normalized_automatic_reasons.append(
+                normalized_reason
+            )
+
+        reasons = (
+            "automatic_form_supplied",
+            *tuple(normalized_automatic_reasons),
+        )
+
+    # ----------------------------------------------
+    # 5. Safe default while Auto router is absent
+    # ----------------------------------------------
+
+    else:
+        if not automatic_eligible:
+            raise ModelFormResolutionError(
+                "Model Form precedence and Auto "
+                "eligibility are inconsistent."
+            )
+
+        resolved_form = "small"
+        source = "safe_default"
+
+        if automatic_reasons:
+            raise ModelFormResolutionError(
+                "automatic_reasons require "
+                "automatic_form when Auto routing wins."
+            )
+
+        reasons = (
+            "auto_without_escalation_router",
+            "small_safe_default",
+        )
+
+    try:
+        decision = ModelFormDecision(
+            form=resolved_form,
+            source=source,
+            execution_context_id=(
+                control.execution_context_id
+            ),
+            reasons=reasons,
+        )
+
+    except ModelFormError as exc:
+        raise ModelFormResolutionError(
+            "Could not create frozen "
+            "Model Form decision."
+        ) from exc
+
+    # Resolve the binding exactly once.
+    #
+    # From this point onward, runtime preparation,
+    # session creation, and retry must reuse this
+    # binding rather than consulting the registry again.
+    try:
+        binding = registry.binding_for_form(
+            decision.form
+        )
+
+    except ModelBindingRegistryError as exc:
+        raise ModelFormResolutionError(
+            "Resolved Model Form "
+            f"{decision.form!r} has no "
+            "available runtime binding."
+        ) from exc
+
+    return FrozenModelFormTurn(
+        decision=decision,
+        binding=binding,
+        task_id=task_id,
+    )

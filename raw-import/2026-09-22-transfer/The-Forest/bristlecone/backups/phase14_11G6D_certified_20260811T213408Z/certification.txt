@@ -1,0 +1,29 @@
+Phase: 14.11G.6D
+Lane: Terminal B
+Type: Real integrated production-path certification
+
+Tests:
+PASS 8
+FAIL 0
+
+Certified:
+- production Reasoning resolves once per meaningful turn
+- production Auto router runs once
+- Model Form freezes once
+- stale recovery reuses the same FrozenModelFormTurn
+- stale recovery does not reroute
+- stale recovery does not re-resolve Reasoning
+- stale recovery performs one replacement and one retry
+- second stale failure escapes without another recovery cycle
+- retry runtime failure does not reroute
+- frozen Model Form survives retry unchanged
+- frozen router provenance survives retry unchanged
+- effective Reasoning survives retry unchanged
+- Task identity mismatch fails before freeze/runtime
+- execution-context mismatch fails before freeze/runtime
+- separate Tasks/contexts route independently
+- Deep does not mechanically select Big
+- Light does not mechanically select Small
+
+Production files modified during G.6D:
+NONE

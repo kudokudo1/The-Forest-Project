@@ -1,0 +1,85 @@
+{
+  "activation_enter_ns": 145809615,
+  "activation_enter_s": 0.145809615,
+  "activation_exit_ns": 7724,
+  "activation_exit_s": 7.724e-06,
+  "active_yaml_sha": "6b8fb9b44757917c1889a7368d43f393165080d248cdb3d9c5982aad53b270e5",
+  "base_toolsets": [
+    "file",
+    "terminal"
+  ],
+  "benchmark_neutral_active_ready": [],
+  "benchmark_neutral_task_sticky_skills": [],
+  "binding_id": "binding-0001",
+  "canonical_skills": [
+    "debugging"
+  ],
+  "cleanup_performed": false,
+  "execution_context_id": "ctx-l7-c-03",
+  "expected_hermes_reasoning_effort": "medium",
+  "message": "Reply only with: L2-COLD-01",
+  "model_form": "small",
+  "persist": false,
+  "persistent_source_active_ready": [
+    "debugging"
+  ],
+  "persistent_source_task_sticky_skills": [
+    "debugging"
+  ],
+  "phase": "14.11L.7",
+  "ready": [
+    "debugging"
+  ],
+  "requested_reasoning_mode": "normal",
+  "resident_after": [
+    "bristlecone-qwen35:4b-64k    af72fe9ad018    5.6 GB    100% CPU     64000      14 minutes from now"
+  ],
+  "resident_before": [
+    "bristlecone-qwen35:4b-64k    af72fe9ad018    5.6 GB    100% CPU     64000      13 minutes from now"
+  ],
+  "result_reasoning_mode": "normal",
+  "runtime_skills": [
+    "systematic-debugging"
+  ],
+  "scenario": "warm-small-controlled-tool-skill-surface",
+  "session_created": true,
+  "session_id": "api_1786572779_36499b38",
+  "session_recovered": false,
+  "session_reused": false,
+  "skill_bindings": [
+    {
+      "adapter": "hermes",
+      "canonical_id": "debugging",
+      "kind": "skill",
+      "runtime_id": "systematic-debugging"
+    }
+  ],
+  "skill_count": 1,
+  "skill_overlay_bytes": 14554,
+  "skill_overlay_cache_hit": false,
+  "skill_overlay_hash": "76060678afab68e49b7760e7fa0a1ee0e17de972b08db6ae4d616a462608f9a0",
+  "status": "success",
+  "surface": "c",
+  "surface_cycle_ns": 241866875179,
+  "surface_cycle_s": 241.866875179,
+  "surface_label": "skill",
+  "task_id": "forest-task-20260812T221259Z-36ec1f2d",
+  "temporary_toolsets": [],
+  "toolset_count_during": 2,
+  "toolsets_after_restore": [
+    "file",
+    "terminal"
+  ],
+  "toolsets_after_turn_before_exit": [
+    "file",
+    "terminal"
+  ],
+  "toolsets_during": [
+    "file",
+    "terminal"
+  ],
+  "trial": 3,
+  "turn_duration_ns": 241721057840,
+  "turn_duration_s": 241.72105784,
+  "workshop": "code-debug"
+}

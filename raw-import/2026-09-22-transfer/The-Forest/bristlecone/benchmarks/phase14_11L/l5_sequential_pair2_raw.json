@@ -1,0 +1,42 @@
+{
+  "active_yaml_sha": "6b8fb9b44757917c1889a7368d43f393165080d248cdb3d9c5982aad53b270e5",
+  "binding_a": "binding-0001",
+  "binding_b": "binding-0001",
+  "cleanup_performed": false,
+  "context_a": "ctx-l5-seq-a2",
+  "context_b": "ctx-l5-seq-b2",
+  "different_sessions": true,
+  "latency_a_ns": 69205067647,
+  "latency_a_s": 69.205067647,
+  "latency_b_ns": 59560988886,
+  "latency_b_s": 59.560988886,
+  "latency_sum_s": 128.766056533,
+  "model_form_a": "small",
+  "model_form_b": "small",
+  "pair": 2,
+  "pair_wall_ns": 128766084847,
+  "pair_wall_s": 128.766084847,
+  "persist": false,
+  "phase": "14.11L.5A",
+  "reasoning_a": "normal",
+  "reasoning_b": "normal",
+  "resident_after": [
+    "bristlecone-qwen35:4b-64k    af72fe9ad018    5.6 GB    100% CPU     64000      14 minutes from now    "
+  ],
+  "resident_before": [
+    "bristlecone-qwen35:4b-64k    af72fe9ad018    5.6 GB    100% CPU     64000      12 minutes from now    "
+  ],
+  "runtime_session_keys": [
+    "ctx-l5-seq-a2",
+    "ctx-l5-seq-b2"
+  ],
+  "scenario": "sequential-multicontext-shared-residency",
+  "session_a": "api_1786544182_4d83c771",
+  "session_b": "api_1786544251_5e518dbc",
+  "session_created_a": true,
+  "session_created_b": true,
+  "session_reused_a": false,
+  "session_reused_b": false,
+  "status": "success",
+  "task_id": "forest-task-20260812T141621Z-a3d4c686"
+}

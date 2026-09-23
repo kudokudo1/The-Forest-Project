@@ -1,0 +1,29 @@
+[
+  {
+    "duration_ns": 229430562429,
+    "duration_s": 229.430562429,
+    "execution_context_id": "ctx-l2-cold-01",
+    "session_id": "api_1786535817_ee622130",
+    "sha256": "4fc65acb1c96738b0082fc1be5aa2213bb9f5a966682b219559c992bad03beb0",
+    "task_id": "forest-task-20260812T115656Z-e049b9df",
+    "trial": 1
+  },
+  {
+    "duration_ns": 164270725926,
+    "duration_s": 164.270725926,
+    "execution_context_id": "ctx-l2-cold-02",
+    "session_id": "api_1786536277_0ebdc2cf",
+    "sha256": "bcdab875e7120a1bde9e7186a21652afefc178a03bd2371800b46a2d8b324500",
+    "task_id": "forest-task-20260812T120437Z-54986b57",
+    "trial": 2
+  },
+  {
+    "duration_ns": 141777837884,
+    "duration_s": 141.777837884,
+    "execution_context_id": "ctx-l2-cold-03",
+    "session_id": "api_1786536640_f9f8810e",
+    "sha256": "24983d0fb8d204d3d2f44c69070bd529c968b21933b55a3f6808c57a7e81ed59",
+    "task_id": "forest-task-20260812T121039Z-1643fd49",
+    "trial": 3
+  }
+]

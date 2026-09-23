@@ -1,0 +1,16 @@
+Phase 14.11K authoritative certificate chain:
+
+- bristlecone/backups/phase14_11K1_big_binding_certified_20260812T104656Z
+- bristlecone/backups/phase14_11K1_B_independent_certified_20260812T105820Z
+- bristlecone/backups/phase14_11K6_zero_side_effect_certified_20260812T111048Z
+- bristlecone/backups/phase14_11K7_A_integrated_certified_20260812T111249Z
+- bristlecone/backups/phase14_11K7_B_independent_certified_20260812T112930Z
+
+Final production state:
+- Small -> binding-0001
+- Big -> no production binding
+- Big execution was not performed in Phase K
+- No silent Big -> Small downgrade is permitted
+
+K.8 is archival only.
+No runtime/model/session command was executed by this certifier.

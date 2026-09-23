@@ -1,0 +1,18 @@
+PASS evidence: execution_context_id: 'ctx-j5'
+PASS evidence: binding_id: 'binding-0001'
+PASS evidence: model_form: 'small'
+PASS evidence: resolved_reasoning_mode: 'normal'
+PASS evidence: initial_requested_session_id: 'api_1786503554_0fed4c96'
+PASS evidence: requested_session_id: 'api_1786503702_bd0d7591'
+PASS evidence: session_id: 'api_1786503702_bd0d7591'
+PASS evidence: previous_session_id: 'api_1786503554_0fed4c96'
+PASS evidence: session_recovered: True
+PASS evidence: recovery_from_session_id: 'api_1786503554_0fed4c96'
+PASS evidence: recovery_session_id: 'api_1786503702_bd0d7591'
+PASS evidence: recovery_binding_persisted: False
+PASS evidence: PASS: genuine stale A recovered to replacement B
+PASS evidence: PASS: disposable replacement B cleaned up
+PASS evidence: PASS: active.yaml unchanged
+PASS evidence: PASS: Hermes PID unchanged
+PASS evidence: PASS: six-file production baseline unchanged
+PASS evidence: 14.11J.5C4 evidence status: 0
