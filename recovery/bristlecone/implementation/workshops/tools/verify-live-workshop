@@ -1,0 +1,87 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+export HERMES_HOME="$HOME/.hermes/profiles/bristlecone"
+
+exec "$HOME/.hermes/hermes-agent/venv/bin/python" - <<'PY'
+from pathlib import Path
+import json
+import subprocess
+import urllib.request
+from dotenv import dotenv_values
+
+home = Path.home()
+profile = home / ".hermes" / "profiles" / "bristlecone"
+
+api_key = dotenv_values(profile / ".env").get("API_SERVER_KEY")
+
+if not api_key:
+    raise SystemExit("ERROR: Bristlecone API_SERVER_KEY not found.")
+
+pid = subprocess.check_output(
+    [
+        "systemctl", "--user", "show",
+        "hermes-bristlecone.service",
+        "-p", "MainPID",
+        "--value",
+    ],
+    text=True,
+).strip()
+
+ss_out = subprocess.check_output(
+    ["ss", "-ltnpH"],
+    text=True,
+)
+
+port = None
+
+for line in ss_out.splitlines():
+    if f"pid={pid}" not in line:
+        continue
+
+    parts = line.split()
+
+    if len(parts) >= 4:
+        candidate = parts[3].rsplit(":", 1)[-1]
+
+        if candidate.isdigit():
+            port = candidate
+            break
+
+if not port:
+    raise SystemExit("ERROR: Gateway port not found.")
+
+request = urllib.request.Request(
+    f"http://127.0.0.1:{port}/v1/toolsets",
+    headers={
+        "Authorization": f"Bearer {api_key}",
+    },
+)
+
+with urllib.request.urlopen(request, timeout=5) as response:
+    payload = json.load(response)
+
+enabled = [
+    item
+    for item in payload.get("data", [])
+    if item.get("enabled")
+]
+
+print()
+print("LIVE BRISTLECONE WORKSHOP")
+print("=" * 44)
+print("Gateway PID:", pid)
+print("Port:", port)
+print("Platform:", payload.get("platform"))
+
+print("\nEnabled toolsets:")
+
+for item in enabled:
+    print(f"\n  {item['name']}")
+    for tool in item.get("tools", []):
+        print(f"    - {tool}")
+
+print()
+print("Enabled toolset count:", len(enabled))
+PY
