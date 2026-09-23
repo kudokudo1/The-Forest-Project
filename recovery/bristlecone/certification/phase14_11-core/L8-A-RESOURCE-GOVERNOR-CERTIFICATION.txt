@@ -1,0 +1,143 @@
+PHASE 14.11L.8 — RESOURCE GOVERNOR PERFORMANCE
+A-SIDE CERTIFICATION
+
+RESULT:
+PASS
+
+CORE PERFORMANCE
+
+Pure Governor approve median:
+2.795 us
+
+Live availability median:
+22.843 us
+
+Live no-explicit-budget median:
+1.713 us
+
+Nonresident residency-aware requirement median:
+373.534 us
+
+Whole live Small Governor median:
+449.952 us
+
+Resident residency-aware requirement median:
+406.455 us
+
+
+LIVE SMALL RESOURCE STATE DURING CORE BENCHMARK
+
+MemAvailable:
+10095 MiB
+
+Available CPU threads:
+9
+
+Accelerator availability:
+0 MiB
+
+Nonresident Small memory requirement:
+6144 MiB
+
+CPU requirement:
+1 thread
+
+Accelerator requirement:
+0 MiB
+
+Whole live pipeline:
+approve 20 / 20
+
+
+RESIDENCY EFFECT
+
+Nonresident Small:
+6144 MiB requirement
+
+Resident Small exact Ollama size:
+5646906816 bytes
+
+Resident Small:
+759 MiB remaining requirement
+
+Resident observations:
+20 / 20 agreed
+
+Residency-aware requirement behavior:
+PASS
+
+
+PURE GOVERNOR SEMANTICS
+
+Approve:
+PASS
+
+Budget denial with deferral allowed:
+DENY
+
+Budget denial with deferral disallowed:
+DENY
+
+Unknown requirement + may_defer=True:
+DEFER
+
+Unknown requirement + may_defer=False:
+DENY
+
+Insufficient availability + may_defer=True:
+DEFER
+
+Insufficient availability + may_defer=False:
+DENY
+
+Unknown availability + may_defer=True:
+DEFER
+
+Unknown availability + may_defer=False:
+DENY
+
+Zero-requirement availability bypass:
+APPROVE
+
+Current priority semantics:
+background  -> approve
+standard    -> approve
+interactive -> approve
+
+No current pure-policy priority effect observed.
+
+
+EXECUTION NOTES
+
+Core benchmark real inference:
+NO
+
+Residency measurement script real inference:
+NO
+
+Controlled unmeasured prewarm used:
+YES
+
+Persistent production state modified:
+NO
+
+Transient Small residency intentionally changed:
+YES
+
+
+FROZEN HASHES
+
+Core raw SHA256:
+2c9e70239070edac150646fe00f75593fea1baf7522ccbb182b32860ee47cb91
+
+Residency raw SHA256:
+243c92316063a368712d690eb06b1fd636d571e881e812b572358e1682e8b166
+
+Core harness SHA256:
+f8ab314952c95fb01b2f5b0295eb89da605d6708e436e665c704d997dd7991f5
+
+Residency harness SHA256:
+e7c50bac53094207562af09b470a030abef400eeb283bbc510c8d8531605035d
+
+A summary SHA256:
+7f51d85b38cb705cb495bfb56a142bc65d0f85d3f7905774ea7eab2e937ce3a5
