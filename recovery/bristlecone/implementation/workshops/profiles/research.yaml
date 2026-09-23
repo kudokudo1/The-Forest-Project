@@ -1,0 +1,17 @@
+schema_version: 2
+tree: bristlecone
+id: research
+name: Research
+
+purpose: >
+  Research external information while exposing the smallest useful
+  capability set.
+
+core:
+  - web
+
+ready: []
+
+policy:
+  sticky_workshop: true
+  minimum_useful_canopy: true
