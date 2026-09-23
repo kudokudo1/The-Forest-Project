@@ -18,7 +18,7 @@ It is **not evidence by itself**. Every status must be traceable to the migratio
 
 | Subsystem / checkpoint | Recovery state | Notes |
 |---|---|---|
-| Tree identity / Seed 0.0.2 | EVIDENCE FOUND | SOUL/AGENTS/Seed/bootstrap material survives in the raw corpus. |
+| Tree identity / Seed 0.0.2 | RECONCILED | Seed 0.0.2 package reconstructed verbatim with SHA-256 provenance; later identity evolution remains a separate reconciliation task. |
 | Workshop system | EVIDENCE FOUND | Architecture, controller snapshots, and runtime evidence survive. |
 | Capability resolver | EVIDENCE FOUND | Python resolver snapshots and Hermes mapping survive. |
 | Task Sessions | EVIDENCE FOUND | Numerous certified and pre-change snapshots survive through Phase 14.11. |
@@ -35,6 +35,4 @@ It is **not evidence by itself**. Every status must be traceable to the migratio
 
 ## Next recovery target
 
-Start with **Tree identity / Seed 0.0.2** because it defines Bristlecone independently of the runtime and provides the foundation for interpreting later implementation.
-
-Then proceed subsystem-by-subsystem, recording every promoted artifact in `recovery/MIGRATION-LEDGER.tsv`.
+Next reconcile the **Workshop system + capability resolver** as a coupled subsystem: canonical Forest capability definitions, Workshop profiles, Hermes adapter mapping, controller/resolver source, and the evidence showing exact-state activation/rollback.
