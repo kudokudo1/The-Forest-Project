@@ -1,6 +1,6 @@
 # Bristlecone Pine — Control-Path Reconciliation
 
-Status: active recovery analysis
+Status: **PARTIALLY SUPERSEDED** — Workshop/resolver/runtime-adapter conclusions were finalized by `WORKSHOP-RUNTIME-ADAPTER-RECONCILIATION.md`; unresolved helper/UI items remain useful from this first-pass analysis.
 
 This note records the first reconciliation pass over current-production Python files that do not have a byte-identical certified-backup match.
 
