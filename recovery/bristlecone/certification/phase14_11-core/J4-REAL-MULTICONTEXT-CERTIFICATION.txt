@@ -1,0 +1,75 @@
+Phase: 14.11J.4
+Name: Real Small Multi-Context Isolation
+Status: CERTIFIED
+
+Task:
+forest-task-20260812T020528Z-d56df134
+
+Model Form:
+small
+
+Binding:
+binding-0001
+
+Adapter:
+hermes
+
+CONTEXT R1
+
+execution_context_id:
+ctx-j4-r1
+
+session:
+api_1786500329_47c45902
+
+session_created = True
+session_reused = False
+initial_session_created = True
+
+CONTEXT R2
+
+execution_context_id:
+ctx-j4-r2
+
+session:
+api_1786500419_78e30923
+
+session_created = True
+session_reused = False
+initial_session_created = True
+
+ISOLATION
+
+R1 session != R2 session
+
+Both contexts retained binding-0001.
+Both contexts retained Model Form Small.
+Exactly two execution-context runtime slots existed.
+
+SHARED RESIDENCY
+
+The same Ollama llama-server process remained present
+before and after the two-context execution.
+
+Observed llama-server PID:
+33261
+
+Observed resident Small:
+bristlecone-qwen35:4b-64k
+
+Observed residency:
+5.6 GB
+
+Therefore the two execution contexts used separate
+Hermes runtime sessions while sharing one resident
+Small model process/weight residency.
+
+PERSISTENCE / INTEGRITY
+
+J.4 used persist=False.
+
+Persistent active.yaml remained unchanged.
+TaskSession production source remained unchanged.
+
+FINAL:
+14.11J.4 REAL MULTI-CONTEXT ISOLATION CERTIFIED.
