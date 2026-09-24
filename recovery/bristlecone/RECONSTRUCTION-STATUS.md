@@ -18,7 +18,8 @@ It is **not evidence by itself**. Every status must be traceable to the migratio
 
 | Subsystem / checkpoint | Recovery state | Notes |
 |---|---|---|
-| Tree identity / Seed 0.0.2 | RECONCILED | Seed 0.0.2 package reconstructed verbatim with SHA-256 provenance; later identity evolution remains a separate reconciliation task. |
+| Tree identity / Seed 0.0.2 | RECONCILED | Seed 0.0.2 package reconstructed verbatim with SHA-256 provenance. |
+| Identity evolution | RECONCILED | Live AGENTS, FIRST-CONVERSATION, seed manifest, API architecture, and Newelle profile instructions remain byte-identical to Seed 0.0.2; no later canonical SOUL/role/authority rewrite is established. Later Colony/session identity changes are technical identity, not a Pine personality rewrite. |
 | Workshop system | RECONCILED | Current controller, Workshop profiles, capability registry/mapping, resolver, and runtime-adapter path match the later master checkpoint; adapter core has certified anchors. |
 | Capability resolver | RECONCILED | Current resolver is the documented later cached implementation; earlier Phase 14.6 lineage explains its evolution and no later conflicting source was found. |
 | Task Sessions | RECONCILED | Current task_session.py is byte-identical to numerous certified checkpoints through real-runtime J-series work and L.9/L.10 source snapshots. |
@@ -37,8 +38,8 @@ It is **not evidence by itself**. Every status must be traceable to the migratio
 | Phase 14.11 L.10 | CERTIFIED | Recovery authority records independent A+B certification. |
 | Phase 14.11 L.11 | PARTIAL | L.11A evidence-inventory builder survives and encodes certified chronology through L.10; expected l11_evidence_inventory.json and any final L.11 certification do not survive, so completion is not claimed. |
 | Reconstructed historical checkpoint | RECONCILED | Highest defensible boundary is Phase 14.11 L.10 A+B certified, followed by an incomplete/unproven L.11A start. See RECONSTRUCTED-CHECKPOINT.md. |
-| Historical UI / auxiliary runtime helpers | EVIDENCE FOUND | Qubes/i3 presentation and a small set of later support helpers survive but are not required to establish the certified Bristlecone core boundary. |
+| Historical UI / auxiliary runtime helpers | RECONCILED | Surviving UI, Qubes/i3 host presentation, Hermes profile bridge, dormant tool-availability provider, and runtime bootstrap artifacts are preserved under historical/ rather than treated as modern canonical implementation. |
 
 ## Next recovery target
 
-Next reconcile the remaining **historical UI / auxiliary runtime helpers** and later identity-evolution evidence, then freeze the recovery branch as the historical Bristlecone baseline before beginning the modern Rust/QML reconstruction.
+Historical Bristlecone recovery is complete enough to freeze as the **L.10 reconstructed baseline**. Modern Rust/QML/Post-Apollo work should proceed from a separate development branch while this recovery baseline remains unchanged except for evidence-backed recovery corrections.
